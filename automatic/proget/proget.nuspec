@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>proget</id>
+    <version>0.0.0</version>
+    <title>proget (Install)</title>
+    <authors>inedo</authors>
+    <projectUrl>https://inedo.com/proget</projectUrl>
+    <tags>proget inedo admin</tags>
+    <summary>Package your Applications and Components</summary>
+    <description>This package sets up a ProGet instance on this server.</description>
+    <dependencies>
+      <dependency id="vcredist2015" version="14.0.24215.20170201" />
+      <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
