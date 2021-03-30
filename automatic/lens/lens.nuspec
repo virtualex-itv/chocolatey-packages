@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>4.1.5</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,16 +41,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 Mirantis, Inc. - All rights reserved.</copyright>
     <tags>kubernetes k8s ide lens</tags>
-    <releaseNotes>autoupdated</releaseNotes>
+    <releaseNotes>https://github.com/lensapp/lens/releases/tag/v4.1.5</releaseNotes>
     <licenseUrl>https://github.com/lensapp/lens/blob/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/lens</packageSourceUrl>
     <docsUrl>https://docs.k8slens.dev/latest/getting-started/</docsUrl>
     <summary>The Kubernetes IDE</summary>
-    <description>Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters.  Lens is open source and free.
+    <description><![CDATA[Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters.  Lens is open source and free.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
