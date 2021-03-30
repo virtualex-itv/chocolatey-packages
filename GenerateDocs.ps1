@@ -8,12 +8,12 @@ Add-Type -AssemblyName System.Web
 $thisDirectory = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $psModuleDirectory = [System.IO.Path]::GetFullPath("$thisDirectory\extensions\")
 $lineFeed = "`r`n"
-$sourceLocation = 'https://github.com/mkevenaar/chocolatey-packages/tree/master/'
+$sourceLocation = 'https://github.com/virtualex-itv/chocolatey-packages/tree/master/'
 $navigationFile = Join-Path $thisDirectory "docs\_data\navigation.yml"
 $docsFolder = [System.IO.Path]::GetFullPath("$thisDirectory\docs")
 $navigation = "toc:$lineFeed"
-# $packagesFolder = "automatic,deprecated,manual"
-$packagesFolder = @("automatic", "extensions", "deprecated" ,"manual")
+#$packagesFolder = @("automatic", "extensions", "deprecated" ,"manual")
+$packagesFolder = @("automatic")
 
 function Get-Aliases($commandName){
 
@@ -111,7 +111,7 @@ Accept Pipeline Input? | $($acceptPipeline)
 
 try
 {
-  $dir = Get-ChildItem $psModuleDirectory | Where-Object {$_.PSISContainer}
+  <# $dir = Get-ChildItem $psModuleDirectory | Where-Object {$_.PSISContainer}
   foreach ($psModuleName in $dir) {
     $navigation += "  - title: $psModuleName$($lineFeed)"
     $navigation += "    subfolderitems:$($lineFeed)"
@@ -185,7 +185,7 @@ $( if ($_.relatedLinks -ne $null) {Write-Output "$lineFeed## Links$lineFeed$line
 View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
 "@  | Out-File $fileName -Encoding UTF8 -Force
   }
-}
+} #>
   # Do the packages
   $navigation += "  - title: Packages$($lineFeed)"
   $navigation += "    subfolderitems:$($lineFeed)"

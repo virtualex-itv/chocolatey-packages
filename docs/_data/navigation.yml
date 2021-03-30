@@ -1,0 +1,22 @@
+﻿toc:
+  - title: Packages
+    subfolderitems:
+      - page: "Amazon WorkSpaces"
+        url: /packages/amazonworkspaces.html
+      - page: "Lens"
+        url: /packages/lens.html
+      - page: "Notepad Replacer"
+        url: /packages/notepadreplacer.html
+      - page: "RVTools"
+        url: /packages/rvtools.html
+      - page: "Termius"
+        url: /packages/termius.html
+      - page: "VMware Remote Console"
+        url: /packages/vmrc.html
+      - page: "VMware Horizon Client for Windows"
+        url: /packages/vmwarehorizonclient.html
+      - page: "VMware Workstation Pro"
+        url: /packages/vmwareworkstation.html
+      - page: "VMware Workstation Player"
+        url: /packages/vmwareworkstationplayer.html
+
