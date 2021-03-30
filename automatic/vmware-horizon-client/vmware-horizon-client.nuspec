@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>8.2.0.17759012</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex windos medalibi</owners>
     <!-- ============================== -->
@@ -41,17 +41,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
-    <releaseNotes>autoupdate</releaseNotes>
+    <releaseNotes>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2103/rn/horizon-client-windows-2103-release-notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-horizon-client</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/index.html</docsUrl>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description>VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
+    <description><![CDATA[VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
