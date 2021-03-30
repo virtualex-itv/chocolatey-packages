@@ -29,7 +29,7 @@ function global:au_GetLatest {
   #region Get Release Notes Url
   $feed = 'https://docs.vmware.com/en/VMware-Workstation-Player/rn_rss.xml'
   $xml_fileName = Split-Path -Leaf $feed
-  $dest = "$env:TEMP\$xml_fileName"
+  $dest = "$env:TEMP\vwp_$xml_fileName"
 
   Get-WebFile $feed $dest | Out-Null
   [xml]$content = Get-Content $dest
