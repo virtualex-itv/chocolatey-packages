@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>4.0.7</version>
+    <version>4.0.7.20210330</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -46,11 +46,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/rvtools</packageSourceUrl>
     <docsUrl>http://robware.net/download/RVTools.pdf</docsUrl>
     <summary>RVTools is a Windows .NET 4.6.1 application which uses VMware vSphere Management SDK 7.0 and CIS REST API to display information about your virtual environments.</summary>
-    <description>Interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX Server 5.x, VirtualCenter 6.x, ESX Server 6.x, VirtualCenter 7.0 and ESX server 7.0. RVTools is able to list information about VMs, CPU, Memory, Disks, Partitions, Network, Floppy drives, CD drives, Snapshots, VMware tools, Resource pools, Clusters, ESX hosts, HBAs, Nics, Switches, Ports, Distributed Switches, Distributed Ports, Service consoles, VM Kernels, Datastores, multipath info, license info and health checks.
+    <description><![CDATA[Interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX Server 5.x, VirtualCenter 6.x, ESX Server 6.x, VirtualCenter 7.0 and ESX server 7.0. RVTools is able to list information about VMs, CPU, Memory, Disks, Partitions, Network, Floppy drives, CD drives, Snapshots, VMware tools, Resource pools, Clusters, ESX hosts, HBAs, Nics, Switches, Ports, Distributed Switches, Distributed Ports, Service consoles, VM Kernels, Datastores, multipath info, license info and health checks.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
