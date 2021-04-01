@@ -6,7 +6,8 @@ $releases = 'https://www.termius.com/windows'
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $url32 = Get-RedirectedUrl ($download_page.Links | Where-Object {$_.href -like "*/win"} | Select-Object -First 1 -ExpandProperty href)
+  $re = '*/win'
+  $url32 = Get-RedirectedUrl ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
 
   $fileName = Split-Path -Leaf $Url32
   $dest = "$env:TEMP\$fileName"
