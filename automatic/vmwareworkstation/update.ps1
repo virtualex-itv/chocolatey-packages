@@ -1,54 +1,68 @@
 Import-Module AU
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://softwareupdate.vmware.com/cds/vmw-desktop/ws/'
+$allProductsUrl = 'https://my.vmware.com/channel/public/api/v1.0/products/getAllProducts?locale=en_US&isPrivate=true'
 
-function global:au_GetLatest {
-  #region Get VMware Workstation Pro Url
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+function CreateStream {
+  param ( $productVersion )
 
-  $versionFolder = $download_page.Links | Where-Object { $_.href -Match '(\d+)' } | Select-Object -Last 1 -Skip 2 -ExpandProperty href
-  $versionFolderUrl = $releases + $versionFolder
+  #region Get VMware Workstation Pro for Windows Urls
+  $productBinariesUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=desktop_end_user_computing&product=vmware_workstation_pro&version=$($productVersion)&dlgType=PRODUCT_BINARY"
 
-  $build_page = Invoke-WebRequest -Uri $versionFolderUrl -UseBasicParsing
-  $buildFolder = $build_page.Links | Where-Object { $_.href -Match '(\d+)' } | Select-Object -Last 1 -ExpandProperty href
-  $buildFolderUrl = $versionFolderUrl + $buildFolder
+  $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
 
-  $staticFolders = 'windows/core/'
-  $fileFolderUrl = $buildFolderUrl + $staticFolders
+  $re = '*-WIN'
+  $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Select-Object -First 1
 
-  $re = '\.tar$'
-  $file_page = Invoke-WebRequest -Uri $fileFolderUrl -UseBasicParsing
-  $fileName = $file_page.Links | Where-Object { $_.href -match $re } | Select-Object -ExpandProperty href
+  $downloadFilesUrl = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)&rPId=$($product.releasePackageId)"
 
-  $Url32 = $fileFolderUrl + $fileName
-  $version = $versionFolder.Replace("/",".") + $buildFolder.Replace("/","")
+  $jsonFile = Invoke-WebRequest -Uri $downloadFilesUrl | ConvertFrom-Json
+
+  $re = '\.exe$'
+  $Url32 = "https://download3.vmware.com/software/wkst/file/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  $version = $jsonFile.downloadFiles.version + '.' + $jsonFile.downloadFiles.build
   $ChecksumType = 'sha256'
+  $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
   #endregion
 
   #region Get Release Notes Url
-  $feed = 'https://docs.vmware.com/en/VMware-Workstation-Pro/rn_rss.xml'
-  $xml_fileName = Split-Path -Leaf $feed
-  $dest = "$env:TEMP\vws_$xml_fileName"
+  $dlgHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getDLGHeader?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
 
-  Get-WebFile $feed $dest | Out-Null
-  [xml]$content = Get-Content $dest
+  $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
 
-  $ReleaseNotes = $content.feed.entry | Where-Object { $_.id -Match $versionFolder } | Select-Object -ExpandProperty id
-
-  Remove-Item $dest -Force -ErrorAction SilentlyContinue
+  $ReleaseNotes = ($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' }
   #endregion
 
-  @{
+  $Result = @{
     Url32          = $Url32
     Version        = $version
     ChecksumType32 = $ChecksumType
+    Checksum32     = $checksum
     ReleaseNotes   = $ReleaseNotes
   }
+  return $Result
 }
 
-function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
+function global:au_GetLatest {
+  $streams = @{}
+
+  #region Get VMware Workstation Pro for Windows Versions
+  $jsonProducts = Invoke-WebRequest -Uri $allProductsUrl | ConvertFrom-Json
+
+  $re = 'vmware_workstation_pro'
+  $productVersion = ($jsonProducts.productCategoryList.productList.actions | Where-Object target -match $re | Select-Object -First 1 -ExpandProperty target).Split("/")[-1]
+
+  $productHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getProductHeader?locale=en_US&category=desktop_end_user_computing&product=vmware_workstation_pro&version=$($productVersion)"
+
+  $jsonProductHeader = Invoke-WebRequest -Uri $productHeaderUrl | ConvertFrom-Json
+
+  foreach ( $id in $jsonProductHeader.versions.id ) {
+    $streams.Add( $id, ( CreateStream $id ) )
+  }
+
+  return @{ Streams = $streams }
+  #endregion
+
+
 }
 
 function global:au_SearchReplace {

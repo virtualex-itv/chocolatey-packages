@@ -2,33 +2,20 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/ws/16.1.1/17801498/windows/core/VMware-workstation-16.1.1-17801498.exe.tar'
-$checksum               = '5c606e01a9903430695fee960062f0382908962c531157f9b852c7e9fa7c78ad'
+$url                    = 'https://download3.vmware.com/software/wkst/file/VMware-workstation-full-16.1.1-17801498.exe'
+$checksum               = '7dab7c43bdfeebb7771a828d208385ade60a86fa31c6beb2f6d93b8e74037f4b'
 $checksumType           = 'sha256'
-
-$zippackageArgs = @{
-  packageName           = $env:ChocolateyPackageName
-  unzipLocation         = $toolsDir
-  url                   = $url
-  checksum              = $checksum
-  checksumType          = $checksumType
-
-}
-
-Install-ChocolateyZipPackage @zippackageArgs
-
-$fileLocation = Get-ChildItem $toolsDir\VMware-workstation*.exe
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
   unzipLocation         = $toolsDir
   fileType              = 'exe'
-  file                  = $fileLocation
-  softwareName          = 'VMware Workstation*'
+  url                   = $url
+  softwareName          = "VMware Workstation*"
+  checksum              = $checksum
+  checksumType          = $checksumType
   silentArgs            = '/s /v/qn EULAS_AGREED=1 AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0 ADDLOCAL=ALL REBOOT=ReallySuppress'
   validExitCodes        = @(0, 3010, 1614, 1641)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-Get-ChildItem $toolsDir\*.exe | ForEach-Object { Remove-Item $_ -ErrorAction SilentlyContinue; if (Test-Path $_) { Set-Content "$_.ignore" } }
