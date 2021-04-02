@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>16.1.1.17801498</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,17 +41,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware workstation player virtual machine virtualization</tags>
-    <releaseNotes>autoupdated</releaseNotes>
+    <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Player/16.1.1/rn/VMware-Workstation-1611-Player-Release-Notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workstation-player</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-Workstation-Player-for-Windows/index.html</docsUrl>
     <summary>VMware Workstation Player allows you to run a second, isolated operating system on a single PC. With many uses ranging from a personal educational tool, to a business tool for providing a simplified experience to run a corporate desktop on a BYO device, Workstation Player leverages the VMware vSphere Hypervisor to provide a simple yet mature and stable, local virtualization solution.</summary>
-    <description>VMware Workstation Player™ is a streamlined desktop virtualization application that runs another operating system on the same computer without rebooting. VMware Workstation Player provides a simple user interface, unmatched operating system support, and portability across the VMware ecosystem.
+    <description><![CDATA[VMware Workstation Player™ is a streamlined desktop virtualization application that runs another operating system on the same computer without rebooting. VMware Workstation Player provides a simple user interface, unmatched operating system support, and portability across the VMware ecosystem.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

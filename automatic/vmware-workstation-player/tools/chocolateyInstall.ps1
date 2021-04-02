@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/player/16.1.1/17801498/windows/core/VMware-player-16.1.1-17801498.exe.tar'
+$checksum               = '3d85dfc810a2d5f3bb7b23c141b4af512be71a98f6beaf257b693767145d0137'
+$checksumType           = 'sha256'
 
 $zippackageArgs = @{
   packageName           = $env:ChocolateyPackageName
