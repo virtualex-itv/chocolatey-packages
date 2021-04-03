@@ -1,5 +1,4 @@
 Import-Module AU
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
 $releases = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/'
 
