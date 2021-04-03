@@ -61,8 +61,6 @@ function global:au_GetLatest {
 
   return @{ Streams = $streams }
   #endregion
-
-
 }
 
 function global:au_SearchReplace {
