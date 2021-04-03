@@ -4,6 +4,28 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 $releases = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/'
 
 function global:au_GetLatest {
+  #region Get Release Notes Url
+  $allProductsUrl = 'https://my.vmware.com/channel/public/api/v1.0/products/getAllProducts?locale=en_US&isPrivate=true'
+  $jsonProducts = Invoke-WebRequest -Uri $allProductsUrl | ConvertFrom-Json
+
+  $re = 'vmware_vsphere'
+  $productVersion = ($jsonProducts.productCategoryList.productList.actions | Where-Object target -match $re | Select-Object -First 1 -ExpandProperty target).Split("/")[-1]
+
+  $productBinariesUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=datacenter_cloud_infrastructure&product=vmware_vsphere&version=$($productVersion)&dlgType=DRIVERS_TOOLS"
+  $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
+
+  $re = 'VMRC*'
+  $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Select-Object -First 1
+
+  $downloadFiles = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
+  $jsonFile = Invoke-WebRequest -Uri $downloadFiles | ConvertFrom-Json
+
+  $dlgHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getDLGHeader?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
+  $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
+
+  $ReleaseNotes = ($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' } | Select-Object -First 1
+  #endregion
+
   #region Get VMware Remote Console Url
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
@@ -20,24 +42,11 @@ function global:au_GetLatest {
   $re = '\.tar$'
   $file_page = Invoke-WebRequest -Uri $fileFolderUrl -UseBasicParsing
   $fileName = $file_page.Links | Where-Object { $_.href -match $re } | Select-Object -ExpandProperty href
+  #endregion
 
   $Url32 = $fileFolderUrl + $fileName
-  $version = $versionFolder.Replace("/",".") + $buildFolder.Replace("/","")
+  $version = $jsonFile.downloadFiles.version[0] + '.' + $jsonFile.downloadFiles.build[0]
   $ChecksumType = 'sha256'
-  #endregion
-
-  #region Get Release Notes Url
-  $feed = 'https://docs.vmware.com/en/VMware-Remote-Console/rn_rss.xml'
-  $xml_fileName = Split-Path -Leaf $feed
-  $dest = "$env:TEMP\vmrc_$xml_fileName"
-
-  Get-WebFile $feed $dest | Out-Null
-  [xml]$content = Get-Content $dest
-
-  $ReleaseNotes = $content.feed.entry | Where-Object { $_.id -Match $versionFolder } | Select-Object -ExpandProperty id
-
-  Remove-Item $dest -Force -ErrorAction SilentlyContinue
-  #endregion
 
   @{
     Url32             = $Url32
@@ -45,10 +54,6 @@ function global:au_GetLatest {
     ChecksumType32    = $ChecksumType
     ReleaseNotes      = $ReleaseNotes
   }
-}
-
-function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
 }
 
 function global:au_SearchReplace {
@@ -65,4 +70,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor none
+Update-Package -ChecksumFor 32

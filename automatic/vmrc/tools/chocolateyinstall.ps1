@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/12.0.0/17287072/windows/vmrc-windows.tar'
+$checksum               = '01912e3fba2476ecef6e438fdb5c5fabf0e07bf1f30f1a4e88353ef03c8f45df'
+$checksumType           = 'sha256'
 
 $zippackageArgs = @{
   packageName           = $env:ChocolateyPackageName
