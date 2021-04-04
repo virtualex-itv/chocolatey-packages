@@ -3,6 +3,8 @@
     subfolderitems:
       - page: "Amazon WorkSpaces"
         url: /packages/amazonworkspaces.html
+      - page: "Microsoft Local Administrator Password Solution (LAPS)"
+        url: /packages/laps.html
       - page: "Lens"
         url: /packages/lens.html
       - page: "Notepad Replacer"

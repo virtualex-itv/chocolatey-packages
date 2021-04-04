@@ -37,4 +37,3 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.vmware.com/products/workstation-pro.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmwareworkstation)
-

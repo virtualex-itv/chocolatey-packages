@@ -35,4 +35,3 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.vmware.com/go/download-vmrc)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmrc)
-

@@ -35,4 +35,3 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.vmware.com/products/workstation-player.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workstation-player)
-
