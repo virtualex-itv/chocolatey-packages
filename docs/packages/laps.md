@@ -24,7 +24,7 @@ choco uninstall laps
 
 ---
 
-## Package Parameters
+### Package Parameters
 
 * if the parameter is not specified, only the AdmPwd GPO Extension is installed (default)
 * `/ALL` - Installs the AdmPwd GPO Extension and all Management Tools (Fat client UI, PowerShell module, and GPO Editor templates)
@@ -32,7 +32,7 @@ Example: `choco install laps --params='"/ALL"'`
 
 ---
 
-## Overview of Local Administrator Password Solution
+### Overview of Local Administrator Password Solution
 
 For environments in which users are required to log on to computers without domain credentials, password management can become a complex issue. Such environments greatly increase the risk of a Pass-the-Hash (PtH) credential replay attack. The Local Administrator Password Solution (LAPS) provides a solution to this issue of using a common local account with an identical password on every computer in a domain. LAPS resolves this issue by setting a different, random password for the common local administrator account on every computer in the domain. Domain administrators using the solution can determine which users, such as helpdesk administrators, are authorized to read passwords.
 

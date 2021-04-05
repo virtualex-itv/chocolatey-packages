@@ -22,7 +22,7 @@ choco uninstall notepadreplacer
 
 ## Description
 
-## Package Parameters
+### Package Parameters
 
 * **If the parameter is not specified, the installation will fail and exit**
 * `/NOTEPAD` - Specifies the path to the executable for the program you wish to replace Notepad with.
@@ -32,7 +32,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 ---
 
-## Overview of Notepad Replacer
+### Overview of Notepad Replacer
 
 Do you use a Notepad alternative, like Notepad++ or Notepad2? Notepad Replacer will allow you to replace the default Windows version of Notepad with whatever alternative you would like to use. No System Files Replaced Won't replace ANY system files, or change ANY file permissions.
 

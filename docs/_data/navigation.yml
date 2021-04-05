@@ -17,6 +17,8 @@
         url: /packages/vmrc.html
       - page: "VMware Horizon Client for Windows"
         url: /packages/vmwarehorizonclient.html
+      - page: "VMWare Tools for Windows"
+        url: /packages/vmwaretools.html
       - page: "VMware Workstation Pro"
         url: /packages/vmwareworkstation.html
       - page: "VMware Workstation Player"
