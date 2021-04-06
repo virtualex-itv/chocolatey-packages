@@ -32,7 +32,7 @@ function CreateStream {
 
     $Url32 = "https://packages.vmware.com/tools/releases/$($release)/windows/x86/$($fileName32)"
     $Url64 = "https://packages.vmware.com/tools/releases/$($release)/windows/x64/$($fileName64)"
-    $version = $release + '.' + $download32.build
+    $version = "$release.$($download32.build)"
     $checksumType = 'sha256'
     $checksum32 = Get-RemoteChecksum -Algorithm $checksumType -Url $Url32
     $checksum64 = Get-RemoteChecksum -Algorithm $checksumType -Url $Url64
