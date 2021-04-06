@@ -23,7 +23,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: virtualex-itv/chocolatey-packages
   github_api_key:
-    secure: XFrUqdUihiCx6QcBfZNLf3xfwEkbKL1A6JNSHRma24hgbn9KjjhewAdqRhEz2EmL # https://ci.appveyor.com/tools/encrypt
+    secure: Bvm3U7OWm9dQo4FOvp7vkrdhk7jY5bcrlAAjlGTN+ZOc1T7DOxRzwFgZvOMmTKs6 # https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
