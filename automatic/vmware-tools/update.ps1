@@ -75,7 +75,6 @@ function global:au_GetLatest {
   $jsonProductHeader = Invoke-WebRequest -Uri $productHeaderUrl | ConvertFrom-Json
 
   foreach ( $id in $jsonProductHeader.versions.id ) {
-    #$streams.Add( $id, ( CreateStream $id ) )
     $streamData = CreateStream($id)
     if ($streamData) {
       $streams.Add($id, $streamData)
