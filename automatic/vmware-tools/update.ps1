@@ -6,8 +6,6 @@ $allProductsUrl = 'https://my.vmware.com/channel/public/api/v1.0/products/getAll
 function CreateStream {
   param ( $productVersion )
 
-  $Result = $null
-
   #region Get VMware Tools Urls
   $productBinariesUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=datacenter_cloud_infrastructure&product=vmware_tools&version=$($productVersion)&dlgType=PRODUCT_BINARY"
 
@@ -24,6 +22,8 @@ function CreateStream {
   $re64 = 'x86_64'
   $download32 = $jsonFile.downloadFiles | Where-Object fileName -match $re32
   $download64 = $jsonFile.downloadFiles | Where-Object fileName -match $re64
+
+  $Result = $false
 
   if ($download32 -and $download64) {
     $fileName32 = ($download32.fileName).Replace('.zip', '')
@@ -75,7 +75,11 @@ function global:au_GetLatest {
   $jsonProductHeader = Invoke-WebRequest -Uri $productHeaderUrl | ConvertFrom-Json
 
   foreach ( $id in $jsonProductHeader.versions.id ) {
-    $streams.Add( $id, ( CreateStream $id ) )
+    #$streams.Add( $id, ( CreateStream $id ) )
+    $streamData = CreateStream($id)
+    if ($streamData) {
+      $streams.Add($id, $streamData)
+    }
   }
 
   return @{ Streams = $streams }
