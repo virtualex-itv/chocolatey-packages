@@ -7,6 +7,8 @@
         url: /packages/laps.html
       - page: "Lens"
         url: /packages/lens.html
+      - page: "Micron Storage Executive"
+        url: /packages/micronstorageexecutive.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
       - page: "RVTools"
