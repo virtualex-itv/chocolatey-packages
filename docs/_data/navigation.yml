@@ -11,6 +11,8 @@
         url: /packages/micronstorageexecutive.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
+      - page: "PSWindowsUpdate (PowerShell Module)"
+        url: /packages/pswindowsupdate.html
       - page: "RVTools"
         url: /packages/rvtools.html
       - page: "Termius"
