@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>7.01.012021.03</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -46,12 +46,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/micron-storage-executive</packageSourceUrl>
     <docsUrl>https://media-www.micron.com/-/media/client/global/documents/products/software/storage-executive-software/storageexecutive_user_guide_en.pdf?rev=89f50224158f40df9ff89a89a5de6b9e</docsUrl>
     <summary>Storage Executive is a Graphical User Interface (GUI) for managing and supporting Micron SSDs.</summary>
-    <description>Micron’s Storage Executive software offers an easy interface to analyze and manage our SATA drives and is compatible with both Linux and Windows systems for your desktop or laptop.
+    <description><![CDATA[Micron’s Storage Executive software offers an easy interface to analyze and manage our SATA drives and is compatible with both Linux and Windows systems for your desktop or laptop.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
