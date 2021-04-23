@@ -21,6 +21,8 @@
         url: /packages/vmwarepowerclipsmodule.html
       - page: "VMWare Tools for Windows"
         url: /packages/vmwaretools.html
+      - page: "VMware.WorkloadManagement (PowerShell Module)"
+        url: /packages/vmwareworkloadmanagement.html
       - page: "VMware Workstation Pro"
         url: /packages/vmwareworkstation.html
       - page: "VMware Workstation Player"
