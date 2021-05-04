@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://github.com/lensapp/lens/releases/download/v4.2.3/Lens-Setup-4.2.3.exe'
-$checksum               = '2bb240ec595fa3f3f71903e1c37a3180966c1f2f3565591729d53e87d3a9b3bd'
+$url                    = 'https://github.com/lensapp/lens/releases/download/v4.2.4/Lens-Setup-4.2.4.exe'
+$checksum               = '2ab3a650a0c1d766d7f70213fef67be34f0a56028c12a7fbec08ab6f676645bb'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
