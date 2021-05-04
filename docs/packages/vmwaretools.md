@@ -43,7 +43,6 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://chocolatey.org/packages/vmware-tools)
@@ -51,4 +50,3 @@ let them know the package is no longer updating correctly.
 [Software Site](https://kb.vmware.com/kb/340)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-tools)
-
