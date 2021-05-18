@@ -5,6 +5,8 @@
         url: /packages/amazonworkspaces.html
       - page: "DisplayFusion (Portable)"
         url: /packages/displayfusion.portable.html
+      - page: "FileSeek (Portable)"
+        url: /packages/fileseek.portable.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
         url: /packages/laps.html
       - page: "Lens"
