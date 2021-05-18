@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/bc3tech/chocolatey/TrayStatus/icon.png" width="32" height="32"/> [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/v/displayfusion.portable.svg?label=DisplayFusion+(Portable))](https://chocolatey.org/packages/displayfusion.portable) [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/dt/displayfusion.portable.svg)](https://chocolatey.org/packages/displayfusion.portable)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png" width="32" height="32"/> [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/v/displayfusion.portable.svg?label=DisplayFusion+(Portable))](https://chocolatey.org/packages/displayfusion.portable) [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/dt/displayfusion.portable.svg)](https://chocolatey.org/packages/displayfusion.portable)
 
 ## Usage
 
