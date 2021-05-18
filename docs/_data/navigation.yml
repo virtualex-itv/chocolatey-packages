@@ -17,6 +17,8 @@
         url: /packages/pswindowsupdate.html
       - page: "RVTools"
         url: /packages/rvtools.html
+      - page: "ShellSend"
+        url: /packages/shellsend.html
       - page: "Termius"
         url: /packages/termius.html
       - page: "TrayStatus"
