@@ -47,12 +47,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/windowinspector</packageSourceUrl>
     <docsUrl>https://www.binaryfortress.com/WindowInspector/Help/</docsUrl>
     <summary>Inspect Your Desktop Windows</summary>
-    <description>View the window class, text, properties, and more, simply by moving your mouse cursor over the target window.
+    <description><![CDATA[View the window class, text, properties, and more, simply by moving your mouse cursor over the target window.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
