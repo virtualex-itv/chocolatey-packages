@@ -12,27 +12,19 @@ function global:au_GetLatest {
 
   $re = 'Setup-|\.exe$'
   $version = ($url32 -split $re)[1]
-  $ChecksumType = 'sha256'
 
   @{
     Url32            = $Url32
     Version          = $version
-    ChecksumType32   = $ChecksumType
   }
-}
-
-function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
 }
 
 function global:au_SearchReplace {
-  @{
-      'tools\chocolateyInstall.ps1' = @{
-          "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.Url32)'"
-          "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-          "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-      }
-  }
+  @{ }
+}
+
+function global:au_AfterUpdate {
+  Update-Metadata -key "dependency" -value "windowinspector.install|[$($Latest.Version)]"
 }
 
 Update-Package -ChecksumFor none
