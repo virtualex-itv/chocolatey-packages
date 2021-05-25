@@ -2,9 +2,9 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = ''
-$checksum              = ''
-$checksumType          = ''
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/126/WindowInspectorSetup-2.6.exe'
+$checksum              = '9c734b52c0d58c7b9339a7450eb7b3d7fcae68f72a80e64e5c1066931797522b'
+$checksumType          = 'sha256'
 
 $packageArgs = @{
   packageName          = $env:ChocolateyPackageName
