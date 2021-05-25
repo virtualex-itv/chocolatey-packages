@@ -45,6 +45,8 @@
         url: /packages/vmwareworkstationplayer.html
       - page: "Window Inspector"
         url: /packages/windowinspector.html
+      - page: "Window Inspector (Install)"
+        url: /packages/windowinspector.install.html
       - page: "Window Inspector (Portable)"
         url: /packages/windowinspector.portable.html
 
