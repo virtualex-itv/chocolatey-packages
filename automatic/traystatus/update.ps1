@@ -20,11 +20,11 @@ function global:au_GetLatest {
 }
 
 function global:au_SearchReplace {
-  @{ }
-}
-
-function global:au_AfterUpdate {
-  Update-Metadata -key "dependency" -value "TrayStatus.Install|[$($Latest.Version)]"
+  @{
+      "$($Latest.PackageName).nuspec" = @{
+          "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+      }
+    }
 }
 
 Update-Package -ChecksumFor none
