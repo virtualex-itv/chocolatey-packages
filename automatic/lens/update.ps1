@@ -1,12 +1,12 @@
 Import-Module AU
 
-$releases = 'https://github.com/lensapp/lens/releases/latest'
+$releases = 'https://api.github.com/repos/lensapp/lens/releases/latest'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri $releases | ConvertFrom-Json
 
   $re = '.*\.exe'
-  $Url32 = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $Url32 = $download_page.assets | Where-Object { $_.browser_download_url -match $re } | Select-Object -First 1 -ExpandProperty browser_download_url
 
   $version = Get-Version($Url32)
   $ChecksumType = 'sha256'
