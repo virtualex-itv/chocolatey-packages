@@ -1,14 +1,15 @@
 Import-Module AU
 
-$releases = 'https://api.github.com/repos/lensapp/lens/releases/latest'
+$releases = 'https://api.k8slens.dev/binaries/latest.json'
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases | ConvertFrom-Json
 
-  $re = '.*\.exe'
-  $Url32 = $download_page.assets | Where-Object { $_.browser_download_url -match $re } | Select-Object -First 1 -ExpandProperty browser_download_url
+  $constUrl = 'https://api.k8slens.dev/binaries/'
+  $Url = "$($constUrl)$($download_page.path)"
+  $Url32 = Get-RedirectedUrl $Url
 
-  $version = Get-Version($Url32)
+  $version = ($download_page.version).Split('-')[0]
   $ChecksumType = 'sha256'
 
   $ReleaseNotes = "https://github.com/lensapp/lens/releases/tag/v$($version)"
