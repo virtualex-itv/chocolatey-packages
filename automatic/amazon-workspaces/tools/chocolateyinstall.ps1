@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://d2td7dqidlhjx7.cloudfront.net/prod/global/windows/Amazon+WorkSpaces.msi'
-$checksum               = '49128638C36C63A8FE9F68513DFD8C54AD9D619E1D8F376620F7CA2946ECAA53'
+$checksum               = '48837E63B491D988278959EE222AD1D41B0CC70C714AED9598F5BB83C83DE1C3'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
