@@ -14,8 +14,7 @@ function global:au_GetLatest {
   $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
 
   $re = 'VMRC*'
-  $date = Get-Date -Format yyyy-MM
-  $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Where-Object releaseDate -match $date | Select-Object -First 1
+  $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Sort-Object releaseDate | Select-Object -Last 1
 
   $downloadFiles = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
   $jsonFile = Invoke-WebRequest -Uri $downloadFiles | ConvertFrom-Json
