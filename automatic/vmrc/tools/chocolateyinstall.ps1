@@ -1,5 +1,40 @@
 ﻿$ErrorActionPreference  = 'Stop';
 
+#region
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  softwareName  = "VMware Remote Console*"
+  fileType      = 'msi'
+  silentArgs    = "/qn /norestart"
+  validExitCodes= @(0, 3010, 1605, 1614, 1641)
+}
+
+# attn: Moderators
+# this is a temporary fallback for implementing a new chocolateyBeforeModify.ps1 and will be removed after 2-3 package iterations
+
+[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+
+if ($key.Count -eq 1) {
+  $key | ForEach-Object {
+    $packageArgs['file'] = "$($_.UninstallString)"
+    if ($packageArgs['fileType'] -eq 'MSI') {
+      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+
+      $packageArgs['file'] = ''
+    }
+
+    Get-Process vmrc* | ForEach-Object { $_.CloseMainWindow() }
+    Uninstall-ChocolateyPackage @packageArgs
+  }
+} elseif ($key.Count -gt 1) {
+  Write-Warning "$($key.Count) matches found!"
+  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
+  Write-Warning "Please alert package maintainer the following keys were matched:"
+  $key | ForEach-Object {Write-Warning "- $($_.DisplayName)"}
+}
+$packageArgs = @{}
+#endregion
+
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/12.0.1/18113358/windows/vmrc-windows.tar'
