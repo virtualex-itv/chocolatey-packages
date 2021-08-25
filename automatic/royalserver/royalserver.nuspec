@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>4.00.50713.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex Sargola</owners>
     <!-- ============================== -->
@@ -41,17 +41,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 Royal Apps GmbH</copyright>
     <tags>server management remote admin vmware</tags>
-    <releaseNotes>https://www.updateme.com</releaseNotes>
+    <releaseNotes>https://support.royalapps.com/support/solutions/articles/17000113547-royal-server-v4-release-notes</releaseNotes>
     <licenseUrl>https://support.royalapps.com/support/solutions/articles/17000074360</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/royalserver</packageSourceUrl>
     <docsUrl>https://support.royalapps.com/support/home</docsUrl>
     <summary>Server Management without Boundaries</summary>
-    <description>Transmitting screen content, mouse and keyboard data to read Windows Events or restart a service? This is so 2014! Royal Server is a secure gateway (SSH tunnel) and provides common remote management tasks to our cross-platform clients (Windows, OS X and soon iOS and Android) using their native UI. The combination of Royal Server and the award winning Royal TS/X remote management clients takes remote systems management to a whole new level.
+    <description><![CDATA[Transmitting screen content, mouse and keyboard data to read Windows Events or restart a service? This is so 2014! Royal Server is a secure gateway (SSH tunnel) and provides common remote management tasks to our cross-platform clients (Windows, OS X and soon iOS and Android) using their native UI. The combination of Royal Server and the award winning Royal TS/X remote management clients takes remote systems management to a whole new level.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
