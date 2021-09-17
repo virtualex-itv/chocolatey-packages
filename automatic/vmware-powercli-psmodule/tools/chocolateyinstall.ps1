@@ -19,6 +19,8 @@ if ($PSversion -lt "5") {
 if (Get-Module -ListAvailable -Name $moduleName -ErrorAction SilentlyContinue){
   Write-Host "  ** Removing installed version, please be patient... **" -ForegroundColor Yellow
   Get-InstalledModule -Name VMware.* | Uninstall-Module -AllVersions -Force -ErrorAction "SilentlyContinue" -Verbose
+  Remove-Item "$ENV:Public\Desktop\$shortcutName" -Force -ErrorAction SilentlyContinue
+  Remove-Item "$ENV:ProgramData\Microsoft\Windows\Start Menu\Programs\$shortcutName" -Force -ErrorAction SilentlyContinue
 }
 
 # Will fail if package version is a revised version not matching the module version, i.e. x.x.x.0020180101
