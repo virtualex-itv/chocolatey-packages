@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/126/WindowInspector-2.6.zip'
-$checksum              = '243ba0e560f955206c352b0ac6c7c4444c778a849fd5fae808ce40d44cb158d4'
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/126/WindowInspector-2.7.zip'
+$checksum              = '3dc9f077e46c05fbae7aaf3269b60b141a23dbb7a2f297d877918ff4d06f1437'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
