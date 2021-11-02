@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>12.4.0.18633274</version>
+    <version>12.4.1.18769701</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex bcurran3</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware powercli vsphere automation client virtual machine virtualization esx esxi powershell hcx nsx-t</tags>
-    <releaseNotes>https://code.vmware.com/docs/14564/vmware-powercli-12-4-0-release-notes</releaseNotes>
+    <releaseNotes>https://vdc-download.vmware.com/vmwb-repository/dcr-public/36746232-ee53-41ad-892f-b0c3638b12c7/0e1b9c80-0a72-4db3-b6e0-80b601211eb9/vmware-powercli-1241-release-notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-powercli-psmodule</packageSourceUrl>
