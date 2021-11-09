@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>16.2.0.18760230</version>
+    <version>16.2.1.18811642</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2021 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware workstation player virtual machine virtualization</tags>
-    <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Player/16.2.0/rn/VMware-Workstation-1620-Player-Release-Notes.html</releaseNotes>
+    <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Player/16.2.1/rn/VMware-Workstation-1621-Player-Release-Notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workstation-player</packageSourceUrl>
