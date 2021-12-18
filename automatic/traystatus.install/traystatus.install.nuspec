@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>4.5</version>
+    <version>4.6</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>bc3tech virtualex</owners>
     <!-- ============================== -->
@@ -47,12 +47,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/traystatus.install</packageSourceUrl>
     <docsUrl>https://www.traystatus.com/Help/</docsUrl>
     <summary>CapsLock, NumLock and ScrollLock Status in your Tray</summary>
-    <description>TrayStatus shows you the status of keyboard keys like Caps Lock, Num Lock, Scroll Lock, Alt, Ctrl, and more, right in your system tray.
+    <description><![CDATA[TrayStatus shows you the status of keyboard keys like Caps Lock, Num Lock, Scroll Lock, Alt, Ctrl, and more, right in your system tray.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

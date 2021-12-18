@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/114/TrayStatusSetup-4.5.exe'
-$checksum              = '22620cdac1077822a8ed0dbb532d862aa6426e22744d4aa844edf3bacf14009f'
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/114/TrayStatusSetup-4.6.exe'
+$checksum              = 'c477a7adc4f7c64561e16a902b5d0e49d504d0ac27b5d68a3368ed3ff811d4b8'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
