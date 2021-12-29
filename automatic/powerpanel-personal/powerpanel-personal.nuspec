@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/powerpanel-personal</packageSourceUrl>
     <docsUrl>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_UM_PPP-Windows-v2.3.4.pdf</docsUrl>
     <summary>An interface to control and monitor a UPS system through a USB or serial cable with the host computer.</summary>
-    <description># PowerPanel® Personal
+    <description><![CDATA[# PowerPanel® Personal
 
 ## Product Overview
 
@@ -75,7 +75,7 @@ In the event of a power outage, the user can configure the software to keep the 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-    </description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
