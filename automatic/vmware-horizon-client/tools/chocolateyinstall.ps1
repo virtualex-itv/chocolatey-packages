@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://download3.vmware.com/software/view/viewclients/CART22FH2/VMware-Horizon-Client-2111-8.4.0-18968194.exe'
-$checksum               = '6de25248219d74e1c7f0ec753e1f29f75857b4981848acc441b3328628bd0b82'
+$url                    = 'https://download3.vmware.com/software/view/viewclients/CART23FQ1/VMware-Horizon-Client-5.5.3-19201434.exe'
+$checksum               = '70acca3c801cef1932f348ea47d057c23cd02c36f566aa20eb89a2e6745261dd'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
