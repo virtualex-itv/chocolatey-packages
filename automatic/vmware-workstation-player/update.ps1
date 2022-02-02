@@ -18,7 +18,7 @@ function CreateStream {
 
   $re = '\.exe$'
   $Url32 = "https://download3.vmware.com/software/player/file/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
-  $version = $jsonFile.downloadFiles.version + '.' + $jsonFile.downloadFiles.build
+  $version = $jsonFile.downloadFiles.version[0] + '.' + $jsonFile.downloadFiles.build[0]
   $ChecksumType = 'sha256'
   $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
   #endregion
