@@ -14,7 +14,7 @@ $packageArgs = @{
   url                = $url
   checksum           = $checksum
   checksumType       = $checksumType
-  silentArgs         = '/qn /norestart'
+  silentArgs         = '--silent'
   validExitCodes     = @(0, 3010, 1641)
 }
 
