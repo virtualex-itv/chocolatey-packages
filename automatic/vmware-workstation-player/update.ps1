@@ -17,7 +17,11 @@ function CreateStream {
   $jsonFile = Invoke-WebRequest -Uri $downloadFilesUrl | ConvertFrom-Json
 
   $re = '\.exe$'
+  if ( $productVersion -match '16_0' ) {
   $Url32 = "https://download3.vmware.com/software/$($product.code)/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  } else {
+    $Url32 = "https://download3.vmware.com/software/player/file/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  }
   $version = ($jsonFile.downloadFiles.version | Select-Object -First 1) + '.' + ($jsonFile.downloadFiles.build | Select-Object -First 1)
   $ChecksumType = 'sha256'
   $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
