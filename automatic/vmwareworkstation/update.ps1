@@ -10,7 +10,7 @@ function CreateStream {
 
   $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
 
-  $re = '*-WIN'
+  $re = '*-WIN*'
   $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Select-Object -First 1
 
   $downloadFilesUrl = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)&rPId=$($product.releasePackageId)"
@@ -18,7 +18,11 @@ function CreateStream {
   $jsonFile = Invoke-WebRequest -Uri $downloadFilesUrl | ConvertFrom-Json
 
   $re = '\.exe$'
-  $Url32 = "https://download3.vmware.com/software/wkst/file/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  if ( ($productVersion -match '14_0') -or ($productVersion -match '15_0') ) {
+    $Url32 = "https://download3.vmware.com/software/wkst/file/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  } else {
+    $Url32 = "https://download3.vmware.com/software/$(($product.code).Replace('NEW','New'))/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
+  }
   $version = $jsonFile.downloadFiles.version + '.' + $jsonFile.downloadFiles.build
   $ChecksumType = 'sha256'
   $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
