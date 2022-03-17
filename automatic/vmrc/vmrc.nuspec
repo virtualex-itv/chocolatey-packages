@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.vmware.com/go/download-vmrc</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1784650e7fdd30ff28f476c23777c895409080e5/icons/vmrc.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2021 VMware, Inc. All rights reserved.</copyright>
+    <copyright>Copyright © 2022 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware vsphere vmrc remote-console</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Remote-Console/12.0/rn/VMware-Remote-Console-1201-Release-Notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>

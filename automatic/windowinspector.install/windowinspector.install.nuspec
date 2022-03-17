@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.binaryfortress.com/WindowInspector/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/cfd5955b3d908853bac0149541a3350ef83f1a7c/icons/windowinspector.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2021 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2022 Binary Fortress Software</copyright>
     <tags>window inspector admin</tags>
     <releaseNotes>https://www.binaryfortress.com/WindowInspector/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.binaryfortress.com/WindowInspector/License/</licenseUrl>

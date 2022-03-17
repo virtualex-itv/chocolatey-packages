@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.vmware.com/products/workstation-player.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e6a6262927b9decf4a7702d926e0df8ecea61d/icons/vmware-workstation-player.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2021 VMware, Inc. All rights reserved.</copyright>
+    <copyright>Copyright © 2022 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware workstation player virtual machine virtualization</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Player/16.2.3/rn/vmware-workstation-player-1623-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.binaryfortress.com/ShellSend</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e78924b467961787352ce2d54f03406d841c8a9e/icons/shellsend.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2021 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2022 Binary Fortress Software</copyright>
     <tags>shellsend admin email cli</tags>
     <releaseNotes>https://www.binaryfortress.com/ShellSend/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.binaryfortress.com/ShellSend/License/</licenseUrl>

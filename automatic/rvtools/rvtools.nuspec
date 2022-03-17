@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://robware.net/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2021 Robware</copyright>
+    <copyright>Copyright © 2022 Robware</copyright>
     <tags>rvtools admin vmware vsphere esx esxi utility</tags>
     <releaseNotes>https://www.robware.net/rvtools/version/</releaseNotes>
     <licenseUrl>https://www.robware.net/rvtools/license/</licenseUrl>

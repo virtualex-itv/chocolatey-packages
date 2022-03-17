@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.vmware.com/products/workstation-pro.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/ad7782a412beed5cb5c54a716b206176c9e79a93/icons/vmwareworkstation.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2021 VMware, Inc. All rights reserved.</copyright>
+    <copyright>Copyright © 2022 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware workstation virtual machine virtualization</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Pro/16.2.3/rn/vmware-workstation-pro-1623-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>

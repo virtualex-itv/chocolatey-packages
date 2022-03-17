@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://www.displayfusion.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2021 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2022 Binary Fortress Software</copyright>
     <tags>multimonitor displayfusion display binaryfortress monitor free</tags>
     <releaseNotes>https://www.displayfusion.com/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.displayfusion.com/License/</licenseUrl>
