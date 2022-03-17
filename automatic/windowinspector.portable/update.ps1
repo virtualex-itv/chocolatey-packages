@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $url32 = Get-RedirectedUrl $url
 
   $re = '-|\.zip$'
-  $version = ($url32 -split $re)[1]
+  $version = (($url32 -split $re)[1]).Substring(0, 3)
   $ChecksumType = 'sha256'
 
   @{
