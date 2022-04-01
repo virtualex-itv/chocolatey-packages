@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://www.techsmith.com/jing-eula.html</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/capture</packageSourceUrl>
     <docsUrl>https://support.techsmith.com/hc/en-us/articles/360057129511-TechSmith-Capture-FAQ</docsUrl>
-    <summary>Share Ideas Instantly with TechSmith Capture (Formerly Jing), a ightweight screen capture application.</summary>
+    <summary>Share Ideas Instantly with TechSmith Capture (Formerly Jing), a lightweight screen capture application.</summary>
     <description><![CDATA[Whether for work, home, or play, TechSmith Capture provides a simple, free way to create basic screenshots and screen recordings and share them with others.
 
 **Please Note**: This is an automatically updated package. If you find it is
