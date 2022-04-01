@@ -3,6 +3,8 @@
     subfolderitems:
       - page: "Amazon WorkSpaces"
         url: /packages/amazonworkspaces.html
+      - page: "Capture (Formerly Jing)"
+        url: /packages/capture.html
       - page: "DisplayFusion (Portable)"
         url: /packages/displayfusion.portable.html
       - page: "FileSeek (Portable)"
