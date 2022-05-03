@@ -47,4 +47,3 @@ let them know the package is no longer updating correctly.
 [Software Site](http://www.geekuninstaller.com)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/geekuninstaller)
-
