@@ -9,6 +9,8 @@
         url: /packages/displayfusion.portable.html
       - page: "FileSeek (Portable)"
         url: /packages/fileseek.portable.html
+      - page: "Geek Uninstaller"
+        url: /packages/geekuninstaller.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
         url: /packages/laps.html
       - page: "Lens"
@@ -57,3 +59,4 @@
         url: /packages/windowinspector.install.html
       - page: "Window Inspector (Portable)"
         url: /packages/windowinspector.portable.html
+
