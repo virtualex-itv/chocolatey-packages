@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://lens-binaries.s3-eu-west-1.amazonaws.com/ide/Lens%20Setup%205.4.6-latest.20220421.1.exe'
-$checksum               = '11ac9115bdf43a06a95d88fa0a143a91d608a31a32ed05481216c6f04b1b2122'
+$url                    = 'https://lens-binaries.s3-eu-west-1.amazonaws.com/ide/Lens%20Setup%205.5.0-latest.20220525.1.exe'
+$checksum               = 'ef08daaa0cd36812e714dec3683da034ef20d09fbd0397809a7aa523d3c647d7'
 $checksumType           = 'sha256'
 $pp                     = Get-PackageParameters
 
