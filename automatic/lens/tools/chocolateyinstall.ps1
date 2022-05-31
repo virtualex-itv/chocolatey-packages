@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://downloads.k8slens.dev/ide/Lens%20Setup%205.5.1-latest.20220526.1.exe'
-$checksum               = '6af331ca7967629d5c97189da456e8f55473a44d5ca5e25e87508167d8702464'
+$url                    = 'https://downloads.k8slens.dev/ide/Lens%20Setup%205.5.2-latest.20220530.1.exe'
+$checksum               = '58baf4cff198f6c21726c90df61d75cbfdc11b73106c1cdcaae2b14accda0c2c'
 $checksumType           = 'sha256'
 $pp                     = Get-PackageParameters
 
