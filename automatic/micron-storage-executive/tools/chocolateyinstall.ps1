@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://media-www.micron.com/-/media/client/global/documents/products/software/storage-executive-software/storageexecutive_windows.exe?rev=8774a41b86104c358a762f17de8d246c'
-$checksum               = '9b31c9134cc1b785efc8b9714c3a7184f73d0941b872067c1b5c3c5ad2955b66'
+$url                    = 'https://media-www.micron.com/-/media/client/global/documents/products/software/storage-executive-software/storageexecutive_windows.exe?rev=863bc56315d942c5afd21ae3f0f2583d'
+$checksum               = '296cd238e0e847f11b2dd893b7df54fc9f467c22f75d37d5dfb4ee4e4686322f'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
