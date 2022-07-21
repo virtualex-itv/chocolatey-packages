@@ -35,13 +35,13 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.advanced-ip-scanner.com</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/mylogos/deprecated.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <!-- <copyright></copyright> -->
+    <copyright></copyright>
     <tags>deprecated</tags>
-    <!-- <releaseNotes></releaseNotes> -->
-    <!-- <licenseUrl></licenseUrl> -->
+    <releaseNotes></releaseNotes>
+    <licenseUrl></licenseUrl>
     <packageSourceUrl>https://github.com/boubou/chocolatey/tree/master/packages/advancedipscanner</packageSourceUrl>
-    <!-- <docsUrl></docsUrl> -->
-    <!-- <summary></summary> -->
+    <docsUrl></docsUrl>
+    <summary></summary>
     <description>## This package has been deprecated. It has been replaced by the dependency shown below.</description>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
@@ -58,5 +58,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
   </metadata>
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
-  <files />
+  <files>
+    <file />
+  </files>
 </package>
