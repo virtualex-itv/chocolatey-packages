@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/69ec6737877e129294ab3ba2b2029b744f094ed2/icons/notepadreplacer.png" width="48" height="48"/> [notepadreplacer](https://chocolatey.org/packages/notepadreplacer)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/69ec6737877e129294ab3ba2b2029b744f094ed2/icons/notepadreplacer.png" width="48" height="48"/> [notepadreplacer](https://community.chocolatey.org/packages/notepadreplacer)
 
 ## Package Parameters
 

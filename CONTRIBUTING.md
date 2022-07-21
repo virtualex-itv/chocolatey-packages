@@ -19,6 +19,7 @@ To achieve those goals we are using the following priorities when adding new or 
 1. Commercial packages with unrestricted trials.
 
 The following rules also apply:
+
 1. When packages have the same priorities, software with higher number of users will generally be considered more important.
 1. Applications without english localization are not accepted in this repository.
 1. The core team may decide to stop supporting a package after a discussion. This may happen if the package requires too much dedication during maintenance.
@@ -33,9 +34,9 @@ The following sections present complete set of guideliness, please read them car
 
 ### 1.1.1 Conform to guidelines
 
-Conform with the [official package creation guidelines](https://chocolatey.org/docs/create-packages) and take a look at [quick start guide](https://chocolatey.org/docs/CreatePackagesQuickStart) on how to create packages.
+Conform with the [official package creation guidelines](https://docs.chocolatey.org/en-us/create/create-packages) and take a look at [quick start guide](https://docs.chocolatey.org/en-us/create/create-packages-quick-start#mainContent) on how to create packages.
 
-You should also know how to [deprecate a package](https://chocolatey.org/docs/how-to-deprecate-a-chocolatey-package).
+You should also know how to [deprecate a package](https://docs.chocolatey.org/en-us/community-repository/maintainers/deprecate-a-chocolatey-package).
 
 ### 1.1.2 Manual or automatic
 
@@ -51,7 +52,7 @@ _Embedded_ packages include the packaged software directly in the nupkg archive 
 
 Its **recommended to create embedded packages** because they don't depend on vendor site working and substantially reduce the network related problems - 404 (file not found) problem and potential vendor bandwidth leaching issues are completely solved by embedding.
 
-Binary files can not be generally checked in into this repository because that will bloat it too much.  The repository is ignoring binary files via `.gitignore`. Automatic packages use AU functions to produce correct package that includes binaries during automatic update procedure. See the following packages as an example: [qbittorent](https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/qbittorrent), [less](https://github.com/majkinetor/au-packages/tree/master/less), [smplayer](https://github.com/majkinetor/au-packages/tree/master/smplayer).
+Binary files can not be generally checked in into this repository because that will bloat it too much.  The repository is ignoring binary files via `.gitignore`. Automatic packages use AU functions to produce correct package that includes binaries during automatic update procedure. See the following packages as an example: [qbittorent](https://github.com/chocolatey-community/chocolatey-packages/tree/master/automatic/qbittorrent), [less](https://github.com/majkinetor/au-packages/tree/master/less), [smplayer](https://github.com/majkinetor/au-packages/tree/master/smplayer).
 
 For software that explicitly doesn't allow redistribution via adequate license then one may **contact the vendor**, ask for the redistribution rights and provide proof in the package in the form of:
 
@@ -59,7 +60,7 @@ For software that explicitly doesn't allow redistribution via adequate license t
 - signed letter
 - PDF of an email chain granting that permission
 
-As an example take a look at the [activepresenter](https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/activepresenter/legal) package. Embeding non-allowed binaries may have [legal repercussions](https://chocolatey.org/docs/legal).
+As an example take a look at the [activepresenter](https://github.com/chocolatey-community/chocolatey-packages/tree/master/automatic/activepresenter/legal) package. Embeding non-allowed binaries may have [legal repercussions](https://docs.chocolatey.org/en-us/information/legal).
 
 **NOTE**: 200MB is the maximum size of the package. Larger tools must be downloaded from a vendor site or mirror.
 
@@ -77,20 +78,20 @@ Packages should **support multiple versions** if possible - do not use URLs that
 
 Remember, code is written for humans, not for computers. Otherwise we'd all write assembly. So it's better to be able to reason about code than it is to take shortcuts that make code harder to decipher.
 
-If you created custom helper functions put them all in the `helpers.ps1` to keep installer clean and understandable ([example](https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/virtualbox/tools)).
+If you created custom helper functions put them all in the `helpers.ps1` to keep installer clean and understandable ([example](https://github.com/chocolatey-community/chocolatey-packages/tree/master/automatic/virtualbox/tools)).
 
-Chocolatey extension [chocolatey-core.extension](https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/extensions/chocolatey-core.extension) provides functions that can make the code even more understandable.
+Chocolatey extension [chocolatey-core.extension](https://github.com/chocolatey-community/chocolatey-packages/tree/master/extensions/chocolatey-core.extension) provides functions that can make the code even more understandable.
 
 ### 1.1.8 Set `softwareName`
 
-If the package uses [Install-ChocolateyPackage](https://github.com/chocolatey/choco/wiki/HelpersInstallChocolateyPackage)
+If the package uses [Install-ChocolateyPackage](https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage#mainContent)
 `softwareName` should be set to represent software _Display Name_ correctly. You can use [myuninstaller](https://community.chocolatey.org/packages/myuninst) package to quickly determine it (it's called _Entry Name_ here).
 
 This information is used for the licensed edition of chocolatey to detect if the software is installed (Business edition) and when the software have been uninstalled (Pro edition).
 
 ### 1.1.9 Test locally
 
-Before pull request **make sure package can install and uninstall correctly** using the [chocolatey test environment](https://github.com/majkinetor/chocolatey-test-environment). It is used as a reference machine to prevent _it works on my computer syndrome_. AU function `Test-Package -Vagrant` can speed this up.
+Before pull request **make sure package can install and uninstall correctly** using the [chocolatey test environment](https://github.com/chocolatey-community/chocolatey-test-environment/blob/master/shell/InstallChocolatey.ps1). It is used as a reference machine to prevent _it works on my computer syndrome_. AU function `Test-Package -Vagrant` can speed this up.
 
 _Although all PR's are tested on appveyor, all packages are expected to have been locally tested before the PR was submitted_
 
@@ -153,7 +154,7 @@ Keep any exisiting owners and add `chocolatey` user before all others.
 
 ### 1.2.5 Provide icon
 
-Packages **must have an icon** if one is available. The icon must be named the same as the package and is placed in the [icons](https://github.com/mkevenaar/chocolatey-packages/tree/master/icons) directory.
+Packages **must have an icon** if one is available. The icon must be named the same as the package and is placed in the [icons](https://github.com/virtualex-itv/chocolatey-packages/tree/master/icons) directory.
 
 If the package name ends with either `.install` or `.portable` those suffixes may be ignored in the icon name.
 
@@ -165,7 +166,7 @@ When icon is added to this folder **it will automatically be set** in the _nuspe
 
 ### 1.3.1 Use `UseBasicParsing` [Optional]
 
-If you use `Invoke-WebRequest` to download a web page, try to use `UseBasicParsing` if possible. Otherwise, the script will require IE engine installed on Windows Server used to run the updater and may also break due to the _accept cookie_ popup (see [#382](https://github.com/chocolatey/chocolatey-coreteampackages/issues/382)).
+If you use `Invoke-WebRequest` to download a web page, try to use `UseBasicParsing` if possible. Otherwise, the script will require IE engine installed on Windows Server used to run the updater and may also break due to the _accept cookie_ popup (see [#382](https://github.com/chocolatey-community/chocolatey-packages/issues/382)).
 
 ### 1.3.2 Do not download large files
 
@@ -198,13 +199,13 @@ Do not create brittle scripts that work only when user doesn't interfer. All scr
 
 ### 2.1 Encoding
 
-Always __use UTF-8 without BOM__ for the `*.nuspec` and __UTF-8 with BOM__ for the `*.ps1` files. See [character encodings](https://chocolatey.org/docs/create-packages#character-encoding).
+Always __use UTF-8 without BOM__ for the `*.nuspec` and __UTF-8 with BOM__ for the `*.ps1` files. See [character encodings](https://docs.chocolatey.org/en-us/create/create-packages#character-encoding).
 
 ### 2.2 Code style
 
 Do not commit code with obvious styling problems such as irregular indentation levels, very long lines, too many comments, too many empty lines, etc.
 
-The project contains [.editorconfig](https://github.com/mkevenaar/chocolatey-packages/blob/master/.editorconfig)
+The project contains [.editorconfig](https://github.com/virtualex-itv/chocolatey-packages/blob/master/.editorconfig)
  file that can be used with many editors via [EditorConfig](http://editorconfig.org/) plugins.
 
 Keep the package source files clean and remove obsolete or outdated code and unnecessary comments. Comment non-obvious code so that others can easily understand what it does.

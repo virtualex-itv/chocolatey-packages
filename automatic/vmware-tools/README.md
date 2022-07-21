@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6ce9dc8f51e1b0adfcd4a2d620988b33caf1ccb3/icons/vmware-tools.png" width="48" height="48"/> [vmware-tools](https://chocolatey.org/packages/vmware-tools)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6ce9dc8f51e1b0adfcd4a2d620988b33caf1ccb3/icons/vmware-tools.png" width="48" height="48"/> [vmware-tools](https://community.chocolatey.org/packages/vmware-tools)
 
 VMware Tools is a set of services and modules that enable several features in VMware products for better management of, and seamless user interactions with, guests operating systems.
 

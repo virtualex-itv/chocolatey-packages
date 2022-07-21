@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e78924b467961787352ce2d54f03406d841c8a9e/icons/shellsend.png" width="48" height="48"/> [shellsend](https://chocolatey.org/packages/shellsend)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e78924b467961787352ce2d54f03406d841c8a9e/icons/shellsend.png" width="48" height="48"/> [shellsend](https://community.chocolatey.org/packages/shellsend)
 
 Email Files From the Command Line.
 

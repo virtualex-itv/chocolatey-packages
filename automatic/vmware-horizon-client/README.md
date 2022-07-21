@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png" width="48" height="48"/> [vmware-horizon-client](https://chocolatey.org/packages/vmware-horizon-client)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png" width="48" height="48"/> [vmware-horizon-client](https://community.chocolatey.org/packages/vmware-horizon-client)
 
 VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
 

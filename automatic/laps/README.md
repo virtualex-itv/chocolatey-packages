@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/227e188880b4e4f7be42a32d31d8b60b74c0119c/icons/laps.png" width="48" height="48"/> [laps](https://chocolatey.org/packages/laps)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/227e188880b4e4f7be42a32d31d8b60b74c0119c/icons/laps.png" width="48" height="48"/> [laps](https://community.chocolatey.org/packages/laps)
 
 ---
 

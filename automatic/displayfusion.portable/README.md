@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png" width="48" height="48"/> [displayfusion.portable](https://chocolatey.org/packages/displayfusion.portable)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png" width="48" height="48"/> [displayfusion.portable](https://community.chocolatey.org/packages/displayfusion.portable)
 
 DisplayFusion will make your multi-monitor life much easier! With powerful features like Multi-Monitor Taskbars, TitleBar Buttons and fully customizable HotKeys, DisplayFusion will make managing your multiple monitors easy.
 
