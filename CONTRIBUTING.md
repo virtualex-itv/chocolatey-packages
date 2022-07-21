@@ -19,7 +19,6 @@ To achieve those goals we are using the following priorities when adding new or 
 1. Commercial packages with unrestricted trials.
 
 The following rules also apply:
-
 1. When packages have the same priorities, software with higher number of users will generally be considered more important.
 1. Applications without english localization are not accepted in this repository.
 1. The core team may decide to stop supporting a package after a discussion. This may happen if the package requires too much dedication during maintenance.
@@ -56,9 +55,9 @@ Binary files can not be generally checked in into this repository because that w
 
 For software that explicitly doesn't allow redistribution via adequate license then one may **contact the vendor**, ask for the redistribution rights and provide proof in the package in the form of:
 
-* PDF of a signed license
-* signed letter
-* PDF of an email chain granting that permission
+- PDF of a signed license
+- signed letter
+- PDF of an email chain granting that permission
 
 As an example take a look at the [activepresenter](https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/activepresenter/legal) package. Embeding non-allowed binaries may have [legal repercussions](https://chocolatey.org/docs/legal).
 
@@ -85,7 +84,7 @@ Chocolatey extension [chocolatey-core.extension](https://github.com/chocolatey/c
 ### 1.1.8 Set `softwareName`
 
 If the package uses [Install-ChocolateyPackage](https://github.com/chocolatey/choco/wiki/HelpersInstallChocolateyPackage)
-`softwareName` should be set to represent software _Display Name_ correctly. You can use [myuninstaller](https://chocolatey.org/packages/myuninst) package to quickly determine it (it's called _Entry Name_ here).
+`softwareName` should be set to represent software _Display Name_ correctly. You can use [myuninstaller](https://community.chocolatey.org/packages/myuninst) package to quickly determine it (it's called _Entry Name_ here).
 
 This information is used for the licensed edition of chocolatey to detect if the software is installed (Business edition) and when the software have been uninstalled (Pro edition).
 
@@ -181,12 +180,11 @@ Since commit message is used to push packages to the community repository (CR), 
 1. If you want to fix package that is pushed but not yet approved (for example it fails verifier) do the same as in first case but request in PR comment that you want version explicitelly set.
 
 __NOTE__: Automatic fix version doesn't work if package is using the _revision_ part of the version (4th number). In that case _explicit version_ must be used: `[AU package:version]`.
-
 ## 1.4 UI Automation
 
 Some installers do not provide silent arguments and can be difficult to automate.
 
-If the package needs to perform tasks that cannot be done with command line switches, e.g. clicking away a prompt during installation that cannot be suppressed like for example in the [dropbox](https://chocolatey.org/packages/dropbox) package, you can use [AutoHotkey](https://chocolatey.org/packages/autohotkey.portable). Make [autohotkey.portable](https://chocolatey.org/packages/autohotkey.portable) a dependency of the package. Prefer AutoHotkey over [AutoIt](https://chocolatey.org/packages/autoit.commandline), because AutoHotkey is more lightweight, FOS and more actively developed than AutoIt.
+If the package needs to perform tasks that cannot be done with command line switches, e.g. clicking away a prompt during installation that cannot be suppressed like for example in the [dropbox](https://community.chocolatey.org/packages/dropbox) package, you can use [AutoHotkey](https://community.chocolatey.org/packages/autohotkey.portable). Make [autohotkey.portable](https://community.chocolatey.org/packages/autohotkey.portable) a dependency of the package. Prefer AutoHotkey over [AutoIt](https://community.chocolatey.org/packages/autoit.commandline), because AutoHotkey is more lightweight, FOS and more actively developed than AutoIt.
 
 ### 1.4.1 Work on all locales
 
@@ -198,11 +196,11 @@ Do not create brittle scripts that work only when user doesn't interfer. All scr
 
 # 2. Source Files
 
-## 2.1 Encoding
+### 2.1 Encoding
 
 Always __use UTF-8 without BOM__ for the `*.nuspec` and __UTF-8 with BOM__ for the `*.ps1` files. See [character encodings](https://chocolatey.org/docs/create-packages#character-encoding).
 
-## 2.2 Code style
+### 2.2 Code style
 
 Do not commit code with obvious styling problems such as irregular indentation levels, very long lines, too many comments, too many empty lines, etc.
 
@@ -215,18 +213,18 @@ Keep the package source files clean and remove obsolete or outdated code and unn
 
 Good communication is essential so please take a look at [etiquette](https://github.com/chocolatey/choco/blob/master/README.md#etiquette-regarding-communication) regarding it.
 
-## 3.1 Single package per push request
+### 3.1 Single package per push request
 
 All contributors should issue pull request containing single package. In special cases multiple packages per PR can be allowed.
 
-## 3.2 Pull request expires after 6 months
+### 3.2 Pull request expires after 6 months
 
 PRs that remain open for 6 months without any feedback may be closed.
 
-## 3.3 Open issue expires after 6 months
+### 3.3 Open issue expires after 6 months
 
 Issues that remain open for 6 months without any feedback may be closed.
 
-## 3.4 Pull request one package
+### 3.4 Pull request one package
 
 Do not mix multiple packages in single pull request unless in specific special cases that fix common problem.

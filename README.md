@@ -15,10 +15,11 @@ This contains Chocolatey packages, both manually and automatically maintained.
 
 ### Folder Structure
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
+* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://community.chocolatey.org/packages/au).
+* deprecated - where packages that are deprecated are kept.
 * icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 * manual - where packages that are not automatic are kept.
-* setup - items for prepping the system to ensure for auto packaging.
+* retired - where packages that are retired are kept.
 
 For setting up your own automatic package repository, please see [Automatic Packaging](https://chocolatey.org/docs/automatic-packages)
 
@@ -29,7 +30,7 @@ For setting up your own automatic package repository, please see [Automatic Pack
 #### AU
 
 * PowerShell v5+.
-* The [AU module](https://chocolatey.org/packages/au).
+* The [AU module](https://community.chocolatey.org/packages/au).
 
 For daily operations check out the AU packages [template README](https://github.com/majkinetor/au-packages-template/blob/master/README.md).
 
@@ -39,6 +40,7 @@ For daily operations check out the AU packages [template README](https://github.
 1. Clone the repository locally.
 1. Head into the `setup` folder and perform the proper steps for your choice of setup (or both if you plan to use both methods).
 1. Edit this README. Update the badges at the top.
+
 
 ### Recommendation on Auto Packaging
 
@@ -53,9 +55,10 @@ You want to bring in all of your packages into the proper folders. We suggest us
 1. Bring over the following files to your package source repository:
 
 * `automatic\README.md`
+* `deprecated\README.md`
 * `icons\README.md`
 * `manual\README.md`
-* `setup\*.*`
+* `retired\README.md`
 * `.appveyor.yml`
 
 1. Inspect the following file and add the differences:
