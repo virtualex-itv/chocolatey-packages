@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="32" height="32"/> [![RVTools](https://img.shields.io/chocolatey/v/rvtools.svg?label=RVTools)](https://chocolatey.org/packages/rvtools) [![RVTools](https://img.shields.io/chocolatey/dt/rvtools.svg)](https://chocolatey.org/packages/rvtools)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="32" height="32"/> [![RVTools](https://img.shields.io/chocolatey/v/rvtools.svg?label=RVTools)](https://community.chocolatey.org/packages/rvtools) [![RVTools](https://img.shields.io/chocolatey/dt/rvtools.svg)](https://community.chocolatey.org/packages/rvtools)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/rvtools)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/rvtools)
 
 [Software Site](https://robware.net/)
 

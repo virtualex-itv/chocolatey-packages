@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="32" height="32"/> [![Geek Uninstaller](https://img.shields.io/chocolatey/v/geekuninstaller.svg?label=Geek+Uninstaller)](https://chocolatey.org/packages/geekuninstaller) [![Geek Uninstaller](https://img.shields.io/chocolatey/dt/geekuninstaller.svg)](https://chocolatey.org/packages/geekuninstaller)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="32" height="32"/> [![Geek Uninstaller](https://img.shields.io/chocolatey/v/geekuninstaller.svg?label=Geek+Uninstaller)](https://community.chocolatey.org/packages/geekuninstaller) [![Geek Uninstaller](https://img.shields.io/chocolatey/dt/geekuninstaller.svg)](https://community.chocolatey.org/packages/geekuninstaller)
 
 ## Usage
 
@@ -42,7 +42,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/geekuninstaller)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/geekuninstaller)
 
 [Software Site](http://www.geekuninstaller.com)
 

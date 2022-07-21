@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/7d89ac1ff4fbd6f9dc60afe9dfe95ae0f209144c/icons/amazon-workspaces.png" width="32" height="32"/> [![Amazon WorkSpaces](https://img.shields.io/chocolatey/v/amazon-workspaces.svg?label=Amazon+WorkSpaces)](https://chocolatey.org/packages/amazon-workspaces) [![Amazon WorkSpaces](https://img.shields.io/chocolatey/dt/amazon-workspaces.svg)](https://chocolatey.org/packages/amazon-workspaces)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/7d89ac1ff4fbd6f9dc60afe9dfe95ae0f209144c/icons/amazon-workspaces.png" width="32" height="32"/> [![Amazon WorkSpaces](https://img.shields.io/chocolatey/v/amazon-workspaces.svg?label=Amazon+WorkSpaces)](https://community.chocolatey.org/packages/amazon-workspaces) [![Amazon WorkSpaces](https://img.shields.io/chocolatey/dt/amazon-workspaces.svg)](https://community.chocolatey.org/packages/amazon-workspaces)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/amazon-workspaces)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/amazon-workspaces)
 
 [Software Site](https://clients.amazonworkspaces.com/)
 

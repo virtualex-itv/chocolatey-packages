@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/69ec6737877e129294ab3ba2b2029b744f094ed2/icons/notepadreplacer.png" width="32" height="32"/> [![Notepad Replacer](https://img.shields.io/chocolatey/v/notepadreplacer.svg?label=Notepad+Replacer)](https://chocolatey.org/packages/notepadreplacer) [![Notepad Replacer](https://img.shields.io/chocolatey/dt/notepadreplacer.svg)](https://chocolatey.org/packages/notepadreplacer)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/69ec6737877e129294ab3ba2b2029b744f094ed2/icons/notepadreplacer.png" width="32" height="32"/> [![Notepad Replacer](https://img.shields.io/chocolatey/v/notepadreplacer.svg?label=Notepad+Replacer)](https://community.chocolatey.org/packages/notepadreplacer) [![Notepad Replacer](https://img.shields.io/chocolatey/dt/notepadreplacer.svg)](https://community.chocolatey.org/packages/notepadreplacer)
 
 ## Usage
 
@@ -47,7 +47,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/notepadreplacer)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/notepadreplacer)
 
 [Software Site](https://www.binaryfortress.com/NotepadReplacer/)
 

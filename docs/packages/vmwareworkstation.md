@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/ad7782a412beed5cb5c54a716b206176c9e79a93/icons/vmwareworkstation.png" width="32" height="32"/> [![VMware Workstation Pro](https://img.shields.io/chocolatey/v/vmwareworkstation.svg?label=VMware+Workstation+Pro)](https://chocolatey.org/packages/vmwareworkstation) [![VMware Workstation Pro](https://img.shields.io/chocolatey/dt/vmwareworkstation.svg)](https://chocolatey.org/packages/vmwareworkstation)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/ad7782a412beed5cb5c54a716b206176c9e79a93/icons/vmwareworkstation.png" width="32" height="32"/> [![VMware Workstation Pro](https://img.shields.io/chocolatey/v/vmwareworkstation.svg?label=VMware+Workstation+Pro)](https://community.chocolatey.org/packages/vmwareworkstation) [![VMware Workstation Pro](https://img.shields.io/chocolatey/dt/vmwareworkstation.svg)](https://community.chocolatey.org/packages/vmwareworkstation)
 
 ## Usage
 
@@ -32,7 +32,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vmwareworkstation)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vmwareworkstation)
 
 [Software Site](https://www.vmware.com/products/workstation-pro.html)
 

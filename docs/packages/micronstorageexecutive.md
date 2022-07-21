@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/7374e4a9b07a743afee368897cbf209d0f1a8790/icons/micron-storage-executive.png" width="32" height="32"/> [![Micron Storage Executive](https://img.shields.io/chocolatey/v/micron-storage-executive.svg?label=Micron+Storage+Executive)](https://chocolatey.org/packages/micron-storage-executive) [![Micron Storage Executive](https://img.shields.io/chocolatey/dt/micron-storage-executive.svg)](https://chocolatey.org/packages/micron-storage-executive)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/7374e4a9b07a743afee368897cbf209d0f1a8790/icons/micron-storage-executive.png" width="32" height="32"/> [![Micron Storage Executive](https://img.shields.io/chocolatey/v/micron-storage-executive.svg?label=Micron+Storage+Executive)](https://community.chocolatey.org/packages/micron-storage-executive) [![Micron Storage Executive](https://img.shields.io/chocolatey/dt/micron-storage-executive.svg)](https://community.chocolatey.org/packages/micron-storage-executive)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/micron-storage-executive)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/micron-storage-executive)
 
 [Software Site](https://www.micron.com/products/ssd/storage-executive-software)
 

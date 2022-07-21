@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e61315c1a1c9da8a17325a22fc299db5d040546d/icons/vmware-workloadmanagement.png" width="32" height="32"/> [![VMware.WorkloadManagement (PowerShell Module)](https://img.shields.io/chocolatey/v/vmware-workloadmanagement.svg?label=VMware.WorkloadManagement+(PowerShell+Module))](https://chocolatey.org/packages/vmware-workloadmanagement) [![VMware.WorkloadManagement (PowerShell Module)](https://img.shields.io/chocolatey/dt/vmware-workloadmanagement.svg)](https://chocolatey.org/packages/vmware-workloadmanagement)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e61315c1a1c9da8a17325a22fc299db5d040546d/icons/vmware-workloadmanagement.png" width="32" height="32"/> [![VMware.WorkloadManagement (PowerShell Module)](https://img.shields.io/chocolatey/v/vmware-workloadmanagement.svg?label=VMware.WorkloadManagement+(PowerShell+Module))](https://community.chocolatey.org/packages/vmware-workloadmanagement) [![VMware.WorkloadManagement (PowerShell Module)](https://img.shields.io/chocolatey/dt/vmware-workloadmanagement.svg)](https://community.chocolatey.org/packages/vmware-workloadmanagement)
 
 ## Usage
 
@@ -34,7 +34,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vmware-workloadmanagement)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-workloadmanagement)
 
 [Software Site](https://github.com/lamw/VMware.WorkloadManagement)
 

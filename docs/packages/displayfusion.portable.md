@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png" width="32" height="32"/> [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/v/displayfusion.portable.svg?label=DisplayFusion+(Portable))](https://chocolatey.org/packages/displayfusion.portable) [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/dt/displayfusion.portable.svg)](https://chocolatey.org/packages/displayfusion.portable)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/bc57ad91f327c9a9b44390c7d766ba55a177726e/icons/displayfusion.portable.png" width="32" height="32"/> [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/v/displayfusion.portable.svg?label=DisplayFusion+(Portable))](https://community.chocolatey.org/packages/displayfusion.portable) [![DisplayFusion (Portable)](https://img.shields.io/chocolatey/dt/displayfusion.portable.svg)](https://community.chocolatey.org/packages/displayfusion.portable)
 
 ## Usage
 
@@ -42,8 +42,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/displayfusion.portable)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/displayfusion.portable)
 
 [Software Site](https://www.displayfusion.com/)
 
-[Package Source](https://github.com/bc3tech/chocolatey/tree/master/TrayStatus)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/displayfusion.portable)

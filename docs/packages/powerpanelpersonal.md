@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="32" height="32"/> [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/v/powerpanel-personal.svg?label=PowerPanel+Personal+(Install))](https://chocolatey.org/packages/powerpanel-personal) [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/dt/powerpanel-personal.svg)](https://chocolatey.org/packages/powerpanel-personal)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="32" height="32"/> [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/v/powerpanel-personal.svg?label=PowerPanel+Personal+(Install))](https://community.chocolatey.org/packages/powerpanel-personal) [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/dt/powerpanel-personal.svg)](https://community.chocolatey.org/packages/powerpanel-personal)
 
 ## Usage
 
@@ -54,7 +54,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/powerpanel-personal)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/powerpanel-personal)
 
 [Software Site](https://www.cyberpowersystems.com/products/software/power-panel-personal/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/cfd5955b3d908853bac0149541a3350ef83f1a7c/icons/windowinspector.png" width="32" height="32"/> [![Window Inspector](https://img.shields.io/chocolatey/v/windowinspector.svg?label=Window+Inspector)](https://chocolatey.org/packages/windowinspector) [![Window Inspector](https://img.shields.io/chocolatey/dt/windowinspector.svg)](https://chocolatey.org/packages/windowinspector)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/cfd5955b3d908853bac0149541a3350ef83f1a7c/icons/windowinspector.png" width="32" height="32"/> [![Window Inspector](https://img.shields.io/chocolatey/v/windowinspector.svg?label=Window+Inspector)](https://community.chocolatey.org/packages/windowinspector) [![Window Inspector](https://img.shields.io/chocolatey/dt/windowinspector.svg)](https://community.chocolatey.org/packages/windowinspector)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/windowinspector)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/windowinspector)
 
 [Software Site](https://www.binaryfortress.com/WindowInspector/)
 

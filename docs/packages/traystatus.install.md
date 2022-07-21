@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30ad93c0ae8f036a00bfbdffbd16b8aa2ddd9c49/icons/traystatus.png" width="32" height="32"/> [![TrayStatus (Install)](https://img.shields.io/chocolatey/v/traystatus.install.svg?label=TrayStatus+(Install))](https://chocolatey.org/packages/traystatus.install) [![TrayStatus (Install)](https://img.shields.io/chocolatey/dt/traystatus.install.svg)](https://chocolatey.org/packages/traystatus.install)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30ad93c0ae8f036a00bfbdffbd16b8aa2ddd9c49/icons/traystatus.png" width="32" height="32"/> [![TrayStatus (Install)](https://img.shields.io/chocolatey/v/traystatus.install.svg?label=TrayStatus+(Install))](https://community.chocolatey.org/packages/traystatus.install) [![TrayStatus (Install)](https://img.shields.io/chocolatey/dt/traystatus.install.svg)](https://community.chocolatey.org/packages/traystatus.install)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/traystatus.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/traystatus.install)
 
 [Software Site](https://www.binaryfortress.com/TrayStatus/)
 

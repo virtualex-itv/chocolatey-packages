@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e40245062e7e7ce67656c2acbb6abcd60848d7a2/icons/pswindowsupdate.png" width="32" height="32"/> [![PSWindowsUpdate (PowerShell Module)](https://img.shields.io/chocolatey/v/pswindowsupdate.svg?label=PSWindowsUpdate+(PowerShell+Module))](https://chocolatey.org/packages/pswindowsupdate) [![PSWindowsUpdate (PowerShell Module)](https://img.shields.io/chocolatey/dt/pswindowsupdate.svg)](https://chocolatey.org/packages/pswindowsupdate)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e40245062e7e7ce67656c2acbb6abcd60848d7a2/icons/pswindowsupdate.png" width="32" height="32"/> [![PSWindowsUpdate (PowerShell Module)](https://img.shields.io/chocolatey/v/pswindowsupdate.svg?label=PSWindowsUpdate+(PowerShell+Module))](https://community.chocolatey.org/packages/pswindowsupdate) [![PSWindowsUpdate (PowerShell Module)](https://img.shields.io/chocolatey/dt/pswindowsupdate.svg)](https://community.chocolatey.org/packages/pswindowsupdate)
 
 ## Usage
 
@@ -32,7 +32,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/pswindowsupdate)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/pswindowsupdate)
 
 [Software Site](https://www.powershellgallery.com/packages/PSWindowsUpdate)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png" width="32" height="32"/> [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/v/vmware-horizon-client.svg?label=VMware+Horizon+Client+for+Windows)](https://chocolatey.org/packages/vmware-horizon-client) [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/dt/vmware-horizon-client.svg)](https://chocolatey.org/packages/vmware-horizon-client)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png" width="32" height="32"/> [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/v/vmware-horizon-client.svg?label=VMware+Horizon+Client+for+Windows)](https://community.chocolatey.org/packages/vmware-horizon-client) [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/dt/vmware-horizon-client.svg)](https://community.chocolatey.org/packages/vmware-horizon-client)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vmware-horizon-client)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-horizon-client)
 
 [Software Site](https://www.vmware.com/products/horizon.html)
 

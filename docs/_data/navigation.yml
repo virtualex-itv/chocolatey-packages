@@ -1,6 +1,8 @@
-﻿toc:
+toc:
   - title: Packages
     subfolderitems:
+      - page: "Advanced IP Scanner (Install)"
+        url: /packages/advancedipscanner.html
       - page: "Amazon WorkSpaces"
         url: /packages/amazonworkspaces.html
       - page: "Capture (Formerly Jing)"
@@ -49,14 +51,13 @@
         url: /packages/vmwaretools.html
       - page: "VMware.WorkloadManagement (PowerShell Module)"
         url: /packages/vmwareworkloadmanagement.html
-      - page: "VMware Workstation Pro"
-        url: /packages/vmwareworkstation.html
       - page: "VMware Workstation Player"
         url: /packages/vmwareworkstationplayer.html
+      - page: "VMware Workstation Pro"
+        url: /packages/vmwareworkstation.html
       - page: "Window Inspector"
         url: /packages/windowinspector.html
       - page: "Window Inspector (Install)"
         url: /packages/windowinspector.install.html
       - page: "Window Inspector (Portable)"
         url: /packages/windowinspector.portable.html
-

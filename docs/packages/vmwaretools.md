@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6ce9dc8f51e1b0adfcd4a2d620988b33caf1ccb3/icons/vmware-tools.png" width="32" height="32"/> [![VMWare Tools for Windows](https://img.shields.io/chocolatey/v/vmware-tools.svg?label=VMWare+Tools+for+Windows)](https://chocolatey.org/packages/vmware-tools) [![VMWare Tools for Windows](https://img.shields.io/chocolatey/dt/vmware-tools.svg)](https://chocolatey.org/packages/vmware-tools)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6ce9dc8f51e1b0adfcd4a2d620988b33caf1ccb3/icons/vmware-tools.png" width="32" height="32"/> [![VMWare Tools for Windows](https://img.shields.io/chocolatey/v/vmware-tools.svg?label=VMWare+Tools+for+Windows)](https://community.chocolatey.org/packages/vmware-tools) [![VMWare Tools for Windows](https://img.shields.io/chocolatey/dt/vmware-tools.svg)](https://community.chocolatey.org/packages/vmware-tools)
 
 ## Usage
 
@@ -45,7 +45,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vmware-tools)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-tools)
 
 [Software Site](https://kb.vmware.com/kb/340)
 

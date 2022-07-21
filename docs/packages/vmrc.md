@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1784650e7fdd30ff28f476c23777c895409080e5/icons/vmrc.png" width="32" height="32"/> [![VMware Remote Console](https://img.shields.io/chocolatey/v/vmrc.svg?label=VMware+Remote+Console)](https://chocolatey.org/packages/vmrc) [![VMware Remote Console](https://img.shields.io/chocolatey/dt/vmrc.svg)](https://chocolatey.org/packages/vmrc)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1784650e7fdd30ff28f476c23777c895409080e5/icons/vmrc.png" width="32" height="32"/> [![VMware Remote Console](https://img.shields.io/chocolatey/v/vmrc.svg?label=VMware+Remote+Console)](https://community.chocolatey.org/packages/vmrc) [![VMware Remote Console](https://img.shields.io/chocolatey/dt/vmrc.svg)](https://community.chocolatey.org/packages/vmrc)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vmrc)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vmrc)
 
 [Software Site](https://www.vmware.com/go/download-vmrc)
 

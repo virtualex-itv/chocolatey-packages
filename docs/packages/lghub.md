@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="32" height="32"/> [![lghub (Install)](https://img.shields.io/chocolatey/v/lghub.svg?label=lghub+(Install))](https://chocolatey.org/packages/lghub) [![lghub (Install)](https://img.shields.io/chocolatey/dt/lghub.svg)](https://chocolatey.org/packages/lghub)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="32" height="32"/> [![lghub (Install)](https://img.shields.io/chocolatey/v/lghub.svg?label=lghub+(Install))](https://community.chocolatey.org/packages/lghub) [![lghub (Install)](https://img.shields.io/chocolatey/dt/lghub.svg)](https://community.chocolatey.org/packages/lghub)
 
 ## Usage
 
@@ -42,7 +42,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/lghub)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/lghub)
 
 [Software Site](https://www.logitechg.com/en-us/innovation/g-hub.html)
 

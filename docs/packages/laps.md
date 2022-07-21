@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/227e188880b4e4f7be42a32d31d8b60b74c0119c/icons/laps.png" width="32" height="32"/> [![Microsoft Local Administrator Password Solution (LAPS)](https://img.shields.io/chocolatey/v/laps.svg?label=Microsoft+Local+Administrator+Password+Solution+(LAPS))](https://chocolatey.org/packages/laps) [![Microsoft Local Administrator Password Solution (LAPS)](https://img.shields.io/chocolatey/dt/laps.svg)](https://chocolatey.org/packages/laps)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/227e188880b4e4f7be42a32d31d8b60b74c0119c/icons/laps.png" width="32" height="32"/> [![Microsoft Local Administrator Password Solution (LAPS)](https://img.shields.io/chocolatey/v/laps.svg?label=Microsoft+Local+Administrator+Password+Solution+(LAPS))](https://community.chocolatey.org/packages/laps) [![Microsoft Local Administrator Password Solution (LAPS)](https://img.shields.io/chocolatey/dt/laps.svg)](https://community.chocolatey.org/packages/laps)
 
 ## Usage
 
@@ -44,7 +44,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/laps)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/laps)
 
 [Software Site](https://www.microsoft.com/en-us/download/details.aspx?id=46899)
 

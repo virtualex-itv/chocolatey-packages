@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8b8f8c20384338d014a1b47a244f82fbd26732a5/icons/termius.png" width="32" height="32"/> [![Termius](https://img.shields.io/chocolatey/v/termius.svg?label=Termius)](https://chocolatey.org/packages/termius) [![Termius](https://img.shields.io/chocolatey/dt/termius.svg)](https://chocolatey.org/packages/termius)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8b8f8c20384338d014a1b47a244f82fbd26732a5/icons/termius.png" width="32" height="32"/> [![Termius](https://img.shields.io/chocolatey/v/termius.svg?label=Termius)](https://community.chocolatey.org/packages/termius) [![Termius](https://img.shields.io/chocolatey/dt/termius.svg)](https://community.chocolatey.org/packages/termius)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/termius)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/termius)
 
 [Software Site](https://termius.com/)
 

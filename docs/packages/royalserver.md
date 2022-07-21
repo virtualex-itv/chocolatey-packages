@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9dc8a38fb867fe2d56a0470d8de1b85248b68fc3/icons/royalserver.png" width="32" height="32"/> [![Royal Server](https://img.shields.io/chocolatey/v/royalserver.svg?label=Royal+Server)](https://chocolatey.org/packages/royalserver) [![Royal Server](https://img.shields.io/chocolatey/dt/royalserver.svg)](https://chocolatey.org/packages/royalserver)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9dc8a38fb867fe2d56a0470d8de1b85248b68fc3/icons/royalserver.png" width="32" height="32"/> [![Royal Server](https://img.shields.io/chocolatey/v/royalserver.svg?label=Royal+Server)](https://community.chocolatey.org/packages/royalserver) [![Royal Server](https://img.shields.io/chocolatey/dt/royalserver.svg)](https://community.chocolatey.org/packages/royalserver)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/royalserver)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/royalserver)
 
 [Software Site](https://www.royalapps.com/server/main/features)
 
