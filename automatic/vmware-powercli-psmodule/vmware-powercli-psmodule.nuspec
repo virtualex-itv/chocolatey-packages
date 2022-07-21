@@ -63,7 +63,7 @@ let them know the package is no longer updating correctly.
 ]]></description>
     <!-- =============================== -->
 
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="dotnet4.5" version="4.5.20120822" />
       <dependency id="powershell" version="5.1.14409.1005" />
