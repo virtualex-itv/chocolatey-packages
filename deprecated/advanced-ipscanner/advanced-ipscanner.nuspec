@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <tags>deprecated</tags>
     <releaseNotes></releaseNotes>
     <licenseUrl></licenseUrl>
-    <packageSourceUrl>https://github.com/boubou/chocolatey/tree/master/packages/advancedipscanner</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/advanced-ipscanner</packageSourceUrl>
     <docsUrl></docsUrl>
     <summary></summary>
     <description>## This package has been deprecated. It has been replaced by the dependency shown below.</description>
