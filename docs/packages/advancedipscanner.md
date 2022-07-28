@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/3f46049c7e9122fdc526ae1e2c0813eb1c83768c/icons/advanced-ip-scanner.png" width="32" height="32"/> [![Advanced IP Scanner (Install)](https://img.shields.io/chocolatey/v/advanced-ip-scanner.svg?label=Advanced+IP+Scanner+(Install))](https://community.chocolatey.org/packages/advanced-ip-scanner) [![Advanced IP Scanner (Install)](https://img.shields.io/chocolatey/dt/advanced-ip-scanner.svg)](https://community.chocolatey.org/packages/advanced-ip-scanner)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/36dfaa8b843b06118a2215136305f67cb826f48f/icons/advanced-ip-scanner.png" width="32" height="32"/> [![Advanced IP Scanner (Install)](https://img.shields.io/chocolatey/v/advanced-ip-scanner.svg?label=Advanced+IP+Scanner+(Install))](https://community.chocolatey.org/packages/advanced-ip-scanner) [![Advanced IP Scanner (Install)](https://img.shields.io/chocolatey/dt/advanced-ip-scanner.svg)](https://community.chocolatey.org/packages/advanced-ip-scanner)
 
 ## Usage
 
