@@ -25,10 +25,11 @@ function GetResultInformation([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri $releases #(-UseBasicParsing causes 403 error in PS 5.x)
 
   $re = '*.msi'
-  $Url32 = 'https://www.nurgo-software.com' + ( $download_page.links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href )
+  $url = $download_page.links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href
+  $Url32 = 'https://www.nurgo-software.com' + $url
 
   Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
 }
