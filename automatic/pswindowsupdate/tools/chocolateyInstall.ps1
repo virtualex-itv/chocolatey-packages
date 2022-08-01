@@ -13,5 +13,10 @@ if (Get-Module -ListAvailable -Name $moduleName -ErrorAction SilentlyContinue){
 
 # install module
 Get-PackageProvider -Name "NuGet" -Force
+
+if ( Get-Module -ListAvailable -Name "PowerShellGet" -ErrorAction SilentlyContinue ) {
+    Install-Module -Name "PowerShellGet" -AllowClobber -Force
+}
+
 Install-Module -Name $moduleName -Scope AllUsers -RequiredVersion $moduleVersion -Force
 Import-Module -Name $moduleName
