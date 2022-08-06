@@ -18,7 +18,6 @@ $packageArgs = @{
   validExitCodes        = @(0)
 }
 
-$OSInfo = (Get-WmiObject Win32_OperatingSystem).ProductType
 [version]$OSVer = (Get-WmiObject Win32_OperatingSystem).Version
 $min='6.1.7601'
 
