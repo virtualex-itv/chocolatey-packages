@@ -20,7 +20,7 @@ if ($key.Count -eq 1) {
     }
 
     #Uninstall-ChocolateyPackage @packageArgs
-    Write-Warning "DeskScapes10 is about to uninstall. If asked to reboot, select 'No', however, you must reboot prior to reinstalling the package.`n`nSelect [Y] to continue.`n"
+    Write-Warning "DeskScapes11 is about to uninstall. If asked to reboot, select 'No', however, you must reboot prior to reinstalling the package.`n`nSelect [Y] to continue.`n"
     ${env:ProgramFiles(x86)} + "\Stardock\DeskScapes10\uninstall.exe" + " $($packageArgs['silentArgs'])" #> $null
 
   }

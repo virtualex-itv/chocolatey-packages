@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/deskscapes/DeskScapes10_setup_sd.exe'
-$checksum               = 'E790E3D07BA153197314CDF5A14791A37DE96671F320F6A90BD6814D1C072A07'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/deskscapes/DeskScapes11-sd-setup.exe'
+$checksum               = '229E72F833F093CD31A38D8661768621F6AFC8E306833142AACB6BEA88CD9D34'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
@@ -18,4 +18,12 @@ $packageArgs = @{
   validExitCodes        = @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+[version]$OSVer = (Get-WmiObject Win32_OperatingSystem).Version
+$min='10.0.10240'
+
+If ( $OSVer -lt [version]$min ) {
+  Write-Warning "*** Stardock DeskScapes 11 requires an OS running Windows 10 or higher... ***`n"
+  throw
+} Else {
+  Install-ChocolateyPackage @packageArgs
+}
