@@ -2,4 +2,4 @@
 
 The complete suite of Windows desktop enhancement products for customizing your PC experience.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
