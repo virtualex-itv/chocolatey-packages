@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/start/Start11_Setup.exe'
+$checksum               = 'ba039ca4967761a196d451b6d97ace88f532f40b9d44aad698da6e921efcfc54'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
