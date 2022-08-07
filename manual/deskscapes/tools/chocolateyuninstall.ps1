@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = "Stardock DeskScapes*"
   fileType      = 'exe'
-  silentArgs    = '"/U:' + ${env:ProgramFiles(x86)} + '\Stardock\DeskScapes10\Uninstall\uninstall.xml"'
+  silentArgs    = '"/U:' + ${env:ProgramFiles(x86)} + '\Stardock\DeskScapes\Uninstall\uninstall.xml"'
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 
@@ -21,7 +21,7 @@ if ($key.Count -eq 1) {
 
     #Uninstall-ChocolateyPackage @packageArgs
     Write-Warning "DeskScapes11 is about to uninstall. If asked to reboot, select 'No', however, you must reboot prior to reinstalling the package.`n`nSelect [Y] to continue.`n"
-    ${env:ProgramFiles(x86)} + "\Stardock\DeskScapes10\uninstall.exe" + " $($packageArgs['silentArgs'])" #> $null
+    ${env:ProgramFiles(x86)} + "\Stardock\DeskScapes\uninstall.exe" + " $($packageArgs['silentArgs'])" #> $null
 
   }
 } elseif ($key.Count -eq 0) {
