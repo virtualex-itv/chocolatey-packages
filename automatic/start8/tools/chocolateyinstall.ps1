@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/start/Start8_setup_sd.exe'
+$checksum               = 'a8385a71a8b5c5f7f011fb0e4d0d0b273d9a1ea25e6188a66e1e1f0c551d78c1'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
