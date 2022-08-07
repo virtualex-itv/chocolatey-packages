@@ -53,6 +53,8 @@
         url: /packages/start8.html
       - page: "Termius"
         url: /packages/termius.html
+      - page: "Tiles"
+        url: /packages/tiles.html
       - page: "TrayStatus"
         url: /packages/traystatus.html
       - page: "TrayStatus (Install)"
