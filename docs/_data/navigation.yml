@@ -47,6 +47,8 @@
         url: /packages/shadowfx.html
       - page: "ShellSend"
         url: /packages/shellsend.html
+      - page: "Start11"
+        url: /packages/start11.html
       - page: "Start8"
         url: /packages/start8.html
       - page: "Termius"

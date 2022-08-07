@@ -35,4 +35,3 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/start8/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/start8)
-
