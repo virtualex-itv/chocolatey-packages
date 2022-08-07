@@ -13,6 +13,8 @@
         url: /packages/capture.html
       - page: "CursorFX"
         url: /packages/cursorfx.html
+      - page: "Curtains"
+        url: /packages/curtains.html
       - page: "DeskScapes"
         url: /packages/deskscapes.html
       - page: "DisplayFusion (Portable)"
