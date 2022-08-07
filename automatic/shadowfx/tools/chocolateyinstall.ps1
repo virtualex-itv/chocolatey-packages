@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/shadowfx/ShadowFX_setup_sd.exe'
+$checksum               = '020eac1851697d7e60dc84339ea10c0f2b63f3fbf9d79037e4d7ab82a1d59eb1'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
