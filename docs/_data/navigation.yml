@@ -43,6 +43,8 @@
         url: /packages/royalserver.html
       - page: "RVTools"
         url: /packages/rvtools.html
+      - page: "ShadowFX"
+        url: /packages/shadowfx.html
       - page: "ShellSend"
         url: /packages/shellsend.html
       - page: "Termius"
