@@ -11,6 +11,10 @@
         url: /packages/camtasia.html
       - page: "Capture (Formerly Jing)"
         url: /packages/capture.html
+      - page: "CursorFX"
+        url: /packages/cursorfx.html
+      - page: "DeskScapes"
+        url: /packages/deskscapes.html
       - page: "DisplayFusion (Portable)"
         url: /packages/displayfusion.portable.html
       - page: "FileSeek (Portable)"
@@ -27,6 +31,8 @@
         url: /packages/micronstorageexecutive.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
+      - page: "Object Desktop"
+        url: /packages/objectdesktop.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
       - page: "PSWindowsUpdate (PowerShell Module)"
