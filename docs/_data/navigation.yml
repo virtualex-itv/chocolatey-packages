@@ -13,6 +13,8 @@
         url: /packages/cursorfx.html
       - page: "Curtains"
         url: /packages/curtains.html
+      - page: "Decor8"
+        url: /packages/decor8.html
       - page: "DeskScapes"
         url: /packages/deskscapes.html
       - page: "DisplayFusion (Portable)"
@@ -29,6 +31,8 @@
         url: /packages/lghub.html
       - page: "Micron Storage Executive"
         url: /packages/micronstorageexecutive.html
+      - page: "ModernMix"
+        url: /packages/modernmix.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
       - page: "Object Desktop"
@@ -45,6 +49,8 @@
         url: /packages/shadowfx.html
       - page: "ShellSend"
         url: /packages/shellsend.html
+      - page: "Multiplicity"
+        url: /packages/stardockmultiplicity.html
       - page: "Start11"
         url: /packages/start11.html
       - page: "Start8"
