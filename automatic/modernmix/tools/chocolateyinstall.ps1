@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/modernmix/ModernMix_setup_sd.exe'
+$checksum               = 'e97adee26a60c03e11e74ec797714b8979d93af3ed15f2002cd21e74c712b742'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
