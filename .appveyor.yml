@@ -28,12 +28,12 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: +mvMyv65x8Fi92dEhKRt0xys8RB7iLv1mbVXpETpUW8= # https://ci.appveyor.com/tools/encrypt
+    secure: GA/lp29rjMhHLFhPxgrufhQA8tXG6IaYQ/ARspQ86/0= # https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: /IpBb0wj13Be2WlJ4wq/kw== # https://ci.appveyor.com/tools/encrypt
+    secure: 8dFg+RezTvCScAfx35th2Q== # https://ci.appveyor.com/tools/encrypt
   mail_server:
-    secure: RPtDo0uPSegHALumC2PWQA==
-  mail_port: 587
+    secure: ImVZ1R9JFUMUTHvk+aUsmw== # https://ci.appveyor.com/tools/encrypt
+  mail_port: 465
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
