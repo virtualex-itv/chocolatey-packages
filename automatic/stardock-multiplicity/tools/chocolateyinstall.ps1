@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/multiplicity/Multiplicity3_setup_sd.exe'
+$checksum               = 'e9fdf63506a606f0ef304b50700e5fce95a85b8aa1659118945aff419dc825d5'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName

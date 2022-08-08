@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/decor8/Decor8_setup_sd.exe'
+$checksum               = 'e6b923d75c14e07c3c69ee045277d2b2203ad9ca7a5b1e489e0d8e4dde210ed4'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
