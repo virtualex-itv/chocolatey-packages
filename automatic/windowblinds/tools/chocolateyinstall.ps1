@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = ''
-$checksum               = ''
-$checksumType           = ''
+$url                    = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds10_setup_sd.exe'
+$checksum               = 'c8f1f37c5fa19b5f1775a6938c1b9da950ea9081527d210d743494dc72334a4e'
+$checksumType           = 'sha256'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
