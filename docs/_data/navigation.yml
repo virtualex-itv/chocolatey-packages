@@ -23,6 +23,8 @@
         url: /packages/fileseek.portable.html
       - page: "Geek Uninstaller"
         url: /packages/geekuninstaller.html
+      - page: "IconPackager"
+        url: /packages/iconpackager.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
         url: /packages/laps.html
       - page: "Lens"
