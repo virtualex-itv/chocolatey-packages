@@ -29,6 +29,8 @@
         url: /packages/iconpackager.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
         url: /packages/laps.html
+      - page: "Launch"
+        url: /packages/launch.html
       - page: "Lens"
         url: /packages/lens.html
       - page: "lghub (Install)"
