@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/39bf275cf5ef67cc91702260701dcbf9a835ae2d/icons/stardock-multiplicity.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2022 Stardock</copyright>
-    <tags>stardock objectdesktop suite multiplicity</tags>
+    <tags>stardock objectdesktop suite multiplicity trial</tags>
     <releaseNotes>https://www.stardock.com/products/multiplicity/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/stardock-multiplicity</packageSourceUrl>
