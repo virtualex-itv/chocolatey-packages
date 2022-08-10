@@ -31,8 +31,6 @@ If ( $OSVer -lt [version]$min ) {
   $uninstallString = Get-ChildItem $paths | Where-Object { $_.GetValue('DisplayName') -Match 'Stardock Start10' } | ForEach-Object { $_.GetValue('UninstallString') }
 
   & cmd /c $uninstallString
-
-  Install-ChocolateyPackage @packageArgs
-} Else {
-  Install-ChocolateyPackage @packageArgs
 }
+
+Install-ChocolateyPackage @packageArgs
