@@ -1,3 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-Invoke-Expression "$ENV:LocalAppData\RelayRecorder\Update.exe --uninstall -s"
+$softwareName = 'TechSmith Capture'
+
+[array]$key = Get-UninstallRegistryKey -softwareName "$($softwareName)"
+
+& cmd /c $key.QuietUninstallString
