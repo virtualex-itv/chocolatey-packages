@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2022 Stardock</copyright>
-    <tags>stardock objectdesktop suite iconpackager</tags>
+    <tags>stardock objectdesktop suite iconpackager trial</tags>
     <releaseNotes>https://www.stardock.com/products/iconpackager/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/iconpackager</packageSourceUrl>
