@@ -27,6 +27,8 @@
         url: /packages/icondeveloper.html
       - page: "IconPackager"
         url: /packages/iconpackager.html
+      - page: "jpegoptim"
+        url: /packages/jpegoptim.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
         url: /packages/laps.html
       - page: "Launch"
