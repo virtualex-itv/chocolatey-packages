@@ -46,9 +46,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/jpegoptim</packageSourceUrl>
     <docsUrl>https://github.com/XhmikosR/jpegoptim-windows</docsUrl>
     <summary>Utility to optimize jpeg files.</summary>
-    <description>Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.
+    <description><![CDATA[Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
 
     <!-- =============================== -->
 
