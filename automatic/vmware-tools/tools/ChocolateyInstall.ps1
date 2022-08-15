@@ -11,42 +11,28 @@ $ChecksumType64        = 'sha256'
 
 $pp                    = Get-PackageParameters
 
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  unzipLocation  = $toolsDir
+  fileType       = 'exe'
+  url            = $url
+  url64bit       = $url64
+  validExitCodes = @(0, 3010)
+  silentArgs     = '/S /v /qn REBOOT=R'
+  softwareName   = "VMware Tools*"
+  checksum       = $checksum
+  checksumType   = $ChecksumType
+  checksum64     = $checksum64
+  checksumType64 = $ChecksumType64
+}
+
 if ( $pp.ALL ) {
   Write-Host "`nPerforming a Complete installation of VMware Tools...`n" -ForegroundColor Yellow
 
-  $packageArgs = @{
-    packageName    = $env:ChocolateyPackageName
-    unzipLocation  = $toolsDir
-    fileType       = 'exe'
-    url            = $url
-    url64bit       = $url64
-    validExitCodes = @(0, 3010)
-    silentArgs     = '/S /v /qn REBOOT=R ADDLOCAL=ALL'
-    softwareName   = "VMware Tools*"
-    checksum       = $checksum
-    checksumType   = $ChecksumType
-    checksum64     = $checksum64
-    checksumType64 = $ChecksumType64
-  }
+  $packageArgs['silentArgs'] = '/S /v /qn REBOOT=R ADDLOCAL=ALL'
 
-  Install-ChocolateyPackage @packageArgs
 } else {
   Write-Host "`nPerforming a Typical installation of VMware Tools...`n" -ForegroundColor Yellow
-
-  $packageArgs = @{
-    packageName    = $env:ChocolateyPackageName
-    unzipLocation  = $toolsDir
-    fileType       = 'exe'
-    url            = $url
-    url64bit       = $url64
-    validExitCodes = @(0, 3010)
-    silentArgs     = '/S /v /qn REBOOT=R'
-    softwareName   = "VMware Tools*"
-    checksum       = $checksum
-    checksumType   = $ChecksumType
-    checksum64     = $checksum64
-    checksumType64 = $ChecksumType64
-  }
-
-  Install-ChocolateyPackage @packageArgs
 }
+
+Install-ChocolateyPackage @packageArgs
