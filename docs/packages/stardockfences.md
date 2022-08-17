@@ -25,7 +25,6 @@ choco uninstall stardock-fences
 Organize your PC by automatically placing your shortcuts and icons into resizable shaded areas on your desktop called fences that are designed to match Windows 10 and 11. Fences has many customization features that make it the world's most popular desktop enhancement.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
-    
 
 ## Links
 
