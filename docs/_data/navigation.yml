@@ -59,8 +59,12 @@
         url: /packages/shellsend.html
       - page: "SoundPackager"
         url: /packages/soundpackager.html
+      - page: "Fences"
+        url: /packages/stardockfences.html
       - page: "Multiplicity"
         url: /packages/stardockmultiplicity.html
+      - page: "Start10"
+        url: /packages/start10.html
       - page: "Start11"
         url: /packages/start11.html
       - page: "Start8"
