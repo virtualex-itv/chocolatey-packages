@@ -58,7 +58,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
 
     <!--<dependencies>
-      <<dependency id="" />
+      <dependency id="" />
       <dependency id="" version="__MINIMUM_VERSION__" />
       <dependency id="" version="[__EXACT_VERSION__]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
