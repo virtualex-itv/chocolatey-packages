@@ -18,4 +18,11 @@ $packageArgs = @{
   validExitCodes        = @(0, 3010, 1614, 1641)
 }
 
+$pp                     = Get-PackageParameters
+
+if ( $pp.SERIALNUMBER ) { 
+  $SN = $pp.SERIALNUMBER
+  $packageArgs['silentArgs'] = '/s /v/qn EULAS_AGREED=1 SERIALNUMBER="' + $SN + '" AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0 ADDLOCAL=ALL REBOOT=ReallySuppress'
+}
+
 Install-ChocolateyPackage @packageArgs
