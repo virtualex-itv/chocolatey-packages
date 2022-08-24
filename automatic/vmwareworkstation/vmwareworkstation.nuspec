@@ -47,14 +47,20 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmwareworkstation</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-Workstation-Player-for-Windows/index.html</docsUrl>
     <summary>VMware Workstation Pro is the industry standard for running multiple operating systems as virtual machines (VMs) on a single Linux or Windows PC. IT professionals, developers and businesses who build, test or demo software for any device, platform or cloud rely on Workstation Pro.</summary>
-    <description><![CDATA[VMware Workstation Pro™ enables technical professionals to develop, test, demonstrate, and deploy software by running multiple x86-based Windows, Linux, and other operating systems simultaneously on the same PC.
+    <description>## Package Parameters
+
+* `/SERIALNUMBER` - allows for passing of your License Key for VMware Workstation Pro.
+Example: `choco install --params='"/SERIALNUMBER:12345-ABCDE-12345-ABCDE"'`
+
+* To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+
+---
+
+VMware Workstation Pro™ enables technical professionals to develop, test, demonstrate, and deploy software by running multiple x86-based Windows, Linux, and other operating systems simultaneously on the same PC.
 
 You can replicate server, desktop, and tablet environments in a virtual machine and allocate multiple processor cores, gigabytes of main memory and graphics memory to each virtual machine, whether the virtual machine resides on a personal PC or on a private enterprise cloud.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-]]></description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
