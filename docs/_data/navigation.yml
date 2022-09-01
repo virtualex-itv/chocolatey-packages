@@ -59,6 +59,8 @@
         url: /packages/shellsend.html
       - page: "SoundPackager"
         url: /packages/soundpackager.html
+      - page: "SpaceMonger"
+        url: /packages/spacemonger.html
       - page: "Fences"
         url: /packages/stardockfences.html
       - page: "Multiplicity"
