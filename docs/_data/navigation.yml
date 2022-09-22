@@ -45,6 +45,8 @@
         url: /packages/notepadreplacer.html
       - page: "Object Desktop"
         url: /packages/objectdesktop.html
+      - page: "OpenLens"
+        url: /packages/openlens.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
       - page: "PSWindowsUpdate (PowerShell Module)"
