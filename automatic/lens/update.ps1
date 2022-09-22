@@ -12,7 +12,7 @@ function global:au_GetLatest {
   $version = ($download_page.version).Split('-')[0]
   $ChecksumType = 'sha256'
 
-  $ReleaseNotes = "https://github.com/lensapp/lens/releases/tag/v$($version)"
+  $ReleaseNotes = "https://docs.k8slens.dev/main/release-notes/"
 
   @{
     Url32             = $Url32
@@ -30,10 +30,6 @@ function global:au_SearchReplace {
           "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
       }
   }
-}
-
-function global:au_AfterUpdate {
-Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
 Update-Package -ChecksumFor 32
