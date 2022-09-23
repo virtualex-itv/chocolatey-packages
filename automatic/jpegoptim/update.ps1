@@ -4,7 +4,7 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 $releases = 'https://github.com/XhmikosR/jpegoptim-windows/releases/'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri $releases
 
   $re = "*win64*"
   $Url = 'https://github.com' + ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
