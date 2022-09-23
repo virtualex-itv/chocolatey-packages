@@ -33,6 +33,8 @@
         url: /packages/laps.html
       - page: "Launch"
         url: /packages/launch.html
+      - page: "Launchy"
+        url: /packages/launchy.html
       - page: "Lens"
         url: /packages/lens.html
       - page: "lghub (Install)"
