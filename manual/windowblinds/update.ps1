@@ -6,10 +6,14 @@ $history_page = 'https://www.stardock.com/products/windowblinds/history'
 function global:au_GetLatest {
   $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
 
-  $Url = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds10_setup_sd.exe'
+  $Url = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds11_setup.exe?a=sd'
   
   $re = "WindowBlinds (?<version>[\d\.]+[\d\.]+)"
   $version = $releases -match $re | ForEach-Object { $Matches.version }
+  if ($version.length -eq 2) {
+    # we must have a revision number
+    $version += ".0.0"
+  }
   $ChecksumType = 'sha256'
 
   @{

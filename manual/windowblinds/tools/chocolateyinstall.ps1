@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds10_setup_sd.exe'
-$checksum               = 'c8f1f37c5fa19b5f1775a6938c1b9da950ea9081527d210d743494dc72334a4e'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds11_setup.exe?a=sd'
+$checksum               = 'e9e14d0750126ad016f3d31691b9878c0c9dc9e6246230f42554a55d22012a0b'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
@@ -20,10 +20,11 @@ $packageArgs = @{
 
 [version]$OSVer = (Get-WmiObject Win32_OperatingSystem).Version
 $min='6.1.7601'
-$max='10.0.19045'
+#$max='10.0.19045'
 
-If (($OSVer -lt [version]$min) -or ($OSVer -gt [version]$max)) {
-  Write-Warning "*** Stardock WindowBlinds requires a desktop OS running Windows 7 or higher but/or is not compatible with $((Get-WmiObject Win32_OperatingSystem).Caption) ***`n"
+#If (($OSVer -lt [version]$min) -or ($OSVer -gt [version]$max)) {
+If ($OSVer -lt [version]$min) {
+  Write-Warning "*** Stardock WindowBlinds requires an OS running Windows 7 or higher but/or is not compatible with $((Get-WmiObject Win32_OperatingSystem).Caption) ***`n"
   throw
 } Else {
   Install-ChocolateyPackage @packageArgs
