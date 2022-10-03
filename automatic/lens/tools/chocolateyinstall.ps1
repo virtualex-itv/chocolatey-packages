@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference  = 'Stop';
+﻿$ErrorActionPreference  = 'Stop'
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -15,12 +15,12 @@ $packageArgs = @{
   url                   = $url
   checksum              = $checksum
   checksumType          = $checksumType
-  silentArgs            = '/currentuser /disableAutoUpdates /S'
+  silentArgs            = '/allusers /disableAutoUpdates /S'
   validExitCodes        = @(0, 3010, 1605, 1614, 1641)
 }
 
-if ( $pp.ALLUSERS) {
-  $packageArgs['silentArgs'] = '/allusers /disableAutoUpdates /S'
+if ( $pp.CURRENTUSER) {
+  $packageArgs['silentArgs'] = '/currentuser /disableAutoUpdates /S'
 }
 
 Install-ChocolateyPackage @packageArgs
