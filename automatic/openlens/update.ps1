@@ -1,12 +1,16 @@
 Import-Module AU
 
-$releases = 'https://github.com/MuhammedKalkan/OpenLens/releases'
+$releases = 'https://api.github.com/repos/MuhammedKalkan/OpenLens/releases'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
 
-  $Url = "https://github.com" + ($download_page.Links.href -match '.exe' -notmatch '.sha256')
-  $version = (($Url).split('-') -split '.exe')[1]
+  $response = Invoke-WebRequest -Uri $releases -Headers $header | ConvertFrom-Json
+
+  $Url = ($response.assets.browser_download_url -match '.exe' -notmatch '.sha256')[0]
+  $version = (($Url).Split('-') -split '.exe')[1]
   $ChecksumType = 'sha256'
 
   $ReleaseNotes = "https://github.com/lensapp/lens/releases/tag/v$($version)"
