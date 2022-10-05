@@ -1,7 +1,7 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.cyberpowersystems.com/products/software/power-panel-personal/'
+$releases = 'https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-personal-windows/'
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
@@ -11,15 +11,11 @@ function global:au_GetLatest {
   $version = $Url32 -split '_v|.exe' | Select-Object -First 1 -Skip 1
   $ChecksumType = 'sha256'
 
-  $re = 'windows-'
-  $product_url = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
-  $product_page = Invoke-WebRequest -Uri $product_url -UseBasicParsing
-
   $re = 'UM_'
-  $DocsUrl = $product_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $DocsUrl = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
 
   $re = 'RN_'
-  $ReleaseNotes = $product_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $ReleaseNotes = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
 
   @{
     Url32             = $Url32
