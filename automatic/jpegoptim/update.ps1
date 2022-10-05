@@ -1,15 +1,18 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://github.com/XhmikosR/jpegoptim-windows/releases/'
+$releases = 'https://api.github.com/repos/XhmikosR/jpegoptim-windows/releases'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
 
-  $re = "*win64*"
-  $Url = 'https://github.com' + ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
+  $json = Invoke-WebRequest -Uri $releases -Headers $header | ConvertFrom-Json
 
-  $tag = ( ($Url).Split('-')[3] + '-' + ($Url).Split('-')[4] )
+  $Url = ($json.assets.browser_download_url)[0]
+
+  $tag = ($json.tag_name)[0]
   $ReleaseNotes = "https://github.com/XhmikosR/jpegoptim-windows/releases/tag/$($tag)"
 
   $version = ( ($tag).Split('-')[0] + '.' + (($tag).Split('-')[1]).Split('l')[1] )
