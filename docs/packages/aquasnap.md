@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="32" height="32"/> [![Aquasnap](https://img.shields.io/chocolatey/v/aquasnap.svg?label=Aquasnap)](https://community.chocolatey.org/packages/aquasnap) [![Aquasnap](https://img.shields.io/chocolatey/dt/aquasnap.svg)](https://community.chocolatey.org/packages/aquasnap)
+﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="32" height="32"/> [![AquaSnap](https://img.shields.io/chocolatey/v/aquasnap.svg?label=AquaSnap)](https://community.chocolatey.org/packages/aquasnap) [![AquaSnap](https://img.shields.io/chocolatey/dt/aquasnap.svg)](https://community.chocolatey.org/packages/aquasnap)
 
 ## Usage
 
-To install Aquasnap, run the following command from the command line or from PowerShell:
+To install AquaSnap, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install aquasnap
 ```
 
-To upgrade Aquasnap, run the following command from the command line or from PowerShell:
+To upgrade AquaSnap, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade aquasnap
 ```
 
-To uninstall Aquasnap, run the following command from the command line or from PowerShell:
+To uninstall AquaSnap, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall aquasnap
@@ -24,7 +24,7 @@ choco uninstall aquasnap
 
 AquaSnap greatly enhances the way you can arrange windows on your Desktop. It gives you the possibility to snap windows to the edges or to the corners of the desktop, set windows to remain on top, stretch windows and more. It is freeware for personal single-monitor use only.
 
- `This software requires a license for all options to be available, but there is a 60 minutes trial for it and there are free options as well.`
+This software requires a license for all options to be available, but there is a 60 minutes trial for it and there are free options as well.
 
 Features:
 
