@@ -1,37 +1,32 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
-Import-Module "$PSScriptRoot\..\..\scripts/au_extensions.psm1"
 
 $releases = 'https://www.nurgo-software.com/pricing/aquasnap'
 
-function GetResultInformation([string]$Url32) {
-  $fileName = Split-Path -Leaf $Url32
-  $dest = "$env:TEMP\$fileName"
+function global:au_GetLatest {
+  $download_page = Invoke-WebRequest -Uri $releases #-UseBasicParsing #(causes 403 error in PS 5.x)
 
-  Get-WebFile $Url32 $dest | Out-Null
+  $re = '.msi'
+  $url = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $Url32 = 'https://www.nurgo-software.com' + $url
+  $ChecksumType = 'sha256'
 
-  $version         = (Get-MsiInformation -Path $dest).ProductVersion
-  $ChecksumType    = 'sha256'
-  $checksum32      = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
-
-  Remove-Item $dest -Force -ErrorAction SilentlyContinue
-
+  $versUrl = 'https://www.nurgo-software.com/company/news/13-aquasnap'
+  $versPage = Invoke-WebRequest -Uri $versUrl #-UseBasicParsing #(causes 403 error in PS 5.x)
+  
+  $re = "AquaSnap v(?<version>[\d\.]+)"
+  $versPage.Content -match $re
+  $version = $matches.version
+  
   @{
     Url32             = $Url32
     Version           = $version
     ChecksumType32    = $ChecksumType
-    Checksum32        = $checksum32
   }
 }
 
-function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases #(-UseBasicParsing causes 403 error in PS 5.x)
-
-  $re = '*.msi'
-  $url = $download_page.links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href
-  $Url32 = 'https://www.nurgo-software.com' + $url
-
-  Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
+function global:au_BeforeUpdate {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
 }
 
 function global:au_SearchReplace {
