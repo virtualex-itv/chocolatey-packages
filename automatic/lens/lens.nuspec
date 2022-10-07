@@ -41,23 +41,20 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2022 Mirantis, Inc. - All rights reserved.</copyright>
     <tags>kubernetes k8s ide lens</tags>
-    <releaseNotes>https://github.com/lensapp/lens/releases/tag/v2022.9.211442</releaseNotes>
+    <releaseNotes>https://docs.k8slens.dev/main/release-notes/</releaseNotes>
     <licenseUrl>https://github.com/lensapp/lens/blob/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/lens</packageSourceUrl>
     <docsUrl>https://docs.k8slens.dev/main/</docsUrl>
     <summary>The Kubernetes IDE</summary>
-    <description><![CDATA[Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters.  Lens is open source and free.
+    <description>Lens is the only IDE you'll ever need to take control of your Kubernetes clusters.  Lens is open source and free.
 
-* **Note:** By default, this package will install into the current user profile, however, the following parameter is available to install for all users: `/ALLUSERS`
+* **Note:** By default, this package will install for all users, however, the following parameter is available to install into the current user profile: `/CURRENTUSER`
 
-Example: `choco install lens --params='"/ALLUSERS"'`
+Example: `choco install lens --params='"/CURRENTUSER"'`
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-]]></description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
