@@ -2,9 +2,9 @@
 
 OpenLens is the only IDE you'll ever need to take control of your Kubernetes clusters.  OpenLens is open source and free.
 
-* **Note:** By default, this package will install into the current user profile, however, the following parameter is available to install for all users: `/ALLUSERS`
+* **Note:** By default, this package will install for all users, however, the following parameter is available to install into the current user profile: `/CURRENTUSER`
 
-Example: `choco install openlens --params='"/ALLUSERS"'`
+Example: `choco install openlens --params='"/CURRENTUSER"'`
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
 
