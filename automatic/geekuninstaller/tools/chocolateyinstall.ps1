@@ -3,7 +3,7 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                   = 'https://geekuninstaller.com/geek.zip'
-$checksum              = '8f0880d4ea8da3b460e5a1c1b5c292c8b3e84bf53e78be379a48a1c7b927879a'
+$checksum              = 'a9d20f30825181335dcb9a2f9cbd32c93d6ca3d2bf5b9c8fab83ff1be9aa6c87'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
