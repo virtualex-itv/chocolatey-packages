@@ -24,13 +24,6 @@ $min='10.0.10240'
 If ( $OSVer -lt [version]$min ) {
   Write-Warning "*** Stardock $($packageName.substring(0,1).toupper()+$packageName.substring(1).tolower()) requires an OS running Windows 10 or 11... ***`n"
   throw
-}ElseIf (Test-Path ${env:ProgramFiles(x86)}"\Stardock\Start10\") {
-  Write-Warning "*** Stardock Start10 was found and is about to uninstall. If asked to reboot, select 'No', however, you must reboot to finish fully uninstalling the package.`n"
-
-  $paths = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall', 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
-  $uninstallString = Get-ChildItem $paths | Where-Object { $_.GetValue('DisplayName') -Match 'Stardock Start10' } | ForEach-Object { $_.GetValue('UninstallString') }
-
-  & cmd /c $uninstallString
 }
 
 Install-ChocolateyPackage @packageArgs
