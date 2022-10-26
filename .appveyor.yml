@@ -48,7 +48,7 @@ environment:
     secure: 7vdY1FDIcMA9+2GbVc/cmQSEDVPeypkvbLAkK1M7RzHyBuVBZh3wdLy5dElG3K7G # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '1.1.0'
+  choco_version: '1.2.0'
   choco_version_pr: '0.11.3' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
@@ -93,7 +93,7 @@ build_script:
 
     . ./scripts/EventLogs.ps1
     Clear-EventLogs
-    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+    if ($Env:APPVEYOR_PROJECT_NAME -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
     if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne $null) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
       Set-Service wuauserv -StartupType Manual
       ./scripts/Test-RepoPackage.ps1 -CleanFiles -TakeScreenshots
@@ -105,7 +105,7 @@ build_script:
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
         switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
         {
-            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+            '\[AU (.+?)\]' { $forced = $Matches[1] }
 
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
@@ -125,10 +125,10 @@ build_script:
     }
 
     ./update_all.ps1 -ForcedPackages $forced
-    Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
+    Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 on_finish:
 - ps: |
-    if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
+    if (Test-Path $Env:TEMP\chocolatey\au) { 7z a -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
     $paths = @(
       Resolve-Path "$env:TEMP\artifacts\*" -ea 0
       Resolve-Path "$env:ChocolateyInstall\logs\*.log" -ea 0
