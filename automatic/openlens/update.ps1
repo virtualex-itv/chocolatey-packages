@@ -1,16 +1,11 @@
 Import-Module AU
+Import-Module "$PSScriptRoot\..\..\scripts/au_extensions.psm1"
 
-$releases = 'https://api.github.com/repos/MuhammedKalkan/OpenLens/releases'
+$release = Get-GitHubRelease MuhammedKalkan OpenLens
 
 function global:au_GetLatest {
-  $header = @{
-    "Authorization" = "token $env:github_api_key"
-  }
-
-  $response = Invoke-WebRequest -Uri $releases -Headers $header | ConvertFrom-Json
-
-  $Url = ($response.assets.browser_download_url -match '.exe' -notmatch '.sha256')[0]
-  $version = (($Url).Split('-') -split '.exe')[1]
+  $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
+  $version = $release.tag_name.Trim('v')
   $ChecksumType = 'sha256'
 
   $ReleaseNotes = "https://github.com/lensapp/lens/releases/tag/v$($version)"
