@@ -1,5 +1,5 @@
 Import-Module AU
-Import-Module "$PSScriptRoot\..\..\scripts/au_extensions.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $release = Get-GitHubRelease XhmikosR jpegoptim-windows
 
