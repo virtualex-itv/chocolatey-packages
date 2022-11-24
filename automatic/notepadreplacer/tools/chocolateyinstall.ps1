@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/116/NotepadReplacerSetup-1.5.exe'
-$checksum              = 'cd758294854b59f2dd86574643b9d986bb1c222eb212ab26c1839a7111c84cd7'
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/116/NotepadReplacerSetup-1.6.exe'
+$checksum              = '17ae3a29a012d1603c9adbf45558f1a4c6ed58490edd64dacffa9384c6e8a65f'
 $checksumType          = 'sha256'
 $pp                    = Get-PackageParameters
 
