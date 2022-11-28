@@ -47,7 +47,18 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-powercli-psmodule</packageSourceUrl>
     <docsUrl>https://developer.vmware.com/docs/powercli/latest/products/</docsUrl>
     <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.</summary>
-    <description><![CDATA[---
+    <description>---
+
+## Package Parameters
+
+This package is designed to install the `VMware.PowerCLI` PowerShell module for the `-Scope CurrentUser` by default.
+
+The following parameter is available to install the module for `-Scope AllUsers`.
+
+* `/ALLUSERS`
+Example: `choco install vmware-powercli-psmodule --params='"/ALLUSERS"'`
+
+---
 
 ## [choco://vmware-powercli-psmodule](choco://vmware-powercli-psmodule)
 
@@ -60,7 +71,7 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
