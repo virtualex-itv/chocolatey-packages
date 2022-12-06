@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <releaseNotes>https://github.com/lensapp/lens/releases/tag/v6.2.4</releaseNotes>
     <licenseUrl>https://github.com/lensapp/lens/blob/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/openlens</packageSourceUrl>
-    <docsUrl>https://docs.k8slens.dev/main/</docsUrl>
+    <docsUrl>https://docs.k8slens.dev/</docsUrl>
     <summary>The Kubernetes IDE - Open Source Project</summary>
     <description><![CDATA[OpenLens is the only IDE you'll ever need to take control of your Kubernetes clusters.  OpenLens is open source and free.
 
