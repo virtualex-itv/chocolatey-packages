@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://download3.vmware.com/software/WKST-1700-WIN/VMware-workstation-full-17.0.0-20800274.exe'
-$checksum               = '977e44df8ad7ea6f80ca14a1f817a65a38bb1660d1b776d4ad80577d9d52c2c7'
+$url                    = 'https://download3.vmware.com/software/WKST-1625-WIN/VMware-workstation-full-16.2.5-20904516.exe'
+$checksum               = '380b0fa8a0f37ade496573cdc2ad922d3985bc83664f94431a9e513444b6c377'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
