@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://kb.vmware.com/kb/340</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6ce9dc8f51e1b0adfcd4a2d620988b33caf1ccb3/icons/vmware-tools.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022 VMware, Inc. All rights reserved.</copyright>
+    <copyright>Copyright © 2023 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware tools vsphere esxi</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Tools/12.1/rn/vmware-tools-1215-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>

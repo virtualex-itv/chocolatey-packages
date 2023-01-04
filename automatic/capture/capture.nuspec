@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.techsmith.com/jing-tool.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6cef9a6af703e8bfd5fb695d54413dee46e49cc8/icons/capture.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 1995 - 2022, TechSmith Corporation, All Rights Reserved.</copyright>
+    <copyright>© 1995 - 2023, TechSmith Corporation, All Rights Reserved.</copyright>
     <tags>techsmith capture jing screenshot</tags>
     <releaseNotes>https://support.techsmith.com/hc/en-us/articles/360048369692-Capture-Version-History-For-Windows</releaseNotes>
     <licenseUrl>https://www.techsmith.com/jing-eula.html</licenseUrl>

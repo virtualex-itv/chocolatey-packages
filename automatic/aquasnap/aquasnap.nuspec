@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>http://www.nurgo-software.com/products/aquasnap</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022, Nurgo Sofware</copyright>
+    <copyright>Copyright © 2023, Nurgo Sofware</copyright>
     <tags>Window manager dock snap tile organize</tags>
     <releaseNotes>https://www.nurgo-software.com/company/news/13-aquasnap/</releaseNotes>
     <licenseUrl>https://www.nurgo-software.com/company/eula/80-aquasnap</licenseUrl>

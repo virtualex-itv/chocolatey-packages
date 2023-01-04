@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/soundpackager/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b411e27a7798bfda4ea75ba6d631f0cca53ab532/icons/soundpackager.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022 Stardock</copyright>
+    <copyright>Copyright © 2023 Stardock</copyright>
     <tags>stardock objectdesktop suite soundpackager trial</tags>
     <releaseNotes>https://www.stardock.com/products/soundpackager/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.cyberpowersystems.com/products/software/power-panel-personal/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2022 Cyber Power Systems (USA), Inc. CyberPower is a registered trademark and brand of Cyber Power Systems (USA), Inc. All rights reserved.</copyright>
+    <copyright>© 2023 Cyber Power Systems (USA), Inc. CyberPower is a registered trademark and brand of Cyber Power Systems (USA), Inc. All rights reserved.</copyright>
     <tags>cyberpower powerpanel powerpanel-personal ups admin</tags>
     <releaseNotes>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_RN_PPP-Windows-v2.4.6.pdf</releaseNotes>
     <licenseUrl>https://www.cyberpowersystems.com/company/terms/</licenseUrl>
