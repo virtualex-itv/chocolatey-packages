@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://developer.vmware.com/powercli</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>Copyright © 2023 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware powercli vsphere automation client virtual machine virtualization esx esxi powershell hcx nsx-t</tags>
     <releaseNotes>https://vdc-repo.vmware.com/vmwb-repository/dcr-public/d7decdfc-c58d-4bfb-9b52-52af714882a6/4cb0604b-959f-48c7-b5a1-d5f516b99433/vmware-powercli-130-release-notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>

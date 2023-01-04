@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/windowblinds/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6a17ba116423e628f23a1febebb931ed230c670/icons/windowblinds.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022 Stardock</copyright>    
+    <copyright>Copyright © 2023 Stardock</copyright>
     <tags>stardock objectdesktop suite windowblinds trial</tags>
     <releaseNotes>https://www.stardock.com/products/windowblinds/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

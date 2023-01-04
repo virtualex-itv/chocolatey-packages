@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.advanced-ip-scanner.com</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/36dfaa8b843b06118a2215136305f67cb826f48f/icons/advanced-ip-scanner.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 1999-2022 Famatech Corp. All rights reserved.</copyright>
+    <copyright>Copyright © 1999-2023 Famatech Corp. All rights reserved.</copyright>
     <tags>ip scanner nmap pentest pentesting security network admin</tags>
     <releaseNotes>https://radmin-club.com/advanced-ip-scanner/?sort=rating</releaseNotes>
     <licenseUrl>https://www.advanced-ip-scanner.com/privacy/</licenseUrl>

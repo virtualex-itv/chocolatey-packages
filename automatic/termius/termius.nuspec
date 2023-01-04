@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://termius.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8b8f8c20384338d014a1b47a244f82fbd26732a5/icons/termius.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2022 Termius Corporation.  All rights reserved.</copyright>
+    <copyright>Copyright © 2023 Termius Corporation.  All rights reserved.</copyright>
     <tags>termius ssh terminal securecrt mosh</tags>
     <releaseNotes>https://docs.termius.com/changelog/desktop</releaseNotes>
     <licenseUrl>https://www.termius.com/terms-of-use</licenseUrl>
