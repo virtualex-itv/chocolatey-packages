@@ -1,4 +1,4 @@
-﻿toc:
+toc:
   - title: Packages
     subfolderitems:
       - page: "Advanced IP Scanner (Install)"
@@ -85,6 +85,8 @@
         url: /packages/traystatus.install.html
       - page: "TrayStatus (Portable)"
         url: /packages/traystatus.portable.html
+      - page: "Twitch Studio"
+        url: /packages/twitchstudio.html
       - page: "VMware Remote Console"
         url: /packages/vmrc.html
       - page: "VMware Horizon Client for Windows"
