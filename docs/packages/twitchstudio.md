@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/36b5bf2f6453f3d4f3f5110380103c511205259e/icons/twitch-studio.png" width="32" height="32"/> [![Twitch Studio](https://img.shields.io/chocolatey/v/twitch-studio.svg?label=Twitch+Studio)](https://community.chocolatey.org/packages/twitch-studio) [![Twitch Studio](https://img.shields.io/chocolatey/dt/twitch-studio.svg)](https://community.chocolatey.org/packages/twitch-studio)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/3d6fec825fb49eadccf4f141a53f3c07ca9c4ea8/icons/twitch-studio.png" width="32" height="32"/> [![Twitch Studio](https://img.shields.io/chocolatey/v/twitch-studio.svg?label=Twitch+Studio)](https://community.chocolatey.org/packages/twitch-studio) [![Twitch Studio](https://img.shields.io/chocolatey/dt/twitch-studio.svg)](https://community.chocolatey.org/packages/twitch-studio)
 
 ## Usage
 
