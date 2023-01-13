@@ -27,15 +27,15 @@ environment:
 
   # VT API Key
   #VT_APIKEY:
-    #secure: 
+    #secure:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: GA/lp29rjMhHLFhPxgrufhQA8tXG6IaYQ/ARspQ86/0=
+    secure: c9xdSB9OqvSKBfHmLsTMl3S6k/YNhaPQYsmCwU6N8H8=
   mail_pass:
-    secure: 8dFg+RezTvCScAfx35th2Q==
+    secure: 2dxjPfbgsRRc+nec2+Pbnd8T2WpE6CAZezT0qnFMLPc=
   mail_server:
-    secure: ImVZ1R9JFUMUTHvk+aUsmw==
+    secure: xcfkTrGJ3u3R7JLqZP7WV3qBM+rrhHv0vGXwYFUWrvo=
   mail_port: 465
   mail_enablessl: true
 
@@ -51,7 +51,7 @@ environment:
     secure: 7vdY1FDIcMA9+2GbVc/cmQSEDVPeypkvbLAkK1M7RzHyBuVBZh3wdLy5dElG3K7G # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '1.2.0'
+  choco_version: '1.2.1'
   choco_version_pr: '0.11.3' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
@@ -69,8 +69,8 @@ install:
       'wormies-au-helpers' = '0.4.1'
       'chocolatey-compatibility.extension' = '1.0.0'
       'chocolatey-core.extension' = '1.4.0'
-      'autohotkey.portable' = '1.1.35.00'
-      'vt-cli' = '0.10.3'
+      'autohotkey.portable' = '2.0.2'
+      'vt-cli' = '0.10.4'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source "'${env:nupkg_cache_path};http://chocolatey.org/api/v2/'" --allow-downgrade }
