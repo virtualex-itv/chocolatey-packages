@@ -8,7 +8,7 @@ function global:au_GetLatest {
 
   $re = '*/?Package*'
   $Url32 = Get-RedirectedUrl ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
-  $version = $Url32 -split '-|.exe' | Select-Object -First 1 -Skip 1
+  $version = ($Url32 -split '-|.exe')[1].Substring(0, 3)
   $ChecksumType = 'sha256'
 
   @{
