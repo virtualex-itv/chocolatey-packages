@@ -2,9 +2,9 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = ''
-$checksum              = ''
-$checksumType          = ''
+$url                   = 'https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.exe'
+$checksum              = '4236BD3B32639D3ABD0859B5D7FB244B7035BA58A8A7A821723E8332B39E6B55'
+$checksumType          = 'sha256'
 
 $packageArgs = @{
   packageName        = $env:ChocolateyPackageName
