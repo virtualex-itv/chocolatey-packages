@@ -36,7 +36,7 @@ environment:
     secure: Y1XZblWs0bSkfPKIbvP3cSc7iIOsk9+x8fO/OcjEQ1E=
   mail_server:
     secure: xcfkTrGJ3u3R7JLqZP7WV3qBM+rrhHv0vGXwYFUWrvo=
-  mail_port: 587
+  mail_port: 465
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
