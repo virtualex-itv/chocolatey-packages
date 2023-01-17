@@ -1,4 +1,4 @@
-toc:
+﻿toc:
   - title: Packages
     subfolderitems:
       - page: "Advanced IP Scanner (Install)"
@@ -39,6 +39,8 @@ toc:
         url: /packages/lens.html
       - page: "lghub (Install)"
         url: /packages/lghub.html
+      - page: "Logi Options+"
+        url: /packages/logioptionsplus.html
       - page: "Micron Storage Executive"
         url: /packages/micronstorageexecutive.html
       - page: "ModernMix"
