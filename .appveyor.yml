@@ -31,7 +31,7 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: c9xdSB9OqvSKBfHmLsTMl3S6k/YNhaPQYsmCwU6N8H8=
+    secure: Wjhfk96or0BPcJnPnU3WIQ==
   mail_pass:
     secure: Y1XZblWs0bSkfPKIbvP3cSc7iIOsk9+x8fO/OcjEQ1E=
   mail_server:
