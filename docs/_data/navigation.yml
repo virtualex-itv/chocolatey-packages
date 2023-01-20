@@ -65,6 +65,8 @@
         url: /packages/shadowfx.html
       - page: "ShellSend"
         url: /packages/shellsend.html
+      - page: "Sound Blaster Command"
+        url: /packages/soundblastercommand.html
       - page: "SoundPackager"
         url: /packages/soundpackager.html
       - page: "SpaceMonger"
