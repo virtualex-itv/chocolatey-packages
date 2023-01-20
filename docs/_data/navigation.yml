@@ -9,6 +9,8 @@
         url: /packages/aquasnap.html
       - page: "Capture (Formerly Jing)"
         url: /packages/capture.html
+      - page: "Creative App"
+        url: /packages/creativeapp.html
       - page: "CursorFX"
         url: /packages/cursorfx.html
       - page: "Curtains"
