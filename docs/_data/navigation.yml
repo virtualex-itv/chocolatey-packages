@@ -57,6 +57,8 @@
         url: /packages/playstationplus.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
+      - page: "Aurora - Unified Lighting Effects"
+        url: /packages/projectaurora.html
       - page: "PSWindowsUpdate (PowerShell Module)"
         url: /packages/pswindowsupdate.html
       - page: "Royal Server"
