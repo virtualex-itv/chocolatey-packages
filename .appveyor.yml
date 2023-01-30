@@ -33,7 +33,7 @@ environment:
   mail_user:
     secure: Wjhfk96or0BPcJnPnU3WIQ==
   mail_pass:
-    secure: Y1XZblWs0bSkfPKIbvP3cSc7iIOsk9+x8fO/OcjEQ1E=
+    secure: dLn3rhiiP1mvf3O92mHE/EGOajhKpIo/NwnpolyQN+Y=
   mail_server:
     secure: xcfkTrGJ3u3R7JLqZP7WV3qBM+rrhHv0vGXwYFUWrvo=
   mail_port: 465
@@ -146,7 +146,8 @@ on_finish:
 
 notifications:
 - provider: Email
-  to: $(mail_user)
+  to:
+    - info@l0p3z.net
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: true
