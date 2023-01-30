@@ -9,10 +9,13 @@ function global:au_GetLatest {
   if ($version -like '*-alpha.*') {
     $version = $version.split('-')[0] + '-' + ($version.split('-')[1]).replace('.','')
   }
+  if ($version -like '*-beta.*') {
+    $version = $version.split('-')[0] + '-' + ($version.split('-')[1]).replace('.','')
+  }
   $ChecksumType = 'sha256'
 
   $tag = $release.tag_name
-  $ReleaseNotes = "https://github.com/lensapp/lens/releases/tag/$($tag)"
+  $ReleaseNotes = "https://github.com/MuhammedKalkan/OpenLens/releases/tag/$($tag)"
 
   @{
     Url64             = $Url
