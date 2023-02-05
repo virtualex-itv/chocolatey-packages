@@ -7,10 +7,10 @@ function global:au_GetLatest {
   $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
   $version = $release.tag_name.Trim('v')
   if ($version -like '*-alpha.*') {
-    $version = $version.split('-')[0] + '-' + ($version.split('-')[1]).replace('.','')
+    $version = $version -replace "alpha.(\d)$", 'alpha0$1'
   }
   if ($version -like '*-beta.*') {
-    $version = $version.split('-')[0] + '-' + ($version.split('-')[1]).replace('.','')
+    $version = $version -replace "beta.(\d)$", 'beta0$1'
   }
   $ChecksumType = 'sha256'
 
