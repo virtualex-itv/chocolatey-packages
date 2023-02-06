@@ -6,11 +6,9 @@ $release = Get-GitHubRelease MuhammedKalkan OpenLens
 function global:au_GetLatest {
   $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
   $version = $release.tag_name.Trim('v')
-  if ($version -like '*-alpha.*') {
-    $version = $version -replace "alpha.(\d)$", 'alpha0$1'
-  }
-  if ($version -like '*-beta.*') {
-    $version = $version -replace "beta.(\d)$", 'beta0$1'
+  if ($version -Match '-[alpha|beta].') {
+    $number = "{0:d2}" -f [int]([regex]::Match($version,".(\d+)$")).Captures.Groups[1].value
+    $version = $version -Replace ".(\d+)$", $number
   }
   $ChecksumType = 'sha256'
 
