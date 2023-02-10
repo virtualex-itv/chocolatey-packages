@@ -1,7 +1,7 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.logitechg.com/en-us/innovation/g-hub.html'
+$releases = 'https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=eee3033c-8e0b-11e9-8db1-d7e925481d4d,&per_page=100'
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -24,10 +24,11 @@ function GetResultInformation([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json
 
   $re = '\.exe'
-  $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $Url = $download_page.articles.body -match $re
+  $Url32 = ((Select-String '(http[s]?)(://)([^\s,]+)(?=")' -Input $Url).Matches.Value)
 
   Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
 }
