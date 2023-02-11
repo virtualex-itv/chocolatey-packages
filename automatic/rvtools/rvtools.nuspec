@@ -46,9 +46,10 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/rvtools</packageSourceUrl>
     <docsUrl>http://robware.net/download/RVTools.pdf</docsUrl>
     <summary>RVTools is a Windows .NET 4.6.1 application which uses VMware vSphere Management SDK 8.0 and CIS REST API to display information about your virtual environments.</summary>
-    <description>Interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX Server 5.x, VirtualCenter 6.x, ESX Server 6.x, VirtualCenter 7.0, ESX server 7.0, VirtualCenter 8.0, ESX server 8.0. RVTools is able to list information about VMs, CPU, Memory, Disks, Partitions, Network, Floppy drives, CD drives, Snapshots, VMware tools, Resource pools, Clusters, ESX hosts, HBAs, Nics, Switches, Ports, Distributed Switches, Distributed Ports, Service consoles, VM Kernels, Datastores, multipath info, license info and health checks.
+    <description><![CDATA[Interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX Server 5.x, VirtualCenter 6.x, ESX Server 6.x, VirtualCenter 7.0, ESX server 7.0, VirtualCenter 8.0, ESX server 8.0. RVTools is able to list information about VMs, CPU, Memory, Disks, Partitions, Network, Floppy drives, CD drives, Snapshots, VMware tools, Resource pools, Clusters, ESX hosts, HBAs, Nics, Switches, Ports, Distributed Switches, Distributed Ports, Service consoles, VM Kernels, Datastores, multipath info, license info and health checks.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
