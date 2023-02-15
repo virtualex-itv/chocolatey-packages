@@ -5,7 +5,11 @@
 The following parameter is available to install with a valid license key:
 
 * `/SERIALNUMBER`
-Example: `choco install vmwareworkstation --params='"/SERIALNUMBER=01234-56789-01234-56789-01234"'`
+Example:
+
+```shell
+choco install vmwareworkstation --params='"/SERIALNUMBER=01234-56789-01234-56789-01234"'
+```
 
 ---
 

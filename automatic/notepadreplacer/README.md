@@ -4,9 +4,17 @@
 
 * **If the parameter is not specified, the installation will fail and exit**
 * `/NOTEPAD` - Specifies the path to the executable for the program you wish to replace Notepad with.
-Example: `choco install notepadreplacer --params='"/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe"'`
+Example:
 
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+```shell
+choco install notepadreplacer --params='"/NOTEPAD:C:\Program Files\Notepad++\notepad++.exe"'
+```
+
+To have choco remember parameters on upgrade, be sure to set:
+
+```shell
+choco feature enable -n=useRememberedArgumentsForUpgrades`
+```
 
 ---
 
@@ -19,6 +27,4 @@ Do you use a Notepad alternative, like Notepad++ or Notepad2? Notepad Replacer w
 * **No Security Warnings**
 * **Completely Free**
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

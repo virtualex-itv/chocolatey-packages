@@ -2,6 +2,4 @@
 
 VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

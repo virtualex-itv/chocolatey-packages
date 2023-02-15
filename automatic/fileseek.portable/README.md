@@ -2,6 +2,4 @@
 
 FileSeek is an easy-to-use file search app that includes advanced functionality for power users! Search through files using simple queries or regular expressions. You can even sync your search settings between computers.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

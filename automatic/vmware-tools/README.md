@@ -7,7 +7,11 @@ VMware Tools is a set of services and modules that enable several features in VM
 ## Package Parameters
 
 * `/ALL` - Performs a Complete Install of VMware Tools (Optional)
-Example: `choco install vmware-tools --params='"/ALL"'`
+Example:
+
+```shell
+choco install vmware-tools --params='"/ALL"'
+```
 
 ---
 
@@ -17,6 +21,4 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 
 ---
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

@@ -12,8 +12,6 @@ Instant startup, minimalistic, simple but efficient user interface.
 
 ### Native X64 support
 
-Single EXE runs flawlessly on both 32 and 64-bit Windows 10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
+Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

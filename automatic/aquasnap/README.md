@@ -13,6 +13,4 @@ Features:
 - Move windows together: Professional applications with complex UI often scatter small toolbox windows on your desktop. Keep them grouped and move them all at once. Move one window while pressing [Ctrl] and the whole group of adjacent windows will follow.
 - Make it stay on top: This is the best way to have this window always visible while working on a fullscreen application. Shake a window to make it transparent and always on top. Shake it again to restore it's normal state.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

@@ -14,6 +14,4 @@ DisplayFusion will make your multi-monitor life much easier! With powerful featu
 - Free for personal use
 - The free license is only usable in a personal and non-commercial context. Commercial use of Display Fusion requires the purchase of a license.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

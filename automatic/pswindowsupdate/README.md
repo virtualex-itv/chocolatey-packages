@@ -2,6 +2,4 @@
 
 Powershell module that allows you to manage Windows Update, check, download and install or remove updates. Especially useful on machines in core edition like Windows Server 2008 R2.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

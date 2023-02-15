@@ -9,7 +9,11 @@ This package is designed to install the `VMware.PowerCLI` PowerShell module for 
 The following parameter is available to install the module for `-Scope AllUsers`.
 
 * `/ALLUSERS`
-Example: `choco install vmware-powercli-psmodule --params='"/ALLUSERS"'`
+Example:
+
+```shell
+choco install vmware-powercli-psmodule --params='"/ALLUSERS"'
+```
 
 ---
 

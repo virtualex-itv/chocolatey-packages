@@ -6,7 +6,11 @@
 
 * if the parameter is not specified, only the AdmPwd GPO Extension is installed (default)
 * `/ALL` - Installs the AdmPwd GPO Extension and all Management Tools (Fat client UI, PowerShell module, and GPO Editor templates)
-Example: `choco install laps --params='"/ALL"'`
+Example:
+
+```shell
+choco install laps --params='"/ALL"'
+```
 
 ---
 
@@ -16,6 +20,4 @@ For environments in which users are required to log on to computers without doma
 
 LAPS simplifies password management while helping customers implement recommended defenses against cyberattacks. In particular, the solution mitigates the risk of lateral escalation that results when customers use the same administrative local account and password combination on their computers. LAPS stores the password for each computer’s local administrator account in Active Directory, secured in a confidential attribute in the computer’s corresponding Active Directory object. The computer is allowed to update its own password data in Active Directory, and domain administrators can grant read access to authorized users or groups, such as workstation helpdesk administrators.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

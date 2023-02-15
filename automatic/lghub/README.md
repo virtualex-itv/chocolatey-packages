@@ -14,6 +14,4 @@ Program buttons with in-app actions and create your own macros to launch media a
 
 Choose from numerous animation effects, download lighting profiles from the community, and create your own advanced effects with Logitech G LIGHTSYNC for keyboards, mice, headsets, and speakers.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

@@ -26,6 +26,4 @@ PowerPanel® Personal allows users to setup email notifications to receive real-
 
 In the event of a power outage, the user can configure the software to keep the computer running until the battery power runs low, or to shut down the computer immediately after a power outage to preserve the battery.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

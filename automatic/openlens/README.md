@@ -4,8 +4,16 @@ OpenLens is the only IDE you'll ever need to take control of your Kubernetes clu
 
 * **Note:** By default, this package will install for all users, however, the following parameter is available to install into the current user profile: `/CURRENTUSER`
 
-Example: `choco install openlens --params='"/CURRENTUSER"'`
+Example:
 
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`
+```shell
+choco install openlens --params='"/CURRENTUSER"'
+```
+
+To have choco remember parameters on upgrade, be sure to set:
+
+```shell
+choco feature enable -n=useRememberedArgumentsForUpgrades
+```
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
