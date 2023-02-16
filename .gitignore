@@ -43,6 +43,7 @@ __attic
 *.msixbundle
 
 # personal
+1password*
 camtasia
 geforce-game-ready-driver
 github-desktop
