@@ -5,7 +5,6 @@ $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definiti
 $url                    = 'https://files.creative.com/creative/bin/apps/swureleases/win/creativeapp/release/CreativeAppSetup_1.12.03.00.exe'
 $checksum               = '7B01EE81A712F13071B27C0BDFB36402F0AEDC7D193B81853512569C82FB269E'
 $checksumType           = 'sha256'
-$pp                     = Get-PackageParameters
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
