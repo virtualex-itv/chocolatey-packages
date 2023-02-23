@@ -7,6 +7,10 @@
         url: /packages/amazonworkspaces.html
       - page: "AquaSnap"
         url: /packages/aquasnap.html
+      - page: "BetterDiscord Installer"
+        url: /packages/betterdiscord.html
+      - page: "Camtasia (Install)"
+        url: /packages/camtasia.html
       - page: "Capture (Formerly Jing)"
         url: /packages/capture.html
       - page: "Creative App"
