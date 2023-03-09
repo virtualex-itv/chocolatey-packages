@@ -6,7 +6,7 @@ SetControlDelay -1
 
 WinWait("ahk_class NSISBGImage")
 if WinExist("ahk_class NSISBGImage") {
-  sleep 5000
+  sleep 1500
 }
 
 winTitle := "ahk_exe BetterDiscord.exe"
@@ -43,7 +43,7 @@ sleep 1000
 ControlClick "x500 y315", winTitle,,,, "Pos"
 
 ; Wait for exit button
-sleep 12000
+sleep 5000
 
 ; Close
 ControlClick "x500 y315", winTitle,,,, "Pos"
