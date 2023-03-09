@@ -34,8 +34,9 @@ ControlClick "x500 y315", winTitle,,,, "Pos"
 sleep 1000
 CoordMode "Pixel", "Window"
 Color := PixelGetColor(320, 96)
-If Color != 0x15141C
+If (Color = 0x15141C or Color != 0x15141C) {
     ControlClick "x320 y96", winTitle,,,, "Pos"
+}
 
 ; Install
 sleep 1000

@@ -30,8 +30,9 @@ ControlClick "x500 y315", winTitle,,,, "Pos"
 sleep 1000
 CoordMode "Pixel", "Window"
 Color := PixelGetColor(320, 200)
-If Color != 0x15141C
+If (Color = 0x15141C or Color != 0x15141C) {
     ControlClick "x320 y200", winTitle,,,, "Pos"
+}
 
 ; Next
 sleep 1000
@@ -41,8 +42,9 @@ ControlClick "x500 y315", winTitle,,,, "Pos"
 sleep 1000
 CoordMode "Pixel", "Window"
 Color := PixelGetColor(320, 96)
-If Color != 0x15141C
-    ControlClick "x320 y96", winTitle,,,, "Pos"
+If (Color = 0x15141C or Color != 0x15141C) {
+  ControlClick "x320 y96", winTitle,,,, "Pos"
+}
 
 ; Uninstall
 sleep 1000
