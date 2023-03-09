@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
+$toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
   fileType              = 'exe'
@@ -17,6 +19,6 @@ $ahkProc  = Start-Process -FilePath $ahkEXE.FullName -ArgumentList $ahkFile -Pas
 Write-Debug "AutoHotKey start time:`t$($ahkProc.StartTime.ToShortTimeString())"
 Write-Debug "Process ID:`t$($ahkProc.Id)"
 
-Uninstall-ChocolateyInstallPackage @packageArgs
+Uninstall-ChocolateyPackage @packageArgs
 
 if (Get-Process -id $ahkProc.Id -ErrorAction SilentlyContinue) {Stop-Process -id $ahkProc.Id}
