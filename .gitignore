@@ -41,6 +41,7 @@ automatic/_output/
 /update_info.xml
 __attic
 *.msixbundle
+knownChecksums
 
 # personal
 1password*
@@ -50,6 +51,7 @@ github-desktop
 manual/.
 manual/v*
 powershell-core
+samsung-magician
 snagit
 streamdeck
 # end
