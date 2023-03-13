@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://dl4jz3rbrsfum.cloudfront.net/software/PPP_Windows_v2.4.6.exe'
-$checksum               = '5122c01046add97cd080700862d107a8b7e362357f6731ab81520e95ee6ddd84'
+$url                    = 'https://dl4jz3rbrsfum.cloudfront.net/software/ppp_windows_2_4_8.exe'
+$checksum               = 'c1b9179b39d5907fbe0ce76416f7a62f554aedeaf1a48ee19ac68a4507d9f7f8'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
