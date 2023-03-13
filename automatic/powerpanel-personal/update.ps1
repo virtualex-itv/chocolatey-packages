@@ -8,13 +8,13 @@ function global:au_GetLatest {
 
   $re = '.exe'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
-  $version = $Url32 -split '_v|.exe' | Select-Object -First 1 -Skip 1
+  $version = ($Url32 -split 'windows_|.exe' | Select-Object -First 1 -Skip 1).replace('_','.')
   $ChecksumType = 'sha256'
 
-  $re = 'UM_'
+  $re = '_UM'
   $DocsUrl = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
 
-  $re = 'RN_'
+  $re = '_RN'
   $ReleaseNotes = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
 
   @{
