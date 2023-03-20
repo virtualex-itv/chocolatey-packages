@@ -3,8 +3,8 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1. Download release from
-    32-Bit: <>
-    64-Bit: <>
+    32-Bit: <https://github.com/mbuilov/sed-windows/releases/download/sed-4.9/sed-4.9-x86.exe>
+    64-Bit: <https://github.com/mbuilov/sed-windows/releases/download/sed-4.9/sed-4.9-x64.exe>
 
 2. Get sha256 checksum with utility of choice
 
