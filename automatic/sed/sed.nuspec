@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>4.9</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex xoviat</owners>
     <!-- ============================== -->
@@ -41,16 +41,16 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 1998-2023 Free Software Foundation, Inc.</copyright>
     <tags>stream-editor sed windows editor</tags>
-    <releaseNotes>https://github.com/mbuilov/sed-windows/releases/tag/sed-0.0</releaseNotes>
+    <releaseNotes>https://github.com/mbuilov/sed-windows/releases/tag/sed-4.9</releaseNotes>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/sed</packageSourceUrl>
     <docsUrl>http://sed.sourceforge.net/#docs</docsUrl>
     <summary>sed (stream editor) is a non-interactive command-line text editor.</summary>
-    <description>sed is commonly used to filter text, i.e., it takes text input, performs some operation (or set of operations) on it, and outputs the modified text. sed is typically used for extracting part of a file using pattern matching or substituting multiple occurrences of a string within a file.
+    <description><![CDATA[sed is commonly used to filter text, i.e., it takes text input, performs some operation (or set of operations) on it, and outputs the modified text. sed is typically used for extracting part of a file using pattern matching or substituting multiple occurrences of a string within a file.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
