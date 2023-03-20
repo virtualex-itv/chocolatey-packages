@@ -69,6 +69,8 @@
         url: /packages/royalserver.html
       - page: "RVTools"
         url: /packages/rvtools.html
+      - page: "GNU sed"
+        url: /packages/sed.html
       - page: "ShadowFX"
         url: /packages/shadowfx.html
       - page: "ShellSend"
