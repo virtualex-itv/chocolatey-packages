@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1. Download release from
-    64-Bit: <https://github.com/XhmikosR/jpegoptim-windows/releases/download/1.5.2-rel1/jpegoptim-1.5.2-rel1-win64-msvc-2022-mozjpeg331-static-ltcg.zip>
+    64-Bit: <https://github.com/XhmikosR/jpegoptim-windows/releases/download/1.5.3-rel1/jpegoptim-1.5.3-rel1-win64-msvc-2022-mozjpeg331-static-ltcg.zip>
 
 2. Get sha256 checksum with utility of choice
 
