@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>13.0.0.20829139</version>
+    <version>13.1.0.21624340</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex bcurran3</owners>
     <!-- ============================== -->
@@ -41,13 +41,13 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2023 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware powercli vsphere automation client virtual machine virtualization esx esxi powershell hcx nsx-t</tags>
-    <releaseNotes>https://vdc-repo.vmware.com/vmwb-repository/dcr-public/d7decdfc-c58d-4bfb-9b52-52af714882a6/4cb0604b-959f-48c7-b5a1-d5f516b99433/vmware-powercli-130-release-notes.html</releaseNotes>
+    <releaseNotes>https://vdc-repo.vmware.com/vmwb-repository/dcr-public/40a9f75e-c3e0-4ee2-be49-2b4e44e8ac9c/9b335d62-d4e0-4c0d-88bd-22761fdbd31e/vmware-powercli-1310-release-notes.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-powercli-psmodule</packageSourceUrl>
     <docsUrl>https://developer.vmware.com/docs/powercli/latest/products/</docsUrl>
     <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.</summary>
-    <description>---
+    <description><![CDATA[---
 
 ## Package Parameters
 
@@ -56,7 +56,11 @@ This package is designed to install the `VMware.PowerCLI` PowerShell module for 
 The following parameter is available to install the module for `-Scope AllUsers`.
 
 * `/ALLUSERS`
-Example: `choco install vmware-powercli-psmodule --params='"/ALLUSERS"'`
+Example:
+
+```shell
+choco install vmware-powercli-psmodule --params='"/ALLUSERS"'
+```
 
 ---
 
@@ -68,10 +72,8 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](
 
 PowerCLI is a command-line interface for managing and automating all aspects of vSphere management, including network, storage, VM, guest OS and more.  PowerCLI is distributed as PowerShell modules, which contain a combined number of over 700 cmdlets (commands.)
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-</description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
