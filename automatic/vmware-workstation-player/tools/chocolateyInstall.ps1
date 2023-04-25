@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://download3.vmware.com/software/WKST-PLAYER-1701/VMware-player-full-17.0.1-21139696.exe'
-$checksum               = '5422765f358f5068bad832ae8bd6615480ddffebe0313c1337a8c958f3415739'
+$url                    = 'https://download3.vmware.com/software/WKST-PLAYER-1702/VMware-player-full-17.0.2-21581411.exe'
+$checksum               = 'dd8db47a80f08ad777bcfe6126ebfe12178ac520514774ae5a70818159ee5826'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
