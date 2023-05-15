@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://github.com/BetterDiscord/Installer/releases/download/v1.2.1/BetterDiscord-Windows.exe'
-$checksum               = '112f3434ba55ae6cd0378f8df0236717309e6c0df5267bf700872a24230ca961'
+$url                    = 'https://github.com/BetterDiscord/Installer/releases/download/v1.3.0/BetterDiscord-Windows.exe'
+$checksum               = 'b07409fc665b9260a42a1cd28e631e741b6250466d6d8b3e48b56fd5547c4eae'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
