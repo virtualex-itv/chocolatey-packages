@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>17.0.1.21139696</version>
+    <version>17.0.2.21581411</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex Stefan Scherer</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2023 VMware, Inc. All rights reserved.</copyright>
     <tags>vmware workstation virtual machine virtualization</tags>
-    <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Pro/17.0.1/rn/vmware-workstation-1701-pro-release-notes/index.html</releaseNotes>
+    <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Pro/17.0.2/rn/vmware-workstation-1702-pro-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmwareworkstation</packageSourceUrl>
@@ -52,7 +52,11 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 The following parameter is available to install with a valid license key:
 
 * `/SERIALNUMBER`
-Example: `choco install vmwareworkstation --params='"/SERIALNUMBER=01234-56789-01234-56789-01234"'`
+Example:
+
+```shell
+choco install vmwareworkstation --params='"/SERIALNUMBER=01234-56789-01234-56789-01234"'
+```
 
 ---
 

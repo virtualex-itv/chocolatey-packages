@@ -17,10 +17,10 @@ $machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\
 
 $key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
                         -ErrorAction SilentlyContinue `
-         | ? { $_.DisplayName -like "$softwareName" }
+         | Where-Object { $_.DisplayName -like "$softwareName" }
 
 if ($key.Count -eq 1) {
-  $key | % {
+  $key | ForEach-Object {
     $file = "$($_.UninstallString)"
 
     if ($installerType -eq 'MSI') {
@@ -41,7 +41,7 @@ if ($key.Count -eq 1) {
   Write-Warning "$key.Count matches found!"
   Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
   Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | % {Write-Warning "- $_.DisplayName"}
+  $key | ForEach-Object {Write-Warning "- $_.DisplayName"}
 }
 
 

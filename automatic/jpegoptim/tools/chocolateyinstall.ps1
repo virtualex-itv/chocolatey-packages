@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://github.com/XhmikosR/jpegoptim-windows/releases/download/1.5.3-rel1/jpegoptim-1.5.3-rel1-win64-msvc-2022-mozjpeg331-static-ltcg.zip'
-$checksum               = '5ad62e7d513ba4040d32612fb378f397879dd30ec889113178c7bbea69ed3c62'
+$url                    = 'https://github.com/XhmikosR/jpegoptim-windows/releases/download/1.5.4-rel1/jpegoptim-1.5.4-rel1-win64-msvc-2022-mozjpeg331-static-ltcg.zip'
+$checksum               = '38b2f4a0387add8af4a5808b8ad2c4f625428b594c524d6a28e7415c1f29a411'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
