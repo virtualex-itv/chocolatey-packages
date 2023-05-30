@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://github.com/MuhammedKalkan/OpenLens/releases/download/v6.5.0/OpenLens-6.5.0.exe'
-$checksum               = 'ae3c716e2fe57cc5ea63449223b55dd27473ffbdd97cfa54e9ed7894ad8a005d'
+$url                    = 'https://github.com/MuhammedKalkan/OpenLens/releases/download/v6.5.1/OpenLens-6.5.1.exe'
+$checksum               = '84554df515c3ef114b5d75b8ec7b427cbce2d75d9a7b934b2c182fce3190aef7'
 $checksumType           = 'sha256'
 $pp                     = Get-PackageParameters
 
