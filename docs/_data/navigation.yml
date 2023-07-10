@@ -29,6 +29,8 @@
         url: /packages/fileseek.portable.html
       - page: "Geek Uninstaller"
         url: /packages/geekuninstaller.html
+      - page: "Groupy"
+        url: /packages/groupy.html
       - page: "IconDeveloper"
         url: /packages/icondeveloper.html
       - page: "IconPackager"
