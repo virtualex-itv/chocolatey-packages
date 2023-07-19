@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/103/FileSeek-6.8-x64.zip'
-$checksum              = '9568609a45084a52285d75265396758d0d0425e2bfaa0edbd246538a303ba3df'
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/103/FileSeek-6.8.1-x64.zip'
+$checksum              = '63ee99d816e904d33d8358fd0ead9eb710d48fe559ce7a07b3b8537febb6d62b'
 $checksumType          = 'sha256'
 
 $packageArgs = @{

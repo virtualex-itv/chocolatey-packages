@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
-$checksum               = '6a86b82e0484dd3180d6cd40ab6a0900f0bb48f9e7738dd16176cc9085518ada'
+$checksum               = '0c50dfb9f7ddef069e017a5f91b8f301d5fa0478305d84f196c83c198aa4f2a8'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
