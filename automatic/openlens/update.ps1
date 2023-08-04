@@ -9,6 +9,8 @@ function global:au_GetLatest {
   if ($version -Match '-[alpha|beta].') {
     $number = "{0:d2}" -f [int]([regex]::Match($version,".(\d+)$")).Captures.Groups[1].value
     $version = $version -Replace ".(\d+)$", $number
+  } elseif ($version -Match '-(\d+)') {
+    $version = ($version).Replace('-','.')
   }
   $ChecksumType = 'sha256'
 
