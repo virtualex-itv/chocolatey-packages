@@ -12,11 +12,10 @@ function global:au_GetLatest {
   $ChecksumType = 'sha256'
 
   #region Get Version
-  $details = Invoke-WebRequest -Uri $details_url -UseBasicParsing
+  $details = Invoke-WebRequest -Uri $details_url
 
-  $re = 'Version:(.*?)((\d+)\.(\d+))'
-  $details -match $re | Out-Null
-  $version = $Matches[2]
+  $re = 'break-word">(\d+).(\d+)'
+  $version = ($details | Select-String $re -AllMatches).Matches.Value[0].Split('>')[-1]
   #endregion
 
   @{
