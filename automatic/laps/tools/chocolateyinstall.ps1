@@ -24,15 +24,14 @@ $packageArgs = @{
   checksumType   = $checksumType
   checksum64     = $checksum64
   checksumType64 = $checksumType64
+}
 
-  if ( $pp.ALL ) {
-    Write-Host "`nInstalling Microsoft Local Account Password Solution with Management Tools...`n" -ForegroundColor Yellow
+if ( $pp.ALL ) {
+  Write-Host "`nInstalling Microsoft Local Account Password Solution with Management Tools...`n" -ForegroundColor Yellow
 
-    $packageArgs['silentArgs'] = 'ADDLOCAL=ALL /qn /norestart'
-
-  } else {
-    Write-Host "`nInstalling Microsoft Local Account Password Solution...`n" -ForegroundColor Yellow
-  }
+  $packageArgs['silentArgs'] = 'ADDLOCAL=ALL /qn /norestart'
+} else {
+  Write-Host "`nInstalling Microsoft Local Account Password Solution...`n" -ForegroundColor Yellow
 }
 
 Install-ChocolateyPackage @packageArgs
