@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://github.com/Aurora-RGB/Aurora/releases/download/v179/Aurora-setup-v179.exe'
-$checksum               = 'dc4b5d1cd61125e2556b9fe918f4096ed0bccc79e3b0c694b623faed3dd7a612'
+$url                    = 'https://github.com/Aurora-RGB/Aurora/releases/download/v180/Aurora-setup-v180.exe'
+$checksum               = '7422fde34a9d5d42fcca5c4436eee71c3fe733d059a0b078634339207ee89174'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
