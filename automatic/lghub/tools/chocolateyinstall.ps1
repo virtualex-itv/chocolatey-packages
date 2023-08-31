@@ -3,7 +3,7 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                   = 'https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe'
-$checksum              = 'E4DB2FD8199EAE867CCE80933654754CD4ADC6748699F4DBE34B0CCA0D9F5BCD'
+$checksum              = '78230ED744A47B1DDE9AF609FDB4AD2CEECE92FDE11B2022428C2A444BF0C90B'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
