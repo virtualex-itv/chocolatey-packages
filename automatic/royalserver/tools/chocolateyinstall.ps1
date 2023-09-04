@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://download.royalapps.com/RoyalServer/RoyalServerInstaller_5.00.50825.0.msi'
-$checksum              = '3ea14edeb27498ea807297a68d14b3bf221e70a4ce7d93eed21e19b234fe14f5'
+$url                   = 'https://download.royalapps.com/RoyalServer/RoyalServerInstaller_5.00.50904.0.msi'
+$checksum              = 'accbd352a6ee6953b64996f35f9fda944b6e4cc1bbd58b879fe1c65848665dcc'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
