@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.5.1.163</version>
+    <version>1.5.2.165</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex jivkok</owners>
     <!-- ============================== -->
@@ -59,11 +59,9 @@ Instant startup, minimalistic, simple but efficient user interface.
 
 ### Native X64 support
 
-Single EXE runs flawlessly on both 32 and 64-bit Windows 10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
+Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 ]]></description>
     <!-- =============================== -->
 
