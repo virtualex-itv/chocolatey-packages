@@ -2,8 +2,8 @@
 
 $toolsDir            = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                 = 'https://spotlight-assets.twitchcdn.net/installer/TwitchStudioSetup-network.f826d5292e4b8fbb3fce6f1cd24b2870.exe?context=%5Breferrer-studio_page%5D'
-$checksum            = '4E20C96DE6BBC09BB348951C6419A6F46BDDF57A05CF9EF5722B37F569D3F02E'
+$url                 = 'https://spotlight-assets.twitchcdn.net/installer/TwitchStudioSetup-network.60de1b5458df05a78a14255cc9d4e017.exe?context=[referrer-studio_page]'
+$checksum            = '605feaec7195b07d7ebd6895864881d8db8847739240f0c291ff9d3e4c0690f5'
 $checksumType        = 'sha256'
 
 $pp                  = Get-PackageParameters
