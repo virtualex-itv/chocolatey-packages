@@ -44,16 +44,7 @@ __attic
 knownChecksums
 
 # personal
-1password*
-camtasia
-geforce-game-ready-driver
-github-desktop
 manual/.
-manual/v*
 personal
-powershell-core
-samsung-magician
-snagit
-streamdeck
-vscode*
+/test_all_mine.ps1
 # end
