@@ -9,8 +9,6 @@
         url: /packages/aquasnap.html
       - page: "BetterDiscord Installer"
         url: /packages/betterdiscord.html
-      - page: "Camtasia (Install)"
-        url: /packages/camtasia.html
       - page: "Capture (Formerly Jing)"
         url: /packages/capture.html
       - page: "Creative App"
@@ -27,6 +25,8 @@
         url: /packages/displayfusion.portable.html
       - page: "FileSeek (Portable)"
         url: /packages/fileseek.portable.html
+      - page: "garmin-express"
+        url: /packages/garminexpress.html
       - page: "Geek Uninstaller"
         url: /packages/geekuninstaller.html
       - page: "Groupy"
