@@ -6,15 +6,12 @@ $url                 = 'https://spotlight-assets.twitchcdn.net/installer/TwitchS
 $checksum            = '605feaec7195b07d7ebd6895864881d8db8847739240f0c291ff9d3e4c0690f5'
 $checksumType        = 'sha256'
 
-$pp                  = Get-PackageParameters
-
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = "Twitch Studio*"
   url            = $url
-  url64bit       = $url64
   validExitCodes = @(0, 3010)
   silentArgs     = '/silent'
   checksum       = $checksum
