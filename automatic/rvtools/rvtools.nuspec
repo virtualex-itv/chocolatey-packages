@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <copyright>Copyright © 2023 Robware</copyright>
     <tags>rvtools admin vmware vsphere esx esxi utility</tags>
     <releaseNotes>https://www.robware.net/rvtools/version/</releaseNotes>
-    <licenseUrl>https://www.robware.net/rvtools/license/</licenseUrl>
+    <licenseUrl>https://www.robware.net/rvtools/download/</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/rvtools</packageSourceUrl>
     <docsUrl>http://robware.net/download/RVTools.pdf</docsUrl>
     <summary>RVTools is a Windows .NET 4.6.1 application which uses VMware vSphere Management SDK 8.0 and CIS REST API to display information about your virtual environments.</summary>
