@@ -23,6 +23,16 @@ function CreateStream {
     $Url32 = "https://download3.vmware.com/software/$(($product.code).Replace('NEW','New'))/" + ($jsonFile.downloadFiles | Where-Object fileName -match $re | Select-Object -First 1 -ExpandProperty fileName)
   }
   $version = ($jsonFile.downloadFiles.version | Select-Object -First 1) + '.' + ($jsonFile.downloadFiles.build | Select-Object -First 1)
+  $versionParts = $version -split '\.'
+  while ($versionParts.Count -lt 4) {
+      $versionParts += "0"
+      $versionParts[3] = $versionParts[2]
+  }
+  # Ensure the third part is always one digit or zero
+  if ($versionParts[2].Length -gt 1) {
+      $versionParts[2] = "0"
+  }
+  $version = ($versionParts -join '.')
   $ChecksumType = 'sha256'
   $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
   #endregion
