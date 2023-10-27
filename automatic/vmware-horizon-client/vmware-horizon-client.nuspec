@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.10.0.21964678</version>
+    <version>8.11.0.22660907</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex windos medalibi</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2023 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
-    <releaseNotes>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2306/rn/vmware-horizon-client-for-windows-2306-release-notes/index.html</releaseNotes>
+    <releaseNotes>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2309/rn/vmware-horizon-client-for-windows-2309-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-horizon-client</packageSourceUrl>
