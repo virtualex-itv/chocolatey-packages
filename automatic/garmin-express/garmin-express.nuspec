@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>7.18.4</version>
+    <version>7.19.0</version>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/garmin-express</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Grobi virtualex</owners>
@@ -48,28 +48,27 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>garmin geolocation gps drivers mapping admin</tags>
     <summary>Garmin Express is a computer application for easily setting up, registering and managing your Garmin device.</summary>
-    <description>
-  ## Garmin Express
+    <description><![CDATA[## Garmin Express
 
-  is your one-stop shop for keeping your maps updated.
+is your one-stop shop for keeping your maps updated.
 
-  ### Features
+### Features
 
-  - downloads available map updates to your computer automatically
-  - alerts you when new maps are ready to install.
-  - control download schedules.
-  - transfer all your favorites from one device to another with one click.
+- downloads available map updates to your computer automatically
+- alerts you when new maps are ready to install.
+- control download schedules.
+- transfer all your favorites from one device to another with one click.
 
-  ### Back up and restore
+### Back up and restore
 
-  - saved addresses
-  - routes
-  - waypoints
+- saved addresses
+- routes
+- waypoints
 
-  to and from your computer
+to and from your computer
 
-  See https://www.garmin.com/de-DE/software/express for all information.
-  </description>
+See https://www.garmin.com/de-DE/software/express for all information.
+]]></description>
     <releaseNotes>https://forums.garmin.com/apps-software/mac-windows-software/f/garmin-express-windows</releaseNotes>
     <!-- =============================== -->
 
