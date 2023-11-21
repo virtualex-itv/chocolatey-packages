@@ -8,7 +8,7 @@
   },
   "markdownlint.config": {
     "MD033": false,
-  //},
+  },
   //"workbench.colorCustomizations": {
     //"activityBar.background": "#aacdec",
     //"activityBar.activeBorder": "#6F3215",
@@ -23,5 +23,6 @@
     //"statusBar.background": "#884B2E",
     //"statusBarItem.hoverBackground": "#6F3215",
     //"statusBar.foreground": "#FDCEA5"
-  }
+  //},
+  "powershell.integratedConsole.showOnStartup": false,
 }
