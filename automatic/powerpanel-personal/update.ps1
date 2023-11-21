@@ -8,7 +8,8 @@ function global:au_GetLatest {
 
   $re = '.exe'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
-  $version = ($Url32 -split 'windows_v|.exe' | Select-Object -First 1 -Skip 1).replace('_','.')
+  $pattern = "v(\d+\.\d+\.\d+)"
+  $version = [regex]::Match($Url32, $pattern).Groups[1].Value
   $ChecksumType = 'sha256'
 
   $re = '_UM'
