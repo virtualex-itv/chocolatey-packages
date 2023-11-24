@@ -8,22 +8,23 @@ function global:au_GetLatest {
 
   $re = '.exe'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
-  $pattern = "v(\d+\.\d+\.\d+)"
-  $version = [regex]::Match($Url32, $pattern).Groups[1].Value
+  $re = "v(\d+\.\d+\.\d+)"
+  $version = [regex]::Match($Url32, $re).Groups[1].Value
   $ChecksumType = 'sha256'
 
   $re = '_UM'
-  $DocsUrl = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+
 
   $re = '_RN'
   $ReleaseNotes = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  $DocsUrl = $ReleaseNotes
 
   @{
     Url32             = $Url32
     Version           = $version
     ChecksumType32    = $ChecksumType
-    DocsUrl           = $DocsUrl
     ReleaseNotes      = $ReleaseNotes
+    DocsUrl           = $DocsUrl
   }
 }
 
