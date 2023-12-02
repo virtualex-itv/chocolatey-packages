@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $release = Get-GitHubRelease MuhammedKalkan OpenLens
 
 function global:au_GetLatest {
-  $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
+  $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -Last 1 -ExpandProperty browser_download_url
   $version = $release.tag_name.Trim('v')
   if ($version -Match '-[alpha|beta].') {
     $number = "{0:d2}" -f [int]([regex]::Match($version,".(\d+)$")).Captures.Groups[1].value
