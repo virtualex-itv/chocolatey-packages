@@ -37,8 +37,8 @@ $packageArgs = @{}
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/12.0.4/21740317/windows/vmrc-windows.tar'
-$checksum               = '7050d3e2f0375401c49275a69e6c84a87c9c58bf85bb12d33745cf010e6c952f'
+$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/12.0.5/22744838/windows/vmrc-windows.tar'
+$checksum               = 'fd34abef686b4e044f5a06f1df7de616935a9df8ebe588d80fa1f9b95763932a'
 $checksumType           = 'sha256'
 
 $zippackageArgs = @{
