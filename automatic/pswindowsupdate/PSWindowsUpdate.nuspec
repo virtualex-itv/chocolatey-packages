@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.powershellgallery.com/packages/PSWindowsUpdate</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e40245062e7e7ce67656c2acbb6abcd60848d7a2/icons/pswindowsupdate.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2011-2023 Michal Gajda. All rights reserved.</copyright>
+    <copyright>Copyright © 2011-2024 Michal Gajda. All rights reserved.</copyright>
     <tags>PowerShell admin Scripting Windows Update module</tags>
     <releaseNotes>https://www.powershellgallery.com/packages/PSWindowsUpdate</releaseNotes>
     <licenseUrl>https://docs.microsoft.com/en-us/legal/termsofuse</licenseUrl>

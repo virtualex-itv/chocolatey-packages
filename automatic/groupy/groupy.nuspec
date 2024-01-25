@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/groupy/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/c70ce66a5e90c9f91dc924c6c48bee6322ec44f9/icons/groupy.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023 Stardock</copyright>
+    <copyright>Copyright © 2024 Stardock</copyright>
     <tags>stardock objectdesktop suite groupy administrative tabs explorer trial</tags>
     <releaseNotes>https://www.stardock.com/products/groupy/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

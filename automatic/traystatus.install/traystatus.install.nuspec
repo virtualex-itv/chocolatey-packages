@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.binaryfortress.com/TrayStatus/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30ad93c0ae8f036a00bfbdffbd16b8aa2ddd9c49/icons/traystatus.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2023 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2024 Binary Fortress Software</copyright>
     <tags>traystatus admin</tags>
     <releaseNotes>https://www.traystatus.com/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.traystatus.com/License/</licenseUrl>

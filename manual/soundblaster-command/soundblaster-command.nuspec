@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://us.creative.com/p/sound-blaster</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/f17bb6121b170badbed892c08bc05d99871470fe/icons/soundblaster-command.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© Copyright 2003 - 2023 Creative Technology Ltd. All rights reserved</copyright>
+    <copyright>© Copyright 2003 - 2024 Creative Technology Ltd. All rights reserved</copyright>
     <tags>creative sound blaster command audio</tags>
     <releaseNotes>https://www.reddit.com/r/SoundBlasterOfficial/comments/ywnj5c/sound_blaster_command_v3590/</releaseNotes>
     <licenseUrl>http://us.creative.com/home/termsofuse</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.binaryfortress.com/NotepadReplacer/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/69ec6737877e129294ab3ba2b2029b744f094ed2/icons/notepadreplacer.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2023 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2024 Binary Fortress Software</copyright>
     <tags>default notepad replacer replacement</tags>
     <releaseNotes>https://www.binaryfortress.com/NotepadReplacer/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.binaryfortress.com/NotepadReplacer/License/</licenseUrl>

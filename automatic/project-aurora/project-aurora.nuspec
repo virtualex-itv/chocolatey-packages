@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.project-aurora.com/index.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/88cdefcd3e3b5a28b9f71a83d3dd2846c9361c25/icons/project-aurora.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2023 GitHub, Inc.</copyright>
+    <copyright>© 2024 GitHub, Inc.</copyright>
     <tags>rgb logitech corsair razer lightfx clevo coolermaster steelseries wooting roccat alienware playstation drevo soundblaster asus yeelight nzxt</tags>
     <releaseNotes>https://github.com/Aurora-RGB/Aurora/releases/tag/v194</releaseNotes>
     <licenseUrl>https://github.com/Aurora-RGB/Aurora/blob/master/LICENSE</licenseUrl>

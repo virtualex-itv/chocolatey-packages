@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=46899</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/227e188880b4e4f7be42a32d31d8b60b74c0119c/icons/laps.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© Microsoft 2023</copyright>
+    <copyright>© Microsoft 2024</copyright>
     <tags>microsoft laps local admin account password solution security</tags>
     <releaseNotes>https://www.microsoft.com/en-us/download/details.aspx?id=46899</releaseNotes>
     <licenseUrl>https://go.microsoft.com/fwlink/?LinkID=206977</licenseUrl>

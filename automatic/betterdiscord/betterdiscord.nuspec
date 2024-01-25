@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://betterdiscord.app/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28312650af5f6f365757d0c90621c11154a7c6ae/icons/betterdiscord.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2015-2023 BetterDiscord Team</copyright>
+    <copyright>© 2015-2024 BetterDiscord Team</copyright>
     <tags>betterdiscord better discord dc betterdc</tags>
     <releaseNotes>https://github.com/BetterDiscord/Installer/releases/tag/v1.3.0</releaseNotes>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://us.creative.com/p/sound-blaster</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/155ad6b2b8739f59012b27ce4bcac68cb76a5e09/icons/creative-app.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© Copyright 2003 - 2023 Creative Technology Ltd. All rights reserved</copyright>
+    <copyright>© Copyright 2003 - 2024 Creative Technology Ltd. All rights reserved</copyright>
     <tags>creative app sound blaster audio</tags>
     <!-- <releaseNotes></releaseNotes> -->
     <licenseUrl>http://us.creative.com/home/termsofuse</licenseUrl>

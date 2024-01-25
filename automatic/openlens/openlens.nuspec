@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://k8slens.dev/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1f7b6b334898ed930db76bf701e3b59d3b61faf0/icons/lens.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023 Mirantis, Inc. - All rights reserved.</copyright>
+    <copyright>Copyright © 2024 Mirantis, Inc. - All rights reserved.</copyright>
     <tags>kubernetes k8s ide lens openlense opensource</tags>
     <releaseNotes>https://github.com/MuhammedKalkan/OpenLens/releases/tag/v6.5.2-366</releaseNotes>
     <licenseUrl>https://github.com/lensapp/lens/blob/master/LICENSE</licenseUrl>

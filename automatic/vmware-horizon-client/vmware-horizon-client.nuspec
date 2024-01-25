@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.vmware.com/products/horizon.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>Copyright © 2024 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2312/rn/vmware-horizon-client-for-windows-2312-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>

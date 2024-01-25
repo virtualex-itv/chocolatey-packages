@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/spacemonger/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e16e8e09ee6ac244066305f447045a98471dca11/icons/spacemonger.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023 Stardock</copyright>
+    <copyright>Copyright © 2024 Stardock</copyright>
     <tags>stardock objectdesktop suite spacemonger trial</tags>
     <releaseNotes>https://forums.stardock.com/499121/spacemonger-history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

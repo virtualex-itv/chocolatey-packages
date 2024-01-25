@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/windowfx/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023 Stardock</copyright>
+    <copyright>Copyright © 2024 Stardock</copyright>
     <tags>stardock windowfx trial</tags>
     <releaseNotes>https://www.stardock.com/products/windowfx/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.logitechg.com/en-us/innovation/g-hub.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2023 Logitech. All rights reserved</copyright>
+    <copyright>© 2024 Logitech. All rights reserved</copyright>
     <tags>lghub logitech ghub hub mouse keyboard headset driver utility gaming</tags>
     <releaseNotes>https://support.logi.com/hc/en-us/articles/360025298133-Logitech-G-HUB-</releaseNotes>
     <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
