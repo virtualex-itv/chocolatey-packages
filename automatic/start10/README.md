@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/236ca863026ffec6007175a4117c6a602934e8c1/icons/start10.png" width="48" height="48"/> [start10](https://community.chocolatey.org/packages/start10)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/456fd4d06ac21f622d924df47b13529470a0d257/icons/start10.png" width="48" height="48"/> [start10](https://community.chocolatey.org/packages/start10)
 
 Bringing back the familiar Windows Start menu.
 
