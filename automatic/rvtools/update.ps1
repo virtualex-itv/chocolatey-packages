@@ -1,21 +1,23 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.robware.net/rvtools/download/'
+$releases = 'https://www.robware.net/download'
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $string = '.msi'
-    $Url32 = (($download_page.Content.ToString() -split "[`r`n]" | Select-String $string | Select-Object -First 1) -split '=|;')[1].trim()
-    $Url32 = $url32.Replace("`"","")
-    $version = Get-Version($Url32)
-    $ChecksumType = 'sha256'
+    $jsReg = 'src="([^"]+\.js)"'
+    $jsMatch = [regex]::Match($download_page.Content, $jsReg)
+    $jsUrl = $jsMatch.Groups[1].Value
+    $jsContent = (Invoke-WebRequest -Uri (($releases).Trim('/download') + $jsUrl) -UseBasicParsing).Content
+
+    $re = 'RVTools([\d\.]+).msi'
+    $Url32 = if ($jsContent -match $re) { (($releases).Replace('www.','')).Replace('download','resources/') + $Matches[0] }
+    $version = $Matches[1]
 
     @{
       Url32             = $Url32
       Version           = $version
-      ChecksumType32    = $ChecksumType
     }
 }
 
