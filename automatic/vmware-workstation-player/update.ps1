@@ -34,7 +34,7 @@ function CreateStream {
   }
   $version = ($versionParts -join '.')
   $ChecksumType = 'sha256'
-  $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1
+  $checksum = $jsonFile.downloadFiles.sha256checksum | Select-Object -First 1 -Skip 1
   #endregion
 
   #region Get Release Notes Url
