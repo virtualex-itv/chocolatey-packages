@@ -7,7 +7,7 @@ $packageArgs = @{
   fileType      = "EXE"
   url           = "https://download.garmin.com/omt/express/GarminExpress.exe"
 
-  checksum      = '6893bdb8edacb7ab2b80add5062aac55201bd4432ed654019929a0d0984cb955'
+  checksum      = '6eeec9f0d5ccf4612e442f4ee730d0f4b2801e356cb219cf49f5cc887f86b9b0'
 
   checksumType  = 'sha256'
   silentArgs    = '/quiet /norestart'
