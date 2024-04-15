@@ -25,4 +25,5 @@
     //"statusBar.foreground": "#FDCEA5"
   //},
   "powershell.integratedConsole.showOnStartup": false,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
 }
