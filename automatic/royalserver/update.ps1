@@ -9,6 +9,7 @@ function global:au_GetLatest {
   $re = '.msi'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Where-Object { $_.title -like '*Server' } | Select-Object -First 1 -ExpandProperty href
   $version = $Url32 -split '_|.msi' | Select-Object -First 1 -Skip 1
+  $version = $version -replace '\.0$', '' # drops last octet if version ends in `.0`
   $ChecksumType = 'sha256'
 
   $support_url = 'https://support.royalapps.com/support/home'
