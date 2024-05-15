@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://robware.net/resources/RVTools4.5.1.msi'
-$checksum               = 'ab9a4edc0c9b703a6df11debf41553dc6ebd050efa4da630645125909d641db8'
+$url                    = 'https://fdendpoint-tf-ae40cce298ca76ff-prod-a2bhbrbte7exh5d4.a01.azurefd.net/resources/prod/RVTools4.6.1.msi'
+$checksum               = '1eaab4a563201384761b2fdf9c7dd0de4d8be2cef8db1faf386279ea4de8c08d'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
