@@ -1,23 +1,18 @@
 Import-Module AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.robware.net/download'
+$baseURL = "https://fdendpoint-tf-ae40cce298ca76ff-prod-a2bhbrbte7exh5d4.a01.azurefd.net/resources/prod/"
+$jsFile = "$($baseURL)versionInfo.json"
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $jsContent = (Invoke-WebRequest -Uri $jsFile).Content | ConvertFrom-Json
 
-    $jsReg = 'src="([^"]+\.js)"'
-    $jsMatch = [regex]::Match($download_page.Content, $jsReg)
-    $jsUrl = $jsMatch.Groups[1].Value
-    $jsContent = (Invoke-WebRequest -Uri (($releases).Trim('/download') + $jsUrl) -UseBasicParsing).Content
-
-    $re = 'RVTools([\d\.]+).msi'
-    $Url32 = if ($jsContent -match $re) { (($releases).Replace('www.','')).Replace('download','resources/') + $Matches[0] }
-    $version = $Matches[1]
+    $version = $jsContent.version[0]
+    $Url32 = "${baseURL}RVTools${version}.msi"
 
     @{
-      Url32             = $Url32
       Version           = $version
+      Url32             = $Url32
     }
 }
 
