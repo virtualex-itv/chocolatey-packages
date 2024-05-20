@@ -18,4 +18,11 @@ $packageArgs = @{
   validExitCodes        = @(0)
 }
 
+$isInstalled = Get-CimInstance -ClassName Win32_Product | Where-Object { $_.Name -like "*$env:ChocolateyPackageName*" }
+
+if ($isInstalled) {
+  Write-Host "`n$env:ChocolateyPackageName installation found, uninstalling prior to upgrade...`n" -ForegroundColor Yellow
+  $isInstalled | Invoke-CimMethod -MethodName Uninstall | Out-Null
+}
+
 Install-ChocolateyPackage @packageArgs
