@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://api.k8slens.dev/binaries/latest.json'
 

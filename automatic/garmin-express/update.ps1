@@ -1,4 +1,4 @@
-﻿import-module au
+﻿Import-Module Chocolatey-AU
 
 $url = 'https://download.garmin.com/omt/express/GarminExpress.exe'
 $forumsticky = "https://support.garmin.com/en-US/?faq=9MuiEv9c2y2wgcXvzEVEe8"

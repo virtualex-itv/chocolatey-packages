@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
 $history_page = 'https://www.stardock.com/products/groupy/history'

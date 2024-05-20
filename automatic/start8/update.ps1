@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
 $history_page = 'https://www.stardock.com/products/start8/history'
@@ -7,7 +7,7 @@ function global:au_GetLatest {
   $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/start/Start8_setup_sd.exe'
-  
+
   $re = "Start8 (?<version>[\d\.]+[\d\.]+)"
   $version = $releases -match $re | ForEach-Object { $Matches.version }
   $ChecksumType = 'sha256'

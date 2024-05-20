@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
 $history_page = 'https://www.stardock.com/products/curtains/history'
@@ -7,7 +7,7 @@ function global:au_GetLatest {
   $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/curtains/Curtains_Setup.exe'
-  
+
   $re = "Curtains (?<version>[\d\.]+[\d\.]+)"
   $version = $releases -match $re | ForEach-Object { $Matches.version }
   $ChecksumType = 'sha256'
