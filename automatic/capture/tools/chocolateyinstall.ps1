@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.cloud.techsmith.com/techsmithcapture/win/x64/Setup.exe'
-$checksum               = 'E84852F696917B88FB0BDC418976FECE8128F170006969963C39522B373E615F'
+$checksum               = 'EA7ACF86CC7DD71B6BE99E20448AA4788ACC831C028EF18A6AACF8FF501239F1'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
