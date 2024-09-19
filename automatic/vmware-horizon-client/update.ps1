@@ -1,30 +1,30 @@
 Import-Module Chocolatey-AU
 
-$allProductsUrl = 'https://my.vmware.com/channel/public/api/v1.0/products/getAllProducts?locale=en_US&isPrivate=true'
+$allProductsUrl = 'https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getAllProducts?locale=en_US&isPrivate=false'
 
 function CreateStream {
   param ( $productVersion )
 
   #region Get VMware Horizon Client for Windows Urls
-  $productBinariesUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=desktop_end_user_computing&product=vmware_horizon_clients&version=$($productVersion)&dlgType=PRODUCT_BINARY"
+  $productBinariesUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=desktop_end_user_computing&product=vmware_horizon_clients&version=$($productVersion)&dlgType=PRODUCT_BINARY"
 
   $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
 
   $re = '*_WIN_*'
   $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Select-Object -First 1
 
-  $downloadFilesUrl = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)&rPId=$($product.releasePackageId)"
+  $downloadFilesUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)&rPId=$($product.releasePackageId)"
 
   $jsonFile = Invoke-WebRequest -Uri $downloadFilesUrl | ConvertFrom-Json
 
   $Url32 = $jsonFile.downloadFiles.thirdPartyDownloadUrl
-  $version = ($Url32).Split("-")[-2] + '.' + ($Url32).Split("-")[-1] -replace (".exe", "")
+  $version = ($Url32).Split("-")[-2]
   $ChecksumType = 'sha256'
   $checksum = $jsonFile.downloadFiles.sha256checksum
   #endregion
 
   #region Get Release Notes Url
-  $dlgHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getDLGHeader?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
+  $dlgHeaderUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getDLGHeader?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
 
   $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
 
@@ -50,7 +50,7 @@ function global:au_GetLatest {
   $re = 'vmware_horizon_clients'
   $productVersion = ($jsonProducts.productCategoryList.productList.actions | Where-Object target -match $re | Select-Object -First 1 -ExpandProperty target).Split("/")[-1]
 
-  $productHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getProductHeader?locale=en_US&category=desktop_end_user_computing&product=vmware_horizon_clients&version=$($productVersion)"
+  $productHeaderUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getProductHeader?locale=en_US&category=desktop_end_user_computing&product=vmware_horizon_clients&version=$($productVersion)"
 
   $jsonProductHeader = Invoke-WebRequest -Uri $productHeaderUrl | ConvertFrom-Json
 
