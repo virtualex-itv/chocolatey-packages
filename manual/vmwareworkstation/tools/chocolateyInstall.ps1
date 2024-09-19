@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/windows/core/VMware-workstation-17.5.2-23775571.exe.tar'
-$checksum               = '907b4d60b94d64e9b44acb97cc279fde51f91be58833ced17993b9c6c0129a54'
+$url                    = 'https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.0/24238078/windows/core/VMware-workstation-17.6.0-24238078.exe.tar'
+$checksum               = '8866101cd4d411dc4f75ecba2458b95ad5ca4edd177e2a500a9d3662ea37fc50'
 $checksumType           = 'sha256'
 
 $zippackageArgs = @{
