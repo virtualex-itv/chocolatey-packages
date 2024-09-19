@@ -9,11 +9,12 @@ function global:au_GetLatest {
   $version = $download_page -match $re | Out-Null
   $version = $Matches[0]
 
-  $releaseInfo = 'https://developer.vmware.com/docs/assets/powercli-release-info.json'
-  $jsonFile = (Invoke-WebRequest -Uri $releaseInfo | ConvertFrom-Json) -split "`r`n" | Where-Object {$_}
-  $re = 'https'
-  $releaseNotesUrl = foreach ($line in $jsonFile) {($line.split('=| |;') | Where-Object {$_ -match $re})[0]}
-  $releaseNotes = Get-RedirectedUrl $releaseNotesUrl
+  $releaseInfo = 'https://docs.vmware.com/en/VMware-PowerCLI/toc.json'
+  $jsonFile = (Invoke-WebRequest -Uri $releaseInfo | ConvertFrom-Json)
+  $re = "*Release Notes*"
+  $docsUrl = "https://docs.vmware.com"
+  $releaseNotesUrl = $jsonFile.children.children.children | Where-Object { $_.name -like $re } | Select-Object -First 1 -ExpandProperty link_url
+  $releaseNotes = "$docsUrl$releaseNotesUrl"
 
   @{
     Version           = $version
