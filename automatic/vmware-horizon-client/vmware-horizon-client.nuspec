@@ -34,18 +34,18 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>VMware Horizon Client for Windows</title>
-    <authors>VMware, Inc.</authors>
+    <authors>Omnissa</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.vmware.com/products/horizon.html</projectUrl>
+    <projectUrl>https://www.omnissa.com/horizon-8/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>© 2024 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2312.1/rn/vmware-horizon-client-for-windows-23121-release-notes/index.html</releaseNotes>
-    <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
+    <licenseUrl>https://www.omnissa.com/legal-center/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-horizon-client</packageSourceUrl>
-    <docsUrl>https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/index.html</docsUrl>
+    <docsUrl>https://docs.omnissa.com/category/Horizon_Clients</docsUrl>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
     <description><![CDATA[VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
 
