@@ -34,19 +34,19 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>VMware.PowerCLI (PowerShell Module)</title>
-    <authors>VMware, Inc.</authors>
+    <authors>VMware by Broadcom</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://developer.vmware.com/powercli</projectUrl>
+    <projectUrl>https://developer.broadcom.com/powercli</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>Copyright © 2005-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
     <tags>vmware powercli vsphere automation client virtual machine virtualization esx esxi powershell hcx nsx-t</tags>
     <releaseNotes>https://vdc-repo.vmware.com/vmwb-repository/dcr-public/c59c5417-e2df-4c49-a5c2-24bc430a7817/806e6648-4c8d-4c37-9925-3998100e421a/vmware-powercli-1321-release-notes.html</releaseNotes>
-    <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
+    <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-powercli-psmodule</packageSourceUrl>
-    <docsUrl>https://developer.vmware.com/docs/powercli/latest/products/</docsUrl>
-    <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.</summary>
+    <docsUrl>https://developer.broadcom.com/powercli</docsUrl>
+    <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.  Discover what you can achieve with PowerCLI today.</summary>
     <description><![CDATA[---
 
 ## Package Parameters
