@@ -4,25 +4,13 @@ $releases = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/'
 
 function global:au_GetLatest {
   #region Get Release Notes Url
-  $allProductsUrl = 'https://my.vmware.com/channel/public/api/v1.0/products/getAllProducts?locale=en_US&isPrivate=true'
-  $jsonProducts = Invoke-WebRequest -Uri $allProductsUrl | ConvertFrom-Json
+  $releaseInfo = 'https://docs.vmware.com/en/VMware-Remote-Console/toc.json'
+  $jsonFile = Invoke-WebRequest -Uri $releaseInfo | ConvertFrom-Json
 
-  $re = 'vmware_vsphere'
-  $productVersion = ($jsonProducts.productCategoryList.productList.actions | Where-Object target -match $re | Select-Object -First 1 -ExpandProperty target).Split("/")[-1]
-
-  $productBinariesUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=datacenter_cloud_infrastructure&product=vmware_vsphere&version=$($productVersion)&dlgType=DRIVERS_TOOLS"
-  $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
-
-  $re = 'VMRC*'
-  $product = $jsonProduct.dlgEditionsLists.dlgList | Where-Object code -like $re | Sort-Object releaseDate | Select-Object -Last 1
-
-  $downloadFiles = "https://my.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
-  $jsonFile = Invoke-WebRequest -Uri $downloadFiles | ConvertFrom-Json
-
-  $dlgHeaderUrl = "https://my.vmware.com/channel/public/api/v1.0/products/getDLGHeader?locale=en_US&downloadGroup=$($product.code)&productId=$($product.productId)"
-  $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
-
-  $ReleaseNotes = ($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' } | Select-Object -First 1
+  $re = "*Release Notes*"
+  $docsUrl = "https://docs.vmware.com"
+  $releaseNotesUrl = $jsonFile.children.children.children | Where-Object { $_.name -like $re } | Select-Object -First 1 -ExpandProperty link_url
+  $releaseNotes = "$docsUrl$releaseNotesUrl"
   #endregion
 
   #region Get VMware Remote Console Url
@@ -44,7 +32,7 @@ function global:au_GetLatest {
   #endregion
 
   $Url32 = $fileFolderUrl + $fileName
-  $version = $jsonFile.downloadFiles.version[0] + '.' + $jsonFile.downloadFiles.build[0]
+  $version = ($versionFolder).Replace('/','.') + ($buildFolder).Trim('/')
   $ChecksumType = 'sha256'
 
   @{
@@ -53,6 +41,10 @@ function global:au_GetLatest {
     ChecksumType32    = $ChecksumType
     ReleaseNotes      = $ReleaseNotes
   }
+}
+
+function global:au_BeforeUpdate() {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
 }
 
 function global:au_SearchReplace {
@@ -69,4 +61,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor none
