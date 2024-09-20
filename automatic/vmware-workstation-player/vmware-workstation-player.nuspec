@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <releaseNotes>https://docs.vmware.com/en/VMware-Workstation-Player/17.6/rn/vmware-workstation-176-player-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/vmware-workstation-player</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workstation-player</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-Workstation-Player-for-Windows/index.html</docsUrl>
     <summary>VMware Workstation Player allows you to run a second, isolated operating system on a single PC. With many uses ranging from a personal educational tool, to a business tool for providing a simplified experience to run a corporate desktop on a BYO device, Workstation Player leverages the VMware vSphere Hypervisor to provide a simple yet mature and stable, local virtualization solution.</summary>
     <description><![CDATA[VMware Workstation Player™ is a streamlined desktop virtualization application that runs another operating system on the same computer without rebooting. VMware Workstation Player provides a simple user interface, unmatched operating system support, and portability across the VMware ecosystem.
