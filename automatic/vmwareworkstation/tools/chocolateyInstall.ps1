@@ -26,7 +26,7 @@ $packageArgs = @{
   file                  = $fileLocation
   softwareName          = 'VMware Workstation*'
   silentArgs            = '/s /v /qn EULAS_AGREED=1 AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0 REBOOT=ReallySuppress'
-  validExitCodes        = @(0, 3010, 1641)
+  validExitCodes        = @(0, 3010, 1614, 1641)
 
 }
 
