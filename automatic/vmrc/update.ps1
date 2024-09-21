@@ -1,46 +1,56 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/'
+$releaseJson = "https://docs.vmware.com/en/VMware-Remote-Console/toc.json"
 
-function global:au_GetLatest {
-  #region Get Release Notes Url
-  $releaseInfo = 'https://docs.vmware.com/en/VMware-Remote-Console/toc.json'
-  $jsonFile = Invoke-WebRequest -Uri $releaseInfo | ConvertFrom-Json
+function CreateStream {
+  param ( $latest )
 
-  $re = "*Release Notes*"
-  $docsUrl = "https://docs.vmware.com"
-  $releaseNotesUrl = $jsonFile.children.children.children | Where-Object { $_.name -like $re } | Select-Object -First 1 -ExpandProperty link_url
-  $releaseNotes = "$docsUrl$releaseNotesUrl"
-  #endregion
+  #region Get VMware Remote Console for Windows Urls
+  $mainVersion = [regex]::Match($latest.name, '\d+\.\d+(\.\d+)?').Value
+  if ($mainVersion -notmatch '\.\d+\.\d+$') {
+      $mainVersion += ".0"
+  }
 
-  #region Get VMware Remote Console Url
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  # Debugging Output
+  Write-Host "Stream Version: $mainVersion"
 
-  $versionFolder = $download_page.Links | Where-Object { $_.href -Match '(\d+)' } | Select-Object -Last 1 -ExpandProperty href
-  $versionFolderUrl = $releases + $versionFolder
+  $ReleaseNotes = "https://docs.vmware.com$($latest.link_url)"
 
-  $build_page = Invoke-WebRequest -Uri $versionFolderUrl -UseBasicParsing
-  $buildFolder = $build_page.Links | Where-Object { $_.href -Match '(\d+)' } | Select-Object -Last 1 -ExpandProperty href
-  $buildFolderUrl = $versionFolderUrl + $buildFolder
+  $buildInfo = Invoke-WebRequest -Uri $ReleaseNotes -UseBasicParsing
+  $buildNumber = if (($buildInfo.RawContent -replace '&nbsp;', ' ' -replace '<[^>]+>', '') -match 'Build\s*(\d+)') { $Matches[1] }
 
-  $staticFolder = 'windows/'
-  $fileFolderUrl = $buildFolderUrl + $staticFolder
+  $version = "$($mainVersion).$($buildNumber)"
 
-  $re = '\.tar$'
-  $file_page = Invoke-WebRequest -Uri $fileFolderUrl -UseBasicParsing
-  $fileName = $file_page.Links | Where-Object { $_.href -match $re } | Select-Object -ExpandProperty href
-  #endregion
+  $releaseUrl = "https://softwareupdate.vmware.com/cds/vmw-desktop/vmrc/$($mainVersion)/$($buildNumber)/windows"
 
-  $Url32 = $fileFolderUrl + $fileName
-  $version = ($versionFolder).Replace('/','.') + ($buildFolder).Trim('/')
+  $dlUrl = Invoke-WebRequest $releaseUrl -UseBasicParsing
+  $file32 = ($dlUrl.Links | Where-Object { $_.href -like '*.tar' }).href
+  $Url32 = "$($releaseUrl)/$($file32)"
   $ChecksumType = 'sha256'
 
-  @{
-    Url32             = $Url32
-    Version           = $version
-    ChecksumType32    = $ChecksumType
-    ReleaseNotes      = $ReleaseNotes
+
+  $Result = @{
+      Url32          = $Url32
+      Version        = $version
+      ReleaseNotes   = $ReleaseNotes
+      ChecksumType32 = $ChecksumType
   }
+  return $Result
+}
+
+function global:au_GetLatest {
+  $streams = @{}
+
+  #region Get VMware Remote Console for Windows Versions
+  $response = Invoke-WebRequest -Uri $releaseJson | ConvertFrom-Json
+
+  foreach ( $product in $response.children[0].children[0]) {
+    $latest = $product.children[0]
+    $majVersion = [regex]::Match($product.children.name, '\d+').Value
+    $streams.Add( $majVersion, (CreateStream $latest))
+  }
+  #endregion
+  return @{ Streams = $streams }
 }
 
 function global:au_BeforeUpdate() {
