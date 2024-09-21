@@ -7,7 +7,11 @@ function CreateStream {
 
   #region Get VMware Tools for Windows Urls
   if ($mainVersion -notmatch '\.\d+\.\d+$') {
-      $mainVersion += ".0"
+    $mainVersion += ".0"
+  }
+
+  if ($majVersion -eq "10") {
+    $mainVersion = "10.3.10"
   }
 
   $ReleaseNotes = "https://docs.vmware.com$($latest.link_url)"
