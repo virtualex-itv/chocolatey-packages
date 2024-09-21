@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <releaseNotes>https://docs.vmware.com/en/VMware-Tools/12.4/rn/vmware-tools-1245-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/vmware-tools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-tools</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-Tools/index.html</docsUrl>
     <summary>VMware Tools is a suite of utilities that enhances the performance of the virtual machines guest operating system and improves management of the virtual machine. Without VMware Tools installed in your guest operating system, guest performance lacks important functionality.</summary>
     <description><![CDATA[VMware Tools is a set of services and modules that enable several features in VMware products for better management of, and seamless user interactions with, guests operating systems.
