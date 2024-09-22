@@ -15,11 +15,6 @@ function CreateStream {
     $latest = $product.children[-3]
   }
 
-  if ($majVersion -eq "10") {
-    $mainVersion = "10.3.10"
-    $latest = $product.children[-3]
-  }
-
   $ReleaseNotes = "https://docs.vmware.com$($latest.link_url)"
 
   $buildInfo = Invoke-WebRequest -Uri $ReleaseNotes -UseBasicParsing
