@@ -11,7 +11,7 @@ function CreateStream {
   }
 
   if ($majVersion -eq "10") {
-    $mainVersion = "10.3.10"
+    $mainVersion = [regex]::Match($product.children.name[-3], '\d+\.\d+(\.\d+)?').Value
     $latest = $product.children[-3]
   }
 
