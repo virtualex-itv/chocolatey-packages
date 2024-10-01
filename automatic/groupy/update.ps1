@@ -8,8 +8,21 @@ function global:au_GetLatest {
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
 
-  $re  = "Groupy (?<version>[\d\.]+[\d\.]+)"
-  $version = $releases -match $re | ForEach-Object { $Matches.version }
+  $re  = "Groupy\s(?<version>\d+(\.\d+)+)\s*(?<beta>Beta)?"
+  $version = $releases.Content -match $re | ForEach-Object {
+    $versionNumber = $Matches.version
+
+    if ($versionNumber -notlike "*.*.*") {
+        $versionNumber += ".0"
+    }
+
+    if ($Matches.beta) {
+        $versionNumber + "-beta"
+    } else {
+        $versionNumber
+    }
+  }
+
   $ChecksumType = 'sha256'
 
   @{
