@@ -6,8 +6,6 @@ $history_page = 'https://www.stardock.com/products/groupy/history'
 function global:au_GetLatest {
   $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
 
-  $Url = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
-
   $re  = "Groupy\s(?<version>\d+(\.\d+)+)\s*(?<beta>Beta)?"
   $version = $releases.Content -match $re | ForEach-Object {
     $versionNumber = $Matches.version
@@ -18,8 +16,16 @@ function global:au_GetLatest {
 
     if ($Matches.beta) {
         $versionNumber + "-beta"
+
+        $versionParts = ($versionNumber -replace '-beta', '') -split '\.'
+        $major = $versionParts[0]
+        $minor = $versionParts[1].Substring(0,1)
+
+        $urlVersion = "$major.$minor.0.0"
+        $Url = "https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_$urlVersion-j145-Setup.exe?a=sd"
     } else {
         $versionNumber
+        $Url = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
     }
   }
 
