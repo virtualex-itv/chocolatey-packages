@@ -23,21 +23,21 @@ function CreateStream {
 
   $version = "$($mainVersion).$($buildNumber)"
 
-  $releaseUrl32 = "https://packages.vmware.com/tools/releases/$($mainVersion)/windows/x86/"
+  #$releaseUrl32 = "https://packages.vmware.com/tools/releases/$($mainVersion)/windows/x86/"
   $releaseUrl64 = "https://packages.vmware.com/tools/releases/$($mainVersion)/windows/x64/"
 
-  $dlUrl32 = Invoke-WebRequest $releaseUrl32 -UseBasicParsing
+  #$dlUrl32 = Invoke-WebRequest $releaseUrl32 -UseBasicParsing
   $dlUrl64 = Invoke-WebRequest $releaseUrl64 -UseBasicParsing
 
-  $file32 = ($dlUrl32.Links | Where-Object { $_.href -like '*.exe' }).href
+  #$file32 = ($dlUrl32.Links | Where-Object { $_.href -like '*.exe' }).href
   $file64 = ($dlUrl64.Links | Where-Object { $_.href -like '*.exe' }).href
 
-  $Url32 = "$($releaseUrl32)$($file32)"
+  #$Url32 = "$($releaseUrl32)$($file32)"
   $Url64 = "$($releaseUrl64)$($file64)"
   #endregion
 
   $Result = @{
-      Url32          = $Url32
+      #Url32          = $Url32
       Url64          = $Url64
       Version        = $version
       ReleaseNotes   = $ReleaseNotes
@@ -69,9 +69,9 @@ function global:au_GetLatest {
 function global:au_SearchReplace {
   @{
       'tools\chocolateyInstall.ps1' = @{
-          "(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
-          "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-          "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+          #"(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
+          #"(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+          #"(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
           "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
           "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
           "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
@@ -83,4 +83,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor 64
