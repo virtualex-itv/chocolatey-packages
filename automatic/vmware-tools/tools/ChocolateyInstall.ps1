@@ -5,8 +5,8 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 #$url                   = 'https://packages.vmware.com/tools/releases/12.4.5/windows/x86/VMware-tools-12.4.5-23787635-i386.exe'
 #$checksum              = '5229bbf3d3c8bf4a84e04eb8a2cfc675d48257034e17346e21af218fb7285c19'
 #$ChecksumType          = 'sha256'
-$url64                 = 'https://packages.vmware.com/tools/releases/12.4.5/windows/x64/VMware-tools-12.4.5-23787635-x86_64.exe'
-$checksum64            = '0d277be897d95db40998e626883a77df564257134164a9cccc666d6588c01c33'
+$url64                 = 'https://packages.vmware.com/tools/releases/12.5.0/windows/x64/VMware-tools-12.5.0-24276846-x64.exe'
+$checksum64            = '33b2fd3587fe43d59d12b6c6f94e7cdf2d143a76921a2618f910768d5e7bcab2'
 $ChecksumType64        = 'sha256'
 
 $pp                    = Get-PackageParameters
