@@ -2,14 +2,20 @@ Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
 $baseURL = "https://resources.robware.net/resources/prod/"
-$jsFile = "$($baseURL)versions_manifest.json"
+$jsonFile = "$($baseURL)manifest.json"
 
 function global:au_GetLatest {
-    $jsContent = (Invoke-WebRequest -Uri $jsFile).Content | ConvertFrom-Json
+    $jsonContent = (Invoke-WebRequest -Uri $jsonFile -UseBasicParsing).Content
 
-    $version = $jsContent.version
-    $Url32 = "$baseURL$($jsContent.Name)"
-    $checksum = $jsContent.SHA256
+    if ($jsonContent[0] -eq 0xFF -and $jsonContent[1] -eq 0xFE) {
+      $jsonContent = $jsonContent[2..($jsonContent.Length - 1)]
+    }
+
+    $jsonData = [System.Text.Encoding]::Unicode.GetString($jsonContent) | ConvertFrom-Json
+
+    $version = $jsonData.version
+    $Url32 = "$baseURL$($jsonData.Name)"
+    $checksum = $jsonData.SHA256
     $checksumType = "sha256"
 
     @{
