@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/101/DisplayFusion-11.0.2-x64.zip'
-$checksum              = '9a60735652a819977b769c338a58fbfeb6722408ed38e8a459c073bcff7ab9e6'
+$url                   = 'https://binaryfortressdownloads.com/Download/BFSFiles/101/DisplayFusion-11.0.3-x64.zip'
+$checksum              = 'b53ffd29f5ffbc0258a3cc77584be0b356f09677502a98528b004e44dde48be9'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
