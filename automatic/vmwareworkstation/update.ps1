@@ -1,17 +1,18 @@
 ﻿Import-Module Chocolatey-AU
 
-$releaseJson = "https://docs.vmware.com/en/VMware-Workstation-Pro/toc.json"
+# this url is now specifically for version 17.x.x due to docs site relocation to broadcom
+$releaseJson = "https://techdocs.broadcom.com/bin/broadcom/techdocs2/TOCServlet?basePath=%2Fcontent%2Fbroadcom%2Ftechdocs%2Fus%2Fen%2Fvmware-cis%2Fdesktop-hypervisors%2Fworkstation-pro%2F17-0"
 
 function CreateStream {
   param ( $latest )
 
   #region Get VMware Workstation Pro for Windows Urls
-  $mainVersion = [regex]::Match($latest.name, '\d+\.\d+(\.\d+)?').Value
+  $mainVersion = [regex]::Match($latest.title, '\d+\.\d+(\.\d+)?').Value
   if ($mainVersion -notmatch '\.\d+\.\d+$') {
     $mainVersion += ".0"
   }
 
-  $ReleaseNotes = "https://docs.vmware.com$($latest.link_url)"
+  $ReleaseNotes = "https://techdocs.broadcom.com$($latest.link)"
 
   $buildInfo = Invoke-WebRequest -Uri $ReleaseNotes -UseBasicParsing
   $buildNumber = if (($buildInfo.RawContent -replace '&nbsp;', ' ' -replace '<[^>]+>', '') -match 'Build\s*(\d+)') { $Matches[1] }
@@ -37,9 +38,9 @@ function global:au_GetLatest {
   #region Get VMware Workstation Pro for Windows Versions
   $response = Invoke-WebRequest -Uri $releaseJson | ConvertFrom-Json
 
-  foreach ( $product in $response.children[0].children) {
-    $latest = $product.children[0]
-    $majVersion = [regex]::Match($product.name, '\d+').Value
+  foreach ( $product in $response[0].children[0]) {
+    $latest = $product
+    $majVersion = [regex]::Match($product.title, '\d+').Value
     $streams.Add( $majVersion, (CreateStream $latest))
   }
   #endregion
