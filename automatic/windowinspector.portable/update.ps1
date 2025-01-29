@@ -12,6 +12,9 @@ function global:au_GetLatest {
 
   $re = '-|\.zip$'
   $version = (($url32 -split $re)[1]).Substring(0, 3)
+  if ($version -notlike "*.*.*") {
+    $version += ".0"
+  }
   $ChecksumType = 'sha256'
 
   @{
