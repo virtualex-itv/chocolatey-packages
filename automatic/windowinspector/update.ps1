@@ -12,6 +12,9 @@ function global:au_GetLatest {
 
   $re = 'Setup-|\.exe$'
   $version = (($url32 -split $re)[1]).Substring(0, 3)
+  if ($version -notlike "*.*.*") {
+    $version += ".0"
+  }
 
   @{
     Url32            = $Url32
