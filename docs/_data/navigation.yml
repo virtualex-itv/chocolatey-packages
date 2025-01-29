@@ -57,6 +57,8 @@
         url: /packages/notepadreplacer.html
       - page: "Object Desktop"
         url: /packages/objectdesktop.html
+      - page: "Omnissa Horizon Client for Windows"
+        url: /packages/omnissahorizonclient.html
       - page: "OpenLens"
         url: /packages/openlens.html
       - page: "PlayStation Plus"
