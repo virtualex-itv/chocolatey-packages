@@ -22,7 +22,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>vmware-horizon-client</id>
+    <id>omnissa-horizon-client</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
@@ -33,24 +33,24 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>VMware Horizon Client for Windows</title>
+    <title>Omnissa Horizon Client for Windows</title>
     <authors>Omnissa</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.omnissa.com/horizon-8/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2024 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
-    <tags>vmware horizon view client virtual-machine vdi admin</tags>
+    <tags>vmware omnissa horizon view client virtual-machine vdi admin</tags>
     <releaseNotes>https://docs.omnissa.com/bundle/horizon-client-windows-RNV2406/page/HorizonClientWindows-ReleaseNotes.html</releaseNotes>
     <licenseUrl>https://www.omnissa.com/legal-center/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-horizon-client</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/omnissa-horizon-client</packageSourceUrl>
     <docsUrl>https://docs.omnissa.com/category/Horizon_Clients</docsUrl>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description><![CDATA[VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
+    <description>Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
