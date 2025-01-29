@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.13.1</version>
+    <version>8.14.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex windos medalibi</owners>
     <!-- ============================== -->
@@ -41,16 +41,16 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2024 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
     <tags>vmware omnissa horizon view client virtual-machine vdi admin</tags>
-    <releaseNotes>https://docs.omnissa.com/bundle/horizon-client-windows-RNV2406/page/HorizonClientWindows-ReleaseNotes.html</releaseNotes>
+    <releaseNotes>HorizonClientWindows-ReleaseNotes.html</releaseNotes>
     <licenseUrl>https://www.omnissa.com/legal-center/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/omnissa-horizon-client</packageSourceUrl>
     <docsUrl>https://docs.omnissa.com/category/Horizon_Clients</docsUrl>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description>Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.
+    <description><![CDATA[Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
