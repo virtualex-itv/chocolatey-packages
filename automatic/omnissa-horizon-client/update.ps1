@@ -28,7 +28,7 @@ function CreateStream {
 
   $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
 
-  $ReleaseNotes = ($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' }
+  $ReleaseNotes = 'https://docs.omnissa.com/bundle/' + (($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match 'horizon-client-windows' }) + '/page/' + (($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' })
   #endregion
 
   $Result = @{
