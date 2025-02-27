@@ -25,7 +25,7 @@
         url: /packages/displayfusion.portable.html
       - page: "FileSeek (Portable)"
         url: /packages/fileseek.portable.html
-      - page: "garmin-express"
+      - page: "garmin-express (Install)"
         url: /packages/garminexpress.html
       - page: "Geek Uninstaller"
         url: /packages/geekuninstaller.html
@@ -121,6 +121,8 @@
         url: /packages/vmwareworkstation.html
       - page: "VMware Workstation Player"
         url: /packages/vmwareworkstationplayer.html
+      - page: "Warp"
+        url: /packages/warpterminal.html
       - page: "WindowBlinds"
         url: /packages/windowblinds.html
       - page: "WindowFX"
