@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://autoupdate.termius.com/windows/Install%20Termius.exe'
-$checksum               = '35F56F38D5B41AD4612A5F686503DECFD4989AE7C4D8963D83ABA2AAED27E96E'
+$checksum               = 'C47EAA97123F3EE74590B505052C4AEBD4881C0DC2B147C7DA792018F6609DA8'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
