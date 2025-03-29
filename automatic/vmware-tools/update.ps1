@@ -10,7 +10,7 @@ $toolsUrl = $staticUrl + ($response.Links | Where-Object { $_.href -match 'vsphe
 
 $rootVersion = ($toolsUrl -split '/|.html')[-2]
 
-$releaseJson = "https://techdocs.broadcom.com/bin/broadcom/techdocs2/TOCServlet?basePath=%2Fcontent%2Fbroadcom%2Ftechdocs%2Fus%2Fen%2Fvmware-cis%2Fvsphere%2Ftools%2F$($rootVersion)"
+$releaseJson = "$($staticUrl)/bin/broadcom/techdocs2/TOCServlet?basePath=%2Fcontent%2Fbroadcom%2Ftechdocs%2Fus%2Fen%2Fvmware-cis%2Fvsphere%2Ftools%2F$($rootVersion)"
 
 function CreateStream {
   param ( $latest )
