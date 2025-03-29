@@ -1,18 +1,10 @@
 Import-Module Chocolatey-AU
 
-<<<<<<< HEAD
-$release = "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere.html"
-
-$response = Invoke-WebRequest -Uri $release -UseBasicParsing
-
-$staticUrl = " https://techdocs.broadcom.com"
-=======
 $staticUrl = " https://techdocs.broadcom.com"
 
 $release = "$($staticUrl)/us/en/vmware-cis/vsphere.html"
 
 $response = Invoke-WebRequest -Uri $release -UseBasicParsing
->>>>>>> b8a6145eaf15505d634855fc16d404410e92b724
 
 $toolsUrl = $staticUrl + ($response.Links | Where-Object { $_.href -match 'vsphere/tools' } | Select-Object -First 1 -ExpandProperty href)
 
