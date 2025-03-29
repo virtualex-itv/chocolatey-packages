@@ -1,46 +1,46 @@
 Import-Module Chocolatey-AU
 
-$releaseJson = "https://docs.vmware.com/en/VMware-Tools/toc.json"
+$staticUrl = " https://techdocs.broadcom.com"
+
+$release = "$($staticUrl)/us/en/vmware-cis/vsphere.html"
+
+$response = Invoke-WebRequest -Uri $release -UseBasicParsing
+
+$toolsUrl = $staticUrl + ($response.Links | Where-Object { $_.href -match 'vsphere/tools' } | Select-Object -First 1 -ExpandProperty href)
+
+$rootVersion = ($toolsUrl -split '/|.html')[-2]
+
+$releaseJson = "https://techdocs.broadcom.com/bin/broadcom/techdocs2/TOCServlet?basePath=%2Fcontent%2Fbroadcom%2Ftechdocs%2Fus%2Fen%2Fvmware-cis%2Fvsphere%2Ftools%2F$($rootVersion)"
 
 function CreateStream {
   param ( $latest )
 
   #region Get VMware Tools for Windows Urls
-  if ($mainVersion -notmatch '\.\d+\.\d+$') {
+  if ($mainVersion -notmatch '^\d+\.\d+\.\d+$') {
     $mainVersion += ".0"
-  }
+}
 
-  if ($majVersion -eq "10") {
-    $mainVersion = [regex]::Match($product.children.name[-3], '\d+\.\d+(\.\d+)?').Value
-    $latest = $product.children[-3]
-  }
+  $releaseNotes = $staticUrl + $latest.link
 
-  $ReleaseNotes = "https://docs.vmware.com$($latest.link_url)"
-
-  $buildInfo = Invoke-WebRequest -Uri $ReleaseNotes -UseBasicParsing
+  $buildInfo = Invoke-WebRequest -Uri $releaseNotes -UseBasicParsing
   $buildInfoContent = $buildInfo.RawContent -replace '&nbsp;', ' ' -replace '<[^>]+>', ''
   $buildNumber = if ($buildInfoContent -match 'Build No\s*(\d+)') { $Matches[1] } elseif ($buildInfoContent -match '\|\s*(\d{8})') { $Matches[1] }
 
-  $version = "$($mainVersion).$($buildNumber)"
+  $version = "$mainVersion.$buildNumber".TrimEnd('.')
 
-  #$releaseUrl32 = "https://packages.vmware.com/tools/releases/$($mainVersion)/windows/x86/"
   $releaseUrl64 = "https://packages.vmware.com/tools/releases/$($mainVersion)/windows/x64/"
 
-  #$dlUrl32 = Invoke-WebRequest $releaseUrl32 -UseBasicParsing
   $dlUrl64 = Invoke-WebRequest $releaseUrl64 -UseBasicParsing
 
-  #$file32 = ($dlUrl32.Links | Where-Object { $_.href -like '*.exe' }).href
   $file64 = ($dlUrl64.Links | Where-Object { $_.href -like '*.exe' }).href
 
-  #$Url32 = "$($releaseUrl32)$($file32)"
   $Url64 = "$($releaseUrl64)$($file64)"
   #endregion
 
   $Result = @{
-      #Url32          = $Url32
       Url64          = $Url64
       Version        = $version
-      ReleaseNotes   = $ReleaseNotes
+      ReleaseNotes   = $releaseNotes
   }
   return $Result
 }
@@ -49,15 +49,15 @@ function global:au_GetLatest {
   $streams = @{}
 
   #region Get VMware Tools for Windows Versions
-  $response = Invoke-WebRequest -Uri $releaseJson | ConvertFrom-Json
+  $responseJson = Invoke-WebRequest -Uri $releaseJson -UseBasicParsing | ConvertFrom-Json
 
-  foreach ( $product in $response.children.children) {
-    $mainVersion = [regex]::Match($product.children.name, '\d+\.\d+(\.\d+)?').Value
+  foreach ( $product in $responseJson.children) {
+    $mainVersion = [regex]::Match($product.title, '\d+(\.\d+)+').Value.TrimEnd('.')
     $majVersion = [regex]::Match($mainVersion, '^\d+').Value
     if (-not [string]::IsNullOrEmpty($mainVersion) -and $mainVersion -notlike '%.') {
       if (-not $streams.ContainsKey($majVersion) -or ([version]$mainVersion -gt [version]$streams[$majVersion].Version)) {
-        $latest = $product.children[0]
-        $streams.Add( $majVersion, (CreateStream $latest))
+        $latest = $product[0]
+        $streams.Add( $majVersion, (CreateStream $latest $mainVersion))
       }
     }
   }
@@ -69,9 +69,6 @@ function global:au_GetLatest {
 function global:au_SearchReplace {
   @{
       'tools\chocolateyInstall.ps1' = @{
-          #"(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
-          #"(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-          #"(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
           "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
           "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
           "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
