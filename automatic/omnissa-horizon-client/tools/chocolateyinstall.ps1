@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://download3.omnissa.com/software/CART25FQ4_WIN_2412/Omnissa-Horizon-Client-2412-8.14.0-12437220870.exe'
-$checksum               = '65449c9a7827c9ddbff858706e57aae53ac61cf07b6321d1b57c037575b5532f'
+$url                    = 'https://download3.omnissa.com/software/CART26FQ1_WIN_2503/Omnissa-Horizon-Client-2503-8.15.0-14236595709.exe'
+$checksum               = 'ac3d0faf500b0e87ab6b51f143c2aaea03412bebf7da91528cb68b4d0576c3b2'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
