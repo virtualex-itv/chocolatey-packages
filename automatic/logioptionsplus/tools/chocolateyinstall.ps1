@@ -3,7 +3,7 @@
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                   = 'https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.exe'
-$checksum              = 'C07AA99B4DAC13506B02EE29D8FB40A806CEA2C8F577ABB87D750EB816F8CCC5'
+$checksum              = 'CED5FE8F9CAE1DF4A49B4A15301EC047ACCD7763ECAFA8265CA7E5035FD34DEA'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
