@@ -1,6 +1,6 @@
 Import-Module Chocolatey-AU
 
-$staticUrl = " https://techdocs.broadcom.com"
+$staticUrl = "https://techdocs.broadcom.com"
 
 $release = "$($staticUrl)/us/en/vmware-cis/vsphere.html"
 
