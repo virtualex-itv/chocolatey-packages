@@ -2,7 +2,7 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://resources.robware.net/resources/prod/RVTools4.7.1.msi'
+$url                    = 'https://downloads.dell.com/rvtools/rvtools4.7.1.msi'
 $checksum               = '0506126bcbc4641d41c138e88d9ea9f10fb65f1eeab3bff90ad25330108b324c'
 $checksumType           = 'sha256'
 
