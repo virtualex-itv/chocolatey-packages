@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://www.nurgo-software.com/download/AquaSnap.msi'
-$checksum               = '49272bba721931d7993492dc75fd24c1fda05cfcbaa030c02e2f0efce6f40347'
+$checksum               = '1eea35dbf80de91047ea3b258da25f25ca210eefef35e45b4f42bacbd866dcb8'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

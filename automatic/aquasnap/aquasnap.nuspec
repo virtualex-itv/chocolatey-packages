@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.24.0</version>
+    <version>1.24.1</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Jivko Kolev, Tim Biermann, virtualex</owners>
     <!-- ============================== -->
@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/aquasnap</packageSourceUrl>
     <docsUrl>https://help.nurgo-software.com/collection/1-aquasnap</docsUrl>
     <summary>Window manager for Windows</summary>
-    <description>AquaSnap greatly enhances the way you can arrange windows on your Desktop. It gives you the possibility to snap windows to the edges or to the corners of the desktop, set windows to remain on top, stretch windows and more. It is freeware for personal single-monitor use only.
+    <description><![CDATA[AquaSnap greatly enhances the way you can arrange windows on your Desktop. It gives you the possibility to snap windows to the edges or to the corners of the desktop, set windows to remain on top, stretch windows and more. It is freeware for personal single-monitor use only.
 
 This software requires a license for all options to be available, but there is a 60 minutes trial for it and there are free options as well.
 
@@ -59,9 +59,8 @@ Features:
 - Move windows together: Professional applications with complex UI often scatter small toolbox windows on your desktop. Keep them grouped and move them all at once. Move one window while pressing [Ctrl] and the whole group of adjacent windows will follow.
 - Make it stay on top: This is the best way to have this window always visible while working on a fullscreen application. Shake a window to make it transparent and always on top. Shake it again to restore it's normal state.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
