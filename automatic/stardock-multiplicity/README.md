@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/39bf275cf5ef67cc91702260701dcbf9a835ae2d/icons/stardock-multiplicity.png" width="48" height="48"/> [stardock-multiplicity](https://community.chocolatey.org/packages/stardock-multiplicity)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@39bf275cf5ef67cc91702260701dcbf9a835ae2d/icons/stardock-multiplicity.png" width="48" height="48"/> [stardock-multiplicity](https://community.chocolatey.org/packages/stardock-multiplicity)
 
 Control multiple PCs with one keyboard and mouse..
 
