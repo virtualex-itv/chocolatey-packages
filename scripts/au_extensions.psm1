@@ -5,14 +5,20 @@
 # but the file containing the functions is expected
 # to be named using the same name.
 $funcs = @(
+  'Update-Metadata'
   'Get-GitHubRelease'
+  'Get-LatestGithubReleases'
+  'Get-AllGithubReleases'
+  'Get-ValidOpenSourceLicense'
+  'Get-GithubRepositoryLicense'
+  'Invoke-VirusTotalScan'
   'Get-MsiInformation'
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
 )
 
-$funcs | % {
+$funcs | ForEach-Object {
   if (Test-Path "$PSScriptRoot\$_.ps1") {
     . "$PSScriptRoot\$_.ps1"
     if (Get-Command $_ -ea 0) {
