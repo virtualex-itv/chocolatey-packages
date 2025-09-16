@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1f7b6b334898ed930db76bf701e3b59d3b61faf0/icons/lens.png" width="48" height="48"/> [lens](https://community.chocolatey.org/packages/lens)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@1f7b6b334898ed930db76bf701e3b59d3b61faf0/icons/lens.png" width="48" height="48"/> [lens](https://community.chocolatey.org/packages/lens)
 
 Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters.  Lens is open source and free.
 
