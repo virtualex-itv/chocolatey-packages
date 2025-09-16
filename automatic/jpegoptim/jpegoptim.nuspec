@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.5.5.1</version>
+    <version>1.5.6.1</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>AnthonyMastrean virtualex</owners>
     <!-- ============================== -->
@@ -37,11 +37,11 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>XhmikosR</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/XhmikosR/jpegoptim-windows</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2024 GitHub, Inc.</copyright>
     <tags>jpeg optimize</tags>
-    <releaseNotes>https://github.com/XhmikosR/jpegoptim-windows/releases/tag/1.5.5-rel1</releaseNotes>
+    <releaseNotes>https://github.com/XhmikosR/jpegoptim-windows/releases/tag/1.5.6-rel1</releaseNotes>
     <licenseUrl>https://docs.github.com/en/github/site-policy/github-terms-of-service</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/jpegoptim</packageSourceUrl>
     <docsUrl>https://github.com/XhmikosR/jpegoptim-windows</docsUrl>

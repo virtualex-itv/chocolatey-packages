@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png" width="48" height="48"/> [jpegoptim](https://community.chocolatey.org/packages/jpegoptim)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png" width="48" height="48"/> [jpegoptim](https://community.chocolatey.org/packages/jpegoptim)
 
 Provides lossless optimization (based on optimizing the Huffman tables) and "lossy" optimization based on setting maximum quality factor.
 
