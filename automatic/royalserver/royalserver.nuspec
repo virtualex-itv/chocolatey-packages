@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>5.3.50226</version>
+    <version>5.3.51001</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex Sargola</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>Royal Apps GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.royalapps.com/server/main/features</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9dc8a38fb867fe2d56a0470d8de1b85248b68fc3/icons/royalserver.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@9dc8a38fb867fe2d56a0470d8de1b85248b68fc3/icons/royalserver.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2024 Royal Apps GmbH</copyright>
     <tags>server management remote admin vmware</tags>
