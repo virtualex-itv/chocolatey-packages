@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64                 = 'https://packages.vmware.com/tools/releases/13.0.1/windows/x64/VMware-tools-13.0.1-24843032-x64.exe'
-$checksum64            = '829953b6c92719dd32080a46d8fc1089f3b70cd96f954b20803d329aec63a74e'
+$url64                 = 'https://packages.vmware.com/tools/releases/12.5.4/x64/VMware-tools-12.5.4-24964629-x64.exe'
+$checksum64            = '6df1b26a1f15070f7612d623ff46c4c6409eefb8e272bf35f17b79a918d79ed7'
 $ChecksumType64        = 'sha256'
 
 $pp                    = Get-PackageParameters
