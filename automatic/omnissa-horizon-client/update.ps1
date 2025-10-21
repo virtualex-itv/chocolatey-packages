@@ -6,7 +6,7 @@ function CreateStream {
   param ( $productVersion )
 
   #region Get Omnissa Horizon Client for Windows Urls
-  $productBinariesUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=desktop_end_user_computing&product=omnissa_horizon_clients&version=$($productVersion)&dlgType=PRODUCT_BINARY"
+  $productBinariesUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getRelatedDLGList?locale=en_US&category=virtual_desktop_and_apps&product=omnissa_horizon_clients&version=$($productVersion)&dlgType=PRODUCT_BINARY"
 
   $jsonProduct = Invoke-WebRequest -Uri $productBinariesUrl | ConvertFrom-Json
 
@@ -50,7 +50,7 @@ function global:au_GetLatest {
   $re = 'omnissa_horizon_clients'
   $productVersion = ($jsonProducts.productCategoryList.productList.actions | Where-Object target -match $re | Select-Object -First 1 -ExpandProperty target).Split("/")[-1]
 
-  $productHeaderUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getProductHeader?locale=en_US&category=desktop_end_user_computing&product=omnissa_horizon_clients&version=$($productVersion)"
+  $productHeaderUrl = "https://customerconnect.omnissa.com/channel/public/api/v1.0/products/getProductHeader?locale=en_US&category=virtual_desktop_and_apps&product=omnissa_horizon_clients&version=$($productVersion)"
 
   $jsonProductHeader = Invoke-WebRequest -Uri $productHeaderUrl | ConvertFrom-Json
 
