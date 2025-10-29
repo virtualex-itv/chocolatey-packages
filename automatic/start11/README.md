@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8e85b1ef0ea7e784bdb8f28910f1d744a0abaf67/icons/start11.png" width="48" height="48"/> [start11](https://community.chocolatey.org/packages/start11)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@8e85b1ef0ea7e784bdb8f28910f1d744a0abaf67/icons/start11.png" width="48" height="48"/> [start11](https://community.chocolatey.org/packages/start11)
 
 Customize the Start Menu and Taskbar in Windows 10/11.
 

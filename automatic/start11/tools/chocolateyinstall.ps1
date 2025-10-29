@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.stardock.us/downloads/public/software/start/v2/Start11v2-setup.exe'
-$checksum               = '6818e6ab406f1bea1fa40aaa512034540e8cf47c36e9741d7e01e61bb8afdc40'
+$checksum               = 'ce17caa6a7ea41734c16a2228739d5f3209a559df8f9213805ce643308d17bdf'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
