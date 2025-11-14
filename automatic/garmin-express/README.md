@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png" width="48" height="48"/> [garmin-express](https://community.chocolatey.org/packages/garmin-express)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png" width="48" height="48"/> [garmin-express](https://community.chocolatey.org/packages/garmin-express)
 
 ## Garmin Express
 
