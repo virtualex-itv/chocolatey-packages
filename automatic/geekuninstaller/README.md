@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="48" height="48"/> [geekuninstaller](https://community.chocolatey.org/packages/geekuninstaller)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="48" height="48"/> [geekuninstaller](https://community.chocolatey.org/packages/geekuninstaller)
 
 ## Features
 
