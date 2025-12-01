@@ -107,6 +107,8 @@
         url: /packages/traystatus.portable.html
       - page: "Twitch Studio"
         url: /packages/twitchstudio.html
+      - page: "VCF.PowerCLI (PowerShell Module)"
+        url: /packages/vcfpowerclipsmodule.html
       - page: "VMware Remote Console"
         url: /packages/vmrc.html
       - page: "VMware Horizon Client for Windows"
