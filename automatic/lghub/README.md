@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="48" height="48"/> [lghub](https://community.chocolatey.org/packages/lghub)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="48" height="48"/> [lghub](https://community.chocolatey.org/packages/lghub)
 
 G HUB recognizes your supported Logitech G gear, and gives you full access to their customization features. It automatically keeps firmware up to date.
 
