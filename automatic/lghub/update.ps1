@@ -1,7 +1,7 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.logitechg.com/en-us/innovation/g-hub.html'
+$releases = 'https://www.logitechg.com/en-us/software/ghub'
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
