@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/curtains/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/de6fb2832128b844f0fd00dec9c7df96e0dae9fb/icons/curtains.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite curtains trial</tags>
     <releaseNotes>https://www.stardock.com/products/curtains/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

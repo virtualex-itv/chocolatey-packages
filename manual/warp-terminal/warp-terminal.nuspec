@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.warp.dev/windows-terminal</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/40d037a72e4d24dae1a1ae1ef2aa45925b180c3d/icons/warp-terminal.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>All Rights Reserved © 2025</copyright>
+    <copyright>All Rights Reserved © 2026</copyright>
     <tags>warp modern terminal AI</tags>
     <releaseNotes>https://docs.warp.dev/getting-started/changelog</releaseNotes>
     <licenseUrl>https://www.warp.dev/terms-of-service</licenseUrl>

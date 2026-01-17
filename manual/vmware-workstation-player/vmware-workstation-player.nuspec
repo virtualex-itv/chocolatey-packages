@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e6a6262927b9decf4a7702d926e0df8ecea61d/icons/vmware-workstation-player.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2005-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
+    <copyright>Copyright © 2005-2026 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
     <tags>vmware workstation player virtual machine virtualization</tags>
     <releaseNotes>https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/17-0/release-notes/vmware-workstation-1763-pro-release-notes.html</releaseNotes>
     <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>

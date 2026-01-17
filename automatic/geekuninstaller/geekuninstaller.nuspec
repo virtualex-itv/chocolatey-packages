@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>http://www.geekuninstaller.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2012-2024 Thomas Koen</copyright>
+    <copyright>Copyright © 2012-2026 Thomas Koen</copyright>
     <tags>Windows geek uninstaller free</tags>
     <releaseNotes>https://geekuninstaller.com/download</releaseNotes>
     <!--<licenseUrl></licenseUrl>-->

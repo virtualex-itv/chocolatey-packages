@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.micron.com/products/ssd/storage-executive-software</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/7374e4a9b07a743afee368897cbf209d0f1a8790/icons/micron-storage-executive.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Micron Technology, Inc. All rights reserved. </copyright>
+    <copyright>Copyright © 2026 Micron Technology, Inc. All rights reserved. </copyright>
     <tags>micron storage executive ssd</tags>
     <releaseNotes>https://www.micron.com/products/ssd/storage-executive-software</releaseNotes>
     <licenseUrl>https://www.micron.com/terms-of-use</licenseUrl>

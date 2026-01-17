@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.omnissa.com/horizon-8/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@d57eb06ba4de46ffdc365ff699067cc6770a0b95/icons/omnissa-horizon-client.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2025 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
+    <copyright>© 2026 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
     <tags>vmware omnissa horizon view client virtual-machine vdi admin</tags>
     <releaseNotes>https://docs.omnissa.com/bundle/horizon-client-windows-RNV2512/page/HorizonClientWindows-ReleaseNotes.html</releaseNotes>
     <licenseUrl>https://www.omnissa.com/legal-center/</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://robware.net/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2023-2025 Dell Inc.</copyright>
+    <copyright>Copyright © 2023-2026 Dell Inc.</copyright>
     <tags>rvtools admin vmware vsphere esx esxi utility</tags>
     <releaseNotes>https://downloads.dell.com/rvtools/rvtools.pdf</releaseNotes>
     <licenseUrl>https://downloads.dell.com/rvtools/rvtools.pdf</licenseUrl>

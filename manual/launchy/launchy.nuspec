@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>http://www.launchy.net</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/308914d82035771688e37b5245152d507258b7c1/icons/launchy.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Code Jelly. All Rights Reserved.</copyright>
+    <copyright>Copyright © 2026 Code Jelly. All Rights Reserved.</copyright>
     <tags>launchy productivity launcher admin</tags>
     <!--<releaseNotes></releaseNotes>-->
     <licenseUrl>http://www.launchy.net/about.php</licenseUrl>

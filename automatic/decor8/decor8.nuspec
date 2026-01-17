@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/decor8/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a562136b65ea6ca2e7297d82273e7e55242882d1/icons/decor8.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite decor8 trial</tags>
     <releaseNotes>https://www.stardock.com/products/decor8/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

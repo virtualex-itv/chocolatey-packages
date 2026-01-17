@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://github.com/XhmikosR/jpegoptim-windows</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2024 GitHub, Inc.</copyright>
+    <copyright>© 2026 GitHub, Inc.</copyright>
     <tags>jpeg optimize</tags>
     <releaseNotes>https://github.com/XhmikosR/jpegoptim-windows/releases/tag/1.5.6-rel1</releaseNotes>
     <licenseUrl>https://docs.github.com/en/github/site-policy/github-terms-of-service</licenseUrl>

@@ -38,7 +38,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.garmin.com/en-US/software/express/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png</iconUrl>
-    <copyright>Copyright © 1996-2024 Garmin Ltd.</copyright>
+    <copyright>Copyright © 1996-2026 Garmin Ltd.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://static.garmin.com/pumac/EN-US_EN.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

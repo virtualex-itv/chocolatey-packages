@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.twitch.tv/broadcast/studio</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/3d6fec825fb49eadccf4f141a53f3c07ca9c4ea8/icons/twitch-studio.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Twitch Interactive</copyright>
+    <copyright>Copyright © 2026 Twitch Interactive</copyright>
     <tags>twitch admin game streaming</tags>
     <releaseNotes>https://help.twitch.tv/s/article/twitch-studio-updates?language=en_US</releaseNotes>
     <licenseUrl>https://www.twitch.tv/p/terms-of-service</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/modernmix/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/d5603d81d82fda2d2f013fa6477bc11d2eda72f8/icons/modernmix.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite modernmix trial</tags>
     <releaseNotes>https://www.stardock.com/products/modernmix/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

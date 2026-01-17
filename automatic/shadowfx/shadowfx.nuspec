@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/shadowfx/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9b59225e02150148b228647a569723a09becd12c/icons/shadowfx.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock shadowfx trial</tags>
     <releaseNotes>https://www.stardock.com/products/shadowfx/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://docs.vmware.com/en/VMware-Remote-Console/index.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/1784650e7fdd30ff28f476c23777c895409080e5/icons/vmrc.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2005-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
+    <copyright>Copyright © 2005-2026 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
     <tags>vmware vsphere vmrc remote-console</tags>
     <releaseNotes>https://docs.vmware.com/en/VMware-Remote-Console/12.0/rn/vmware-remote-console-1205-release-notes/index.html</releaseNotes>
     <licenseUrl>https://www.vmware.com/download/eula/universal_eula.html</licenseUrl>

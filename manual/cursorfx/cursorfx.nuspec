@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/cursorfx/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/f8276f56c973ad8a4a524340be1f8f925db362c1/icons/cursorfx.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite cursorfx trial</tags>
     <releaseNotes>https://www.stardock.com/products/cursorfx/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>

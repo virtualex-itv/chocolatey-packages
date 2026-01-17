@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.stardock.com/products/odnt/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/720b6025044a58df35e2c7da5b51ea3a4016e975/icons/object-desktop.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2024 Stardock</copyright>
+    <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite cursorfx curtains decor8 deskscapes fences groupy icondeveloper iconpackager modernmix multiplicity soundpackager spacemonger start8 start10 start11 thememanager tiles windowblinds windowfx</tags>
     <!-- <releaseNotes></releaseNotes> -->
     <licenseUrl>https://www.stardock.com/policies/terms</licenseUrl>

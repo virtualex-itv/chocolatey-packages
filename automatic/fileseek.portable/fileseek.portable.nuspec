@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.fileseek.ca/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@0e8f671282ae49b2aa8739ea7ff703c9d9687d04/icons/fileseek.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 2007-2024 Binary Fortress Software</copyright>
+    <copyright>Copyright © 2007-2026 Binary Fortress Software</copyright>
     <tags>fileseek admin file search contents</tags>
     <releaseNotes>https://www.fileseek.ca/ChangeLog/</releaseNotes>
     <licenseUrl>https://www.fileseek.ca/License/</licenseUrl>

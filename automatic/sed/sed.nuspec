@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.gnu.org/software/sed/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/43cc017d72450819b67d2beda0b01996085f8543/icons/sed.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Copyright © 1998-2024 Free Software Foundation, Inc.</copyright>
+    <copyright>Copyright © 1998-2026 Free Software Foundation, Inc.</copyright>
     <tags>stream-editor sed windows editor</tags>
     <releaseNotes>https://github.com/mbuilov/sed-windows/releases/tag/sed-4.9</releaseNotes>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.md</licenseUrl>

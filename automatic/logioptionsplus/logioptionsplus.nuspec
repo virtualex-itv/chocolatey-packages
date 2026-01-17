@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://www.logitech.com/en-us/software/logi-options-plus.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@6e0ab2474d0021afcfdc4ae12e4561efc3cd54e8/icons/logioptionsplus.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2024 Logitech. All rights reserved</copyright>
+    <copyright>© 2026 Logitech. All rights reserved</copyright>
     <tags>logitech logi options mouse keyboard headset driver utility</tags>
     <releaseNotes>https://support.logi.com/hc/en-us/articles/1500005516462-Logi-Options-Release-Notes</releaseNotes>
     <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
