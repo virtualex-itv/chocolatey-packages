@@ -12,11 +12,10 @@ function global:au_GetLatest {
   $version = [regex]::Match($Url32, $re).Groups[1].Value
   $ChecksumType = 'sha256'
 
-  $re = '_UM'
-
-
-  $re = '_RN'
-  $ReleaseNotes = $download_page.links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
+  # Get release notes from salsify PDF links (second PDF is typically the release notes)
+  $salsifyPdfs = $download_page.Links | Where-Object { $_.href -match 'salsify\.com.*\.pdf$' } | Select-Object -ExpandProperty href -Unique
+  # Skip first PDF (EULA), take second one (Release Notes)
+  $ReleaseNotes = $salsifyPdfs | Select-Object -Skip 1 -First 1
   $DocsUrl = $ReleaseNotes
 
   @{
@@ -43,8 +42,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate {
-  Update-Metadata -key "docsUrl" -value $Latest.DocsUrl
-  Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
+  if ($Latest.DocsUrl) { Update-Metadata -key "docsUrl" -value $Latest.DocsUrl }
+  if ($Latest.ReleaseNotes) { Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes }
 }
 
 Update-Package -ChecksumFor none
