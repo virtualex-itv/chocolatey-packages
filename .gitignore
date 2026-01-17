@@ -42,6 +42,7 @@ automatic/_output/
 __attic
 *.msixbundle
 knownChecksums
+CLAUDE.md
 
 # personal
 manual/.
