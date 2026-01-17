@@ -12,7 +12,7 @@ $Options = [ordered]@{
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
-    PluginPath    = ''                                      #Path to user plugins
+    PluginPath    = "$PSScriptRoot\scripts\plugins"          #Path to user plugins
     IgnoreOn      = @(                                      #Error message parts to set the package ignore status
       'Could not create SSL/TLS secure channel'
       'Could not establish trust relationship'
