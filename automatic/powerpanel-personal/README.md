@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="48" height="48"/> [powerpanel-personal](https://community.chocolatey.org/packages/powerpanel-personal)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="48" height="48"/> [powerpanel-personal](https://community.chocolatey.org/packages/powerpanel-personal)
 
 # PowerPanel® Personal
 
