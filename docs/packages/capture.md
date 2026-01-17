@@ -1,37 +1,39 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6cef9a6af703e8bfd5fb695d54413dee46e49cc8/icons/capture.png" width="32" height="32"/> [![Capture (Formerly Jing)](https://img.shields.io/chocolatey/v/capture.svg?label=Capture+(Formerly+Jing))](https://community.chocolatey.org/packages/capture) [![Capture (Formerly Jing)](https://img.shields.io/chocolatey/dt/capture.svg)](https://community.chocolatey.org/packages/capture)
+# [DEPRECATED] Capture (Formerly Jing)
 
-## Usage
+## ⚠️ This package has been deprecated
 
-To install Capture (Formerly Jing), run the following command from the command line or from PowerShell:
+TechSmith Capture (formerly known as Jing) has been officially retired by TechSmith Corporation and is no longer supported or available for download from the official website.
 
-```powershell
-choco install capture
-```
+## Replacement
 
-To upgrade Capture (Formerly Jing), run the following command from the command line or from PowerShell:
+TechSmith recommends **[Snagit](https://community.chocolatey.org/packages/snagit)** as the replacement for Capture/Jing.
 
-```powershell
-choco upgrade capture
-```
+### Install Snagit
 
-To uninstall Capture (Formerly Jing), run the following command from the command line or from PowerShell:
+To install Snagit, run the following command from the command line or from PowerShell:
 
 ```powershell
-choco uninstall capture
+choco install snagit
 ```
 
-## Description
+## What Happened?
 
-Whether for work, home, or play, TechSmith Capture provides a simple, free way to create basic screenshots and screen recordings and share them with others.
+The `capture` package now depends on `snagit`. When you update the `capture` package, Snagit will be installed automatically as a replacement.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+Snagit includes all the features of Capture plus many more:
+
+- Advanced screenshot and screen recording capabilities
+- Scrolling capture
+- Advanced annotation tools
+- Video recording with audio
+- Organized library for managing captures
 
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/capture)
 
-[Software Site](https://www.techsmith.com/jing-tool.html)
+[Snagit Package Page](https://community.chocolatey.org/packages/snagit)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/capture)
+[TechSmith Capture Migration Info](https://www.techsmith.com/solutions/capture-tool/)
+
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/capture)
