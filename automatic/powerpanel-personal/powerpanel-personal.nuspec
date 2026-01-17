@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.6.1</version>
+    <version>2.7.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex jtcmedia</owners>
     <!-- ============================== -->
@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>CyberPower Systems</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.cyberpowersystems.com/products/software/power-panel-personal/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2026 Cyber Power Systems (USA), Inc. CyberPower is a registered trademark and brand of Cyber Power Systems (USA), Inc. All rights reserved.</copyright>
     <tags>cyberpower powerpanel powerpanel-personal ups admin</tags>
-    <releaseNotes>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_RN_PowerPanel Personal Windows 2.6.1.pdf</releaseNotes>
+    <releaseNotes>http://images.salsify.com/image/upload/s--75qwtVFZ--/dbebe5e064b7077ce51c950497374952ddd31379.pdf</releaseNotes>
     <licenseUrl>https://www.cyberpowersystems.com/company/terms/</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/powerpanel-personal</packageSourceUrl>
-    <docsUrl>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_RN_PowerPanel Personal Windows 2.6.1.pdf</docsUrl>
+    <docsUrl>http://images.salsify.com/image/upload/s--75qwtVFZ--/dbebe5e064b7077ce51c950497374952ddd31379.pdf</docsUrl>
     <summary>An interface to control and monitor a UPS system through a USB or serial cable with the host computer.</summary>
     <description><![CDATA[# PowerPanel® Personal
 
