@@ -4,52 +4,68 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 $history_page = 'https://www.stardock.com/products/groupy/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
+    $response = Invoke-WebRequest -Uri $history_page -UseBasicParsing
+    $content  = $response.Content
 
-  $re  = "Groupy\s(?<version>\d+(\.\d+)+)\s*(?<beta>Beta)?"
-  $version = $releases.Content -match $re | ForEach-Object {
-    $versionNumber = $Matches.version
+    $headingRe = 'Groupy\s+(?<version>2\.\d+(?:\.\d+)*)\s+Changelog'
+    $headingMatches   = [regex]::Matches($content, $headingRe)
 
-    if ($versionNumber -notlike "*.*.*") {
-        $versionNumber += ".0"
+    # Collect raw version strings (e.g. "2.30", "2.20")
+    $versionStrings = $headingMatches |
+        ForEach-Object { $_.Groups['version'].Value.Trim() } |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+        Sort-Object -Unique
+
+    # Turn them into comparable objects and pick the highest
+    $parsed = foreach ($v in $versionStrings) {
+        $parts = $v -split '\.'
+        if ($parts.Count -lt 2) { continue }
+
+        [pscustomobject]@{
+            Raw   = $v
+            Major = [int]$parts[0]
+            Minor = [int]$parts[1]
+            Patch = if ($parts.Count -ge 3) { [int]$parts[2] } else { 0 }
+            Build = if ($parts.Count -ge 4) { [int]$parts[3] } else { 0 }
+        }
     }
 
-    if ($Matches.beta) {
-        $versionNumber + "-beta"
-
-        $versionParts = ($versionNumber -replace '-beta', '') -split '\.'
-        $major = $versionParts[0]
-        $minor = $versionParts[1].Substring(0,1)
-
-        $urlVersion = "$major.$minor.0.0"
-        $Url = "https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_$urlVersion-j145-Setup.exe?a=sd"
-    } else {
-        $versionNumber
-        $Url = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
+    if (-not $parsed -or $parsed.Count -eq 0) {
+        throw "Failed to parse any numeric versions from headings on $history_page"
     }
-  }
 
-  $ChecksumType = 'sha256'
+    # Highest version wins
+    $latestObj      = $parsed | Sort-Object Major,Minor,Patch,Build -Descending | Select-Object -First 1
+    $headingVersion = $latestObj.Raw
 
-  @{
-    Url32             = $Url
-    Version           = $version
-    ChecksumType32    = $ChecksumType
-  }
+    # Normalize to 3 or 4 parts
+    $parts = $headingVersion -split '\.'
+    while ($parts.Count -lt 3) { $parts += '0' }
+    if ($parts.Count -gt 4) { $parts = $parts[0..3] }
+    $version = ($parts -join '.')
+
+    $Url          = 'https://cdn.stardock.us/downloads/public/software/groupy/Groupy2_setup.exe'
+    $ChecksumType = 'sha256'
+
+    @{
+        Url32          = $Url
+        Version        = $version
+        ChecksumType32 = $ChecksumType
+    }
 }
 
 function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32 -Algorithm $Latest.ChecksumType32
 }
 
 function global:au_SearchReplace {
-  @{
-      'tools\chocolateyInstall.ps1' = @{
-          "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.Url32)'"
-          "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-          "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-      }
-  }
+    @{
+        'tools\chocolateyInstall.ps1' = @{
+            "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.Url32)'"
+            "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+        }
+    }
 }
 
 Update-Package -ChecksumFor none
