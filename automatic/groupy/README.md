@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/c70ce66a5e90c9f91dc924c6c48bee6322ec44f9/icons/groupy.png" width="48" height="48"/> [groupy](https://community.chocolatey.org/packages/groupy)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@c70ce66a5e90c9f91dc924c6c48bee6322ec44f9/icons/groupy.png" width="48" height="48"/> [groupy](https://community.chocolatey.org/packages/groupy)
 
 ### Organize multiple applications into grouped tabs on your Windows desktop!
 
