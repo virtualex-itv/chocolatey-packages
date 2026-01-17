@@ -1,28 +1,45 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$baseURL = "https://resources.robware.net/resources/prod/"
-$jsonFile = "$($baseURL)manifest.json"
+$baseURL = "https://downloads.dell.com/rvtools/"
 
 function global:au_GetLatest {
-    $jsonContent = (Invoke-WebRequest -Uri $jsonFile -UseBasicParsing).Content
+    # Get version from PDF metadata (title contains version and date)
+    $pdfUrl = "${baseURL}rvtools.pdf"
+    $tempFile = [System.IO.Path]::GetTempFileName()
 
-    if ($jsonContent[0] -eq 0xFF -and $jsonContent[1] -eq 0xFE) {
-      $jsonContent = $jsonContent[2..($jsonContent.Length - 1)]
+    try {
+        Invoke-WebRequest -Uri $pdfUrl -OutFile $tempFile -UseBasicParsing
+        $pdfContent = [System.IO.File]::ReadAllText($tempFile)
+
+        # Extract version from PDF title metadata: /Title(RVTools 4.7.1 October 3, 2024)
+        if ($pdfContent -match '/Title\(RVTools\s+(\d+\.\d+\.\d+)') {
+            $version = $matches[1]
+        } else {
+            throw "Could not extract version from PDF metadata"
+        }
+    } finally {
+        Remove-Item $tempFile -Force -ErrorAction SilentlyContinue
     }
 
-    $jsonData = [System.Text.Encoding]::Unicode.GetString($jsonContent) | ConvertFrom-Json
+    # Get checksum from checksum.txt
+    $checksumUrl = "${baseURL}checksum.txt"
+    $checksumContent = (Invoke-WebRequest -Uri $checksumUrl -UseBasicParsing).Content
 
-    $version = $jsonData.version
-    $Url32 = "$baseURL$($jsonData.Name)"
-    $checksum = $jsonData.SHA256
-    $checksumType = "sha256"
+    # Extract SHA256 hash from content (format: "SHA256: <hash>")
+    if ($checksumContent -match 'SHA256:\s*([a-fA-F0-9]{64})') {
+        $checksum = $matches[1].ToLower()
+    } else {
+        throw "Could not extract checksum from checksum.txt"
+    }
+
+    $Url32 = "${baseURL}rvtools${version}.msi"
 
     @{
       Version           = $version
       Url32             = $Url32
       Checksum32        = $checksum
-      ChecksumType32    = $checksumType
+      ChecksumType32    = "sha256"
     }
 }
 
