@@ -53,11 +53,12 @@ $Options = [ordered]@{
         }
     }
 
-    History = @{
-        Lines = 120                                         #Number of lines to show
-        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
-    }
+    # History plugin disabled - using custom script after updateall to fix "Parameter name: length" error
+    # History = @{
+    #     Lines = 120                                         #Number of lines to show
+    #     Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
+    #     Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
+    # }
 
     Gist = @{
         Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
@@ -118,6 +119,9 @@ $Options = [ordered]@{
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root                                    #Path to the AU packages
 $global:info = updateall -Name $Name -Options $Options
+
+# Run custom History plugin (fixes "Parameter name: length" error in built-in plugin)
+& "$PSScriptRoot\scripts\plugins\History.ps1" -Info $global:info -Lines 120 -Github_UserRepo $Env:github_user_repo -Path "$PSScriptRoot\Update-History.md"
 
 #Uncomment to fail the build on AppVeyor on any package error
 #if ($global:info.error_count.total) { throw 'Errors during update' }
