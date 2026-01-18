@@ -63,7 +63,7 @@ $Options = [ordered]@{
     Gist = @{
         Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
         ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
+        Path   = "$PSScriptRoot\Update-AUPackages.md"       #Update-History.md uploaded separately after custom History plugin runs
     }
 
     Git = @{
@@ -122,6 +122,30 @@ $global:info = updateall -Name $Name -Options $Options
 
 # Run custom History plugin (fixes "Parameter name: length" error in built-in plugin)
 & "$PSScriptRoot\scripts\plugins\History.ps1" -Info $global:info -Lines 120 -Github_UserRepo $Env:github_user_repo -Path "$PSScriptRoot\Update-History.md"
+
+# Upload Update-History.md to Gist (must run after custom History plugin generates the file)
+if ($Env:github_api_key -and $Env:gist_id) {
+    Write-Host "Uploading Update-History.md to Gist"
+    $gist_url = "https://api.github.com/gists/$Env:gist_id"
+    $gist_headers = @{
+        Authorization = "token $Env:github_api_key"
+        Accept        = "application/vnd.github.v3+json"
+    }
+    $history_content = [System.IO.File]::ReadAllText("$PSScriptRoot\Update-History.md")
+    if ($history_content) {
+        $gist_body = @{
+            files = @{
+                "Update-History.md" = @{ content = $history_content }
+            }
+        } | ConvertTo-Json -Depth 3 -Compress
+        try {
+            $response = Invoke-RestMethod -Uri $gist_url -Method Patch -Headers $gist_headers -Body $gist_body -ContentType "application/json"
+            Write-Host "  $($response.html_url)"
+        } catch {
+            Write-Warning "Failed to upload Update-History.md to Gist: $_"
+        }
+    }
+}
 
 #Uncomment to fail the build on AppVeyor on any package error
 #if ($global:info.error_count.total) { throw 'Errors during update' }
