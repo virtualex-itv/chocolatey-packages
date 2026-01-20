@@ -8,7 +8,22 @@ function global:au_GetLatest {
 
   $re = '*/?Package*'
   $Url32 = Get-RedirectedUrl ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
-  $version = ($Url32 -split '-|.exe')[1].Substring(0, 3)
+
+  # Extract version from URL like NotepadReplacerSetup-1.6c.exe
+  # Handles versions like 1.6, 1.6c, 1.10, 1.10a, etc.
+  if ($Url32 -match 'Setup-(\d+\.\d+)([a-z]?)\.exe$') {
+    $version = $matches[1]
+    # Convert letter suffix to patch number (a=1, b=2, c=3, etc.) or 0 if no suffix
+    $suffix = $matches[2]
+    if ($suffix) {
+      $patch = [int][char]$suffix - [int][char]'a' + 1
+    } else {
+      $patch = 0
+    }
+    $version = "$version.$patch"
+  } else {
+    throw "Could not extract version from URL: $Url32"
+  }
   $ChecksumType = 'sha256'
 
   @{

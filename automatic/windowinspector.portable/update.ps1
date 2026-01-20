@@ -10,10 +10,20 @@ function global:au_GetLatest {
   $url = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -Skip 1 -First 1 -ExpandProperty href
   $url32 = Get-RedirectedUrl $url
 
-  $re = '-|\.zip$'
-  $version = (($url32 -split $re)[1]).Substring(0, 3)
-  if ($version -notlike "*.*.*") {
-    $version += ".0"
+  # Extract version from URL like WindowInspector-3.8c.zip or WindowInspector-3.8c-x64.zip
+  # Handles versions like 3.8, 3.8c, 3.10, 3.10a, etc.
+  if ($url32 -match 'WindowInspector-(\d+\.\d+)([a-z]?)(?:-x64)?\.zip$') {
+    $version = $matches[1]
+    # Convert letter suffix to patch number (a=1, b=2, c=3, etc.) or 0 if no suffix
+    $suffix = $matches[2]
+    if ($suffix) {
+      $patch = [int][char]$suffix - [int][char]'a' + 1
+    } else {
+      $patch = 0
+    }
+    $version = "$version.$patch"
+  } else {
+    throw "Could not extract version from URL: $url32"
   }
   $ChecksumType = 'sha256'
 
