@@ -75,10 +75,7 @@ $options = [ordered]@{
   }
 }
 
-[System.Net.ServicePointManager]::SecurityProtocol = 3072 -bor
-  768 -bor
-  [System.Net.SecurityProtocolType]::Tls -bor
-  [System.Net.SecurityProtocolType]::Ssl3
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
 
 $global:info = updateall -Name $Name -Options $Options
 
