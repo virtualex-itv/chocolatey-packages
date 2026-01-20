@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2025.12.17</version>
+    <version>0.0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -44,10 +44,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <releaseNotes>https://docs.warp.dev/getting-started/changelog</releaseNotes>
     <licenseUrl>https://www.warp.dev/terms-of-service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/warp-terminal</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/warp-terminal</packageSourceUrl>
     <docsUrl>https://docs.warp.dev/</docsUrl>
     <summary>The intelligent terminal.</summary>
-    <description>Become a command line power user on day one. Warp combines AI and your dev team's knowledge in one fast, intuitive terminal.</description>
+    <description>Become a command line power user on day one. Warp combines AI and your dev team's knowledge in one fast, intuitive terminal.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
