@@ -8,8 +8,10 @@ function global:au_GetLatest {
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/curtains/Curtains_Setup.exe'
 
-  $re = "Curtains (?<version>[\d\.]+[\d\.]+)"
-  $version = $releases -match $re | ForEach-Object { $Matches.version }
+  # Match stable versions only (skip Beta releases since download URL only has stable)
+  $re = "Curtains (?<version>\d+\.\d+(?:\.\d+)*)(?!\s+Beta)"
+  $null = $releases.Content -match $re
+  $version = $Matches.version
   $ChecksumType = 'sha256'
 
   @{
