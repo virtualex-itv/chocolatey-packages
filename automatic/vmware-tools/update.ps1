@@ -8,7 +8,7 @@ $response = Invoke-WebRequest -Uri $release -UseBasicParsing
 
 $toolsUrl = $staticUrl + ($response.Links | Where-Object { $_.href -match 'vsphere/tools' } | Select-Object -First 1 -ExpandProperty href)
 
-$rootVersion = ($toolsUrl -split '/|.html')[-2]
+$rootVersion = ($toolsUrl -split '/|\.html')[-2]
 
 $releaseJson = "$($staticUrl)/bin/broadcom/techdocs2/TOCServlet?basePath=%2Fcontent%2Fbroadcom%2Ftechdocs%2Fus%2Fen%2Fvmware-cis%2Fvsphere%2Ftools%2F$($rootVersion)"
 
@@ -43,10 +43,18 @@ function CreateStream {
   $displayMain = Trim-TrailingDotZero $MainVersionNorm
   $version = ("$displayMain.$buildNumber").TrimEnd('.')
 
-  $releaseUrl64 = "https://packages-prod.broadcom.com/tools/releases/$($displayMain)/windows/x64/"
+  $releaseUrl64Base = "https://packages-prod.broadcom.com/tools/releases/$($displayMain)"
 
+  # Try with /windows/ first (old structure), fall back to without (new structure)
+  $releaseUrl64 = "$releaseUrl64Base/windows/x64/"
   $dlUrl64 = Invoke-WebRequest $releaseUrl64 -UseBasicParsing
   $file64 = ($dlUrl64.Links | Where-Object { $_.href -like '*.exe' }).href
+
+  if (-not $file64) {
+    $releaseUrl64 = "$releaseUrl64Base/x64/"
+    $dlUrl64 = Invoke-WebRequest $releaseUrl64 -UseBasicParsing
+    $file64 = ($dlUrl64.Links | Where-Object { $_.href -like '*.exe' }).href
+  }
 
   $Url64 = "$($releaseUrl64)$($file64)"
   #endregion
