@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vmware-horizon-client</id>
+    <version>8.13.1.20260121</version>
+    <owners>virtualex windos medalibi</owners>
+    <title>[Deprecated] VMware Horizon Client for Windows</title>
+    <authors>Omnissa</authors>
+    <projectUrl>https://www.omnissa.com/horizon-8/</projectUrl>
+    <copyright>© 2026 Omnissa, LLC 590 E Middlefield Road, Mountain View CA 94043 All Rights Reserved.</copyright>
+    <tags>vmware omnissa horizon view client virtual-machine vdi admin deprecated</tags>
+    <licenseUrl>https://www.omnissa.com/legal-center/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-horizon-client</packageSourceUrl>
+    <docsUrl>https://docs.omnissa.com/category/Horizon_Clients</docsUrl>
+    <summary>DEPRECATED: VMware Horizon Client has been rebranded to Omnissa Horizon Client. This package now installs omnissa-horizon-client instead.</summary>
+    <description>## DEPRECATED
+
+VMware Horizon Client has been deprecated and rebranded to **Omnissa Horizon Client**.
+
+In 2024, Broadcom sold VMware's End-User Computing (EUC) division to KKR, which rebranded it as Omnissa. The Horizon Client is now developed and distributed by Omnissa.
+
+### What happens when you install this package?
+
+This deprecated package will automatically install the replacement package **[omnissa-horizon-client](https://community.chocolatey.org/packages/omnissa-horizon-client)** as a dependency.
+
+---
+
+### Migration
+
+To migrate manually:
+```powershell
+choco uninstall vmware-horizon-client
+choco install omnissa-horizon-client
+```
+
+Or simply update, and the dependency will handle the transition:
+```powershell
+choco upgrade vmware-horizon-client
+```
+</description>
+    <dependencies>
+      <dependency id="omnissa-horizon-client" />
+    </dependencies>
+  </metadata>
+  <files />
+</package>
