@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.14.00.00</version>
+    <version>1.23.4.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>Creative Technology Ltd.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://us.creative.com/p/sound-blaster</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/155ad6b2b8739f59012b27ce4bcac68cb76a5e09/icons/creative-app.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@155ad6b2b8739f59012b27ce4bcac68cb76a5e09/icons/creative-app.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© Copyright 2003 - 2026 Creative Technology Ltd. All rights reserved</copyright>
     <tags>creative app sound blaster audio</tags>
@@ -46,9 +46,8 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/creative-app</packageSourceUrl>
     <docsUrl>https://support.creative.com/Products/Products.aspx?catid=1</docsUrl>
     <summary>Creative app provides you with various configuration and control options to enhance the performance of your product and personalize your audio settings.</summary>
-    <description>Available for Windows®, the comprehensive and easy-to-use Creative App software offers users a complete control over their istening experience from audio realism to immersive audio effects, all which will intelligently embellish how users perceive sounds.
-
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <description><![CDATA[Available for Windows®, the comprehensive and easy-to-use Creative App software offers users a complete control over their istening experience from audio realism to immersive audio effects, all which will intelligently embellish how users perceive sounds.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
