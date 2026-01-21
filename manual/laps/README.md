@@ -2,6 +2,16 @@
 
 ---
 
+> **DEPRECATION NOTICE**
+>
+> **Legacy Microsoft LAPS is deprecated** as of Windows 11 23H2 and later. The MSI installer is blocked on newer Windows versions and Microsoft no longer develops this product.
+>
+> **For new deployments**, use [Windows LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview) which is built into Windows 10/11 and Windows Server 2019/2022 (April 2023 security updates and later). No separate installation required.
+>
+> This package remains available for **legacy systems** (Windows 10 pre-23H2, Windows Server 2016, etc.) until they reach end-of-life.
+
+---
+
 ## Package Parameters
 
 * if the parameter is not specified, only the AdmPwd GPO Extension is installed (default)
