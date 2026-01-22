@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vmware-workstation-player</id>
+    <version>17.6.3.24583900</version>
+    <owners>virtualex</owners>
+    <title>[Deprecated] VMware Workstation Player</title>
+    <authors>VMware by Broadcom</authors>
+    <projectUrl>https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion</projectUrl>
+    <copyright>Copyright © 2005-2026 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
+    <tags>vmware workstation player virtual machine virtualization deprecated</tags>
+    <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-workstation-player</packageSourceUrl>
+    <summary>DEPRECATED: VMware Workstation Player was discontinued in May 2024. This package now depends on vmwareworkstation.</summary>
+    <description>## DEPRECATED
+
+VMware Workstation Player was **discontinued in May 2024** when VMware Workstation Pro became free for personal use.
+
+As of November 2024, VMware Workstation Pro is **free for all users** (commercial, educational, and personal) and no longer requires a license key.
+
+### Why was Player discontinued?
+
+VMware Workstation Player was a stripped-down version of Workstation Pro. Since Workstation Pro is now free with no functional limitations, there is no longer a need for a separate Player product.
+
+### What happens when you install this package?
+
+This deprecated package depends on **[vmwareworkstation](https://community.chocolatey.org/packages/vmwareworkstation)**, the VMware Workstation Pro package.
+
+**Note:** The vmwareworkstation package has been retired because Broadcom now requires account authentication to download VMware Workstation Pro. See that package for alternatives.
+
+---
+
+### Migration
+
+To migrate manually:
+```powershell
+choco uninstall vmware-workstation-player
+```
+
+### Alternatives
+
+- **VMware Workstation Pro** - Download directly from [Broadcom](https://support.broadcom.com) (free, requires account)
+- **VirtualBox** - Free and open source: `choco install virtualbox`
+- **Hyper-V** - Built into Windows Pro/Enterprise
+</description>
+    <dependencies>
+      <dependency id="vmwareworkstation" version="17.6.3.24583900" />
+    </dependencies>
+  </metadata>
+  <files />
+</package>
