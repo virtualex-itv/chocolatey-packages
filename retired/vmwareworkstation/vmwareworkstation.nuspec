@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vmwareworkstation</id>
+    <version>17.6.3.24583900</version>
+    <owners>virtualex Stefan Scherer</owners>
+    <title>[Retired] VMware Workstation Pro</title>
+    <authors>VMware by Broadcom</authors>
+    <projectUrl>https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion</projectUrl>
+    <tags>retired</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/vmwareworkstation</packageSourceUrl>
+    <summary>RETIRED: VMware Workstation Pro downloads require a Broadcom account. This package can no longer be maintained.</summary>
+    <description>## This package has been retired.
+
+This package has been retired because VMware Workstation Pro downloads now require authentication through the Broadcom support portal, making automated package updates impossible.
+
+### Good news: VMware Workstation Pro is now FREE
+
+As of November 2024, VMware Workstation Pro is **free for all users** (commercial, educational, and personal) and no longer requires a license key.
+
+### How to get VMware Workstation Pro
+
+VMware Workstation Pro must now be downloaded directly from Broadcom, which requires creating a free Broadcom account:
+
+1. Create a free account at [Broadcom Support Portal](https://support.broadcom.com)
+2. Navigate to VMware Desktop Hypervisor downloads
+3. Download VMware Workstation Pro
+
+### Why this package cannot be maintained
+
+Following Broadcom's acquisition of VMware, the direct download URLs were removed from public CDNs. Downloads now require authentication through the Broadcom support portal, making automated package updates impossible.
+
+### Alternatives
+
+- **VMware Workstation Pro** - Download directly from [Broadcom](https://support.broadcom.com) (free, requires account)
+- **VirtualBox** - Free and open source: `choco install virtualbox`
+- **Hyper-V** - Built into Windows Pro/Enterprise
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
