@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vcf-powercli-psmodule</id>
+    <version>9.0.0.24798382</version>
+    <owners>virtualex</owners>
+    <title>VCF.PowerCLI (PowerShell Module)</title>
+    <authors>VMware by Broadcom</authors>
+    <projectUrl>https://developer.broadcom.com/powercli</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png</iconUrl>
+    <copyright>Copyright © 2005-2026 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</copyright>
+    <tags>vmware cloud foundation vcf powercli vsphere automation client virtual machine virtualization esx esxi powershell hcx nsxt</tags>
+    <releaseNotes>https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/release-notes/vmware-cloud-foundation-90-release-notes/platform-whats-new/whats-new-vcf-cli-api-sdk.html</releaseNotes>
+    <licenseUrl>https://www.broadcom.com/company/legal/licensing</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vcf-powercli-psmodule</packageSourceUrl>
+    <docsUrl>https://developer.broadcom.com/powercli</docsUrl>
+    <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.  Discover what you can achieve with PowerCLI today.</summary>
+    <description>
+## Package Parameters
+
+This package is designed to install the `VCF.PowerCLI` PowerShell module for the `-Scope CurrentUser` by default.
+
+The following parameter is available to install the module for `-Scope AllUsers`.
+
+* `/ALLUSERS`
+Example:
+
+```shell
+choco install vcf-powercli-psmodule --params='"/ALLUSERS"'
+```
+
+---
+
+PowerCLI is a command-line interface for managing and automating all aspects of vSphere management, including network, storage, VM, guest OS and more.  PowerCLI is distributed as PowerShell modules, which contain a combined number of over 700 cmdlets (commands.)
+
+**Please Note**: This package supersedes [vmware-powercli-psmodule](https://community.chocolatey.org/packages/vmware-powercli-psmodule).  If this package is detected, it will be removed prior to installing this new package.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+</description>
+    <dependencies>
+      <dependency id="netfx-4.7.2" />
+      <dependency id="powershell" version="5.1.14409.1005" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
