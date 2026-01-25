@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>openlens</id>
+    <version>6.5.2.3700</version>
+    <owners>virtualex kengibous</owners>
+    <title>[Deprecated] OpenLens</title>
+    <authors>Mirantis, Inc.</authors>
+    <projectUrl>https://github.com/freelensapp/freelens</projectUrl>
+    <copyright>Copyright 2026 Mirantis, Inc. - All rights reserved.</copyright>
+    <tags>kubernetes k8s ide lens openlens opensource deprecated</tags>
+    <licenseUrl>https://github.com/freelensapp/freelens/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/openlens</packageSourceUrl>
+    <docsUrl>https://github.com/freelensapp/freelens</docsUrl>
+    <summary>DEPRECATED: OpenLens is discontinued. This package now installs Freelens instead.</summary>
+    <description>## DEPRECATED
+
+OpenLens has been deprecated because the project is **discontinued**.
+
+In early 2024, Mirantis removed the public source code for Lens, making it impossible to build new OpenLens releases. The last OpenLens release (v6.5.2-366) was in June 2023.
+
+**[Freelens](https://github.com/freelensapp/freelens)** is an active open-source fork created by community contributors to continue the OpenLens vision with modern Kubernetes support and long-term maintenance.
+
+### What happens when you install this package?
+
+This deprecated package will automatically install the replacement package **[freelens](https://community.chocolatey.org/packages/freelens)** as a dependency.
+
+---
+
+### Migration
+
+To migrate manually:
+```powershell
+choco uninstall openlens
+choco install freelens
+```
+
+Or simply update, and the dependency will handle the transition:
+```powershell
+choco upgrade openlens
+```
+</description>
+    <dependencies>
+      <dependency id="freelens" />
+    </dependencies>
+  </metadata>
+  <files />
+</package>
