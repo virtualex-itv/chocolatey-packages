@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>modernmix</id>
+    <version>1.22.20260125</version>
+    <owners>virtualex</owners>
+    <title>[Retired] ModernMix</title>
+    <authors>Stardock</authors>
+    <projectUrl>https://www.stardock.com/products/modernmix/</projectUrl>
+    <tags>retired</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/modernmix</packageSourceUrl>
+    <summary>RETIRED: ModernMix was designed for Windows 8 Modern Apps which no longer exist. This package can no longer be maintained.</summary>
+    <description>## This package has been retired.
+
+ModernMix was a Stardock utility that allowed running Windows 8 "Modern Apps" (Metro apps) in resizable windows on the desktop. **The Windows 8 Modern App ecosystem no longer exists in Windows 10/11**, making this software obsolete.
+
+### Why was this package retired?
+
+- Windows 8 Modern Apps (Metro apps) were replaced by UWP apps in Windows 10
+- The specific problem ModernMix solved (running full-screen Modern Apps in windows) no longer applies
+- Windows 10/11 already run UWP apps in resizable windows by default
+- The software has no practical use on modern operating systems
+
+### Note
+
+There is no direct replacement for ModernMix because the problem it solved no longer exists in modern Windows.
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
