@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/de6fb2832128b844f0fd00dec9c7df96e0dae9fb/icons/curtains.png" width="48" height="48"/> [curtains](https://community.chocolatey.org/packages/curtains)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@de6fb2832128b844f0fd00dec9c7df96e0dae9fb/icons/curtains.png" width="48" height="48"/> [curtains](https://community.chocolatey.org/packages/curtains)
 
 Easily create and add additional style modes to Windows 10.
 
