@@ -8,8 +8,8 @@ function global:au_GetLatest {
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/spacemonger/SpaceMonger_sd_setup.exe'
 
-  # Match versions like "SpaceMonger 3.0"
-  $re = "SpaceMonger (?<version>\d+\.\d+(?:\.\d+)*)"
+  # Match versions like "Space Monger 3.0" (note: two words on forums page)
+  $re = "Space\s*Monger\s+(?<version>\d+\.\d+(?:\.\d+)*)"
   $null = $releases.Content -match $re
   $version = $Matches.version
   $ChecksumType = 'sha256'
