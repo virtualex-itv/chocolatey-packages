@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.stardock.us/downloads/public/software/spacemonger/SpaceMonger_sd_setup.exe'
-$checksum               = '51A4478774EF998BAF8F54245AB3DD00A8AB1E2E7F8B7E334FE57A640A482F68'
+$checksum               = '51a4478774ef998baf8f54245ab3dd00a8ab1e2e7f8b7e334fe57a640a482f68'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

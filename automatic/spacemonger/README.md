@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e16e8e09ee6ac244066305f447045a98471dca11/icons/spacemonger.png" width="48" height="48"/> [spacemonger](https://community.chocolatey.org/packages/spacemonger)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@9792ce1a3c2ca91abe6ff2c9b20655af96ac9df4/icons/spacemonger.png" width="48" height="48"/> [spacemonger](https://community.chocolatey.org/packages/spacemonger)
 
 Quickly free up storage space on PCs and shared-networks.
 
