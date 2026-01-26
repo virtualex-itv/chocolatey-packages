@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <tags>stardock objectdesktop suite windowblinds trial</tags>
     <releaseNotes>https://www.stardock.com/products/windowblinds/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/windowblinds</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/windowblinds</packageSourceUrl>
     <docsUrl>https://www.stardock.com/support/</docsUrl>
     <summary>Skin and theme your Windows desktop.</summary>
     <description><![CDATA[Customize the look and feel of your taskbar window frames and more.
