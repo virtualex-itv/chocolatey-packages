@@ -43,13 +43,14 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <tags>stardock objectdesktop suite cursorfx trial</tags>
     <releaseNotes>https://www.stardock.com/products/cursorfx/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/cursorfx</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/cursorfx</packageSourceUrl>
     <docsUrl>https://forums.stardock.com/485856/cursorfx-support-faq</docsUrl>
     <summary>Customize and change your mouse cursor</summary>
     <description>Customize your Windows cursor and create your own.
 
-    NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
-    </description>
+NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
 
     <!-- =============================== -->
 
