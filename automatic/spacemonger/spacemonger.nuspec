@@ -43,13 +43,14 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <tags>stardock objectdesktop suite spacemonger trial</tags>
     <releaseNotes>https://forums.stardock.com/499121/spacemonger-history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/spacemonger</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/spacemonger</packageSourceUrl>
     <docsUrl>https://forums.stardock.com/forum/1147</docsUrl>
     <summary>Scan, map, and manage disk drive space</summary>
     <description>Quickly free up storage space on PCs and shared-networks.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
-    </description>
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
 
     <!-- =============================== -->
 
