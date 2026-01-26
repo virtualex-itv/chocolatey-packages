@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/cursorfx/CursorFX4_4.03_setup_sd.exe'
-$checksum               = '0198e05d4b4af04f82aef95e0c2d581ee4de15a454214ba200396be8d50581b5'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/cursorfx/CursorFX_setup_sd.exe'
+$checksum               = '2297fff6268a1566955c1892e69437a1ecf92dec28d54c6e6acef15d0cfcae0d'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
