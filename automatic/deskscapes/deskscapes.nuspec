@@ -43,13 +43,14 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <tags>stardock objectdesktop suite deskscapes trial</tags>
     <releaseNotes>https://www.stardock.com/products/deskscapes/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
-    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/deskscapes</packageSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/deskscapes</packageSourceUrl>
     <docsUrl>https://forums.stardock.com/485954/deskscapes-support-faq</docsUrl>
     <summary>Animated wallpapers for Windows</summary>
     <description>Personalize your desktop background with animated pictures and video.
 
-    NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
-    </description>
+NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
 
     <!-- =============================== -->
 
