@@ -6,12 +6,16 @@ $history_page = 'https://www.stardock.com/products/soundpackager/history'
 function global:au_GetLatest {
   $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
 
-  $Url = 'https://cdn.stardock.us/downloads/public/software/soundpackager/SoundPackager_setup_sd.exe'
+  $Url = 'https://cdn.stardock.us/downloads/public/software/soundpackager/SoundPackager10_setup_sd.exe'
 
-  # Match versions like "SoundPackager 10.0"
-  $re = "SoundPackager (?<version>\d+\.\d+(?:\.\d+)*)"
+  # Match versions like "SoundPackager 10" or "SoundPackager 10.0"
+  $re = "SoundPackager\s+(?<version>\d+(?:\.\d+)*)"
   $null = $releases.Content -match $re
   $version = $Matches.version
+  # Ensure version has at least 2 parts (e.g., "10" -> "10.0")
+  $parts = $version -split '\.'
+  while ($parts.Count -lt 2) { $parts += '0' }
+  $version = $parts -join '.'
   $ChecksumType = 'sha256'
 
   @{
