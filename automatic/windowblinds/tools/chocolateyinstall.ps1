@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds11_setup.exe?a=sd'
-$checksum               = 'e9e14d0750126ad016f3d31691b9878c0c9dc9e6246230f42554a55d22012a0b'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds11_setup.exe'
+$checksum               = '15aea7ad9cc969e69130b1731de17c8f23e0871de3e52beddd70ae0ebc283dfd'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

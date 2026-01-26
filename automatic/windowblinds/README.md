@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6a17ba116423e628f23a1febebb931ed230c670/icons/windowblinds.png" width="48" height="48"/> [windowblinds](https://community.chocolatey.org/packages/windowblinds)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@a6a17ba116423e628f23a1febebb931ed230c670/icons/windowblinds.png" width="48" height="48"/> [windowblinds](https://community.chocolatey.org/packages/windowblinds)
 
 Customize the look and feel of your taskbar window frames and more.
 
