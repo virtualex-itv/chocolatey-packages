@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>decor8</id>
+    <version>1.08.20260125</version>
+    <owners>virtualex</owners>
+    <title>[Retired] Decor8</title>
+    <authors>Stardock</authors>
+    <projectUrl>https://www.stardock.com/products/decor8/</projectUrl>
+    <tags>retired</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/decor8</packageSourceUrl>
+    <summary>RETIRED: Decor8 was designed for Windows 8 which is no longer supported. This package can no longer be maintained.</summary>
+    <description>## This package has been retired.
+
+Decor8 was a Windows 8 Start screen customization tool by Stardock. **Windows 8 reached end of support on January 10, 2023**, and the software is no longer relevant for modern Windows systems.
+
+### Why was this package retired?
+
+- Windows 8 has reached end of life and is no longer supported by Microsoft
+- The Windows 8 Start screen that Decor8 customizes does not exist in Windows 10/11
+- The software has no practical use on modern operating systems
+
+### Alternatives
+
+For Start menu customization on modern Windows, consider:
+
+- **Start11** - Modern Start menu customization: `choco install start11`
+- **StartAllBack** - Windows 11 Start menu alternative: available on Chocolatey Community Repository
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
