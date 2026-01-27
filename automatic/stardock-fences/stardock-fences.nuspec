@@ -7,7 +7,7 @@
     <title>Fences</title>
     <authors>Stardock</authors>
     <projectUrl>https://www.stardock.com/products/fences/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9a54bd07ed3e744bbfe7176cf3eccfdb1a3c530b/icons/stardock-fences.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@fa2e7f5eadd3aaf90882e09c32fba44ce4592128/icons/stardock-fences.png</iconUrl>
     <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite fences trial</tags>
     <releaseNotes>https://www.stardock.com/products/fences/history</releaseNotes>
