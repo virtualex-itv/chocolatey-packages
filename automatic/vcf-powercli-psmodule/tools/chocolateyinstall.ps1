@@ -12,12 +12,15 @@ $moduleOldName = 'VMware.PowerCLI'
 $moduleName   = 'VCF.PowerCLI'
 $moduleVers   = "$env:ChocolateyPackageVersion"
 
-$PSversion = $PSVersionTable.PSVersion.Major
-if ($PSversion -lt "5") {
-  Write-Warning "  ** PowerShell < v5 detected."
-  Write-Warning "  ** $packageName installs via the PowerShell Gallery and thus requires PowerShell v5+."
-  Write-Warning "  ** If PowerShell v5 was installed as a dependency, you need to reboot and reinstall this package."
-  throw
+$usePwsh = $pp.V7
+
+if ($usePwsh) {
+  $pwshExe = "$ENV:ProgramFiles\PowerShell\7\pwsh.exe"
+  if (-not (Test-Path $pwshExe)) {
+    throw "PowerShell 7 not found at: $pwshExe. Install it first: choco install powershell-core"
+  }
+  Write-Host "  ** /V7 specified - installing $moduleName via PowerShell 7 **" -ForegroundColor Yellow
+  $exe = $pwshExe
 }
 
 $Provider = Get-PackageProvider -ListAvailable -ErrorAction SilentlyContinue
@@ -51,10 +54,12 @@ if ( Get-Module -ListAvailable -Name $moduleName -ErrorAction SilentlyContinue )
 Write-Host "`n  ** Installing $moduleName v$moduleVers... **`n" -ForegroundColor Yellow
 Get-PackageProvider -Name NuGet -Force
 
-if ($pp.ALLUSERS) {
-  Install-Module -Name $moduleName -Scope AllUsers -RequiredVersion $moduleVers -AllowClobber -Force -SkipPublisherCheck
+$scope = if ($pp.ALLUSERS) { 'AllUsers' } else { 'CurrentUser' }
+
+if ($usePwsh) {
+  & $pwshExe -NoProfile -Command "Install-Module -Name '$moduleName' -Scope $scope -RequiredVersion '$moduleVers' -AllowClobber -Force -SkipPublisherCheck"
 } else {
-  Install-Module -Name $moduleName -Scope CurrentUser -RequiredVersion $moduleVers -AllowClobber -Force -SkipPublisherCheck
+  Install-Module -Name $moduleName -Scope $scope -RequiredVersion $moduleVers -AllowClobber -Force -SkipPublisherCheck
 }
 
 if ( Get-Module -ListAvailable -Name $moduleName -ErrorAction SilentlyContinue ) {

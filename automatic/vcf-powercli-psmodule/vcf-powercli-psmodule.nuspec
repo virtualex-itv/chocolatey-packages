@@ -23,11 +23,15 @@ This package is designed to install the `VCF.PowerCLI` PowerShell module for the
 
 The following parameter is available to install the module for `-Scope AllUsers`.
 
-* `/ALLUSERS`
-Example:
+* `/ALLUSERS` - Install the module for all users instead of current user only
+* `/V7` - Install the module via PowerShell 7 (ensures module is available in pwsh sessions)
+
+Examples:
 
 ```shell
 choco install vcf-powercli-psmodule --params='"/ALLUSERS"'
+choco install vcf-powercli-psmodule --params='"/V7"'
+choco install vcf-powercli-psmodule --params='"/ALLUSERS /V7"'
 ```
 
 ---
