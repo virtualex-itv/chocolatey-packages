@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/cfd5955b3d908853bac0149541a3350ef83f1a7c/icons/windowinspector.png" width="32" height="32"/> [![Window Inspector (Install)](https://img.shields.io/chocolatey/v/windowinspector.install.svg?label=Window+Inspector+(Install))](https://community.chocolatey.org/packages/windowinspector.install) [![Window Inspector (Install)](https://img.shields.io/chocolatey/dt/windowinspector.install.svg)](https://community.chocolatey.org/packages/windowinspector.install)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@cfd5955b3d908853bac0149541a3350ef83f1a7c/icons/windowinspector.png" width="32" height="32"/> [![Window Inspector (Install)](https://img.shields.io/chocolatey/v/windowinspector.install.svg?label=Window+Inspector+(Install))](https://community.chocolatey.org/packages/windowinspector.install) [![Window Inspector (Install)](https://img.shields.io/chocolatey/dt/windowinspector.install.svg)](https://community.chocolatey.org/packages/windowinspector.install)
 
 ## Usage
 
@@ -24,9 +24,8 @@ choco uninstall windowinspector.install
 
 View the window class, text, properties, and more, simply by moving your mouse cursor over the target window.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -35,3 +34,4 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.binaryfortress.com/WindowInspector/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/windowinspector.install)
+

@@ -1,20 +1,20 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png" width="32" height="32"/> [![garmin-express](https://img.shields.io/chocolatey/v/garmin-express.svg?label=garmin-express)](https://community.chocolatey.org/packages/garmin-express) [![garmin-express](https://img.shields.io/chocolatey/dt/garmin-express.svg)](https://community.chocolatey.org/packages/garmin-express)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@da95d6d15a97b71935643992dcf624e170cf510f/icons/garmin-express.png" width="32" height="32"/> [![garmin-express (Install)](https://img.shields.io/chocolatey/v/garmin-express.svg?label=garmin-express+(Install))](https://community.chocolatey.org/packages/garmin-express) [![garmin-express (Install)](https://img.shields.io/chocolatey/dt/garmin-express.svg)](https://community.chocolatey.org/packages/garmin-express)
 
 ## Usage
 
-To install garmin-express, run the following command from the command line or from PowerShell:
+To install garmin-express (Install), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install garmin-express
 ```
 
-To upgrade garmin-express, run the following command from the command line or from PowerShell:
+To upgrade garmin-express (Install), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade garmin-express
 ```
 
-To uninstall garmin-express, run the following command from the command line or from PowerShell:
+To uninstall garmin-express (Install), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall garmin-express
@@ -22,25 +22,27 @@ choco uninstall garmin-express
 
 ## Description
 
+## Garmin Express
 
-  ## Garmin Express
-  is your one-stop shop for keeping your maps updated.
+is your one-stop shop for keeping your maps updated.
 
-  ### Features
-  - downloads available map updates to your computer automatically
-  - alerts you when new maps are ready to install.
-  - control download schedules.
-  - transfer all your favorites from one device to another with one click.
+### Features
 
-  ### Back up and restore
-  - saved addresses
-  - routes
-  - waypoints
+- downloads available map updates to your computer automatically
+- alerts you when new maps are ready to install.
+- control download schedules.
+- transfer all your favorites from one device to another with one click.
 
-  to and from your computer
+### Back up and restore
 
-  See https://www.garmin.com/de-DE/software/express for all information.
-  
+- saved addresses
+- routes
+- waypoints
+
+to and from your computer
+
+See https://www.garmin.com/de-DE/software/express for all information.
+
 
 ## Links
 

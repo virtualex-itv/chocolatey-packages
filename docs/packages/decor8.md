@@ -1,20 +1,20 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a562136b65ea6ca2e7297d82273e7e55242882d1/icons/decor8.png" width="32" height="32"/> [![Decor8](https://img.shields.io/chocolatey/v/decor8.svg?label=Decor8)](https://community.chocolatey.org/packages/decor8) [![Decor8](https://img.shields.io/chocolatey/dt/decor8.svg)](https://community.chocolatey.org/packages/decor8)
+#  [![[Retired] Decor8](https://img.shields.io/chocolatey/v/decor8.svg?label=%5BRetired%5D+Decor8)](https://community.chocolatey.org/packages/decor8) [![[Retired] Decor8](https://img.shields.io/chocolatey/dt/decor8.svg)](https://community.chocolatey.org/packages/decor8)
 
 ## Usage
 
-To install Decor8, run the following command from the command line or from PowerShell:
+To install [Retired] Decor8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install decor8
 ```
 
-To upgrade Decor8, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Decor8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade decor8
 ```
 
-To uninstall Decor8, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Decor8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall decor8
@@ -22,11 +22,23 @@ choco uninstall decor8
 
 ## Description
 
-Personalize your Windows 8 Start screen with your own pictures and colors.
+## This package has been retired.
 
-NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+Decor8 was a Windows 8 Start screen customization tool by Stardock. **Windows 8 reached end of support on January 10, 2023**, and the software is no longer relevant for modern Windows systems.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+### Why was this package retired?
+
+- Windows 8 has reached end of life and is no longer supported by Microsoft
+- The Windows 8 Start screen that Decor8 customizes does not exist in Windows 10/11
+- The software has no practical use on modern operating systems
+
+### Alternatives
+
+For Start menu customization on modern Windows, consider:
+
+- **Start11** - Modern Start menu customization: `choco install start11`
+- **StartAllBack** - Windows 11 Start menu alternative: available on Chocolatey Community Repository
+
 
 ## Links
 
@@ -34,4 +46,5 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 [Software Site](https://www.stardock.com/products/decor8/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/decor8)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/decor8)
+

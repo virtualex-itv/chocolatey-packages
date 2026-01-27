@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="32" height="32"/> [![IconPackager](https://img.shields.io/chocolatey/v/iconpackager.svg?label=IconPackager)](https://community.chocolatey.org/packages/iconpackager) [![IconPackager](https://img.shields.io/chocolatey/dt/iconpackager.svg)](https://community.chocolatey.org/packages/iconpackager)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="32" height="32"/> [![IconPackager](https://img.shields.io/chocolatey/v/iconpackager.svg?label=IconPackager)](https://community.chocolatey.org/packages/iconpackager) [![IconPackager](https://img.shields.io/chocolatey/dt/iconpackager.svg)](https://community.chocolatey.org/packages/iconpackager)
 
 ## Usage
 
@@ -28,6 +28,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/iconpackager)
@@ -35,3 +36,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/iconpackager/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/iconpackager)
+

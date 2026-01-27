@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8e85b1ef0ea7e784bdb8f28910f1d744a0abaf67/icons/start11.png" width="32" height="32"/> [![Start11](https://img.shields.io/chocolatey/v/start11.svg?label=Start11)](https://community.chocolatey.org/packages/start11) [![Start11](https://img.shields.io/chocolatey/dt/start11.svg)](https://community.chocolatey.org/packages/start11)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@8e85b1ef0ea7e784bdb8f28910f1d744a0abaf67/icons/start11.png" width="32" height="32"/> [![Start11](https://img.shields.io/chocolatey/v/start11.svg?label=Start11)](https://community.chocolatey.org/packages/start11) [![Start11](https://img.shields.io/chocolatey/dt/start11.svg)](https://community.chocolatey.org/packages/start11)
 
 ## Usage
 
@@ -28,6 +28,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/start11)
@@ -35,3 +36,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/start11/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/start11)
+

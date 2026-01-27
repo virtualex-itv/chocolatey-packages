@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="32" height="32"/> [![WindowFX](https://img.shields.io/chocolatey/v/windowfx.svg?label=WindowFX)](https://community.chocolatey.org/packages/windowfx) [![WindowFX](https://img.shields.io/chocolatey/dt/windowfx.svg)](https://community.chocolatey.org/packages/windowfx)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="32" height="32"/> [![WindowFX](https://img.shields.io/chocolatey/v/windowfx.svg?label=WindowFX)](https://community.chocolatey.org/packages/windowfx) [![WindowFX](https://img.shields.io/chocolatey/dt/windowfx.svg)](https://community.chocolatey.org/packages/windowfx)
 
 ## Usage
 
@@ -28,6 +28,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/windowfx)
@@ -35,3 +36,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/windowfx/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/windowfx)
+

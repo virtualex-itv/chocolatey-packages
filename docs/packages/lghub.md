@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="32" height="32"/> [![lghub (Install)](https://img.shields.io/chocolatey/v/lghub.svg?label=lghub+(Install))](https://community.chocolatey.org/packages/lghub) [![lghub (Install)](https://img.shields.io/chocolatey/dt/lghub.svg)](https://community.chocolatey.org/packages/lghub)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@96d8d5005c0b04d2f497379838c0ff8f3f941ce0/icons/lghub.png" width="32" height="32"/> [![lghub (Install)](https://img.shields.io/chocolatey/v/lghub.svg?label=lghub+(Install))](https://community.chocolatey.org/packages/lghub) [![lghub (Install)](https://img.shields.io/chocolatey/dt/lghub.svg)](https://community.chocolatey.org/packages/lghub)
 
 ## Usage
 
@@ -36,9 +36,8 @@ Program buttons with in-app actions and create your own macros to launch media a
 
 Choose from numerous animation effects, download lighting profiles from the community, and create your own advanced effects with Logitech G LIGHTSYNC for keyboards, mice, headsets, and speakers.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -47,3 +46,4 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.logitechg.com/en-us/innovation/g-hub.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/lghub)
+

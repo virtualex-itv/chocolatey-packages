@@ -23,12 +23,9 @@ choco uninstall pswindowsupdate
 ## Description
 
 Powershell module that allows you to manage Windows Update, check, download and install or remove updates. Especially useful on machines in core edition like Windows Server 2008 R2.
-To import module use:
-`Import-Module PSWindowsUpdate`
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -37,3 +34,4 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.powershellgallery.com/packages/PSWindowsUpdate)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/pswindowsupdate)
+

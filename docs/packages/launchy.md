@@ -1,20 +1,20 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/308914d82035771688e37b5245152d507258b7c1/icons/launchy.png" width="32" height="32"/> [![Launchy](https://img.shields.io/chocolatey/v/launchy.svg?label=Launchy)](https://community.chocolatey.org/packages/launchy) [![Launchy](https://img.shields.io/chocolatey/dt/launchy.svg)](https://community.chocolatey.org/packages/launchy)
+#  [![[Retired] Launchy](https://img.shields.io/chocolatey/v/launchy.svg?label=%5BRetired%5D+Launchy)](https://community.chocolatey.org/packages/launchy) [![[Retired] Launchy](https://img.shields.io/chocolatey/dt/launchy.svg)](https://community.chocolatey.org/packages/launchy)
 
 ## Usage
 
-To install Launchy, run the following command from the command line or from PowerShell:
+To install [Retired] Launchy, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install launchy
 ```
 
-To upgrade Launchy, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Launchy, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade launchy
 ```
 
-To uninstall Launchy, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Launchy, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall launchy
@@ -22,8 +22,24 @@ choco uninstall launchy
 
 ## Description
 
-Launchy is a free cross-platform utility designed to help you forget about your start menu, the icons on your desktop, and even your file manager.
-     Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes!
+## This package has been retired.
+
+Launchy was a free cross-platform keystroke launcher utility that helped users launch programs, documents, and bookmarks with just a few keystrokes.
+
+### Why was this package retired?
+
+- Development stalled since June 2023
+- Source code was removed by maintainers from GitHub (Open-Launcher/launchy)
+- The project appears abandoned with no active development
+- No new releases or maintenance updates are expected
+
+### Alternatives
+
+- **PowerToys Run** (`powertoys`) - Microsoft's built-in launcher (Windows 10/11)
+- **Keypirinha** - Fast keystroke launcher for Windows
+- **Listary** - File search and app launcher
+- **Wox** - Full-featured launcher with plugin support
+
 
 ## Links
 
@@ -31,4 +47,5 @@ Launchy is a free cross-platform utility designed to help you forget about your 
 
 [Software Site](http://www.launchy.net)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/launchy)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/launchy)
+

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/236ca863026ffec6007175a4117c6a602934e8c1/icons/start10.png" width="32" height="32"/> [![Start10](https://img.shields.io/chocolatey/v/start10.svg?label=Start10)](https://community.chocolatey.org/packages/start10) [![Start10](https://img.shields.io/chocolatey/dt/start10.svg)](https://community.chocolatey.org/packages/start10)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/456fd4d06ac21f622d924df47b13529470a0d257/icons/start10.png" width="32" height="32"/> [![Start10](https://img.shields.io/chocolatey/v/start10.svg?label=Start10)](https://community.chocolatey.org/packages/start10) [![Start10](https://img.shields.io/chocolatey/dt/start10.svg)](https://community.chocolatey.org/packages/start10)
 
 ## Usage
 
@@ -28,6 +28,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/start10)
@@ -35,3 +36,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/start10/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/start10)
+

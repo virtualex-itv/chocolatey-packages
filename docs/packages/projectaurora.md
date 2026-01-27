@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/88cdefcd3e3b5a28b9f71a83d3dd2846c9361c25/icons/project-aurora.png" width="32" height="32"/> [![Aurora - Unified Lighting Effects](https://img.shields.io/chocolatey/v/project-aurora.svg?label=Aurora+-+Unified+Lighting+Effects)](https://community.chocolatey.org/packages/project-aurora) [![Aurora - Unified Lighting Effects](https://img.shields.io/chocolatey/dt/project-aurora.svg)](https://community.chocolatey.org/packages/project-aurora)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@88cdefcd3e3b5a28b9f71a83d3dd2846c9361c25/icons/project-aurora.png" width="32" height="32"/> [![Aurora - Unified Lighting Effects](https://img.shields.io/chocolatey/v/project-aurora.svg?label=Aurora+-+Unified+Lighting+Effects)](https://community.chocolatey.org/packages/project-aurora) [![Aurora - Unified Lighting Effects](https://img.shields.io/chocolatey/dt/project-aurora.svg)](https://community.chocolatey.org/packages/project-aurora)
 
 ## Usage
 
@@ -26,6 +26,7 @@ Project Aurora is a utility that unifies RGB lighting devices across different b
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/project-aurora)
@@ -33,3 +34,4 @@ Project Aurora is a utility that unifies RGB lighting devices across different b
 [Software Site](https://www.project-aurora.com/index.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/project-aurora)
+

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/c70ce66a5e90c9f91dc924c6c48bee6322ec44f9/icons/groupy.png" width="32" height="32"/> [![Groupy](https://img.shields.io/chocolatey/v/groupy.svg?label=Groupy)](https://community.chocolatey.org/packages/groupy) [![Groupy](https://img.shields.io/chocolatey/dt/groupy.svg)](https://community.chocolatey.org/packages/groupy)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@c70ce66a5e90c9f91dc924c6c48bee6322ec44f9/icons/groupy.png" width="32" height="32"/> [![Groupy](https://img.shields.io/chocolatey/v/groupy.svg?label=Groupy)](https://community.chocolatey.org/packages/groupy) [![Groupy](https://img.shields.io/chocolatey/dt/groupy.svg)](https://community.chocolatey.org/packages/groupy)
 
 ## Usage
 
@@ -40,6 +40,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/groupy)
@@ -47,3 +48,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/groupy/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/groupy)
+

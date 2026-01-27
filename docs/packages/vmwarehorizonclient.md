@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5e488db2693d987c03b071fae758bbffbd8eecc8/icons/vmware-horizon-client.png" width="32" height="32"/> [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/v/vmware-horizon-client.svg?label=VMware+Horizon+Client+for+Windows)](https://community.chocolatey.org/packages/vmware-horizon-client) [![VMware Horizon Client for Windows](https://img.shields.io/chocolatey/dt/vmware-horizon-client.svg)](https://community.chocolatey.org/packages/vmware-horizon-client)
+#  [![[Deprecated] VMware Horizon Client for Windows](https://img.shields.io/chocolatey/v/vmware-horizon-client.svg?label=%5BDeprecated%5D+VMware+Horizon+Client+for+Windows)](https://community.chocolatey.org/packages/vmware-horizon-client) [![[Deprecated] VMware Horizon Client for Windows](https://img.shields.io/chocolatey/dt/vmware-horizon-client.svg)](https://community.chocolatey.org/packages/vmware-horizon-client)
 
 ## Usage
 
-To install VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
+To install [Deprecated] VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install vmware-horizon-client
 ```
 
-To upgrade VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
+To upgrade [Deprecated] VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade vmware-horizon-client
 ```
 
-To uninstall VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
+To uninstall [Deprecated] VMware Horizon Client for Windows, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall vmware-horizon-client
@@ -22,16 +22,37 @@ choco uninstall vmware-horizon-client
 
 ## Description
 
-VMware Horizon Client for Windows makes it easy to access your remote desktops and published applications with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
+## DEPRECATED
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+VMware Horizon Client has been deprecated and rebranded to **Omnissa Horizon Client**.
+
+In 2024, Broadcom sold VMware's End-User Computing (EUC) division to KKR, which rebranded it as Omnissa. The Horizon Client is now developed and distributed by Omnissa.
+
+### What happens when you install this package?
+
+This deprecated package will automatically install the replacement package **[omnissa-horizon-client](https://community.chocolatey.org/packages/omnissa-horizon-client)** as a dependency.
+
+---
+
+### Migration
+
+To migrate manually:
+```powershell
+choco uninstall vmware-horizon-client
+choco install omnissa-horizon-client
+```
+
+Or simply update, and the dependency will handle the transition:
+```powershell
+choco upgrade vmware-horizon-client
+```
+
 
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-horizon-client)
 
-[Software Site](https://www.vmware.com/products/horizon.html)
+[Software Site](https://www.omnissa.com/horizon-8/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-horizon-client)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-horizon-client)
+

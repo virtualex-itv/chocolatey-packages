@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/3d6fec825fb49eadccf4f141a53f3c07ca9c4ea8/icons/twitch-studio.png" width="32" height="32"/> [![Twitch Studio](https://img.shields.io/chocolatey/v/twitch-studio.svg?label=Twitch+Studio)](https://community.chocolatey.org/packages/twitch-studio) [![Twitch Studio](https://img.shields.io/chocolatey/dt/twitch-studio.svg)](https://community.chocolatey.org/packages/twitch-studio)
+#  [![[Retired] Twitch Studio](https://img.shields.io/chocolatey/v/twitch-studio.svg?label=%5BRetired%5D+Twitch+Studio)](https://community.chocolatey.org/packages/twitch-studio) [![[Retired] Twitch Studio](https://img.shields.io/chocolatey/dt/twitch-studio.svg)](https://community.chocolatey.org/packages/twitch-studio)
 
 ## Usage
 
-To install Twitch Studio, run the following command from the command line or from PowerShell:
+To install [Retired] Twitch Studio, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install twitch-studio
 ```
 
-To upgrade Twitch Studio, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Twitch Studio, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade twitch-studio
 ```
 
-To uninstall Twitch Studio, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Twitch Studio, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall twitch-studio
@@ -22,7 +22,22 @@ choco uninstall twitch-studio
 
 ## Description
 
-Twitch Studio is our free streaming app designed from the ground up to meet new streamers needs. It enables you to stream directly on Twitch and provides a guided and intuitive experience when setting up your stream. If you're thinking about becoming a streamer or tried and gave up because it was too difficult, Twitch Studio is for you!
+## This package has been retired.
+
+Twitch Studio was **discontinued by Twitch on May 30, 2024**. The software is no longer available for download and will not receive any future updates.
+
+### Why was Twitch Studio discontinued?
+
+Twitch announced on May 30, 2024 that they would be discontinuing Twitch Studio to focus on other initiatives. The application is no longer available for download from Twitch's website.
+
+### Alternatives
+
+If you're looking for streaming software, consider these popular alternatives:
+
+- **OBS Studio** - Free and open source: `choco install obs-studio`
+- **Streamlabs Desktop** - Free with additional features: `choco install streamlabs-obs`
+- **XSplit Broadcaster** - Professional streaming: `choco install xsplit-broadcaster`
+
 
 ## Links
 
@@ -30,4 +45,5 @@ Twitch Studio is our free streaming app designed from the ground up to meet new 
 
 [Software Site](https://www.twitch.tv/broadcast/studio)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/twitch-studio)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/twitch-studio)
+

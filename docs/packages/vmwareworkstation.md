@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/ad7782a412beed5cb5c54a716b206176c9e79a93/icons/vmwareworkstation.png" width="32" height="32"/> [![VMware Workstation Pro](https://img.shields.io/chocolatey/v/vmwareworkstation.svg?label=VMware+Workstation+Pro)](https://community.chocolatey.org/packages/vmwareworkstation) [![VMware Workstation Pro](https://img.shields.io/chocolatey/dt/vmwareworkstation.svg)](https://community.chocolatey.org/packages/vmwareworkstation)
+#  [![[Retired] VMware Workstation Pro](https://img.shields.io/chocolatey/v/vmwareworkstation.svg?label=%5BRetired%5D+VMware+Workstation+Pro)](https://community.chocolatey.org/packages/vmwareworkstation) [![[Retired] VMware Workstation Pro](https://img.shields.io/chocolatey/dt/vmwareworkstation.svg)](https://community.chocolatey.org/packages/vmwareworkstation)
 
 ## Usage
 
-To install VMware Workstation Pro, run the following command from the command line or from PowerShell:
+To install [Retired] VMware Workstation Pro, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install vmwareworkstation
 ```
 
-To upgrade VMware Workstation Pro, run the following command from the command line or from PowerShell:
+To upgrade [Retired] VMware Workstation Pro, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade vmwareworkstation
 ```
 
-To uninstall VMware Workstation Pro, run the following command from the command line or from PowerShell:
+To uninstall [Retired] VMware Workstation Pro, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall vmwareworkstation
@@ -22,18 +22,38 @@ choco uninstall vmwareworkstation
 
 ## Description
 
-VMware Workstation Pro™ enables technical professionals to develop, test, demonstrate, and deploy software by running multiple x86-based Windows, Linux, and other operating systems simultaneously on the same PC.
+## This package has been retired.
 
-You can replicate server, desktop, and tablet environments in a virtual machine and allocate multiple processor cores, gigabytes of main memory and graphics memory to each virtual machine, whether the virtual machine resides on a personal PC or on a private enterprise cloud.
+This package has been retired because VMware Workstation Pro downloads now require authentication through the Broadcom support portal, making automated package updates impossible.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+### Good news: VMware Workstation Pro is now FREE
+
+As of November 2024, VMware Workstation Pro is **free for all users** (commercial, educational, and personal) and no longer requires a license key.
+
+### How to get VMware Workstation Pro
+
+VMware Workstation Pro must now be downloaded directly from Broadcom, which requires creating a free Broadcom account:
+
+1. Create a free account at [Broadcom Support Portal](https://support.broadcom.com)
+2. Navigate to VMware Desktop Hypervisor downloads
+3. Download VMware Workstation Pro
+
+### Why this package cannot be maintained
+
+Following Broadcom's acquisition of VMware, the direct download URLs were removed from public CDNs. Downloads now require authentication through the Broadcom support portal, making automated package updates impossible.
+
+### Alternatives
+
+- **VMware Workstation Pro** - Download directly from [Broadcom](https://support.broadcom.com) (free, requires account)
+- **VirtualBox** - Free and open source: `choco install virtualbox`
+- **Hyper-V** - Built into Windows Pro/Enterprise
+
 
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmwareworkstation)
 
-[Software Site](https://www.vmware.com/products/workstation-pro.html)
+[Software Site](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmwareworkstation)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/vmwareworkstation)
+

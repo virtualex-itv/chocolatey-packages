@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/39bf275cf5ef67cc91702260701dcbf9a835ae2d/icons/stardock-multiplicity.png" width="32" height="32"/> [![Multiplicity](https://img.shields.io/chocolatey/v/stardock-multiplicity.svg?label=Multiplicity)](https://community.chocolatey.org/packages/stardock-multiplicity) [![Multiplicity](https://img.shields.io/chocolatey/dt/stardock-multiplicity.svg)](https://community.chocolatey.org/packages/stardock-multiplicity)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@39bf275cf5ef67cc91702260701dcbf9a835ae2d/icons/stardock-multiplicity.png" width="32" height="32"/> [![Multiplicity](https://img.shields.io/chocolatey/v/stardock-multiplicity.svg?label=Multiplicity)](https://community.chocolatey.org/packages/stardock-multiplicity) [![Multiplicity](https://img.shields.io/chocolatey/dt/stardock-multiplicity.svg)](https://community.chocolatey.org/packages/stardock-multiplicity)
 
 ## Usage
 
@@ -28,6 +28,7 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/stardock-multiplicity)
@@ -35,3 +36,4 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/multiplicity/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/stardock-multiplicity)
+

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/f17bb6121b170badbed892c08bc05d99871470fe/icons/soundblaster-command.png" width="32" height="32"/> [![Sound Blaster Command](https://img.shields.io/chocolatey/v/soundblaster-command.svg?label=Sound+Blaster+Command)](https://community.chocolatey.org/packages/soundblaster-command) [![Sound Blaster Command](https://img.shields.io/chocolatey/dt/soundblaster-command.svg)](https://community.chocolatey.org/packages/soundblaster-command)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/f17bb6121b170badbed892c08bc05d99871470fe/icons/soundblaster-command.png" width="32" height="32"/> [![Sound Blaster Command](https://img.shields.io/chocolatey/v/soundblaster-command.svg?label=Sound+Blaster+Command)](https://community.chocolatey.org/packages/soundblaster-command) [![Sound Blaster Command](https://img.shields.io/chocolatey/dt/soundblaster-command.svg)](https://community.chocolatey.org/packages/soundblaster-command)
 
 ## Usage
 
@@ -28,6 +28,7 @@ Available for Windows®, the comprehensive and easy-to-use Sound Blaster Command
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/soundblaster-command)
 
-[Software Site](https://www.project-aurora.com/index.html)
+[Software Site](https://us.creative.com/p/sound-blaster)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/soundblaster-command)
+

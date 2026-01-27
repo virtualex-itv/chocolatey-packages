@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="32" height="32"/> [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/v/powerpanel-personal.svg?label=PowerPanel+Personal+(Install))](https://community.chocolatey.org/packages/powerpanel-personal) [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/dt/powerpanel-personal.svg)](https://community.chocolatey.org/packages/powerpanel-personal)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@9e6ac1b5bcff7f79ed00a242a239f49df182d896/icons/powerpanel-personal.png" width="32" height="32"/> [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/v/powerpanel-personal.svg?label=PowerPanel+Personal+(Install))](https://community.chocolatey.org/packages/powerpanel-personal) [![PowerPanel Personal (Install)](https://img.shields.io/chocolatey/dt/powerpanel-personal.svg)](https://community.chocolatey.org/packages/powerpanel-personal)
 
 ## Usage
 
@@ -48,9 +48,8 @@ PowerPanel® Personal allows users to setup email notifications to receive real-
 
 In the event of a power outage, the user can configure the software to keep the computer running until the battery power runs low, or to shut down the computer immediately after a power outage to preserve the battery.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -59,3 +58,4 @@ let them know the package is no longer updating correctly.
 [Software Site](https://www.cyberpowersystems.com/products/software/power-panel-personal/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/powerpanel-personal)
+

@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/43cc017d72450819b67d2beda0b01996085f8543/icons/sed.png" width="32" height="32"/> [![GNU sed](https://img.shields.io/chocolatey/v/sed.svg?label=GNU+sed)](https://community.chocolatey.org/packages/sed) [![GNU sed](https://img.shields.io/chocolatey/dt/sed.svg)](https://community.chocolatey.org/packages/sed)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/43cc017d72450819b67d2beda0b01996085f8543/icons/sed.png" width="32" height="32"/> [![GNU sed](https://img.shields.io/chocolatey/v/sed.svg?label=GNU+sed)](https://community.chocolatey.org/packages/sed) [![GNU sed](https://img.shields.io/chocolatey/dt/sed.svg)](https://community.chocolatey.org/packages/sed)
 
 ## Usage
 
@@ -26,6 +26,7 @@ sed is commonly used to filter text, i.e., it takes text input, performs some op
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/sed)
@@ -33,3 +34,4 @@ sed is commonly used to filter text, i.e., it takes text input, performs some op
 [Software Site](https://www.gnu.org/software/sed/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/sed)
+

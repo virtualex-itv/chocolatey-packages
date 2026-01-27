@@ -1,20 +1,20 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/d5603d81d82fda2d2f013fa6477bc11d2eda72f8/icons/modernmix.png" width="32" height="32"/> [![ModernMix](https://img.shields.io/chocolatey/v/modernmix.svg?label=ModernMix)](https://community.chocolatey.org/packages/modernmix) [![ModernMix](https://img.shields.io/chocolatey/dt/modernmix.svg)](https://community.chocolatey.org/packages/modernmix)
+#  [![[Retired] ModernMix](https://img.shields.io/chocolatey/v/modernmix.svg?label=%5BRetired%5D+ModernMix)](https://community.chocolatey.org/packages/modernmix) [![[Retired] ModernMix](https://img.shields.io/chocolatey/dt/modernmix.svg)](https://community.chocolatey.org/packages/modernmix)
 
 ## Usage
 
-To install ModernMix, run the following command from the command line or from PowerShell:
+To install [Retired] ModernMix, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install modernmix
 ```
 
-To upgrade ModernMix, run the following command from the command line or from PowerShell:
+To upgrade [Retired] ModernMix, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade modernmix
 ```
 
-To uninstall ModernMix, run the following command from the command line or from PowerShell:
+To uninstall [Retired] ModernMix, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall modernmix
@@ -22,11 +22,21 @@ choco uninstall modernmix
 
 ## Description
 
-Run multiple Modern Apps in resizable windows on your desktop.
+## This package has been retired.
 
-NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+ModernMix was a Stardock utility that allowed running Windows 8 "Modern Apps" (Metro apps) in resizable windows on the desktop. **The Windows 8 Modern App ecosystem no longer exists in Windows 10/11**, making this software obsolete.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+### Why was this package retired?
+
+- Windows 8 Modern Apps (Metro apps) were replaced by UWP apps in Windows 10
+- The specific problem ModernMix solved (running full-screen Modern Apps in windows) no longer applies
+- Windows 10/11 already run UWP apps in resizable windows by default
+- The software has no practical use on modern operating systems
+
+### Note
+
+There is no direct replacement for ModernMix because the problem it solved no longer exists in modern Windows.
+
 
 ## Links
 
@@ -34,4 +44,5 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 [Software Site](https://www.stardock.com/products/modernmix/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/modernmix)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/modernmix)
+

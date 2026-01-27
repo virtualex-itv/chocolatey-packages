@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9a54bd07ed3e744bbfe7176cf3eccfdb1a3c530b/icons/stardock-fences.png" width="32" height="32"/> [![Fences](https://img.shields.io/chocolatey/v/stardock-fences.svg?label=Fences)](https://community.chocolatey.org/packages/stardock-fences) [![Fences](https://img.shields.io/chocolatey/dt/stardock-fences.svg)](https://community.chocolatey.org/packages/stardock-fences)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@fa2e7f5eadd3aaf90882e09c32fba44ce4592128/icons/stardock-fences.png" width="32" height="32"/> [![Fences](https://img.shields.io/chocolatey/v/stardock-fences.svg?label=Fences)](https://community.chocolatey.org/packages/stardock-fences) [![Fences](https://img.shields.io/chocolatey/dt/stardock-fences.svg)](https://community.chocolatey.org/packages/stardock-fences)
 
 ## Usage
 
@@ -26,10 +26,14 @@ Organize your PC by automatically placing your shortcuts and icons into resizabl
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/stardock-fences)
 
 [Software Site](https://www.stardock.com/products/fences/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/stardock-fences)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/stardock-fences)
+

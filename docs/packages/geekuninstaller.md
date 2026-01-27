@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="32" height="32"/> [![Geek Uninstaller](https://img.shields.io/chocolatey/v/geekuninstaller.svg?label=Geek+Uninstaller)](https://community.chocolatey.org/packages/geekuninstaller) [![Geek Uninstaller](https://img.shields.io/chocolatey/dt/geekuninstaller.svg)](https://community.chocolatey.org/packages/geekuninstaller)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@30fafb835165e8d432dc77f68ea395319c7febd9/icons/geekuninstaller.png" width="32" height="32"/> [![Geek Uninstaller](https://img.shields.io/chocolatey/v/geekuninstaller.svg?label=Geek+Uninstaller)](https://community.chocolatey.org/packages/geekuninstaller) [![Geek Uninstaller](https://img.shields.io/chocolatey/dt/geekuninstaller.svg)](https://community.chocolatey.org/packages/geekuninstaller)
 
 ## Usage
 
@@ -34,11 +34,10 @@ Instant startup, minimalistic, simple but efficient user interface.
 
 ### Native X64 support
 
-Single EXE runs flawlessly on both 32 and 64-bit Windows 10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
+Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -47,3 +46,4 @@ let them know the package is no longer updating correctly.
 [Software Site](http://www.geekuninstaller.com)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/geekuninstaller)
+

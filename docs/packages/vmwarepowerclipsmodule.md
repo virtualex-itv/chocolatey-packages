@@ -1,20 +1,20 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png" width="32" height="32"/> [![VMware.PowerCLI (PowerShell Module)](https://img.shields.io/chocolatey/v/vmware-powercli-psmodule.svg?label=VMware.PowerCLI+(PowerShell+Module))](https://community.chocolatey.org/packages/vmware-powercli-psmodule) [![VMware.PowerCLI (PowerShell Module)](https://img.shields.io/chocolatey/dt/vmware-powercli-psmodule.svg)](https://community.chocolatey.org/packages/vmware-powercli-psmodule)
+#  [![[Deprecated] VMware.PowerCLI (PowerShell Module)](https://img.shields.io/chocolatey/v/vmware-powercli-psmodule.svg?label=%5BDeprecated%5D+VMware.PowerCLI+(PowerShell+Module))](https://community.chocolatey.org/packages/vmware-powercli-psmodule) [![[Deprecated] VMware.PowerCLI (PowerShell Module)](https://img.shields.io/chocolatey/dt/vmware-powercli-psmodule.svg)](https://community.chocolatey.org/packages/vmware-powercli-psmodule)
 
 ## Usage
 
-To install VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
+To install [Deprecated] VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install vmware-powercli-psmodule
 ```
 
-To upgrade VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
+To upgrade [Deprecated] VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade vmware-powercli-psmodule
 ```
 
-To uninstall VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
+To uninstall [Deprecated] VMware.PowerCLI (PowerShell Module), run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall vmware-powercli-psmodule
@@ -22,24 +22,52 @@ choco uninstall vmware-powercli-psmodule
 
 ## Description
 
+## DEPRECATED
+
+VMware.PowerCLI has been deprecated by Broadcom and rebranded to **VCF.PowerCLI** (VMware Cloud Foundation PowerCLI).
+
+As of July 2025, the VMware.PowerCLI module on PSGallery displays a deprecation notice directing users to use VCF.PowerCLI instead. The underlying cmdlets and functionality remain the same—the change is purely a rebranding as part of Broadcom's VMware Cloud Foundation strategy.
+
+### What happens when you install this package?
+
+This deprecated package will automatically install the replacement package **[vcf-powercli-psmodule](https://community.chocolatey.org/packages/vcf-powercli-psmodule)** as a dependency.
+
 ---
 
-### [choco://vmware-powercli-psmodule](choco://vmware-powercli-psmodule)
+## Package Parameters
 
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+The replacement package is designed to install the `VCF.PowerCLI` PowerShell module for the `-Scope CurrentUser` by default.
+
+The following parameter is available to install the module for `-Scope AllUsers`.
+
+* `/ALLUSERS`
+
+Example:
+```powershell
+choco install vcf-powercli-psmodule --params='"/ALLUSERS"'
+```
 
 ---
 
-PowerCLI is a command-line interface for managing and automating all aspects of vSphere management, including network, storage, VM, guest OS and more.  PowerCLI is distributed as PowerShell modules, which contain a combined number of over 700 cmdlets (commands.)
+### Migration
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+To migrate manually:
+```powershell
+choco uninstall vmware-powercli-psmodule
+choco install vcf-powercli-psmodule
+```
+
+Or simply update, and the dependency will handle the transition:
+```powershell
+choco upgrade vmware-powercli-psmodule
+```
+
 
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-powercli-psmodule)
 
-[Software Site](https://developer.vmware.com/powercli)
+[Software Site](https://developer.broadcom.com/powercli)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-powercli-psmodule)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-powercli-psmodule)
+

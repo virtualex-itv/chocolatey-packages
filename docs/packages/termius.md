@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/8b8f8c20384338d014a1b47a244f82fbd26732a5/icons/termius.png" width="32" height="32"/> [![Termius](https://img.shields.io/chocolatey/v/termius.svg?label=Termius)](https://community.chocolatey.org/packages/termius) [![Termius](https://img.shields.io/chocolatey/dt/termius.svg)](https://community.chocolatey.org/packages/termius)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@8b8f8c20384338d014a1b47a244f82fbd26732a5/icons/termius.png" width="32" height="32"/> [![Termius](https://img.shields.io/chocolatey/v/termius.svg?label=Termius)](https://community.chocolatey.org/packages/termius) [![Termius](https://img.shields.io/chocolatey/dt/termius.svg)](https://community.chocolatey.org/packages/termius)
 
 ## Usage
 
@@ -24,9 +24,8 @@ choco uninstall termius
 
 Termius isn't a mere SSH client, it's a complete command-line solution. Securely access Linux or IoT devices from your Android or iOS mobile device, as well as any Windows, macOS, or Linux computer. It is Mosh-compatible, providing excellent reliability on high-latency constantly changing connections.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 
 ## Links
 
@@ -35,3 +34,4 @@ let them know the package is no longer updating correctly.
 [Software Site](https://termius.com/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/termius)
+

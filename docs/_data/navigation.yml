@@ -1,7 +1,9 @@
-﻿toc:
+toc:
   - title: Packages
     subfolderitems:
       - page: "Advanced IP Scanner (Install)"
+        url: /packages/advancedipscanner.html
+      - page: "[DEPRECATED] Advanced-IP Scanner"
         url: /packages/advancedipscanner.html
       - page: "Amazon WorkSpaces"
         url: /packages/amazonworkspaces.html
@@ -9,7 +11,7 @@
         url: /packages/aquasnap.html
       - page: "BetterDiscord Installer"
         url: /packages/betterdiscord.html
-      - page: "Capture (Formerly Jing)"
+      - page: "[Deprecated] Capture (Formerly Jing)"
         url: /packages/capture.html
       - page: "Creative App"
         url: /packages/creativeapp.html
@@ -17,7 +19,7 @@
         url: /packages/cursorfx.html
       - page: "Curtains"
         url: /packages/curtains.html
-      - page: "Decor8"
+      - page: "[Retired] Decor8"
         url: /packages/decor8.html
       - page: "DeskScapes"
         url: /packages/deskscapes.html
@@ -41,7 +43,7 @@
         url: /packages/laps.html
       - page: "Launch"
         url: /packages/launch.html
-      - page: "Launchy"
+      - page: "[Retired] Launchy"
         url: /packages/launchy.html
       - page: "Lens"
         url: /packages/lens.html
@@ -51,7 +53,7 @@
         url: /packages/logioptionsplus.html
       - page: "Micron Storage Executive"
         url: /packages/micronstorageexecutive.html
-      - page: "ModernMix"
+      - page: "[Retired] ModernMix"
         url: /packages/modernmix.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
@@ -59,8 +61,10 @@
         url: /packages/objectdesktop.html
       - page: "Omnissa Horizon Client for Windows"
         url: /packages/omnissahorizonclient.html
-      - page: "OpenLens"
+      - page: "[Deprecated] OpenLens"
         url: /packages/openlens.html
+      - page: "Pangolin"
+        url: /packages/pangolin.html
       - page: "PlayStation Plus"
         url: /packages/playstationplus.html
       - page: "PowerPanel Personal (Install)"
@@ -105,24 +109,26 @@
         url: /packages/traystatus.install.html
       - page: "TrayStatus (Portable)"
         url: /packages/traystatus.portable.html
-      - page: "Twitch Studio"
+      - page: "[Retired] Twitch Studio"
         url: /packages/twitchstudio.html
       - page: "VCF.PowerCLI (PowerShell Module)"
         url: /packages/vcfpowerclipsmodule.html
-      - page: "VMware Remote Console"
+      - page: "[Retired] VMware Remote Console"
         url: /packages/vmrc.html
-      - page: "VMware Horizon Client for Windows"
+      - page: "[RETIRED] VMware vCenter Converter Standalone"
+        url: /packages/vmwareconverter.html
+      - page: "[Deprecated] VMware Horizon Client for Windows"
         url: /packages/vmwarehorizonclient.html
-      - page: "VMware.PowerCLI (PowerShell Module)"
+      - page: "[Deprecated] VMware.PowerCLI (PowerShell Module)"
         url: /packages/vmwarepowerclipsmodule.html
       - page: "VMWare Tools for Windows"
         url: /packages/vmwaretools.html
       - page: "VMware.WorkloadManagement (PowerShell Module)"
         url: /packages/vmwareworkloadmanagement.html
-      - page: "VMware Workstation Pro"
-        url: /packages/vmwareworkstation.html
-      - page: "VMware Workstation Player"
+      - page: "[Deprecated] VMware Workstation Player"
         url: /packages/vmwareworkstationplayer.html
+      - page: "[Retired] VMware Workstation Pro"
+        url: /packages/vmwareworkstation.html
       - page: "Warp"
         url: /packages/warpterminal.html
       - page: "WindowBlinds"
