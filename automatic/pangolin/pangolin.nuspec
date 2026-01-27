@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pangolin</id>
+    <version>0.0.0</version>
+    <owners>virtualex</owners>
+    <title>Pangolin</title>
+    <authors>fosrl</authors>
+    <projectUrl>https://pangolin.net/</projectUrl>
+    <projectSourceUrl>https://github.com/fosrl/pangolin</projectSourceUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/pangolin</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fosrl/pangolin/issues</bugTrackerUrl>
+    <docsUrl>https://docs.pangolin.net</docsUrl>
+    <licenseUrl>https://github.com/fosrl/pangolin/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/fosrl/windows/releases</releaseNotes>
+    <copyright>© 2026 Fossorial, Inc</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@98ca7895360ab02b5f1da15684b803777663eecd/icons/pangolin.png</iconUrl>
+    <tags>vpn wireguard zero-trust proxy remote-access ztna pangolin</tags>
+    <summary>Identity-aware VPN and proxy for zero-trust remote access</summary>
+    <description>Pangolin is an identity-aware VPN and proxy solution for zero-trust remote access to anything, anywhere. Built on WireGuard, it provides secure tunneled access to your self-hosted services and networks.
+
+## Features
+
+- Zero-trust network access (ZTNA)
+- WireGuard-based VPN tunneling
+- Identity-aware proxy
+- Secure remote access to self-hosted services
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
