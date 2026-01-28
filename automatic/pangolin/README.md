@@ -9,6 +9,4 @@ Pangolin is an identity-aware VPN and proxy solution for zero-trust remote acces
 - Identity-aware proxy
 - Secure remote access to self-hosted services
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
