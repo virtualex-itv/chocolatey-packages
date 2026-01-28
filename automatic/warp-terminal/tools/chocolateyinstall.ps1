@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://releases.warp.dev/stable/v0.2026.01.21.08.14.stable_03/WarpSetup.exe'
-$checksum               = 'e134f581024e355228be0fd494db80076aafa245b0bdf5bfb9f39b04efab4f0b'
+$url                    = 'https://releases.warp.dev/stable/v0.2026.01.21.08.14.stable_04/WarpSetup.exe'
+$checksum               = '7f03333a1896773017467e0616736fc11c4bd97f2cd9b8dffea8eb46001126f8'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
