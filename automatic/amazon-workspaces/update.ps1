@@ -30,7 +30,35 @@ function global:au_GetLatest {
   $regex = '.*\.msi'
   $Url32 = $download_page.links | Where-Object {$_.href -match $regex} | Select-Object -First 1 -ExpandProperty href
 
-  Update-OnETagChanged -execUrl $Url32 -OnETagChanged { GetResultInformation $Url32 } -OnUpdated { @{ Url32 = $Url32 } }
+  # Get ETag and Content-Length via HEAD request
+  $request = [System.Net.WebRequest]::CreateDefault($Url32)
+  $request.Method = "HEAD"
+  try {
+    $response = $request.GetResponse()
+    $etag = $response.Headers.Get("ETag")
+    $contentLength = $response.ContentLength.ToString()
+  } finally {
+    if ($response) { $response.Dispose() }
+  }
+
+  $saveFile = ".\info"
+  $needsUpdate = $true
+
+  if ((Test-Path $saveFile) -and !$global:au_Force) {
+    $existingInfo = (Get-Content $saveFile -Encoding UTF8 -TotalCount 1) -split '\|'
+    # Update if either ETag or Content-Length changed
+    if ($existingInfo[0] -eq $etag -and $existingInfo.Count -gt 2 -and $existingInfo[2] -eq $contentLength) {
+      $needsUpdate = $false
+      $result = @{ Url32 = $Url32; Version = $existingInfo[1] }
+    }
+  }
+
+  if ($needsUpdate) {
+    $result = GetResultInformation $Url32
+    "$etag|$($result.Version)|$contentLength" | Out-File $saveFile -Encoding utf8 -NoNewline
+  }
+
+  $result
 }
 
 function global:au_SearchReplace {
