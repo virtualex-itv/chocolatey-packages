@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin</id>
-    <version>0.5.0</version>
+    <version>0.5.1</version>
     <owners>virtualex</owners>
     <title>Pangolin</title>
     <authors>fosrl</authors>
