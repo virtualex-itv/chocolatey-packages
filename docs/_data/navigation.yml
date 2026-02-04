@@ -51,6 +51,8 @@ toc:
         url: /packages/lghub.html
       - page: "Logi Options+"
         url: /packages/logioptionsplus.html
+      - page: "[Retired] Marcs Updater"
+        url: /packages/marcsupdater.html
       - page: "Micron Storage Executive"
         url: /packages/micronstorageexecutive.html
       - page: "[Retired] ModernMix"
