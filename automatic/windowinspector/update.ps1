@@ -10,11 +10,11 @@ function global:au_GetLatest {
   $url = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
   $url32 = Get-RedirectedUrl $url
 
-  # Extract version from URL like WindowInspectorSetup-3.8c.exe
-  # Handles versions like 3.8, 3.8c, 3.10, 3.10a, etc.
-  if ($url32 -match 'Setup-(\d+\.\d+)([a-z]?)\.exe$') {
+  # Extract version from URL like WindowInspectorSetup-3.9.1.exe or WindowInspectorSetup-3.8c.exe
+  if ($url32 -match 'Setup-(\d+\.\d+\.\d+)\.exe$') {
     $version = $matches[1]
-    # Convert letter suffix to patch number (a=1, b=2, c=3, etc.) or 0 if no suffix
+  } elseif ($url32 -match 'Setup-(\d+\.\d+)([a-z]?)\.exe$') {
+    $version = $matches[1]
     $suffix = $matches[2]
     if ($suffix) {
       $patch = [int][char]$suffix - [int][char]'a' + 1
