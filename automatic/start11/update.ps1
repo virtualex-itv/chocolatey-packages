@@ -9,7 +9,7 @@ function global:au_GetLatest {
 
   $Url = 'https://cdn.stardock.us/downloads/public/software/start/v2/Start11v2-setup.exe'
 
-  $pattern = 'Start11 (?<version>\d+(\.\d+)+)(?<beta> Beta)?'
+  $pattern = 'Start11 v?(?<version>\d+(\.\d+)+)(?<beta> Beta)?'
   $matches = [regex]::Matches($content, $pattern)
   $version = $null
   foreach ($m in $matches) {
