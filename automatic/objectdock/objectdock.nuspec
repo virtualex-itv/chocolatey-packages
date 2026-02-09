@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>objectdock</id>
+    <version>0.0.0</version>
+    <owners>virtualex</owners>
+    <title>ObjectDock</title>
+    <authors>Stardock</authors>
+    <projectUrl>https://www.stardock.com/products/objectdock/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@de98660ce7f23156d8298c1c0c2af2b69ddae192/icons/objectdock.png</iconUrl>
+    <copyright>Copyright © 2026 Stardock</copyright>
+    <tags>stardock objectdesktop suite objectdock dock taskbar trial</tags>
+    <releaseNotes>https://www.stardock.com/products/objectdock/history</releaseNotes>
+    <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/objectdock</packageSourceUrl>
+    <summary>A skinnable dock for Windows to organize shortcuts and running tasks</summary>
+    <description>A skinnable dock for Windows that enables you to quickly access your applications, files, and shortcuts from an animated dock.
+
+NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
