@@ -1,9 +1,9 @@
-$ErrorActionPreference  = 'Stop';
+﻿$ErrorActionPreference  = 'Stop';
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.stardock.us/downloads/public/software/objectdock/v3/ObjectDock3_setup.exe'
-$checksum               = ''
+$checksum               = '7fd062e8b907278f5708b68d9489cbe2ecb9372e0cc4f86268d88e974a5a0fde'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

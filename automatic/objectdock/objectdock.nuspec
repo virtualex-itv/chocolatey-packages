@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>objectdock</id>
-    <version>0.0.0</version>
+    <version>3.01</version>
     <owners>virtualex</owners>
     <title>ObjectDock</title>
     <authors>Stardock</authors>
@@ -14,11 +14,12 @@
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/objectdock</packageSourceUrl>
     <summary>A skinnable dock for Windows to organize shortcuts and running tasks</summary>
-    <description>A skinnable dock for Windows that enables you to quickly access your applications, files, and shortcuts from an animated dock.
+    <description><![CDATA[A skinnable dock for Windows that enables you to quickly access your applications, files, and shortcuts from an animated dock.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
