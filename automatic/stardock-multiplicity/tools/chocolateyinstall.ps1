@@ -19,11 +19,12 @@ $packageArgs = @{
 }
 
 [version]$OSVer = (Get-WmiObject Win32_OperatingSystem).Version
-$min='6.1.7601'
+$min='10.0.10240'
 
 If ( $OSVer -lt [version]$min ) {
-  Write-Warning "*** Stardock Multiplicity requires an OS running Windows 7 or higher... ***`n"
+  Write-Warning "*** Stardock Multiplicity 4 requires an OS running Windows 10 or higher... ***`n"
   throw
 } Else {
   Install-ChocolateyPackage @packageArgs
+  Write-Warning "`nNOTE: This is trial software. A purchased license is required to activate the full version.`n"
 }
