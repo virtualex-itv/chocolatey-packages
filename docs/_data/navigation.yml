@@ -61,6 +61,8 @@ toc:
         url: /packages/notepadreplacer.html
       - page: "Object Desktop"
         url: /packages/objectdesktop.html
+      - page: "ObjectDock"
+        url: /packages/objectdock.html
       - page: "Omnissa Horizon Client for Windows"
         url: /packages/omnissahorizonclient.html
       - page: "[Deprecated] OpenLens"
