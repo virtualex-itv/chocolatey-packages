@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2044753919b5921176b28eb5ddc8bd44e9d3c566/icons/start8.png" width="32" height="32"/> [![Start8](https://img.shields.io/chocolatey/v/start8.svg?label=Start8)](https://community.chocolatey.org/packages/start8) [![Start8](https://img.shields.io/chocolatey/dt/start8.svg)](https://community.chocolatey.org/packages/start8)
+#  [![[Retired] Start8](https://img.shields.io/chocolatey/v/start8.svg?label=%5BRetired%5D+Start8)](https://community.chocolatey.org/packages/start8) [![[Retired] Start8](https://img.shields.io/chocolatey/dt/start8.svg)](https://community.chocolatey.org/packages/start8)
 
 ## Usage
 
-To install Start8, run the following command from the command line or from PowerShell:
+To install [Retired] Start8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install start8
 ```
 
-To upgrade Start8, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Start8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade start8
 ```
 
-To uninstall Start8, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Start8, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall start8
@@ -22,11 +22,22 @@ choco uninstall start8
 
 ## Description
 
-Return the Start menu to Windows 8 and make navigating your PC easier.
+## This package has been retired
 
-NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+Start8 was a Windows 8 Start menu replacement tool by Stardock. **Windows 8 reached end of support on January 10, 2023**, and the software is no longer relevant for modern Windows systems.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+### Why was this package retired?
+
+- Windows 8 has reached end of life and is no longer supported by Microsoft
+- Start8 was designed to restore the Windows 7 Start menu on Windows 8, which is not applicable to Windows 10/11
+- The software has no practical use on modern operating systems
+
+### Alternatives
+
+For Start menu customization on modern Windows, consider:
+
+- **Start11** - Modern Start menu customization: `choco install start11`
+- **StartAllBack** - Windows 11 Start menu alternative: available on Chocolatey Community Repository
 
 
 ## Links
@@ -35,5 +46,5 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 [Software Site](https://www.stardock.com/products/start8/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/start8)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/start8)
 
