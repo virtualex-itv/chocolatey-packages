@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://stardock.cachefly.net/software/ObjectDesktop/ObjectDesktop_4.07-j113-Setup.exe'
-$checksum               = 'a1552a6e0147229fd4b6d40d55f6b0230051160ec64292aa2c12eefec5535de5'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/objectdesktop/objectdesktop_setup.exe'
+$checksum               = '403cab70808118d7eb63a557ec8130f82bd6047f63fdf845d96d7f5f43a16784'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
