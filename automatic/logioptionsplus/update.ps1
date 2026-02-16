@@ -1,7 +1,7 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.logitech.com/en-us/software/logi-options-plus.html'
+$releases = 'https://www.logitech.com/en-us/software/logi-options-plus'
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
