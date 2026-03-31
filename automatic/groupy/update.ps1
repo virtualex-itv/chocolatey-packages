@@ -7,7 +7,7 @@ function global:au_GetLatest {
     $response = Invoke-WebRequest -Uri $history_page -UseBasicParsing
     $content  = $response.Content
 
-    $headingRe = 'Groupy\s+(?<version>2\.\d+(?:\.\d+)*)\s+Changelog'
+    $headingRe = 'Groupy\s+v?(?<version>2\.\d+(?:\.\d+)*)\s+Changelog'
     $headingMatches   = [regex]::Matches($content, $headingRe)
 
     # Collect raw version strings (e.g. "2.30", "2.20")
