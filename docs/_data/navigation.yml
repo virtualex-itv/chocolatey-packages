@@ -133,6 +133,8 @@ toc:
         url: /packages/vmwareworkstationplayer.html
       - page: "[Retired] VMware Workstation Pro"
         url: /packages/vmwareworkstation.html
+      - page: "vTUI - vSphere Terminal UI"
+        url: /packages/vtui.html
       - page: "Warp"
         url: /packages/warpterminal.html
       - page: "WindowBlinds"
