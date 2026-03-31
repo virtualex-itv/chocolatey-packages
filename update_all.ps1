@@ -139,7 +139,8 @@ if ($Env:github_api_key -and $Env:gist_id) {
             }
         } | ConvertTo-Json -Depth 3 -Compress
         try {
-            $response = Invoke-RestMethod -Uri $gist_url -Method Patch -Headers $gist_headers -Body $gist_body -ContentType "application/json"
+            $bodyBytes = [System.Text.Encoding]::UTF8.GetBytes($gist_body)
+            $response = Invoke-RestMethod -Uri $gist_url -Method Patch -Headers $gist_headers -Body $bodyBytes -ContentType "application/json; charset=utf-8"
             Write-Host "  $($response.html_url)"
         } catch {
             Write-Warning "Failed to upload Update-History.md to Gist: $_"
