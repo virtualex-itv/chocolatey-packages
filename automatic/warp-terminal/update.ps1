@@ -28,9 +28,13 @@ function global:au_GetLatest {
   $fullVersion = $latest.FullVersion
 
   # Chocolatey package version format: YYYY.M.D.HHMMBB
-  # 4th octet combines time (HHMM) + stable build number (BB)
-  # e.g., v0.2026.01.14.08.15.stable_04 -> 2026.1.14.081504
-  $fourthOctet = "{0}{1}{2:D2}" -f $latest.Hour, $latest.Minute, [int]$latest.StableBuild
+  # 4th octet combines time (HHMM) + stable build number (BB) using integer arithmetic.
+  # e.g., v0.2026.01.14.08.15.stable_04 -> 2026.1.14.81504
+  # Integer arithmetic avoids leading zeros (e.g., "08" hour -> 8), which is critical:
+  # NuGet normalizes version segments as integers, so a leading zero in the 4th octet
+  # causes a mismatch between AU's RemoteVersion and the actual .nupkg filename,
+  # breaking the GitReleases plugin (it can't find the .nupkg and skips the release).
+  $fourthOctet = [int]$latest.Hour * 10000 + [int]$latest.Minute * 100 + [int]$latest.StableBuild
   $chocoVersion = "{0}.{1}.{2}.{3}" -f $latest.Year, [int]$latest.Month, [int]$latest.Day, $fourthOctet
 
   # Build download URL
