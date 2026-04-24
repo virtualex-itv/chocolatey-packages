@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64         = 'https://github.com/noclue/vtui/releases/download/v0.2.4/vtui-x86_64-pc-windows-msvc.zip'
-$checksum64    = '12ab0dff4abc0d65c715ca0641a90d01c1c82e130d198040cbc181859adfb149'
-$urlArm64      = 'https://github.com/noclue/vtui/releases/download/v0.2.4/vtui-aarch64-pc-windows-msvc.zip'
-$checksumArm64 = '774dfe68ed3721a7a0fc69f23275d1d97eff5ef1b4c331bd74fadc93a32fc6a6'
+$url64         = 'https://github.com/noclue/vtui/releases/download/v0.2.5/vtui-x86_64-pc-windows-msvc.zip'
+$checksum64    = 'c6977f8376e16b02217327b08298eb61c9ae6d8a5944889c7ce90306baa7012e'
+$urlArm64      = 'https://github.com/noclue/vtui/releases/download/v0.2.5/vtui-aarch64-pc-windows-msvc.zip'
+$checksumArm64 = '59f1d888b1d8f18dad679bed282071e923284dde2b54e28e679005e0696ff3ad'
 
 $isArm64  = $env:PROCESSOR_ARCHITECTURE -eq 'ARM64'
 
