@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png" width="48" height="48"/> [vcf-powercli-psmodule](https://community.chocolatey.org/packages/vcf-powercli-psmodule)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@6aa0e16032e742aaea35f0cd428fb310f77a57dc/icons/vmware-powercli-psmodule.png" width="48" height="48"/> [vcf-powercli-psmodule](https://community.chocolatey.org/packages/vcf-powercli-psmodule)
 
 ---
 
