@@ -74,6 +74,7 @@ $Options = [ordered]@{
     GitReleases = @{
       ApiToken = $Env:github_api_key
       ReleaseType = 'package'
+      Force = $true
     }
 
     RunInfo = @{
