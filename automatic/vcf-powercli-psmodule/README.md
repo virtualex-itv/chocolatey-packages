@@ -6,13 +6,16 @@
 
 This package is designed to install the `VCF.PowerCLI` PowerShell module for the `-Scope CurrentUser` by default.
 
-The following parameter is available to install the module for `-Scope AllUsers`.
+The following parameters are available to install the module for Powershell 7 and `-Scope AllUsers`
 
+* `/V7`
 * `/ALLUSERS`
-Example:
+Examples:
 
 ```shell
+choco install vcf-powercli-psmodule --params='"/V7"'
 choco install vcf-powercli-psmodule --params='"/ALLUSERS"'
+choco install vcf-powercli-psmodule --params='"/V7 /ALLUSERS"'
 ```
 
 ---
@@ -22,3 +25,4 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
 **Please Note**: This package supersedes [vmware-powercli-psmodule](https://community.chocolatey.org/packages/vmware-powercli-psmodule).  If this package is detected, it will be removed prior to installing this new package.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
