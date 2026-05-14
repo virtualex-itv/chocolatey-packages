@@ -10,6 +10,7 @@ The following parameters are available to install the module for Powershell 7 an
 
 * `/V7`
 * `/ALLUSERS`
+
 Examples:
 
 ```shell
