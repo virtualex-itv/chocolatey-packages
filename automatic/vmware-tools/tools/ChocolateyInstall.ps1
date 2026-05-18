@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64                 = 'https://packages-prod.broadcom.com/tools/releases/13.0.10/x64/VMware-tools-13.0.10-25056151-x64.exe'
-$checksum64            = '1dd069f50ea635cd18afd0cfdf992b6bfba9050310552055b083f1e156b3f41c'
+$url64                 = 'https://packages-prod.broadcom.com/tools/releases/13.1.0/windows/x64/VMware-tools-13.1.0-25218885-x64.exe'
+$checksum64            = '8e6981c44fd7595ce27cf66bba48617bab3cb72baba52e1cc06683c25b5c8239'
 $ChecksumType64        = 'sha256'
 
 $pp                    = Get-PackageParameters
