@@ -22,6 +22,16 @@ function global:au_GetLatest {
         break
     }
   }
+
+  # NuGet normalizes 2-segment versions in the .nupkg filename (4.07 -> ...4.07.0.nupkg).
+  # AU's GitReleases plugin looks up the file using the raw version, so a mismatch silently
+  # skips the GitHub release. Pad to at least 3 segments.
+  if ($version) {
+    $parts = $version.Split('.')
+    while ($parts.Count -lt 3) { $parts += '0' }
+    $version = $parts -join '.'
+  }
+
   $ChecksumType = 'sha256'
 
   @{
