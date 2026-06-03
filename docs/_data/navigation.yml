@@ -33,6 +33,8 @@ toc:
         url: /packages/geekuninstaller.html
       - page: "Groupy"
         url: /packages/groupy.html
+      - page: "Hermes Desktop"
+        url: /packages/hermesdesktop.html
       - page: "IconDeveloper"
         url: /packages/icondeveloper.html
       - page: "IconPackager"

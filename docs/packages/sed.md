@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/43cc017d72450819b67d2beda0b01996085f8543/icons/sed.png" width="32" height="32"/> [![GNU sed](https://img.shields.io/chocolatey/v/sed.svg?label=GNU+sed)](https://community.chocolatey.org/packages/sed) [![GNU sed](https://img.shields.io/chocolatey/dt/sed.svg)](https://community.chocolatey.org/packages/sed)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@43cc017d72450819b67d2beda0b01996085f8543/icons/sed.png" width="32" height="32"/> [![GNU sed](https://img.shields.io/chocolatey/v/sed.svg?label=GNU+sed)](https://community.chocolatey.org/packages/sed) [![GNU sed](https://img.shields.io/chocolatey/dt/sed.svg)](https://community.chocolatey.org/packages/sed)
 
 ## Usage
 

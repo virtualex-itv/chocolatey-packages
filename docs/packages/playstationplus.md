@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/5b78fceafab72b8146f37a5db2407d85804becc8/icons/playstationplus.png" width="32" height="32"/> [![PlayStation Plus](https://img.shields.io/chocolatey/v/playstationplus.svg?label=PlayStation+Plus)](https://community.chocolatey.org/packages/playstationplus) [![PlayStation Plus](https://img.shields.io/chocolatey/dt/playstationplus.svg)](https://community.chocolatey.org/packages/playstationplus)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@5b78fceafab72b8146f37a5db2407d85804becc8/icons/playstationplus.png" width="32" height="32"/> [![PlayStation Plus](https://img.shields.io/chocolatey/v/playstationplus.svg?label=PlayStation+Plus)](https://community.chocolatey.org/packages/playstationplus) [![PlayStation Plus](https://img.shields.io/chocolatey/dt/playstationplus.svg)](https://community.chocolatey.org/packages/playstationplus)
 
 ## Usage
 
