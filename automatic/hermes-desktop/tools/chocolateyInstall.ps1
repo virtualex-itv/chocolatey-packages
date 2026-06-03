@@ -1,0 +1,63 @@
+$ErrorActionPreference = 'Stop'
+$toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+$url64      = ''
+$checksum64 = ''
+
+# Hermes-Setup.exe is a Tauri-built GUI bootstrap; its embedded tauri.conf.json
+# defines no CLI plugin, so there is no silent flag. AutoHotkey drives the
+# 3-screen wizard from the outside.
+$ahkScript = Join-Path $toolsDir 'hermes-clickthrough.ahk'
+
+# Locate AutoHotkey v2 (AutoHotkey64.exe). The 'autohotkey' meta dependency may
+# resolve to either autohotkey.install (Program Files) or autohotkey.portable
+# (under choco's lib dir), so search both.
+$candidates = @(
+  "$env:ProgramFiles\AutoHotkey\v2\AutoHotkey64.exe"
+  "$env:ProgramFiles\AutoHotkey\AutoHotkey64.exe"
+  "$env:ChocolateyInstall\lib\autohotkey.portable\tools\AutoHotkey64.exe"
+  "$env:ChocolateyInstall\lib\autohotkey\tools\AutoHotkey64.exe"
+)
+$ahkExe = $candidates | Where-Object { Test-Path $_ } | Select-Object -First 1
+if (-not $ahkExe) {
+  # Last resort: any AutoHotkey64.exe choco knows about
+  $ahkExe = Get-ChildItem "$env:ChocolateyInstall\lib" -Filter 'AutoHotkey64.exe' -Recurse -ErrorAction SilentlyContinue |
+            Select-Object -First 1 -ExpandProperty FullName
+}
+if (-not $ahkExe) {
+  throw 'Could not locate AutoHotkey64.exe (v2) from the autohotkey dependency.'
+}
+
+Write-Host "Starting AutoHotkey wizard driver: $ahkScript"
+$ahkProc = Start-Process -FilePath $ahkExe -ArgumentList $ahkScript -PassThru
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'exe'
+  url64bit       = $url64
+  checksum64     = $checksum64
+  checksumType64 = 'sha256'
+  softwareName   = 'Hermes*'
+  silentArgs     = ''
+  validExitCodes = @(0, 1)
+}
+
+try {
+  Install-ChocolateyPackage @packageArgs
+} finally {
+  if ($ahkProc -and -not $ahkProc.HasExited) {
+    Write-Host 'Waiting for click-through driver to finish...'
+    $null = $ahkProc | Wait-Process -Timeout 60 -ErrorAction SilentlyContinue
+    if (-not $ahkProc.HasExited) {
+      Write-Warning 'AutoHotkey driver still running; stopping it.'
+      $ahkProc | Stop-Process -Force -ErrorAction SilentlyContinue
+    }
+  }
+}
+
+# Sanity check: did install.ps1 actually succeed?
+$marker = Join-Path $env:LOCALAPPDATA 'hermes\hermes-agent\.hermes-bootstrap-complete'
+if (-not (Test-Path $marker)) {
+  throw "Hermes install did not complete (marker file missing: $marker). Check %LOCALAPPDATA%\hermes\logs\desktop.log for details."
+}
+Write-Host 'Hermes install confirmed via bootstrap marker.'
