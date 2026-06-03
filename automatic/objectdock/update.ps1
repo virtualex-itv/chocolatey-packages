@@ -16,16 +16,6 @@ function global:au_GetLatest {
   $pattern = 'UI:\s*(?<version>\d+\.\d+(?:\.\d+)*)'
   $null = $content -match $pattern
   $version = $Matches.version
-
-  # NuGet normalizes 2-segment versions in the .nupkg filename (3.01 -> ...3.01.0.nupkg).
-  # AU's GitReleases plugin looks up the file using the raw version, so a mismatch silently
-  # skips the GitHub release. Pad to at least 3 segments.
-  if ($version) {
-    $parts = $version.Split('.')
-    while ($parts.Count -lt 3) { $parts += '0' }
-    $version = $parts -join '.'
-  }
-
   $ChecksumType = 'sha256'
 
   @{

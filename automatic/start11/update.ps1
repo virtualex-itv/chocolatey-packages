@@ -18,15 +18,6 @@ function global:au_GetLatest {
         break
     }
   }
-
-  # NuGet normalizes 2-segment versions in the .nupkg filename (2.72 -> start11.2.72.0.nupkg).
-  # AU's GitReleases plugin uses the raw version to find the file, so a mismatch means it can't
-  # resolve the nupkg and silently skips the GitHub release. Pad to at least 3 segments.
-  if ($version) {
-    $parts = $version.Split('.')
-    while ($parts.Count -lt 3) { $parts += '0' }
-    $version = $parts -join '.'
-  }
   $ChecksumType = 'sha256'
 
   @{
