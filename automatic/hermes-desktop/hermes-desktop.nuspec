@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>0.15.2</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <docsUrl>https://hermes-agent.nousresearch.com/docs</docsUrl>
     <bugTrackerUrl>https://github.com/NousResearch/hermes-agent/issues</bugTrackerUrl>
     <summary>Hermes Desktop - the AI agent that grows with you, from Nous Research.</summary>
-    <description>Hermes Desktop is the native AI agent from Nous Research, providing persistent memory, focused automation, isolated subagents, web browsing, and multi-model reasoning across Telegram, Discord, Slack, WhatsApp, Signal, Email, and CLI - one agent, one memory, every surface.
+    <description><![CDATA[Hermes Desktop is the native AI agent from Nous Research, providing persistent memory, focused automation, isolated subagents, web browsing, and multi-model reasoning across Telegram, Discord, Slack, WhatsApp, Signal, Email, and CLI - one agent, one memory, every surface.
 
 * **Chat with the full agent** - streaming responses, live tool activity, structured tool summaries, and shared conversation history with the CLI and gateway.
 * **Side-by-side previews** - render web pages, files, and tool outputs in a right-hand pane while you keep chatting.
@@ -57,7 +57,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 MIT licensed. Paid tiers include monthly credits for the Nous Portal (300+ models and built-in tool use).
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
