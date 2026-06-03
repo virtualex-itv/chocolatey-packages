@@ -16,6 +16,7 @@ $funcs = @(
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
+  'ConvertTo-NuGetVersion'
 )
 
 $funcs | ForEach-Object {

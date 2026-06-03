@@ -1,5 +1,6 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $history_page = 'https://www.stardock.com/products/multiplicity/history'
 
@@ -22,6 +23,10 @@ function global:au_GetLatest {
         break
     }
   }
+
+  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can find it.
+  $version = ConvertTo-NuGetVersion $version
+
   $ChecksumType = 'sha256'
 
   @{

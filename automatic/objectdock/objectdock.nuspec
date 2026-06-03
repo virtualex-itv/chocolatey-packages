@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>objectdock</id>
-    <version>3.01</version>
+    <version>3.1.0</version>
     <owners>virtualex</owners>
     <title>ObjectDock</title>
     <authors>Stardock</authors>
