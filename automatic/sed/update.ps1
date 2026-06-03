@@ -1,5 +1,6 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $release = Get-GitHubRelease mbuilov sed-windows
 
@@ -7,7 +8,14 @@ function global:au_GetLatest {
   $Url32 = $release.assets | ? {$_.name -match 'x86' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
   $Url64 = $release.assets | ? {$_.name -match 'x64' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
 
-  $version = $release.tag_name.Trim('sed-')
+  # The upstream repo re-uses the same numeric version across tags when binaries are
+  # hotfixed (e.g., sed-4.9 followed by sed-4.9-x64-fixed). Pull just the X.Y(.Z) portion.
+  $null = $release.tag_name -match 'sed-(\d+\.\d+(?:\.\d+)?)'
+  $version = $Matches[1]
+
+  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can find it.
+  $version = ConvertTo-NuGetVersion $version
+
   $ChecksumType = 'sha256'
 
   $tag = $release.tag_name

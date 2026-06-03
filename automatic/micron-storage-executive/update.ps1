@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://www.micron.com/products/ssd/storage-executive-software'
 
@@ -11,6 +12,9 @@ function global:au_GetLatest {
   $re = '((\d+)\.(\d+)\.(\d+)\.(\d+))'
   $version = $download_page.Content -match $re | Out-Null
   $version = $Matches[0]
+
+  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can find it.
+  $version = ConvertTo-NuGetVersion $version
 
   $checksumType = 'sha256'
   $checksum64 = Get-RemoteChecksum -Algorithm $checksumType -Url $Url64
