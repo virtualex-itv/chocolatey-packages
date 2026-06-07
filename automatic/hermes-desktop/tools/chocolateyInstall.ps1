@@ -28,6 +28,17 @@ if (-not $ahkExe) {
   throw 'Could not locate AutoHotkey64.exe (v2) from the autohotkey dependency.'
 }
 
+# The AHK driver's completion signal is the .hermes-bootstrap-complete marker file
+# inside %LOCALAPPDATA%\hermes\hermes-agent. On an upgrade, that file from the prior
+# install is still on disk - AHK would see it immediately on its first poll and close
+# the wizard before the new install ever runs. Remove it up front so AHK only matches
+# a fresh marker dropped by the current install.
+$marker = Join-Path $env:LOCALAPPDATA 'hermes\hermes-agent\.hermes-bootstrap-complete'
+if (Test-Path $marker) {
+  Write-Host "Removing previous bootstrap marker so AHK can detect this install's completion."
+  Remove-Item $marker -Force -ErrorAction SilentlyContinue
+}
+
 Write-Host "Starting AutoHotkey wizard driver: $ahkScript"
 $ahkProc = Start-Process -FilePath $ahkExe -ArgumentList $ahkScript -PassThru
 
@@ -56,7 +67,6 @@ try {
 }
 
 # Sanity check: did install.ps1 actually succeed?
-$marker = Join-Path $env:LOCALAPPDATA 'hermes\hermes-agent\.hermes-bootstrap-complete'
 if (-not (Test-Path $marker)) {
   throw "Hermes install did not complete (marker file missing: $marker). Check %LOCALAPPDATA%\hermes\logs\desktop.log for details."
 }
