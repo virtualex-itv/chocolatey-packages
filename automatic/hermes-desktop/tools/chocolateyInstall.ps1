@@ -2,7 +2,7 @@
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $url64      = 'https://hermes-assets.nousresearch.com/Hermes-Setup.exe'
-$checksum64 = 'de1de2a339ce52f25fe85cf5098e25269180a3c40d5c26ef4433a2caef58ff91'
+$checksum64 = '505dfb4c2c1052b055e3fc694a76cb7ce093a64962c7713aa294f5549c6734f5'
 
 # Hermes-Setup.exe is a Tauri-built GUI bootstrap; its embedded tauri.conf.json
 # defines no CLI plugin, so there is no silent flag. AutoHotkey drives the
