@@ -1,15 +1,20 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-# Version detection: scrape the public download page. The download URL is always-latest
-# (no per-version URL exists), so checksum gets recomputed every time the page reports
-# a new version.
-$releases = 'https://hermes-agent.nousresearch.com/desktop'
+# Version detection: read the latest GitHub release name (e.g. "Hermes Agent v0.17.0
+# (v2026.6.19)"). The old public download page (hermes-agent.nousresearch.com/desktop)
+# now 308-redirects to /, which Invoke-WebRequest won't follow cleanly, so the releases
+# API is the stable source. The download URL is always-latest (no per-version URL
+# exists), so checksum gets recomputed every time a new version is reported.
+$releasesApi = 'https://api.github.com/repos/NousResearch/hermes-agent/releases/latest'
 
 function global:au_GetLatest {
-  $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  if ($page.Content -notmatch 'Hermes Agent v(\d+\.\d+(?:\.\d+)?)') {
-    throw 'Could not find Hermes Agent version on the page'
+  $headers = @{}
+  if ($env:github_api_key) { $headers.Authorization = "Bearer $env:github_api_key" }
+
+  $release = Invoke-RestMethod -Uri $releasesApi -Headers $headers
+  if ($release.name -notmatch 'Hermes Agent v(\d+\.\d+(?:\.\d+)?)') {
+    throw 'Could not find Hermes Agent version in the latest GitHub release name'
   }
   $version = $Matches[1]
 
