@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28312650af5f6f365757d0c90621c11154a7c6ae/icons/betterdiscord.png" width="48" height="48"/> [betterdiscord](https://community.chocolatey.org/packages/betterdiscord)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@28312650af5f6f365757d0c90621c11154a7c6ae/icons/betterdiscord.png" width="48" height="48"/> [betterdiscord](https://community.chocolatey.org/packages/betterdiscord)
 
 BetterDiscord extends the functionality of DiscordApp by enhancing it with new features.
 
