@@ -50,10 +50,16 @@ If (Color = 0x15141C or Color != 0x15141C) {
 sleep 1000
 ControlClick "x500 y315", winTitle,,,, "Pos"
 
-; Wait for exit button
-sleep 5000
-
-; Close
-ControlClick "x500 y315", winTitle,,,, "Pos"
+; Wait for the uninstall phase to finish (variable duration), then keep
+; clicking the Close button position until the window actually closes.
+; Clicks that land while the progress page is still up are no-ops. Cap the
+; loop so it cannot spin forever if the window is closed by other means.
+sleep 3000
+attempts := 0
+While WinExist(winTitle) and (attempts < 300) {
+  ControlClick "x500 y315", winTitle,,,, "Pos"
+  sleep 1000
+  attempts += 1
+}
 
 Exit

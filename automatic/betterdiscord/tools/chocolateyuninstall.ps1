@@ -21,4 +21,10 @@ Write-Debug "Process ID:`t$($ahkProc.Id)"
 
 Uninstall-ChocolateyPackage @packageArgs
 
-if (Get-Process -id $ahkProc.Id -ErrorAction SilentlyContinue) {Stop-Process -id $ahkProc.Id}
+# Give the AHK script time to click Close and exit on its own; force-kill
+# only if it is still running after the grace period. The uninstaller is an
+# NSIS stub that can exit before the child UI window is closed, so killing
+# AHK immediately here races its final Close click.
+if (-not $ahkProc.WaitForExit(60000)) {
+  Stop-Process -Id $ahkProc.Id -ErrorAction SilentlyContinue
+}

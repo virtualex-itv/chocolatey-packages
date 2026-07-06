@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://github.com/BetterDiscord/Installer/releases/download/v1.3.0/BetterDiscord-Windows.exe'
-$checksum               = 'b07409fc665b9260a42a1cd28e631e741b6250466d6d8b3e48b56fd5547c4eae'
+$checksum               = '249bdaa4332b3e1a3a2148d4fd587a42bd48615af556d1c72da51c55bb2ca697'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
@@ -35,4 +35,10 @@ Write-Debug "Process ID:`t$($ahkProc.Id)"
 
 Install-ChocolateyInstallPackage @packageArgs
 
-if (Get-Process -id $ahkProc.Id -ErrorAction SilentlyContinue) {Stop-Process -id $ahkProc.Id}
+# Give the AHK script time to click Close and exit on its own; force-kill
+# only if it is still running after the grace period. The installer is an
+# NSIS stub that can exit before the child UI window is closed, so killing
+# AHK immediately here races its final Close click.
+if (-not $ahkProc.WaitForExit(60000)) {
+  Stop-Process -Id $ahkProc.Id -ErrorAction SilentlyContinue
+}
