@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="48" height="48"/> [rvtools](https://community.chocolatey.org/packages/rvtools)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="48" height="48"/> [rvtools](https://community.chocolatey.org/packages/rvtools)
 
 **Note**: In October 2023, Dell Technologies acquired RVTools technology. Dell is committed to keeping RVTools available as a no cost public download, so it can continue to be an open asset for the technical community.
 
