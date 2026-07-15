@@ -69,6 +69,6 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
   </files>
 </package>
