@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://support.creative.com/Downloads/searchdownloads.aspx?filename=CreativeApp&ShowAll=1'
 
@@ -10,7 +11,9 @@ function global:au_GetLatest {
   if ($download_page.Content -match $re) {
     $versionParts = @($Matches[1], $Matches[2], $Matches[3], $Matches[4])
     # Version for nuspec: 1.23.4.0 (remove leading zeros from minor parts)
-    $version = "$($versionParts[0]).$([int]$versionParts[1]).$([int]$versionParts[2]).$([int]$versionParts[3])"
+    # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can
+    # find it (a trailing zero revision is dropped: 1.24.0.0 -> 1.24.0).
+    $version = ConvertTo-NuGetVersion "$($versionParts[0]).$([int]$versionParts[1]).$([int]$versionParts[2]).$([int]$versionParts[3])"
     # Version for URL: 1.23.04.00 (keep the original format with leading zeros)
     $urlVersion = "$($versionParts[0]).$($versionParts[1]).$($versionParts[2]).$($versionParts[3])"
   } else {

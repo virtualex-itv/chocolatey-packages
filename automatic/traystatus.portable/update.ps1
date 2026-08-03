@@ -1,5 +1,6 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://www.traystatus.com/Download'
 
@@ -12,6 +13,11 @@ function global:au_GetLatest {
 
   $re = '-|\.zip$'
   $version = ($url32 -split $re)[1]
+
+  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can
+  # find it (vendor ships 2-part versions like 5.2, packed as ...5.2.0.nupkg).
+  $version = ConvertTo-NuGetVersion $version
+
   $ChecksumType = 'sha256'
 
   @{

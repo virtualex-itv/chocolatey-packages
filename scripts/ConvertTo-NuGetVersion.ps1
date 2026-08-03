@@ -1,6 +1,8 @@
 # Normalizes a version string the same way NuGet does when writing a .nupkg filename:
 # - Each numeric segment is parsed as an integer (drops leading zeros: '07' -> '7').
 # - The version is padded with '.0' to at least 3 segments.
+# - A zero fourth segment is dropped ('26.0.1.0' -> '26.0.1'); a non-zero revision is
+#   kept ('2.5.4594.1' stays as-is).
 #
 # Use this in au_GetLatest so the version AU stores as RemoteVersion matches the .nupkg
 # filename on disk. The GitReleases plugin resolves the file with $Name.$RemoteVersion.nupkg
@@ -20,6 +22,7 @@ function ConvertTo-NuGetVersion {
     if ($parts | Where-Object { $_ -notmatch '^\d+$' }) { return $Version }
     $ints = $parts | ForEach-Object { [int]$_ }
     while ($ints.Count -lt 3) { $ints += 0 }
+    if ($ints.Count -eq 4 -and $ints[3] -eq 0) { $ints = $ints[0..2] }
     ($ints -join '.')
   }
 }
