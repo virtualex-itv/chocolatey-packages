@@ -1,30 +1,26 @@
 Import-Module Chocolatey-AU
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.termius.com/windows'
+# Version + sha512 from Termius's electron-updater feed (what the app's own updater
+# reads). Do NOT detect from the changelog - it publishes days before the stable rollout.
+$feedUrl      = 'https://autoupdate.termius.com/windows/latest.yml'
+$installerUrl = 'https://download.termius.com/windows/Install%20Termius.exe'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $yaml = (Invoke-WebRequest -Uri $feedUrl -UseBasicParsing).Content
+  if ($yaml -is [byte[]]) { $yaml = [System.Text.Encoding]::UTF8.GetString($yaml) }
 
-  $re = '*/win'
-  $url32 = Get-RedirectedUrl ($download_page.Links | Where-Object { $_.href -like $re } | Select-Object -First 1 -ExpandProperty href)
+  if ($yaml -notmatch '(?m)^version:\s*(\S+)\s*$') { throw "No version in $feedUrl" }
+  $version = $Matches[1]
 
-  $fileName = Split-Path -Leaf $Url32
-  $dest = "$env:TEMP\$fileName"
-
-  Get-WebFile $Url32 $dest | Out-Null
-
-  $version = (Get-Item $dest).VersionInfo.FileVersion
-  $ChecksumType = 'sha256'
-  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
-
-  Remove-Item $dest -Force -ErrorAction SilentlyContinue
+  # Anchored ^sha512 skips the indented per-file copy; base64 -> hex for Chocolatey.
+  if ($yaml -notmatch '(?m)^sha512:\s*(\S+)\s*$') { throw "No sha512 in $feedUrl" }
+  $checksum = ([BitConverter]::ToString([Convert]::FromBase64String($Matches[1])) -replace '-', '').ToLower()
 
   @{
-    Url32            = $Url32
+    Url32            = $installerUrl
     Version          = $version
-    ChecksumType32   = $ChecksumType
-    Checksum32       = $checksum32
+    ChecksumType32   = 'sha512'
+    Checksum32       = $checksum
   }
 }
 
