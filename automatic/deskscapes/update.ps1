@@ -14,8 +14,7 @@ function global:au_GetLatest {
   $null = $releases.Content -match $re
   $version = $Matches.version
 
-  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can
-  # find it (a trailing zero revision is dropped: 26.0.1.0 -> 26.0.1).
+  # Match NuGet's nupkg filename so GitReleases can find it (26.0.1.0 -> 26.0.1).
   $version = ConvertTo-NuGetVersion $version
 
   $ChecksumType = 'sha256'

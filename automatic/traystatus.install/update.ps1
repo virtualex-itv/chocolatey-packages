@@ -14,8 +14,7 @@ function global:au_GetLatest {
   $re = 'Setup-|\.exe$'
   $version = ($url32 -split $re)[1]
 
-  # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can
-  # find it (vendor ships 2-part versions like 5.2, packed as ...5.2.0.nupkg).
+  # Match NuGet's nupkg filename so GitReleases can find it (5.2 -> 5.2.0).
   $version = ConvertTo-NuGetVersion $version
 
   $ChecksumType = 'sha256'
