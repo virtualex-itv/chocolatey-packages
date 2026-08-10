@@ -2,9 +2,9 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://download.termius.com/windows/Install%20Termius.exe'
-$checksum               = '9D6FB0B32FCEF989762E7C268F298EBCFB46E042920847681418E38A1A6752D0'
-$checksumType           = 'sha256'
+$url                    = 'https://autoupdate.termius.com/windows/Install%20Termius.exe'
+$checksum               = '71e7a8b5d2c19188752bb2a0f5ea84430a2fe1f864dc770e9d80640aed505ef57d9603469d91849c799475b73d94afead3c3e9821c968b22af1406fa730d174b'
+$checksumType           = 'sha512'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
