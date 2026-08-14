@@ -42,12 +42,8 @@ If (Color = 0x15141C or Color != 0x15141C) {
 sleep 1000
 ControlClick "x500 y315", winTitle,,,, "Pos"
 
-; Wait for the install phase to finish (variable duration - the installer
-; downloads the asar at install time), then keep clicking the Close button
-; position until the window actually closes. Clicks that land while the
-; progress page is still up are no-ops. Cap the loop so it cannot spin
-; forever if the window is closed by other means.
-sleep 3000
+; Install length varies (the asar downloads here); click Close until the window closes.
+sleep 8000
 attempts := 0
 While WinExist(winTitle) and (attempts < 300) {
   ControlClick "x500 y315", winTitle,,,, "Pos"
