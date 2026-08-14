@@ -8,21 +8,29 @@ $releases = 'https://www.micron.com/products/ssd/storage-executive-software'
 $fallbackUrl = 'https://assets.micron.com/adobe/assets/urn:aaid:aem:cbf18087-f8b5-4434-910b-15953998aa84/renditions/original/as/storageexecutive-windows.exe'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  # Anchor on the Windows Storage Executive phrase - the page also lists Linux and msecli.
+  $re = '(?i)Windows[^<]{0,40}?Storage Executive[^<]{0,20}version[^\d]{0,12}([\d\.]+)'
+  $ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+
+  # Micron intermittently serves the page without the version block; retry before failing.
+  $version = $null
+  $download_page = $null
+  for ($i = 1; $i -le 3 -and -not $version; $i++) {
+    if ($i -gt 1) { Start-Sleep -Seconds ($i * 3) }
+    try {
+      $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent $ua
+      if ($download_page.Content -match $re) { $version = $Matches[1] }
+    } catch { }
+  }
+  if (-not $version) { throw "Could not find the Windows Storage Executive version on $releases" }
 
   $Url64 = $download_page.links |
     Where-Object { $_.href -match 'storageexecutive-windows\.exe' } |
     Select-Object -First 1 -ExpandProperty href
   if (-not $Url64) { $Url64 = $fallbackUrl }
 
-  # Anchor on the Windows Storage Executive phrase - the page also lists Linux and msecli.
-  $re = '(?i)Windows[^<]{0,40}?Storage Executive[^<]{0,20}version[^\d]{0,12}([\d\.]+)'
-  if ($download_page.Content -notmatch $re) {
-    throw "Could not find the Windows Storage Executive version on $releases"
-  }
-
   # Match NuGet's nupkg filename so GitReleases can find it (11.08.082025.00 -> 11.8.82025).
-  $version = ConvertTo-NuGetVersion $Matches[1]
+  $version = ConvertTo-NuGetVersion $version
 
   $checksumType = 'sha256'
   $checksum64 = Get-RemoteChecksum -Algorithm $checksumType -Url $Url64
