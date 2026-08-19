@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://stardock.cachefly.net/software/Fences6_setup.exe'
-$checksum               = 'ca569e4a7f301d534de596943b58c4d0cae85b428ddde774cfae3608c9692766'
+$checksum               = 'c15a045f6f63639c660e084d6fdd902a3ce2e827468e5268169c6b1fd0c72cd3'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
