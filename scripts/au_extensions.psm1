@@ -17,6 +17,7 @@ $funcs = @(
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
   'ConvertTo-NuGetVersion'
+  'Get-RetryWebContent'
 )
 
 $funcs | ForEach-Object {
