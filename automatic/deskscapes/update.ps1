@@ -5,13 +5,12 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/deskscapes/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-
   $Url = 'https://cdn.stardock.us/downloads/public/software/deskscapes/DeskScapes11-sd-setup.exe'
 
   # Match versions like "DeskScapes 10.96" or "DeskScapes 11.0"
   $re = "DeskScapes (?<version>\d+\.\d+(?:\.\d+)*)"
-  $null = $releases.Content -match $re
+  $content = Get-RetryWebContent $history_page -MustMatch $re
+  $null = $content -match $re
   $version = $Matches.version
 
   # Match NuGet's nupkg filename so GitReleases can find it (26.0.1.0 -> 26.0.1).

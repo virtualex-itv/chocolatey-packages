@@ -5,16 +5,15 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/multiplicity/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-  $content = $releases.Content
-
-  # Get download URL from trial page (follows redirect to archive.stardock.com)
-  $downloadPage = Invoke-WebRequest -Uri 'https://www.stardock.com/products/multiplicity/download-trial' -UseBasicParsing
-  $null = $downloadPage.Content -match '(https?://[^\s"<>]+Multiplicity[^\s"<>]*\.exe)'
-  $Url = $Matches[0]
 
   # Parse version from history page, skip betas
   $pattern = 'Multiplicity\s+(?<version>\d+\.\d+(?:\.\d+)*)(?<beta>\s+Beta)?'
+  $content = Get-RetryWebContent $history_page -MustMatch $pattern
+
+  # Download URL is scraped from the trial page
+  $urlRe = '(https?://[^\s"<>]+Multiplicity[^\s"<>]*\.exe)'
+  $null = (Get-RetryWebContent 'https://www.stardock.com/products/multiplicity/download-trial' -MustMatch $urlRe) -match $urlRe
+  $Url = $Matches[0]
   $versionMatches = [regex]::Matches($content, $pattern)
   $version = $null
   foreach ($m in $versionMatches) {

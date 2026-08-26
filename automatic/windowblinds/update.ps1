@@ -5,13 +5,12 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/windowblinds/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-
   $Url = 'https://cdn.stardock.us/downloads/public/software/windowblinds/WindowBlinds11_setup.exe'
 
   # Match versions like "WindowBlinds 11.0.0"
   $re = "WindowBlinds (?<version>\d+\.\d+(?:\.\d+)*)"
-  $null = $releases.Content -match $re
+  $content = Get-RetryWebContent $history_page -MustMatch $re
+  $null = $content -match $re
   $version = $Matches.version
   # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can find it.
   $version = ConvertTo-NuGetVersion $version

@@ -1,5 +1,6 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $history_page = 'https://www.stardock.com/products/fences/history'
 
@@ -89,8 +90,7 @@ function CreateStream {
 function global:au_GetLatest {
     $streams = @{}
 
-    $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-    $content = $releases.Content
+    $content = Get-RetryWebContent $history_page -MustMatch 'Fences\s*\d'
 
     foreach ($major in $majorVersions) {
         $stream = CreateStream -major $major -content $content

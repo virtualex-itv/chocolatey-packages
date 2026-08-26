@@ -1,13 +1,13 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $history_page = 'https://www.stardock.com/products/groupy/history'
 
 function global:au_GetLatest {
-    $response = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-    $content  = $response.Content
 
     $headingRe = 'Groupy\s+v?(?<version>2\.\d+(?:\.\d+)*)\s+Changelog'
+    $content   = Get-RetryWebContent $history_page -MustMatch $headingRe
     $headingMatches   = [regex]::Matches($content, $headingRe)
 
     # Collect raw version strings (e.g. "2.30", "2.20")

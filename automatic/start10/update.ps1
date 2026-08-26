@@ -5,12 +5,12 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/start10/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-
   $Url = 'https://cdn.stardock.us/downloads/public/software/start/Start10_setup_sd.exe'
 
   $re = "Start10 v(?<version>[\d\.]+[\d\.]+)"
-  $version = $releases -match $re | ForEach-Object { $Matches.version }
+
+  $content = Get-RetryWebContent $history_page -MustMatch $re
+  $version = $content -match $re | ForEach-Object { $Matches.version }
   # Normalize to match NuGet's on-disk nupkg filename so AU's GitReleases plugin can find it.
   $version = ConvertTo-NuGetVersion $version
 

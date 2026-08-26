@@ -1,16 +1,16 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $history_page = 'https://www.stardock.com/products/cursorfx/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-
   $Url = 'https://cdn.stardock.us/downloads/public/software/cursorfx/CursorFX_setup_sd.exe'
 
   # Match versions like "CursorFX 4.03" or "CursorFX 4.0"
   $re = "CursorFX (?<version>\d+\.\d+(?:\.\d+)*)"
-  $null = $releases.Content -match $re
+  $content = Get-RetryWebContent $history_page -MustMatch $re
+  $null = $content -match $re
   $version = $Matches.version
   $ChecksumType = 'sha256'
 

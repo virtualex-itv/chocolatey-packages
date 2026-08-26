@@ -5,16 +5,15 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/objectdock/history'
 
 function global:au_GetLatest {
-  $releases = Invoke-WebRequest -Uri $history_page -UseBasicParsing
-  $content = $releases.Content
-
-  # Get download URL from trial page
-  $downloadPage = Invoke-WebRequest -Uri 'https://www.stardock.com/products/objectdock/download-trial' -UseBasicParsing
-  $null = $downloadPage.Content -match '(https?://[^\s"<>]+ObjectDock[^\s"<>]*\.exe)'
-  $Url = $Matches[0]
 
   # Parse version from history page (e.g., "UI: <version>")
   $pattern = 'UI:\s*(?<version>\d+\.\d+(?:\.\d+)*)'
+  $content = Get-RetryWebContent $history_page -MustMatch $pattern
+
+  # Download URL is scraped from the trial page
+  $urlRe = '(https?://[^\s"<>]+ObjectDock[^\s"<>]*\.exe)'
+  $null = (Get-RetryWebContent 'https://www.stardock.com/products/objectdock/download-trial' -MustMatch $urlRe) -match $urlRe
+  $Url = $Matches[0]
   $null = $content -match $pattern
   $version = $Matches.version
 
