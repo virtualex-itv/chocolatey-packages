@@ -7,18 +7,11 @@ $history_page = 'https://www.stardock.com/products/start11/history'
 function global:au_GetLatest {
   $Url = 'https://cdn.stardock.us/downloads/public/software/start/v2/Start11v2-setup.exe'
   $pattern = 'Start11 v?(?<version>\d+(\.\d+)+)(?<beta> Beta)?'
-  $ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
 
-  # Stardock intermittently serves the history page without the release list; retry.
+  $content = Get-RetryWebContent $history_page -MustMatch $pattern
   $version = $null
-  for ($i = 1; $i -le 3 -and -not $version; $i++) {
-    if ($i -gt 1) { Start-Sleep -Seconds ($i * 3) }
-    try {
-      $content = (Invoke-WebRequest -Uri $history_page -UseBasicParsing -UserAgent $ua).Content
-      foreach ($m in [regex]::Matches($content, $pattern)) {
-        if (-not $m.Groups['beta'].Success) { $version = $m.Groups['version'].Value; break }
-      }
-    } catch { }
+  foreach ($m in [regex]::Matches($content, $pattern)) {
+    if (-not $m.Groups['beta'].Success) { $version = $m.Groups['version'].Value; break }
   }
   if (-not $version) { throw "Could not find a non-beta Start11 version on $history_page" }
 

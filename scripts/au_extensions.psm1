@@ -18,6 +18,7 @@ $funcs = @(
   'Update-OnETagChanged'
   'ConvertTo-NuGetVersion'
   'Get-RetryWebContent'
+  'Get-RetryWebResponse'
 )
 
 $funcs | ForEach-Object {

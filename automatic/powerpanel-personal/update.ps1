@@ -1,10 +1,11 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-personal-windows/'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Get-RetryWebResponse $releases -MustMatch '\.exe'
 
   $re = '.exe'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
