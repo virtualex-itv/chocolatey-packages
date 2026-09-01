@@ -11,6 +11,8 @@ toc:
         url: /packages/aquasnap.html
       - page: "BetterDiscord Installer"
         url: /packages/betterdiscord.html
+      - page: "BetterDiscord CLI"
+        url: /packages/betterdiscordcli.html
       - page: "[Deprecated] Capture (Formerly Jing)"
         url: /packages/capture.html
       - page: "Creative App"

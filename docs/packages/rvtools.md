@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="32" height="32"/> [![RVTools](https://img.shields.io/chocolatey/v/rvtools.svg?label=RVTools)](https://community.chocolatey.org/packages/rvtools) [![RVTools](https://img.shields.io/chocolatey/dt/rvtools.svg)](https://community.chocolatey.org/packages/rvtools)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@2dcfd72797ad9ed0ce34c5450962910ce1c146df/icons/rvtools.png" width="32" height="32"/> [![RVTools](https://img.shields.io/chocolatey/v/rvtools.svg?label=RVTools)](https://community.chocolatey.org/packages/rvtools) [![RVTools](https://img.shields.io/chocolatey/dt/rvtools.svg)](https://community.chocolatey.org/packages/rvtools)
 
 ## Usage
 
@@ -28,7 +28,6 @@ RVTools interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/rvtools)
@@ -36,4 +35,3 @@ RVTools interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX
 [Software Site](https://robware.net/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/rvtools)
-

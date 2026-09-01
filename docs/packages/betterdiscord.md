@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28312650af5f6f365757d0c90621c11154a7c6ae/icons/betterdiscord.png" width="32" height="32"/> [![BetterDiscord Installer](https://img.shields.io/chocolatey/v/betterdiscord.svg?label=BetterDiscord+Installer)](https://community.chocolatey.org/packages/betterdiscord) [![BetterDiscord Installer](https://img.shields.io/chocolatey/dt/betterdiscord.svg)](https://community.chocolatey.org/packages/betterdiscord)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@28312650af5f6f365757d0c90621c11154a7c6ae/icons/betterdiscord.png" width="32" height="32"/> [![BetterDiscord Installer](https://img.shields.io/chocolatey/v/betterdiscord.svg?label=BetterDiscord+Installer)](https://community.chocolatey.org/packages/betterdiscord) [![BetterDiscord Installer](https://img.shields.io/chocolatey/dt/betterdiscord.svg)](https://community.chocolatey.org/packages/betterdiscord)
 
 ## Usage
 
@@ -74,4 +74,3 @@ Explore communities from [DiscordServers.com](https://discordservers.com/) direc
 [Software Site](https://betterdiscord.app/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/betterdiscord)
-
