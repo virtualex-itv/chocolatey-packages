@@ -18,18 +18,26 @@ Get-ChocolateyWebFile @packageArgs
 
 $discordRoot = Join-Path $env:LOCALAPPDATA 'Discord'
 
-# Injection lives in the newest app-*/modules/discord_desktop_core-*/index.js. Discord
-# writes a fresh stock copy on every update, which is why BD must be re-run after one.
+# BD 2.0.0 injects with the app.asar method: a resources\app shim (index.js plus a
+# package.json pointing at it) that loads betterdiscord.app.asar. BD 1.x instead
+# patched discord_desktop_core's index.js, which 2.x never touches - checking only the
+# old site reports a false failure on every 2.x install. Discord restores both on
+# update, which is why BD must be re-run after one.
 function Test-BDInjected {
   $app = Get-ChildItem $discordRoot -Filter 'app-*' -Directory -ErrorAction SilentlyContinue |
     Sort-Object Name -Descending | Select-Object -First 1
   if (-not $app) { return $false }
+
+  $shim = Join-Path $app.FullName 'resources\app\index.js'
+  if ((Test-Path $shim) -and ((Get-Content $shim -Raw) -match 'betterdiscord')) { return $true }
+
   $core = Get-ChildItem (Join-Path $app.FullName 'modules') -Filter 'discord_desktop_core-*' -Directory -ErrorAction SilentlyContinue |
     Sort-Object Name -Descending | Select-Object -First 1
   if (-not $core) { return $false }
   $idx = Join-Path $core.FullName 'discord_desktop_core\index.js'
   return (Test-Path $idx) -and ((Get-Content $idx -Raw) -match 'betterdiscord')
 }
+
 
 # BD injects into a stopped Discord; remember whether to bring it back afterwards.
 $discordWasRunning = [bool](Get-Process 'discord' -ErrorAction SilentlyContinue)
