@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://files.creative.com/creative/bin/apps/swureleases/win/creativeapp/release/CreativeAppSetup_1.24.00.00.exe'
-$checksum               = 'a162f19cad2fca834cca41b979176b43083f8579a303a97b3cd0305b52a31911'
+$url                    = 'https://files.creative.com/creative/bin/apps/swureleases/win/creativeapp/release/CreativeAppSetup_1.24.05.01.exe'
+$checksum               = '0754362c9d6d55310fcebfbf161bb33b7b897957c2d29d1f2216d7365eb97918'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
