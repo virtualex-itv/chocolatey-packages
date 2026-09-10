@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://downloads.dell.com/rvtools/rvtools4.8.2.msi'
-$checksum               = 'a3f72e51f08b0308d2a85844c1b61d698e8b823cb3c0e3cb6bf3e8f5eb4dc01e'
+$url                    = 'https://downloads.dell.com/rvtools/rvtools4.8.1.msi'
+$checksum               = '0a3f73f9fed85ff4f9756cbc20437eee3c5d100f1d0b764ec47665697aabfb47'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
