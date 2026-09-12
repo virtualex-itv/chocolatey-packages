@@ -22,6 +22,17 @@ function global:au_GetLatest {
         Remove-Item $tempFile -Force -ErrorAction SilentlyContinue
     }
 
+    # Dell's CDN serves two different rvtools.pdf objects - one still titled 4.8.1, one
+    # 4.8.2 - so consecutive runs saw the version flap and AU repackaged daily, shipping
+    # the older MSI under the newer version number. A stale edge copy is not a release:
+    # never accept a version below what is already packaged.
+    $nuspecVersion = ([xml](Get-Content "$PSScriptRoot\rvtools.nuspec")).package.metadata.version
+    $packaged = ($nuspecVersion -split '\.')[0..2] -join '.'
+    if ([version]$version -lt [version]$packaged) {
+        Write-Warning "PDF reports $version but $packaged is already packaged - stale CDN copy, keeping $packaged"
+        $version = $packaged
+    }
+
     $Url32 = "${baseURL}rvtools${version}.msi"
 
     # Checksum: hash the actual served MSI (~8MB). Dell's checksum.txt is NOT the
