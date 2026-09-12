@@ -90,7 +90,10 @@ function CreateStream {
 function global:au_GetLatest {
     $streams = @{}
 
-    $content = Get-RetryWebContent $history_page -MustMatch 'Fences\s*\d'
+    # Guard on a real changelog entry, not just 'Fences <digit>': that matches the page's own
+    # navigation ("Fences 6 Page Navigation Fences 6 Download"), so a stub page satisfied the
+    # retry, passed through, and then yielded no versions at all.
+    $content = Get-RetryWebContent $history_page -MustMatch 'Changelog\s*\(Released'
 
     foreach ($major in $majorVersions) {
         $stream = CreateStream -major $major -content $content
