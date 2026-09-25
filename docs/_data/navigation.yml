@@ -19,7 +19,7 @@ toc:
         url: /packages/creativeapp.html
       - page: "CursorFX"
         url: /packages/cursorfx.html
-      - page: "Curtains"
+      - page: "[Retired] Curtains"
         url: /packages/curtains.html
       - page: "[Retired] Decor8"
         url: /packages/decor8.html
@@ -101,7 +101,7 @@ toc:
         url: /packages/stardockfences.html
       - page: "Multiplicity"
         url: /packages/stardockmultiplicity.html
-      - page: "Start10"
+      - page: "[Retired] Start10"
         url: /packages/start10.html
       - page: "Start11"
         url: /packages/start11.html

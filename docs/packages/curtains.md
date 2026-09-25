@@ -1,20 +1,20 @@
-# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@de6fb2832128b844f0fd00dec9c7df96e0dae9fb/icons/curtains.png" width="32" height="32"/> [![Curtains](https://img.shields.io/chocolatey/v/curtains.svg?label=Curtains)](https://community.chocolatey.org/packages/curtains) [![Curtains](https://img.shields.io/chocolatey/dt/curtains.svg)](https://community.chocolatey.org/packages/curtains)
+#  [![[Retired] Curtains](https://img.shields.io/chocolatey/v/curtains.svg?label=%5BRetired%5D+Curtains)](https://community.chocolatey.org/packages/curtains) [![[Retired] Curtains](https://img.shields.io/chocolatey/dt/curtains.svg)](https://community.chocolatey.org/packages/curtains)
 
 ## Usage
 
-To install Curtains, run the following command from the command line or from PowerShell:
+To install [Retired] Curtains, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install curtains
 ```
 
-To upgrade Curtains, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Curtains, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade curtains
 ```
 
-To uninstall Curtains, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Curtains, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall curtains
@@ -22,13 +22,21 @@ choco uninstall curtains
 
 ## Description
 
-Easily create and add additional style modes to Windows 10.
+## This package has been retired
 
-**WARNING: Windows 10 Only** - Curtains does NOT work on Windows 11. Stardock has stated they have no plans to support Windows 11 due to incompatible changes in how Windows handles window styling. If you are running Windows 11, this software will not function.
+Curtains was a Windows 10 visual-style tool by Stardock. **Windows 10 reached end of support on October 14, 2025**, and Curtains does not work on Windows 11.
 
-NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+### Why was this package retired?
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+- Windows 10 has reached end of life and is no longer supported by Microsoft
+- Curtains does NOT work on Windows 11 - Stardock has stated they have no plans to support Windows 11 due to incompatible changes in how Windows handles window styling
+- The last stable release was 1.19.1 in November 2021, so the software is no longer being developed
+
+### Alternatives
+
+For customizing the look of modern Windows, consider:
+
+- **WindowBlinds** - Stardock's full Windows UI skinning tool, supports Windows 10 and 11: `choco install windowblinds`
 
 
 ## Links
@@ -37,5 +45,5 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 [Software Site](https://www.stardock.com/products/curtains/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/curtains)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/curtains)
 

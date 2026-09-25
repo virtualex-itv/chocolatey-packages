@@ -1,20 +1,20 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/456fd4d06ac21f622d924df47b13529470a0d257/icons/start10.png" width="32" height="32"/> [![Start10](https://img.shields.io/chocolatey/v/start10.svg?label=Start10)](https://community.chocolatey.org/packages/start10) [![Start10](https://img.shields.io/chocolatey/dt/start10.svg)](https://community.chocolatey.org/packages/start10)
+#  [![[Retired] Start10](https://img.shields.io/chocolatey/v/start10.svg?label=%5BRetired%5D+Start10)](https://community.chocolatey.org/packages/start10) [![[Retired] Start10](https://img.shields.io/chocolatey/dt/start10.svg)](https://community.chocolatey.org/packages/start10)
 
 ## Usage
 
-To install Start10, run the following command from the command line or from PowerShell:
+To install [Retired] Start10, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install start10
 ```
 
-To upgrade Start10, run the following command from the command line or from PowerShell:
+To upgrade [Retired] Start10, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade start10
 ```
 
-To uninstall Start10, run the following command from the command line or from PowerShell:
+To uninstall [Retired] Start10, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall start10
@@ -22,11 +22,23 @@ choco uninstall start10
 
 ## Description
 
-Bringing back the familiar Windows Start menu.
+## This package has been retired
 
-NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
+Start10 was a Windows 10 Start menu replacement tool by Stardock. **Windows 10 reached end of support on October 14, 2025**, and Windows 10 is the only operating system Stardock lists for Start10.
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+### Why was this package retired?
+
+- Windows 10 has reached end of life and is no longer supported by Microsoft
+- Start10 was built for the Windows 10 Start menu; Stardock lists Windows 10 as its only supported OS
+- Stardock's successor, Start11, supports both Windows 10 and Windows 11
+
+### Alternatives
+
+For Start menu customization on modern Windows, consider:
+
+- **Start11** - Stardock's successor to Start10 (requires its own license); its installer removes Start10 automatically: `choco install start11`
+- **StartAllBack** - Windows 11 Start menu alternative: `choco install startallback`
+- **Open-Shell** - Free, open-source Start menu replacement: `choco install open-shell`
 
 
 ## Links
@@ -35,5 +47,5 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 [Software Site](https://www.stardock.com/products/start10/)
 
-[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/start10)
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/start10)
 
