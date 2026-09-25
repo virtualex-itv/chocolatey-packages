@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>start10</id>
+    <version>1.98.0.20260925</version>
+    <owners>necrose99 virtualex</owners>
+    <title>[Retired] Start10</title>
+    <authors>Stardock</authors>
+    <projectUrl>https://www.stardock.com/products/start10/</projectUrl>
+    <tags>retired</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/start10</packageSourceUrl>
+    <summary>RETIRED: Start10 was designed for Windows 10, which is no longer supported.</summary>
+    <description>## This package has been retired
+
+Start10 was a Windows 10 Start menu replacement tool by Stardock. **Windows 10 reached end of support on October 14, 2025**, and Windows 10 is the only operating system Stardock lists for Start10.
+
+### Why was this package retired?
+
+- Windows 10 has reached end of life and is no longer supported by Microsoft
+- Start10 was built for the Windows 10 Start menu; Stardock lists Windows 10 as its only supported OS
+- Stardock's successor, Start11, supports both Windows 10 and Windows 11
+
+### Alternatives
+
+For Start menu customization on modern Windows, consider:
+
+- **Start11** - Stardock's successor to Start10 (requires its own license); its installer removes Start10 automatically: `choco install start11`
+- **StartAllBack** - Windows 11 Start menu alternative: `choco install startallback`
+- **Open-Shell** - Free, open-source Start menu replacement: `choco install open-shell`
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
