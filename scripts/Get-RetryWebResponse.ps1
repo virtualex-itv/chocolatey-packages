@@ -20,7 +20,9 @@ function Get-RetryWebResponse {
     try {
       $r = Invoke-WebRequest -Uri $Uri -UseBasicParsing -UserAgent $ua
       if ($r.Content -and (-not $MustMatch -or $r.Content -match $MustMatch)) { return $r }
-      $last = "content did not match '$MustMatch'"
+      # Describe what came back so a failure shows whether it was a stub or a block page.
+      $title = ([regex]::Match([string]$r.Content, '(?is)<title[^>]*>(.*?)</title>')).Groups[1].Value.Trim()
+      $last = "HTTP $($r.StatusCode), $(([string]$r.Content).Length) bytes, title '$title' - content did not match '$MustMatch'"
     } catch { $last = $_.Exception.Message }
   }
   throw "Could not read expected content from $Uri after $Retries attempts ($last)"
