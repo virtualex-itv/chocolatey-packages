@@ -2,12 +2,14 @@
 # the expected marker. Vendor sites intermittently serve a page with no release list
 # (or a 5xx), which otherwise surfaces as an opaque downstream error. Backoff is
 # jittered so packages sharing a host in a parallel AU run do not retry in lockstep.
+# Six attempts span ~90s: Stardock's origin sometimes renders history pages without their
+# changelog for longer than the old four-attempt (~35s) window. Healthy runs return on attempt 1.
 function Get-RetryWebResponse {
   [CmdletBinding()]
   param(
     [Parameter(Mandatory)][string] $Uri,
     [string] $MustMatch,
-    [int]    $Retries = 4
+    [int]    $Retries = 6
   )
   $ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
   $waits = @(0, 3, 8, 20, 30)
