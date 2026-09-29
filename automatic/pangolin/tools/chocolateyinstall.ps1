@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64      = 'https://github.com/fosrl/windows/releases/download/0.14.0/pangolin-amd64-0.14.0.msi'
-$checksum64 = 'aa059848bb61709735e8711f6cbae6a80f002599e631cc38105f9f5fc15b2df3'
+$url64      = 'https://github.com/fosrl/windows/releases/download/0.15.0/pangolin-amd64-0.15.0.msi'
+$checksum64 = 'ac86d2bb1d30c7f6574d0dfc76d673ddb0844715f8012d6bf8a7ffaf2aba8057'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
