@@ -62,7 +62,6 @@ Or simply update, and the dependency will handle the transition:
 choco upgrade vmware-powercli-psmodule
 ```
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-powercli-psmodule)
@@ -70,4 +69,3 @@ choco upgrade vmware-powercli-psmodule
 [Software Site](https://developer.broadcom.com/powercli)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-powercli-psmodule)
-

@@ -31,4 +31,3 @@ Available for Windows®, the comprehensive and easy-to-use Sound Blaster Command
 [Software Site](https://us.creative.com/p/sound-blaster)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/soundblaster-command)
-

@@ -32,7 +32,6 @@ To import module use:
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-workloadmanagement)
@@ -40,4 +39,3 @@ let them know the package is no longer updating correctly.
 [Software Site](https://github.com/lamw/VMware.WorkloadManagement)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workloadmanagement)
-

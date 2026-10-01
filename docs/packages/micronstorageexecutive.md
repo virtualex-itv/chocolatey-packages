@@ -26,7 +26,6 @@ Micron’s Storage Executive software offers an easy interface to analyze and ma
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/micron-storage-executive)
@@ -34,4 +33,3 @@ Micron’s Storage Executive software offers an easy interface to analyze and ma
 [Software Site](https://www.micron.com/products/ssd/storage-executive-software)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/micron-storage-executive)
-

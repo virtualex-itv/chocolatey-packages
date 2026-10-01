@@ -26,7 +26,6 @@ Transmitting screen content, mouse and keyboard data to read Windows Events or r
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/royalserver)
@@ -34,4 +33,3 @@ Transmitting screen content, mouse and keyboard data to read Windows Events or r
 [Software Site](https://www.royalapps.com/server/main/features)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/royalserver)
-

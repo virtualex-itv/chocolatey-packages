@@ -26,7 +26,6 @@ FileSeek is an easy-to-use file search app that includes advanced functionality 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/fileseek.portable)
@@ -34,4 +33,3 @@ FileSeek is an easy-to-use file search app that includes advanced functionality 
 [Software Site](https://www.fileseek.ca/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/fileseek.portable)
-

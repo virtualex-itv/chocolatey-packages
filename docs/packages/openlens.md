@@ -49,7 +49,6 @@ Or simply update, and the dependency will handle the transition:
 choco upgrade openlens
 ```
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/openlens)
@@ -57,4 +56,3 @@ choco upgrade openlens
 [Software Site](https://github.com/freelensapp/freelens)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/openlens)
-

@@ -38,7 +38,6 @@ If you're looking for streaming software, consider these popular alternatives:
 - **Streamlabs Desktop** - Free with additional features: `choco install streamlabs-obs`
 - **XSplit Broadcaster** - Professional streaming: `choco install xsplit-broadcaster`
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/twitch-studio)
@@ -46,4 +45,3 @@ If you're looking for streaming software, consider these popular alternatives:
 [Software Site](https://www.twitch.tv/broadcast/studio)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/twitch-studio)
-

@@ -26,7 +26,6 @@ Amazon WorkSpaces plays nice with everyone. Access your personal Windows environ
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/amazon-workspaces)
@@ -34,4 +33,3 @@ Amazon WorkSpaces plays nice with everyone. Access your personal Windows environ
 [Software Site](https://clients.amazonworkspaces.com/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/amazon-workspaces)
-

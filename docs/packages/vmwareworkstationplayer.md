@@ -53,7 +53,6 @@ choco uninstall vmware-workstation-player
 - **VirtualBox** - Free and open source: `choco install virtualbox`
 - **Hyper-V** - Built into Windows Pro/Enterprise
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-workstation-player)
@@ -61,4 +60,3 @@ choco uninstall vmware-workstation-player
 [Software Site](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-workstation-player)
-

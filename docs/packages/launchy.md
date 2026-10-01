@@ -40,7 +40,6 @@ Launchy was a free cross-platform keystroke launcher utility that helped users l
 - **Listary** - File search and app launcher
 - **Wox** - Full-featured launcher with plugin support
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/launchy)
@@ -48,4 +47,3 @@ Launchy was a free cross-platform keystroke launcher utility that helped users l
 [Software Site](http://www.launchy.net)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/launchy)
-

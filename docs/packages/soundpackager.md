@@ -26,7 +26,6 @@ Customize your auditory experience by applying sound packages to your PC.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/soundpackager)
@@ -34,4 +33,3 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/soundpackager/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/soundpackager)
-

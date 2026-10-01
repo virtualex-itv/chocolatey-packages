@@ -37,7 +37,6 @@ ModernMix was a Stardock utility that allowed running Windows 8 "Modern Apps" (M
 
 There is no direct replacement for ModernMix because the problem it solved no longer exists in modern Windows.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/modernmix)
@@ -45,4 +44,3 @@ There is no direct replacement for ModernMix because the problem it solved no lo
 [Software Site](https://www.stardock.com/products/modernmix/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/modernmix)
-

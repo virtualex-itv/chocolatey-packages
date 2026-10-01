@@ -26,7 +26,6 @@ Customize your Windows cursor and create your own.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/cursorfx)
@@ -34,4 +33,3 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/cursorfx/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/cursorfx)
-

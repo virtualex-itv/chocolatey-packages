@@ -48,7 +48,6 @@ Following Broadcom's acquisition of VMware, the direct download URLs were remove
 - **VirtualBox** - Free and open source: `choco install virtualbox`
 - **Hyper-V** - Built into Windows Pro/Enterprise
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmwareworkstation)
@@ -56,4 +55,3 @@ Following Broadcom's acquisition of VMware, the direct download URLs were remove
 [Software Site](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/vmwareworkstation)
-

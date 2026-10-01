@@ -40,7 +40,6 @@ For Start menu customization on modern Windows, consider:
 - **StartAllBack** - Windows 11 Start menu alternative: `choco install startallback`
 - **Open-Shell** - Free, open-source Start menu replacement: `choco install open-shell`
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/start10)
@@ -48,4 +47,3 @@ For Start menu customization on modern Windows, consider:
 [Software Site](https://www.stardock.com/products/start10/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/start10)
-

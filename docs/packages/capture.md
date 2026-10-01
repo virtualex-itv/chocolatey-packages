@@ -46,7 +46,6 @@ choco install snagit
 
 For more information, visit: https://www.techsmith.com/solutions/capture-tool/
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/capture)
@@ -54,4 +53,3 @@ For more information, visit: https://www.techsmith.com/solutions/capture-tool/
 [Software Site](https://www.techsmith.com/jing-tool.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/capture)
-

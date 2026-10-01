@@ -26,7 +26,6 @@ Personalize your desktop background with animated pictures and video.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/deskscapes)
@@ -34,4 +33,3 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/deskscapes/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/deskscapes)
-

@@ -47,7 +47,6 @@ Or simply update, and the dependency will handle the transition:
 choco upgrade vmware-horizon-client
 ```
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmware-horizon-client)
@@ -55,4 +54,3 @@ choco upgrade vmware-horizon-client
 [Software Site](https://www.omnissa.com/horizon-8/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/vmware-horizon-client)
-

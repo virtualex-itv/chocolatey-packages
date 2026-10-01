@@ -51,7 +51,6 @@ Do you use a Notepad alternative, like Notepad++ or Notepad2? Notepad Replacer w
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/notepadreplacer)
@@ -59,4 +58,3 @@ Do you use a Notepad alternative, like Notepad++ or Notepad2? Notepad Replacer w
 [Software Site](https://www.binaryfortress.com/NotepadReplacer/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/notepadreplacer)
-

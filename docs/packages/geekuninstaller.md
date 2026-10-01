@@ -38,7 +38,6 @@ Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. Whe
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/geekuninstaller)
@@ -46,4 +45,3 @@ Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. Whe
 [Software Site](http://www.geekuninstaller.com)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/geekuninstaller)
-

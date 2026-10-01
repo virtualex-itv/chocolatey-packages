@@ -24,7 +24,6 @@ choco uninstall warp-terminal
 
 Become a command line power user on day one. Warp combines AI and your dev team's knowledge in one fast, intuitive terminal.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/warp-terminal)
@@ -32,4 +31,3 @@ Become a command line power user on day one. Warp combines AI and your dev team'
 [Software Site](https://www.warp.dev/windows-terminal)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/warp-terminal)
-

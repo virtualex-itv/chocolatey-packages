@@ -31,4 +31,3 @@ The complete suite of Windows desktop enhancement products for customizing your 
 [Software Site](https://www.stardock.com/products/odnt/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/manual/object-desktop)
-

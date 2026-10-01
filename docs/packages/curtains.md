@@ -38,7 +38,6 @@ For customizing the look of modern Windows, consider:
 
 - **WindowBlinds** - Stardock's full Windows UI skinning tool, supports Windows 10 and 11: `choco install windowblinds`
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/curtains)
@@ -46,4 +45,3 @@ For customizing the look of modern Windows, consider:
 [Software Site](https://www.stardock.com/products/curtains/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/curtains)
-

@@ -26,7 +26,6 @@ Enjoy hundreds of PS5, PS4 and classic PlayStation games, and unmissable benefit
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/playstationplus)
@@ -34,4 +33,3 @@ Enjoy hundreds of PS5, PS4 and classic PlayStation games, and unmissable benefit
 [Software Site](https://www.playstation.com/en-us/ps-plus/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/playstationplus)
-

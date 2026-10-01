@@ -26,7 +26,6 @@ Project Aurora is a utility that unifies RGB lighting devices across different b
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/project-aurora)
@@ -34,4 +33,3 @@ Project Aurora is a utility that unifies RGB lighting devices across different b
 [Software Site](https://www.project-aurora.com/index.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/project-aurora)
-

@@ -26,7 +26,6 @@ Termius isn't a mere SSH client, it's a complete command-line solution. Securely
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/termius)
@@ -34,4 +33,3 @@ Termius isn't a mere SSH client, it's a complete command-line solution. Securely
 [Software Site](https://termius.com/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/termius)
-

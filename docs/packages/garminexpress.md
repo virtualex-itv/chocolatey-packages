@@ -43,7 +43,6 @@ to and from your computer
 
 See https://www.garmin.com/de-DE/software/express for all information.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/garmin-express)
@@ -51,4 +50,3 @@ See https://www.garmin.com/de-DE/software/express for all information.
 [Software Site](https://www.garmin.com/en-US/software/express/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/garmin-express)
-

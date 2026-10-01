@@ -26,7 +26,6 @@ Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/omnissa-horizon-client)
@@ -34,4 +33,3 @@ Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon
 [Software Site](https://www.omnissa.com/horizon-8/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/omnissa-horizon-client)
-

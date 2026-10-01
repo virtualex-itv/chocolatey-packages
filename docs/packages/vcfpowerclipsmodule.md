@@ -49,8 +49,6 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vcf-powercli-psmodule)
@@ -58,4 +56,3 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
 [Software Site](https://developer.broadcom.com/powercli)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vcf-powercli-psmodule)
-

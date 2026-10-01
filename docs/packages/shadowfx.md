@@ -28,7 +28,6 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/shadowfx)
@@ -36,4 +35,3 @@ NOTE: This is commercial software, and only provides a trial version. Full usage
 [Software Site](https://www.stardock.com/products/shadowfx/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/shadowfx)
-

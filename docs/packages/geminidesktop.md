@@ -35,4 +35,3 @@ The app is free to use with a Google Account. Selected features require a paid G
 [Software Site](https://gemini.google/desktop/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/gemini-desktop)
-

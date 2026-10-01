@@ -50,7 +50,6 @@ In the event of a power outage, the user can configure the software to keep the 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/powerpanel-personal)
@@ -58,4 +57,3 @@ In the event of a power outage, the user can configure the software to keep the 
 [Software Site](https://www.cyberpowersystems.com/products/software/power-panel-personal/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/powerpanel-personal)
-

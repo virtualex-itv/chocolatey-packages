@@ -35,7 +35,6 @@ One of our top goals is to maintain the safety and stability of our customers' w
 Work on a renewed version of vCenter Converter is already in progress. Although we cannot commit to any specific timelines for its release, the updated tool will meet our high standards for security and stability, providing enhanced functionality and supporting the latest technologies available in vSphere virtual machines.
 
 vSphere Team"
-    
 
 ## Links
 
@@ -44,4 +43,3 @@ vSphere Team"
 [Software Site](https://my.vmware.com/en/web/vmware/info/slug/infrastructure_operations_management/vmware_vcenter_converter_standalone/6_2_0)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/vmware-converter)
-

@@ -26,7 +26,6 @@ Easier and more productive are the goals. How you do it is up to you. Logi Optio
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/logioptionsplus)
@@ -34,4 +33,3 @@ Easier and more productive are the goals. How you do it is up to you. Logi Optio
 [Software Site](https://www.logitech.com/en-us/software/logi-options-plus.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/logioptionsplus)
-

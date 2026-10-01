@@ -40,7 +40,6 @@ If you need a dynamic DNS client, consider:
 - [ddclient](https://community.chocolatey.org/packages/ddclient) (open source)
 - Your DNS provider's own update client
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/marcs-updater)
@@ -48,4 +47,3 @@ If you need a dynamic DNS client, consider:
 [Software Site](https://marc.hoersken.de/updater)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/marcs-updater)
-

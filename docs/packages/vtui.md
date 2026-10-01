@@ -28,7 +28,6 @@ Features include real-time inventory browsing via the vSphere PropertyCollector 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vtui)
@@ -36,4 +35,3 @@ Features include real-time inventory browsing via the vSphere PropertyCollector 
 [Software Site](https://github.com/noclue/vtui)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vtui)
-

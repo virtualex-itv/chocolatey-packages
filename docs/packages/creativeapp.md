@@ -24,7 +24,6 @@ choco uninstall creative-app
 
 Available for Windows®, the comprehensive and easy-to-use Creative App software offers users a complete control over their istening experience from audio realism to immersive audio effects, all which will intelligently embellish how users perceive sounds.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/creative-app)
@@ -32,4 +31,3 @@ Available for Windows®, the comprehensive and easy-to-use Creative App software
 [Software Site](https://us.creative.com/p/sound-blaster)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/creative-app)
-

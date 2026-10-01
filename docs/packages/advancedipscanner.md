@@ -31,4 +31,3 @@ choco uninstall advanced-ipscanner
 [Software Site](https://www.advanced-ip-scanner.com)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/deprecated/advanced-ipscanner)
-

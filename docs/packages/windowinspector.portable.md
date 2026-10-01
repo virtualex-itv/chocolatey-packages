@@ -26,7 +26,6 @@ View the window class, text, properties, and more, simply by moving your mouse c
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/windowinspector.portable)
@@ -34,4 +33,3 @@ View the window class, text, properties, and more, simply by moving your mouse c
 [Software Site](https://www.binaryfortress.com/WindowInspector/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/windowinspector.portable)
-

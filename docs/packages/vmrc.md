@@ -47,7 +47,6 @@ For macOS users, VMRC can be installed directly from the App Store.
 
 Following Broadcom's acquisition of VMware, the direct download URLs were removed from public CDNs. Downloads now require authentication through the Broadcom support portal, making automated package updates impossible.
 
-
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vmrc)
@@ -55,4 +54,3 @@ Following Broadcom's acquisition of VMware, the direct download URLs were remove
 [Software Site](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vmware-remote-console/12-0/vmware-remote-console-for-vsphere-12-0.html)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/retired/vmrc)
-
