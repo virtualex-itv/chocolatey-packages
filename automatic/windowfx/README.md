@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="48" height="48"/> [windowfx](https://community.chocolatey.org/packages/windowfx)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="48" height="48"/> [windowfx](https://community.chocolatey.org/packages/windowfx)
 
 Customize your windows and menus with stunning animations and effects.
 

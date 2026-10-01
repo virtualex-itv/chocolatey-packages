@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="48" height="48"/> [iconpackager](https://community.chocolatey.org/packages/iconpackager)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="48" height="48"/> [iconpackager](https://community.chocolatey.org/packages/iconpackager)
 
 Change all your Windows icons at once with custom icon packages.
 

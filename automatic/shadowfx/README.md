@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9b59225e02150148b228647a569723a09becd12c/icons/shadowfx.png" width="48" height="48"/> [shadowfx](https://community.chocolatey.org/packages/shadowfx)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/9b59225e02150148b228647a569723a09becd12c/icons/shadowfx.png" width="48" height="48"/> [shadowfx](https://community.chocolatey.org/packages/shadowfx)
 
 Instantly add drop shadows to Windows 8 and 10.
 

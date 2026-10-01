@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png" width="48" height="48"/> [tiles](https://community.chocolatey.org/packages/tiles)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png" width="48" height="48"/> [tiles](https://community.chocolatey.org/packages/tiles)
 
 Create multiple desktops of related programs, files and links.
 

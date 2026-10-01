@@ -1,4 +1,4 @@
-﻿# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png" width="48" height="48"/> [launch](https://community.chocolatey.org/packages/launch)
+# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png" width="48" height="48"/> [launch](https://community.chocolatey.org/packages/launch)
 
 Add a stationary dock to your Windows Start screen.
 
