@@ -213,6 +213,7 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
 
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
+    $description = $(if ($meta.description -is [string]) { $meta.description } else { $meta.description.InnerText }).Trim()
     $readme += @"
 # $( if ( $meta.iconUrl ) { Write-Output "<img src=`"$($meta.iconUrl)`" width=`"32`" height=`"32`"/>" }) [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://community.chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://community.chocolatey.org/packages/$($meta.id))
 
@@ -238,7 +239,7 @@ choco uninstall $($meta.id)
 
 ## Description
 
-$( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
+$description
 
 ## Links
 
@@ -247,7 +248,6 @@ $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.des
 [Software Site]($($meta.projectUrl))
 
 [Package Source]($($meta.packageSourceUrl))
-
 "@ -replace "<!-- PARAMETERS.md -->", $parameters | Out-File -Encoding UTF8 $filename
 
     $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"

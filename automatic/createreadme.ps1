@@ -4,8 +4,9 @@ Get-ChildItem | Where-Object PSIsContainer | Where-Object { !(Test-Path $_\READM
 
   $meta = $package.package.metadata
   $description = if ($meta.description -is [string]) { $meta.description } else { $meta.description.InnerText }
+  $description = $description.Trim()
   $readme = ('# <img src="{1}" width="48" height="48"/> [{0}](https://community.chocolatey.org/packages/{0})' -f $meta.id, $meta.iconUrl), ''
   $readme += $description -split "`n" | ForEach-Object { $_.Trim() }
-  $readme -join "`n" | Out-File -Encoding UTF8 $_\README.md
+  $readme -join "`r`n" | Out-File -Encoding UTF8 $_\README.md
   $meta.id
 }
