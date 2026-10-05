@@ -1,7 +1,19 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.logitech.com/en-us/software/logi-options-plus'
+$releases   = 'https://www.logitech.com/en-us/software/logi-options-plus'
+$urlOffline = 'https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.exe'
+
+function Get-HeadInfo([string]$Url) {
+  $request = [System.Net.WebRequest]::CreateDefault($Url)
+  $request.Method = "HEAD"
+  try {
+    $response = $request.GetResponse()
+    @{ ETag = $response.Headers.Get("ETag"); Length = $response.ContentLength.ToString() }
+  } finally {
+    if ($response) { $response.Dispose() }
+  }
+}
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -29,32 +41,37 @@ function global:au_GetLatest {
   $re = '\.exe'
   $Url32 = $download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href
 
-  # Get ETag and Content-Length via HEAD request
-  $request = [System.Net.WebRequest]::CreateDefault($Url32)
-  $request.Method = "HEAD"
-  try {
-    $response = $request.GetResponse()
-    $etag = $response.Headers.Get("ETag")
-    $contentLength = $response.ContentLength.ToString()
-  } finally {
-    if ($response) { $response.Dispose() }
-  }
+  # Get ETag and Content-Length of both installers via HEAD requests
+  $online  = Get-HeadInfo $Url32
+  $offline = Get-HeadInfo $urlOffline
 
   $saveFile = ".\info"
   $needsUpdate = $true
 
   if ((Test-Path $saveFile) -and !$global:au_Force) {
     $existingInfo = (Get-Content $saveFile -Encoding UTF8 -TotalCount 1) -split '\|'
-    # Update if either ETag or Content-Length changed
-    if ($existingInfo[0] -eq $etag -and $existingInfo.Count -gt 2 -and $existingInfo[2] -eq $contentLength) {
+    # Update if the ETag or Content-Length of either installer changed
+    if ($existingInfo.Count -gt 4 -and
+        $existingInfo[0] -eq $online.ETag  -and $existingInfo[2] -eq $online.Length -and
+        $existingInfo[3] -eq $offline.ETag -and $existingInfo[4] -eq $offline.Length) {
       $needsUpdate = $false
       $result = @{ Url32 = $Url32; Version = $existingInfo[1] }
     }
   }
 
   if ($needsUpdate) {
-    $result = GetResultInformation $Url32
-    "$etag|$($result.Version)|$contentLength" | Out-File $saveFile -Encoding utf8 -NoNewline
+    $result      = GetResultInformation $Url32
+    $offlineInfo = GetResultInformation $urlOffline
+
+    # Logitech can publish the offline installer hours after the online one; never pair different builds.
+    if ($offlineInfo.Version -ne $result.Version) {
+      Write-Host "Offline installer is $($offlineInfo.Version) but the online installer is $($result.Version); skipping until both match."
+      return 'ignore'
+    }
+
+    $result.UrlOffline      = $urlOffline
+    $result.ChecksumOffline = $offlineInfo.Checksum32
+    "$($online.ETag)|$($result.Version)|$($online.Length)|$($offline.ETag)|$($offline.Length)" | Out-File $saveFile -Encoding utf8 -NoNewline
   }
 
   $result
@@ -66,6 +83,8 @@ function global:au_SearchReplace {
           "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.Url32)'"
           "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
           "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+          "(^[$]urlOffline\s*=\s*)('.*')"      = "`$1'$($Latest.UrlOffline)'"
+          "(^[$]checksumOffline\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumOffline)'"
       }
   }
 }

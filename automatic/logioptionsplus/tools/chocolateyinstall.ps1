@@ -5,6 +5,17 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 $url                   = 'https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.exe'
 $checksum              = 'EBDC8C4D9647A9D17652D2129563C4251D8C74ADEEE5D3DEDCA4551633437F7A'
 $checksumType          = 'sha256'
+$urlOffline            = 'https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.exe'
+$checksumOffline       = 'BCFF70D8A90F2DA24116821186B52DAFDA0E1AC61CB6F558D450B41E212D517A'
+
+$pp = Get-PackageParameters
+
+# /Offline installs from Logitech's full offline installer, which needs no internet access during setup.
+if ($pp.Offline) {
+  Write-Host 'Using the Logi Options+ offline installer (/Offline).'
+  $url      = $urlOffline
+  $checksum = $checksumOffline
+}
 
 $packageArgs = @{
   packageName        = $env:ChocolateyPackageName
