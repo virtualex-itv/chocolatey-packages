@@ -11,8 +11,11 @@
 ; Wizard layout (apps/bootstrap-installer/src/routes):
 ;   1. welcome.tsx  - one button: "Install Hermes"          (we click this)
 ;   2. progress.tsx - no buttons, just progress             (we wait)
-;   3. success.tsx  - one button: "Launch Hermes"           (we close, don't launch)
+;   3. success.tsx  - one button: "Launch"                  (we close, don't launch)
 ;   4. failure.tsx  - error screen                          (we bail)
+;
+; Arguments: A_Args[1] = bootstrap marker path, A_Args[2] = log file path.
+; chocolateyInstall.ps1 passes both and echoes the log into the choco output.
 ; ============================================================================
 
 TraySetIcon "*"  ; suppress default tray icon
@@ -23,15 +26,24 @@ windowMatch      := "Hermes ahk_exe Hermes-Setup.exe"
 windowWaitSec    := 30          ; wait up to 30s for the bootstrap UI to launch
 installTimeoutMs := 1800000     ; 30 min wall-clock for the install itself
 pollIntervalMs   := 2000
-markerFile       := A_AppData . "\..\Local\hermes\hermes-agent\.hermes-bootstrap-complete"
-; A_AppData is Roaming; resolve LOCALAPPDATA directly for clarity
-markerFile := EnvGet("LOCALAPPDATA") . "\hermes\hermes-agent\.hermes-bootstrap-complete"
+closeGraceMs     := 15000       ; how long WM_CLOSE gets before the process is ended
+markerFile := A_Args.Length >= 1 ? A_Args[1] : EnvGet("LOCALAPPDATA") . "\hermes\hermes-agent\.hermes-bootstrap-complete"
+logFile    := A_Args.Length >= 2 ? A_Args[2] : A_Temp . "\hermes-clickthrough.log"
+
+try FileDelete logFile
+
+Log(msg) {
+    global logFile
+    FileAppend FormatTime(, "HH:mm:ss") . " " . msg . "`n", logFile
+}
 
 ; ---- Phase 1: wait for the wizard window ---------------------------------
 if !WinWait(windowMatch, , windowWaitSec) {
-    FileAppend "hermes-clickthrough: Hermes Setup window never appeared (timeout)`n", "*"
+    Log("Hermes Setup window never appeared within " . windowWaitSec . "s")
     ExitApp 10
 }
+setupPid := WinGetPID(windowMatch)
+Log("Setup window found (pid " . setupPid . ")")
 
 WinActivate windowMatch
 WinWaitActive windowMatch, , 5
@@ -56,38 +68,56 @@ CoordMode "Mouse", "Screen"
 MouseClick "Left", btnX, btnY, 1, 0
 Sleep 500
 MouseMove origX, origY, 0
+Log("Clicked Install Hermes")
 
 ; ---- Phase 3: wait for completion ----------------------------------------
-; install.ps1 drops .hermes-bootstrap-complete in the agent dir when its
-; first-launch setup finishes (see apps/desktop/README.md "Troubleshooting").
-; If the window vanishes first, accept that too.
+; The bootstrap writes .hermes-bootstrap-complete once every install stage
+; has finished. Track the Setup process rather than its window, so a window
+; that is briefly undetectable does not end the wait early.
 elapsed := 0
 Loop {
     Sleep pollIntervalMs
     elapsed += pollIntervalMs
 
-    if FileExist(markerFile)
+    if FileExist(markerFile) {
+        Log("Bootstrap marker found after " . (elapsed // 1000) . "s")
         break
+    }
 
-    if !WinExist(windowMatch)
-        break    ; installer window closed itself; treat as done
+    if !ProcessExist(setupPid) {
+        Log("Setup exited before the bootstrap marker appeared")
+        ExitApp 12
+    }
 
     if (elapsed >= installTimeoutMs) {
-        FileAppend "hermes-clickthrough: install did not complete within " . installTimeoutMs . "ms`n", "*"
-        if WinExist(windowMatch)
-            WinClose windowMatch
+        Log("Install did not complete within " . (installTimeoutMs // 60000) . " min")
+        if WinExist("ahk_pid " . setupPid)
+            WinClose
         ExitApp 11
     }
 }
 
 ; ---- Phase 4: close the Success window so Hermes-Setup.exe exits ---------
-; The wizard sits on the Success screen waiting for "Launch Hermes". We don't
-; launch (Chocolatey convention: don't auto-launch installed apps), we just
-; close so the parent installer process can return to choco.
-if WinExist(windowMatch) {
-    WinActivate windowMatch
-    Sleep 500
-    WinClose windowMatch, , 5
+; Close promptly instead of leaving "Launch" on screen: the Aug 2026
+; Hermes-Setup.exe starts the desktop app holding Setup's stdout/stderr,
+; which keeps Chocolatey waiting until the desktop app is closed. The marker
+; means the install is finished, so ending Setup is safe if WM_CLOSE fails.
+Sleep 2000
+attempts := 0
+deadline := A_TickCount + closeGraceMs
+while ProcessExist(setupPid) && (A_TickCount < deadline) {
+    if WinExist("ahk_pid " . setupPid) {
+        WinClose
+        attempts += 1
+    }
+    Sleep 1000
+}
+
+if ProcessExist(setupPid) {
+    Log("Setup still running after " . attempts . " close attempt(s); ending it")
+    ProcessClose setupPid
+} else {
+    Log("Setup closed after " . attempts . " close attempt(s)")
 }
 
 ExitApp 0

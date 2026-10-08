@@ -39,8 +39,10 @@ if (Test-Path $marker) {
   Remove-Item $marker -Force -ErrorAction SilentlyContinue
 }
 
+$ahkLog = Join-Path $env:TEMP 'hermes-clickthrough.log'
+
 Write-Host "Starting AutoHotkey wizard driver: $ahkScript"
-$ahkProc = Start-Process -FilePath $ahkExe -ArgumentList $ahkScript -PassThru
+$ahkProc = Start-Process -FilePath $ahkExe -ArgumentList "`"$ahkScript`" `"$marker`" `"$ahkLog`"" -PassThru
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -63,6 +65,10 @@ try {
       Write-Warning 'AutoHotkey driver still running; stopping it.'
       $ahkProc | Stop-Process -Force -ErrorAction SilentlyContinue
     }
+  }
+  # Echo the driver's trace into the Chocolatey log so a stuck wizard can be diagnosed.
+  if (Test-Path $ahkLog) {
+    Get-Content $ahkLog | ForEach-Object { Write-Host "  [wizard] $_" }
   }
 }
 
