@@ -2,8 +2,8 @@ Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-$releases     = 'https://www.logitechg.com/en-us/software/ghub'
-$releaseNotes = 'https://marketplace.logi.com/releasenotes/ghub/en'
+$releases   = 'https://www.logitechg.com/en-us/software/ghub'
+$updateFeed = 'https://updates.ghub.logitechg.com/pipeline/v2/update/ghub13/win/public/update.json'
 
 function GetChecksum([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -21,11 +21,9 @@ function GetChecksum([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  # Version comes from Logitech's release notes, newest entry first. Do NOT read the
-  # installer's ProductVersion - it is a bootstrapper whose own version lags the app.
-  $notes   = Get-RetryWebContent $releaseNotes -MustMatch '20\d\d\.\d+\.\d+'
-  $version = ([regex]::Match($notes, '20\d\d\.\d+\.\d+')).Value
-  if (-not $version) { throw "Could not find a G HUB version on $releaseNotes" }
+  # Version comes from the updater's public-channel feed, i.e. the build the bootstrapper installs.
+  $version = (Invoke-RestMethod -Uri $updateFeed -UseBasicParsing).version
+  if ($version -notmatch '^20\d\d\.\d+\.\d+$') { throw "Unexpected G HUB version '$version' from $updateFeed" }
 
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $Url32 = $download_page.Links | Where-Object { $_.href -match '\.exe' } | Select-Object -First 1 -ExpandProperty href
@@ -51,7 +49,7 @@ function global:au_GetLatest {
   # never reaches au_SearchReplace without a matching checksum.
   if ((Test-Path $saveFile) -and !$global:au_Force) {
     $existingInfo = (Get-Content $saveFile -Encoding UTF8 -TotalCount 1) -split '\|'
-    if ($existingInfo[0] -eq $etag -and $existingInfo.Count -gt 2 -and $existingInfo[2] -eq $contentLength -and $nuspecVersion -eq $version) {
+    if ($existingInfo[0] -eq $etag -and $existingInfo.Count -gt 2 -and $existingInfo[2] -eq $contentLength -and [version]$nuspecVersion -ge [version]$version) {
       $needsUpdate = $false
       $result = @{ Url32 = $Url32; Version = $version }
     }
@@ -61,6 +59,13 @@ function global:au_GetLatest {
     $result = GetChecksum $Url32
     $result.Version = $version
     "$etag|$version|$contentLength" | Out-File $saveFile -Encoding utf8 -NoNewline
+
+    # Logitech swapped the stub without a version bump: force a fix-version so the latest package keeps installing.
+    $match = Select-String -Path "$PSScriptRoot\tools\chocolateyInstall.ps1" -Pattern '\$checksum\s*=\s*''([a-fA-F0-9]{64})''' -ErrorAction SilentlyContinue
+    if ($match -and $match.Matches[0].Groups[1].Value -ne $result.Checksum32) {
+      Write-Host "Checksum changed without version bump - forcing update"
+      $global:au_Force = $true
+    }
   }
 
   $result
