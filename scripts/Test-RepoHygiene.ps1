@@ -42,7 +42,10 @@ $textExtensions = '.ps1', '.psm1', '.ahk', '.nuspec', '.md', '.yml', '.json'
 $checked = 0
 
 foreach ($file in $files) {
-  if (-not (Test-Path -LiteralPath $file -PathType Leaf)) { continue }
+  if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
+    if ($Path) { Add-Finding 'ERROR' $file 'path not found' }
+    continue
+  }
   $ext = [System.IO.Path]::GetExtension($file).ToLower()
   if ($textExtensions -notcontains $ext) { continue }
   $checked++
