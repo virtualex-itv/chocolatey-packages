@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64         = ''
-$checksum64    = ''
-$urlArm64      = ''
-$checksumArm64 = ''
+$url64         = 'https://github.com/amanthanvi/noctty/releases/download/v1.3.131/noctty-1.3.131-windows-x64-setup.exe'
+$checksum64    = '175c7afbb13d47fe87b666d449e664b67248de32a593f2eda2d0fa010a96d03c'
+$urlArm64      = 'https://github.com/amanthanvi/noctty/releases/download/v1.3.131/noctty-1.3.131-windows-arm64-setup.exe'
+$checksumArm64 = 'e1590c39bca8df47f2b7fe52dcb0e1a005efa63fd6caba5f2ef60ec55e079d3c'
 
 $isArm64 = $env:PROCESSOR_ARCHITECTURE -eq 'ARM64'
 
