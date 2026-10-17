@@ -1,4 +1,4 @@
-#  [![noctty](https://img.shields.io/chocolatey/v/noctty.svg?label=noctty)](https://community.chocolatey.org/packages/noctty) [![noctty](https://img.shields.io/chocolatey/dt/noctty.svg)](https://community.chocolatey.org/packages/noctty)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@661d4350a9867982cea50dd5d2d64da142cd1e3f/icons/noctty.png" width="32" height="32"/> [![noctty](https://img.shields.io/chocolatey/v/noctty.svg?label=noctty)](https://community.chocolatey.org/packages/noctty) [![noctty](https://img.shields.io/chocolatey/dt/noctty.svg)](https://community.chocolatey.org/packages/noctty)
 
 ## Usage
 
