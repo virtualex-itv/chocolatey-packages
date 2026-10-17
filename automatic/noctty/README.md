@@ -1,4 +1,4 @@
-# <img src="" width="48" height="48"/> [noctty](https://community.chocolatey.org/packages/noctty)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@661d4350a9867982cea50dd5d2d64da142cd1e3f/icons/noctty.png" width="48" height="48"/> [noctty](https://community.chocolatey.org/packages/noctty)
 
 noctty is a native Win32 terminal emulator for Windows 10 and 11 (x64 and ARM64). It runs Ghostty's terminal core - parsing, fonts, rendering, input and shell integration - inside a native Windows app with its own windowing, tabs, splits, settings window and updater.
 
