@@ -63,8 +63,6 @@ toc:
         url: /packages/micronstorageexecutive.html
       - page: "[Retired] ModernMix"
         url: /packages/modernmix.html
-      - page: "noctty"
-        url: /packages/noctty.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
       - page: "Object Desktop"
