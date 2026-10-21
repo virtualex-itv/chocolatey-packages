@@ -15,14 +15,16 @@ function global:au_GetLatest {
   # Micron intermittently serves the page without the version block; retry before failing.
   $version = $null
   $download_page = $null
+  $lastProblem = 'no response'
   for ($i = 1; $i -le 3 -and -not $version; $i++) {
     if ($i -gt 1) { Start-Sleep -Seconds ($i * 3) }
     try {
       $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent $ua
       if ($download_page.Content -match $re) { $version = $Matches[1] }
-    } catch { }
+      else { $lastProblem = "page had no version block ($($download_page.Content.Length) bytes)" }
+    } catch { $lastProblem = $_.Exception.Message }
   }
-  if (-not $version) { throw "Could not find the Windows Storage Executive version on $releases" }
+  if (-not $version) { throw "Could not find the Windows Storage Executive version on $releases ($lastProblem)" }
 
   $Url64 = $download_page.links |
     Where-Object { $_.href -match 'storageexecutive-windows\.exe' } |
