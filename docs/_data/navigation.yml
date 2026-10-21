@@ -129,6 +129,8 @@ toc:
         url: /packages/start8.html
       - page: "Steam Art Manager"
         url: /packages/steamartmanager.html
+      - page: "Supermium"
+        url: /packages/supermium.html
       - page: "Termius"
         url: /packages/termius.html
       - page: "Tiles"
@@ -141,6 +143,8 @@ toc:
         url: /packages/traystatus.portable.html
       - page: "[Retired] Twitch Studio"
         url: /packages/twitchstudio.html
+      - page: "Varia"
+        url: /packages/varia.html
       - page: "VCF.PowerCLI (PowerShell Module)"
         url: /packages/vcfpowerclipsmodule.html
       - page: "[Retired] VMware Remote Console"
