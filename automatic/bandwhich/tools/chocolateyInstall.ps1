@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64      = ''
-$checksum64 = ''
+$url64      = 'https://github.com/imsnif/bandwhich/releases/download/v0.23.1/bandwhich-v0.23.1-x86_64-pc-windows-msvc.zip'
+$checksum64 = '684d87acfd0fa808700500c2d4ced2a60be222dd86adc671035ad7b84c42cda4'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

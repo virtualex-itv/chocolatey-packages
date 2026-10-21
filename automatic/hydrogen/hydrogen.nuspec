@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>1.2.7</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright (c) The Hydrogen Developers</copyright>
     <tags>hydrogen drum-machine sequencer music audio midi foss</tags>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://github.com/hydrogen-music/hydrogen/releases/tag/1.2.7</releaseNotes>
     <licenseUrl>https://github.com/hydrogen-music/hydrogen/blob/main/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/hydrogen</packageSourceUrl>
@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/hydrogen-music/hydrogen/issues</bugTrackerUrl>
     <docsUrl>http://www.hydrogen-music.org/documentation/manual/manual_en.html</docsUrl>
     <summary>An advanced drum machine.</summary>
-    <description>Hydrogen is an advanced, open source drum machine. It provides a pattern-based sequencer, a song editor, a mixer with effects, and support for multi-layer drum kits, with MIDI input and audio export.
+    <description><![CDATA[Hydrogen is an advanced, open source drum machine. It provides a pattern-based sequencer, a song editor, a mixer with effects, and support for multi-layer drum kits, with MIDI input and audio export.
 
 ### Features
 
@@ -64,7 +64,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * This package installs the 64-bit installer.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
