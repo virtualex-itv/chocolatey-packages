@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>2.0.2</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright (c) 2022-2024 Charmbracelet, Inc</copyright>
     <tags>gum cli shell scripts terminal tui charm bash foss</tags>
-    <releaseNotes>https://github.com/charmbracelet/gum/releases</releaseNotes>
+    <releaseNotes>https://github.com/charmbracelet/gum/releases/tag/v2.0.2</releaseNotes>
     <licenseUrl>https://github.com/charmbracelet/gum/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/gum</packageSourceUrl>
@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/charmbracelet/gum/issues</bugTrackerUrl>
     <docsUrl>https://github.com/charmbracelet/gum#readme</docsUrl>
     <summary>A tool for glamorous shell scripts.</summary>
-    <description>Gum provides highly configurable, ready-to-use utilities to help you write useful shell scripts and dotfiles aliases with just a few lines of code. Ask for input, choose from lists, filter, confirm, spin, style, format, page and more, without writing any Go.
+    <description><![CDATA[Gum provides highly configurable, ready-to-use utilities to help you write useful shell scripts and dotfiles aliases with just a few lines of code. Ask for input, choose from lists, filter, confirm, spin, style, format, page and more, without writing any Go.
 
 ### Features
 
@@ -63,7 +63,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * The 64-bit build is installed on 64-bit Windows and the 32-bit build on 32-bit Windows.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-</description>
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
