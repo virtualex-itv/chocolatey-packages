@@ -9,6 +9,8 @@ toc:
         url: /packages/amazonworkspaces.html
       - page: "AquaSnap"
         url: /packages/aquasnap.html
+      - page: "bandwhich"
+        url: /packages/bandwhich.html
       - page: "BetterDiscord Installer"
         url: /packages/betterdiscord.html
       - page: "BetterDiscord CLI"
@@ -31,6 +33,8 @@ toc:
         url: /packages/deskscapes.html
       - page: "DisplayFusion (Portable)"
         url: /packages/displayfusion.portable.html
+      - page: "F3D"
+        url: /packages/f3d.html
       - page: "FileSeek (Portable)"
         url: /packages/fileseek.portable.html
       - page: "garmin-express (Install)"
@@ -45,6 +49,8 @@ toc:
         url: /packages/gum.html
       - page: "Hermes Desktop"
         url: /packages/hermesdesktop.html
+      - page: "Hydrogen"
+        url: /packages/hydrogen.html
       - page: "IconDeveloper"
         url: /packages/icondeveloper.html
       - page: "IconPackager"
@@ -87,6 +93,8 @@ toc:
         url: /packages/pangolin.html
       - page: "PlayStation Plus"
         url: /packages/playstationplus.html
+      - page: "Policy Plus"
+        url: /packages/policyplus.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
       - page: "Aurora - Unified Lighting Effects"
@@ -119,6 +127,8 @@ toc:
         url: /packages/start11.html
       - page: "[Retired] Start8"
         url: /packages/start8.html
+      - page: "Steam Art Manager"
+        url: /packages/steamartmanager.html
       - page: "Termius"
         url: /packages/termius.html
       - page: "Tiles"
