@@ -16,7 +16,10 @@ function global:Find-WindowsExe {
       $r   = Invoke-WebRequest -Uri $url -UseBasicParsing -ErrorAction Stop
       $exe = ($r.Links | Where-Object { $_.href -match '-(x64|x86_64)\.exe$' } | Select-Object -First 1).href
       if ($exe) { return @{ Url = "$url$exe"; File = $exe } }
-    } catch {}
+    } catch {
+      # A 404 is expected for whichever layout this version does not use; report anything else.
+      if ($_.Exception.Message -notmatch '404|Not Found') { Write-Warning "Could not read $url : $($_.Exception.Message)" }
+    }
   }
   return $null
 }
