@@ -79,4 +79,4 @@ function global:au_AfterUpdate {
   Update-Metadata -key 'releaseNotes' -value $url
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor 64 -NoReadme

@@ -39,4 +39,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor none -NoCheckUrl
+Update-Package -ChecksumFor none -NoCheckUrl -NoReadme

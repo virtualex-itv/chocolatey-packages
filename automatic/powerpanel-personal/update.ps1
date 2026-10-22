@@ -47,4 +47,4 @@ function global:au_AfterUpdate {
   if ($Latest.ReleaseNotes) { Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes }
 }
 
-Update-Package -ChecksumFor none
+Update-Package -ChecksumFor none -NoReadme

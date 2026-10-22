@@ -34,4 +34,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor none -NoCheckChocoVersion
+Update-Package -ChecksumFor none -NoCheckChocoVersion -NoReadme

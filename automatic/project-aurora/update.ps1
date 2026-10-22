@@ -33,4 +33,4 @@ function global:au_AfterUpdate {
 Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor 64 -NoReadme

@@ -50,4 +50,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor none
+Update-Package -ChecksumFor none -NoReadme
