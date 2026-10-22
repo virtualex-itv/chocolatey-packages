@@ -7,6 +7,7 @@
 $funcs = @(
   'Update-Metadata'
   'Get-GitHubRelease'
+  'Test-ReleaseAssetsPending'
   'Get-LatestGithubReleases'
   'Get-AllGithubReleases'
   'Get-ValidOpenSourceLicense'
