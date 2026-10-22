@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/ktgw0316/LightZone/issues</bugTrackerUrl>
     <docsUrl>https://github.com/ktgw0316/LightZone#readme</docsUrl>
     <summary>A professional-level digital darkroom and photo editor.</summary>
-    <description><![CDATA[LightZone is a professional-level digital darkroom and photo editor with RAW processing. Rather than layers, it lets you build a stack of tools that can be rearranged, readjusted, turned off and on, and removed. It is a completely non-destructive editor: any tool can be re-adjusted later, even in a different editing session. A tool stack can be copied to a batch of photos at one time. LightZone always works in a 16-bit linear color space with the wide gamut of ProPhoto RGB.
+    <description>LightZone is a professional-level digital darkroom and photo editor with RAW processing. Rather than layers, it lets you build a stack of tools that can be rearranged, readjusted, turned off and on, and removed. It is a completely non-destructive editor: any tool can be re-adjusted later, even in a different editing session. A tool stack can be copied to a batch of photos at one time. LightZone always works in a 16-bit linear color space with the wide gamut of ProPhoto RGB.
 
 ### Features
 
@@ -64,7 +64,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * This package installs the 64-bit MSI installer.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

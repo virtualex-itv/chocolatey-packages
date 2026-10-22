@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/giantpinkrobots/varia/issues</bugTrackerUrl>
     <docsUrl>https://github.com/giantpinkrobots/varia#readme</docsUrl>
     <summary>Download manager for files, torrents and videos, built on aria2 and yt-dlp.</summary>
-    <description><![CDATA[Varia is a free, open source download manager for Windows and Linux. It handles regular file downloads, torrents, and video and audio streams, and is a graphical frontend for aria2 and yt-dlp.
+    <description>Varia is a free, open source download manager for Windows and Linux. It handles regular file downloads, torrents, and video and audio streams, and is a graphical frontend for aria2 and yt-dlp.
 
 ### Features
 
@@ -64,7 +64,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * The installer is not code signed, so Windows SmartScreen may warn on a manual download.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

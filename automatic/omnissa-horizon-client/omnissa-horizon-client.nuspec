@@ -47,10 +47,10 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/omnissa-horizon-client</packageSourceUrl>
     <docsUrl>https://docs.omnissa.com/category/Horizon_Clients</docsUrl>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description><![CDATA[Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.
+    <description>Omnissa Horizon Client for Windows allows you to connect to your Omnissa Horizon virtual desktop from your device of choice giving you on-the-go access from any location.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/Faster3ck/Converseen/issues</bugTrackerUrl>
     <docsUrl>https://converseen.fasterland.net/</docsUrl>
     <summary>A free cross-platform batch image processor.</summary>
-    <description><![CDATA[Converseen is a free batch image processor. It lets you convert, resize, rotate and flip any number of images with a single mouse click. Built on the ImageMagick library, it handles more than 100 image formats, including DPX, EXR, GIF, JPEG, JPEG-2000, PNG, SVG, TIFF, WebP and HEIC/HEIF.
+    <description>Converseen is a free batch image processor. It lets you convert, resize, rotate and flip any number of images with a single mouse click. Built on the ImageMagick library, it handles more than 100 image formats, including DPX, EXR, GIF, JPEG, JPEG-2000, PNG, SVG, TIFF, WebP and HEIC/HEIF.
 
 ### Features
 
@@ -65,7 +65,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * This package installs the 64-bit MSI installer.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

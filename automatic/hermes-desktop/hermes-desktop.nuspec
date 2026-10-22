@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <docsUrl>https://hermes-agent.nousresearch.com/docs</docsUrl>
     <bugTrackerUrl>https://github.com/NousResearch/hermes-agent/issues</bugTrackerUrl>
     <summary>Hermes Desktop - the AI agent that grows with you, from Nous Research.</summary>
-    <description><![CDATA[Hermes Desktop is the native AI agent from Nous Research, providing persistent memory, focused automation, isolated subagents, web browsing, and multi-model reasoning across Telegram, Discord, Slack, WhatsApp, Signal, Email, and CLI - one agent, one memory, every surface.
+    <description>Hermes Desktop is the native AI agent from Nous Research, providing persistent memory, focused automation, isolated subagents, web browsing, and multi-model reasoning across Telegram, Discord, Slack, WhatsApp, Signal, Email, and CLI - one agent, one memory, every surface.
 
 * **Chat with the full agent** - streaming responses, live tool activity, structured tool summaries, and shared conversation history with the CLI and gateway.
 * **Side-by-side previews** - render web pages, files, and tool outputs in a right-hand pane while you keep chatting.
@@ -57,7 +57,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 MIT licensed. Paid tiers include monthly credits for the Nous Portal (300+ models and built-in tool use).
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

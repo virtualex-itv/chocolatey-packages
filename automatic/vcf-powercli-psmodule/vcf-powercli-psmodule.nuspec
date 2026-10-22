@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vcf-powercli-psmodule</packageSourceUrl>
     <docsUrl>https://developer.broadcom.com/powercli</docsUrl>
     <summary>PowerCLI is the tool millions of customers around the world use to manage and automate their VMware environments.  Discover what you can achieve with PowerCLI today.</summary>
-    <description><![CDATA[---
+    <description>---
 
 ## Package Parameters
 
@@ -69,7 +69,7 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
-]]></description>
+</description>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>

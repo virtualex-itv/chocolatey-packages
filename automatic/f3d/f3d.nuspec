@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/f3d-app/f3d/issues</bugTrackerUrl>
     <docsUrl>https://f3d.app/docs/</docsUrl>
     <summary>A fast and minimalist 3D viewer.</summary>
-    <description><![CDATA[F3D (pronounced "fed") is a fast and minimalist 3D viewer. It supports many file formats, from digital content to scientific datasets, can show animations, and offers many rendering and texturing options, including real-time physically based rendering. It is also controllable from the command line.
+    <description>F3D (pronounced "fed") is a fast and minimalist 3D viewer. It supports many file formats, from digital content to scientific datasets, can show animations, and offers many rendering and texturing options, including real-time physically based rendering. It is also controllable from the command line.
 
 ### Features
 
@@ -68,7 +68,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * `/Raytracing` - installs the larger build that includes raytracing support instead of the standard build. To switch builds on an existing install, reinstall with `choco install f3d --force --params "'/Raytracing'"`.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

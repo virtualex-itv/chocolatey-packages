@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/imsnif/bandwhich/issues</bugTrackerUrl>
     <docsUrl>https://github.com/imsnif/bandwhich#readme</docsUrl>
     <summary>A CLI utility for displaying current network utilization by process, connection and remote IP/hostname.</summary>
-    <description><![CDATA[bandwhich is a command-line tool that sniffs a network interface and shows current network utilization by process, connection and remote IP or hostname. It cross-references packets with the processes that own them using the Windows API and resolves IP addresses to hostnames in the background.
+    <description>bandwhich is a command-line tool that sniffs a network interface and shows current network utilization by process, connection and remote IP or hostname. It cross-references packets with the processes that own them using the Windows API and resolves IP addresses to hostnames in the background.
 
 ### Features
 
@@ -65,7 +65,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * The project is in passive maintenance; the latest release is from October 2024.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

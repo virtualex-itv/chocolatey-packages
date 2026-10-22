@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/geekuninstaller</packageSourceUrl>
     <docsUrl>https://geekuninstaller.com/</docsUrl>
     <summary>Basic uninstaller though powerful and lightning fast.</summary>
-    <description><![CDATA[## Features
+    <description>## Features
 
 ### Clean Removal, Force Removal
 
@@ -62,7 +62,7 @@ Instant startup, minimalistic, simple but efficient user interface.
 Single EXE runs flawlessly on both 32 and 64-bit Windows 11/10/8/7/Vista/XP. When running on x64 Windows GeekUninstaller is running as a native 64-bit application.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

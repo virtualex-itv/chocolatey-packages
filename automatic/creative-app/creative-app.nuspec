@@ -46,8 +46,8 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/creative-app</packageSourceUrl>
     <docsUrl>https://support.creative.com/Products/Products.aspx?catid=1</docsUrl>
     <summary>Creative app provides you with various configuration and control options to enhance the performance of your product and personalize your audio settings.</summary>
-    <description><![CDATA[Available for Windows®, the comprehensive and easy-to-use Creative App software offers users a complete control over their istening experience from audio realism to immersive audio effects, all which will intelligently embellish how users perceive sounds.
-]]></description>
+    <description>Available for Windows®, the comprehensive and easy-to-use Creative App software offers users a complete control over their istening experience from audio realism to immersive audio effects, all which will intelligently embellish how users perceive sounds.
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

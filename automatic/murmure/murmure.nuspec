@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/Kieirra/murmure/issues</bugTrackerUrl>
     <docsUrl>https://docs.murmure.app</docsUrl>
     <summary>Fully local, private speech-to-text with LLM post-processing.</summary>
-    <description><![CDATA[Murmure is a privacy-first, open-source speech-to-text application that runs entirely on your machine. A neural network, NVIDIA's Parakeet TDT 0.6B v3 model, transcribes your voice locally, so no audio or text ever leaves your computer and no network connection is required.
+    <description>Murmure is a privacy-first, open-source speech-to-text application that runs entirely on your machine. A neural network, NVIDIA's Parakeet TDT 0.6B v3 model, transcribes your voice locally, so no audio or text ever leaves your computer and no network connection is required.
 
 ### Features
 
@@ -64,7 +64,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * Murmure requires Windows 10 or later and installs the 64-bit MSI.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

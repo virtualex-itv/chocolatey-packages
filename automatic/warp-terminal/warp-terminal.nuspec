@@ -47,8 +47,8 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/warp-terminal</packageSourceUrl>
     <docsUrl>https://docs.warp.dev/</docsUrl>
     <summary>The intelligent terminal.</summary>
-    <description><![CDATA[Become a command line power user on day one. Warp combines AI and your dev team's knowledge in one fast, intuitive terminal.
-]]></description>
+    <description>Become a command line power user on day one. Warp combines AI and your dev team's knowledge in one fast, intuitive terminal.
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

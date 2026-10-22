@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workloadmanagement</packageSourceUrl>
     <docsUrl>https://www.powershellgallery.com/packages/VMware.WorkloadManagement</docsUrl>
     <summary>PowerCLI Module for vSphere with Kubernetes Workload Management</summary>
-    <description><![CDATA[PowerCLI Module to interact with both [vSphere with Tanzu using Distributed Virtual Switch](https://www.virtuallyghetto.com/2020/10/automated-vsphere-with-tanzu-lab-deployment-script.html) and [vSphere with Tanzu using NSX-T](https://blogs.vmware.com/vsphere/2020/03/vsphere-7-kubernetes-tanzu.html).
+    <description>PowerCLI Module to interact with both [vSphere with Tanzu using Distributed Virtual Switch](https://www.virtuallyghetto.com/2020/10/automated-vsphere-with-tanzu-lab-deployment-script.html) and [vSphere with Tanzu using NSX-T](https://blogs.vmware.com/vsphere/2020/03/vsphere-7-kubernetes-tanzu.html).
 
 To import module use:
 **Note**: Requires PowerShell v6 or higher
@@ -55,7 +55,7 @@ To import module use:
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

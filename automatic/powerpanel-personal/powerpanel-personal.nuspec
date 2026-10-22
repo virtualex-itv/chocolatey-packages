@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/powerpanel-personal</packageSourceUrl>
     <docsUrl>https://images.salsify.com/image/upload/s--w4HsjETg--/c45a86c806b6633d12798e7fbbbf60acb15d7c3f.pdf</docsUrl>
     <summary>An interface to control and monitor a UPS system through a USB or serial cable with the host computer.</summary>
-    <description><![CDATA[# PowerPanel® Personal
+    <description># PowerPanel® Personal
 
 ## Product Overview
 
@@ -73,7 +73,7 @@ PowerPanel® Personal allows users to setup email notifications to receive real-
 In the event of a power outage, the user can configure the software to keep the computer running until the battery power runs low, or to shut down the computer immediately after a power outage to preserve the battery.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

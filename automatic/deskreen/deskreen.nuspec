@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/pavlobu/deskreen/issues</bugTrackerUrl>
     <docsUrl>https://deskreen.com/faq</docsUrl>
     <summary>Turns any device with a web browser into a secondary screen for your computer.</summary>
-    <description><![CDATA[Deskreen CE (Community Edition) turns any device with a web browser into a secondary screen for your computer. It is an Electron application that uses WebRTC to stream your computer screen live to a web browser on any device, with no software needed on the receiving device.
+    <description>Deskreen CE (Community Edition) turns any device with a web browser into a secondary screen for your computer. It is an Electron application that uses WebRTC to stream your computer screen live to a web browser on any device, with no software needed on the receiving device.
 
 ### Package Notes
 
@@ -57,7 +57,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * This package installs the 64-bit MSI on 64-bit Windows and the 32-bit MSI on 32-bit Windows.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

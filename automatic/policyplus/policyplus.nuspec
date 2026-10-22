@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/Fleex255/PolicyPlus/issues</bugTrackerUrl>
     <docsUrl>https://github.com/Fleex255/PolicyPlus#readme</docsUrl>
     <summary>Local Group Policy editor with more features, for all Windows editions.</summary>
-    <description><![CDATA[Policy Plus is a local Group Policy editor that works on every edition of Windows, including Home. It reads administrative templates (ADMX/ADML files) and writes the policies they describe, so it can manage settings that the built-in Local Group Policy Editor does not offer on some editions.
+    <description>Policy Plus is a local Group Policy editor that works on every edition of Windows, including Home. It reads administrative templates (ADMX/ADML files) and writes the policies they describe, so it can manage settings that the built-in Local Group Policy Editor does not offer on some editions.
 
 ### Features
 
@@ -67,7 +67,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * The project publishes releases named after the month and year (for example October2025), so the package version is YYYY.M.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

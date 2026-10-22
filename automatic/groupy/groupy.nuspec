@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/groupy</packageSourceUrl>
     <docsUrl>https://forums.stardock.com/forum/1170</docsUrl>
     <summary>Organize multiple applications into grouped tabs on your Windows desktop in Windows 10 and 11</summary>
-    <description><![CDATA[### Organize multiple applications into grouped tabs on your Windows desktop!
+    <description>### Organize multiple applications into grouped tabs on your Windows desktop!
 
 **Key Features**
 
@@ -63,7 +63,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
 
     <!-- =============================== -->
 

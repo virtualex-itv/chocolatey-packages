@@ -46,12 +46,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/launch</packageSourceUrl>
     <docsUrl>https://forums.stardock.com/forum/1069</docsUrl>
     <summary>Adds dock to Windows Start screen</summary>
-    <description><![CDATA[Add a stationary dock to your Windows Start screen.
+    <description>Add a stationary dock to your Windows Start screen.
 
 NOTE: This is commercial software, and only provides a trial version. Full usage will require the purchase of a license.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
 
     <!-- =============================== -->
 

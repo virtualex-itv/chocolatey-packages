@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/win32ss/supermium/issues</bugTrackerUrl>
     <docsUrl>https://github.com/win32ss/supermium#readme</docsUrl>
     <summary>A current Chromium-based web browser that also runs on Windows XP, Vista, 7 and 8.</summary>
-    <description><![CDATA[Supermium is a free, open source web browser built from current Chromium code that keeps working on older versions of Windows, including Windows XP, Vista, 7 and 8.x, as well as Windows 10 and 11.
+    <description>Supermium is a free, open source web browser built from current Chromium code that keeps working on older versions of Windows, including Windows XP, Vista, 7 and 8.x, as well as Windows 10 and 11.
 
 ### Features
 
@@ -68,7 +68,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * The package version is built from the release tag: v150-r2.01 is package version 150.2.1.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

@@ -47,12 +47,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/shellsend</packageSourceUrl>
     <docsUrl>https://www.binaryfortress.com/ShellSend/Help/</docsUrl>
     <summary>Email Files From the Command Line.</summary>
-    <description><![CDATA[Email Files From the Command Line.
+    <description>Email Files From the Command Line.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

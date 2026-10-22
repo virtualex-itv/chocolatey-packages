@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/hydrogen-music/hydrogen/issues</bugTrackerUrl>
     <docsUrl>http://www.hydrogen-music.org/documentation/manual/manual_en.html</docsUrl>
     <summary>An advanced drum machine.</summary>
-    <description><![CDATA[Hydrogen is an advanced, open source drum machine. It provides a pattern-based sequencer, a song editor, a mixer with effects, and support for multi-layer drum kits, with MIDI input and audio export.
+    <description>Hydrogen is an advanced, open source drum machine. It provides a pattern-based sequencer, a song editor, a mixer with effects, and support for multi-layer drum kits, with MIDI input and audio export.
 
 ### Features
 
@@ -64,7 +64,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 * This package installs the 64-bit installer.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->

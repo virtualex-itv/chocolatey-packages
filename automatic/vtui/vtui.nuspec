@@ -47,12 +47,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/noclue/vtui/issues</bugTrackerUrl>
     <tags>vmware vsphere esxi tui cli admin</tags>
     <summary>Terminal-based UI for browsing and managing VMware vSphere inventory.</summary>
-    <description><![CDATA[vTUI is a terminal-based user interface for browsing and managing VMware vSphere inventory from the command line.
+    <description>vTUI is a terminal-based user interface for browsing and managing VMware vSphere inventory from the command line.
 
 Features include real-time inventory browsing via the vSphere PropertyCollector API, VM power management, full-text resource search, object property inspection, and JSON export of inventory data.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <releaseNotes>https://github.com/noclue/vtui/releases/tag/v0.2.8</releaseNotes>
     <!-- =============================== -->
 

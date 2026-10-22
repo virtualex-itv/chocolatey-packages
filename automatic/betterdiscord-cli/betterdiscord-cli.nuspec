@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <bugTrackerUrl>https://github.com/BetterDiscord/cli/issues</bugTrackerUrl>
     <docsUrl>https://github.com/BetterDiscord/cli#usage</docsUrl>
     <summary>Command-line interface for installing, updating, and managing BetterDiscord.</summary>
-    <description><![CDATA[BetterDiscord CLI (`bdcli`) is a native Go command-line tool for installing, removing, and maintaining [BetterDiscord](https://betterdiscord.app/) across supported Discord desktop installations.
+    <description>BetterDiscord CLI (`bdcli`) is a native Go command-line tool for installing, removing, and maintaining [BetterDiscord](https://betterdiscord.app/) across supported Discord desktop installations.
 
 ### Features
 
@@ -74,7 +74,7 @@ Run `bdcli [command] --help` for command-specific flags.
 This package installs the CLI only - it does not inject BetterDiscord into Discord on its own. Run `bdcli install` afterwards, or use the `betterdiscord` package.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-]]></description>
+</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
