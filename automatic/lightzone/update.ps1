@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset64 = $release.assets | Where-Object { $_.name -like 'LightZone-*-windows-64bit.msi' } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset matching 'LightZone-*-windows-64bit.msi' in ktgw0316/LightZone $version" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'LightZone-*-windows-64bit.msi' in ktgw0316/LightZone $version" }
 
   @{
     Version      = $version

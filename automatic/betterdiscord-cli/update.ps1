@@ -7,12 +7,12 @@ function global:au_GetLatest {
 
   $url64    = $release.assets | Where-Object { $_.name -like 'bdcli_*_windows_amd64.zip' } | Select-Object -ExpandProperty browser_download_url -First 1
   $urlArm64 = $release.assets | Where-Object { $_.name -like 'bdcli_*_windows_arm64.zip' } | Select-Object -ExpandProperty browser_download_url -First 1
-  if (-not $url64)    { throw "No windows_amd64 asset in BetterDiscord/cli $version" }
-  if (-not $urlArm64) { throw "No windows_arm64 asset in BetterDiscord/cli $version" }
+  if (-not $url64)    { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No windows_amd64 asset in BetterDiscord/cli $version" }
+  if (-not $urlArm64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No windows_arm64 asset in BetterDiscord/cli $version" }
 
   # Upstream ships one checksums file covering every asset.
   $sumsUrl = $release.assets | Where-Object { $_.name -eq 'bdcli_checksums.txt' } | Select-Object -ExpandProperty browser_download_url -First 1
-  if (-not $sumsUrl) { throw "No bdcli_checksums.txt in BetterDiscord/cli $version" }
+  if (-not $sumsUrl) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No bdcli_checksums.txt in BetterDiscord/cli $version" }
 
   @{
     Version      = $version
@@ -30,7 +30,7 @@ function global:au_BeforeUpdate {
   function Get-Sum([string]$assetUrl) {
     $name = Split-Path -Leaf $assetUrl
     $line = $raw -split "`n" | Where-Object { $_ -match "\s$([regex]::Escape($name))\s*$" } | Select-Object -First 1
-    if (-not $line) { throw "No checksum for $name in bdcli_checksums.txt" }
+    if (-not $line) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No checksum for $name in bdcli_checksums.txt" }
     ($line -split '\s+')[0].ToLower()
   }
 

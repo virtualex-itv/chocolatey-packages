@@ -5,6 +5,7 @@ $releases = Get-GitHubRelease BetterDiscord Installer
 
 function global:au_GetLatest {
   $Url = $releases.assets | Where-Object { $_.name.endswith('.exe') } | Select-Object -First 1 -ExpandProperty browser_download_url
+  if (-not $Url) { if (Test-ReleaseAssetsPending $releases) { return 'ignore' }; throw "No .exe asset in BetterDiscord/Installer $($releases.tag_name)" }
   $version = $releases.tag_name.Trim('v')
   $ChecksumType = 'sha256'
 

@@ -5,6 +5,7 @@ $release = Get-GitHubRelease Aurora-RGB Aurora
 
 function global:au_GetLatest {
   $Url = $release.assets | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
+  if (-not $Url) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No .exe asset in Aurora-RGB/Aurora $($release.tag_name)" }
   $version = $release.tag_name.Trim('v') + '.0.0'
   $ChecksumType = 'sha256'
 

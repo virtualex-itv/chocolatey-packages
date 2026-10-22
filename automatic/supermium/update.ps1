@@ -15,10 +15,10 @@ function global:au_GetLatest {
   $major = $Matches['major']
 
   $asset32 = $release.assets | Where-Object { $_.name -eq "supermium_${major}_32_setup.exe" } | Select-Object -First 1
-  if (-not $asset32) { throw "No asset 'supermium_${major}_32_setup.exe' in win32ss/supermium $($release.tag_name)" }
+  if (-not $asset32) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset 'supermium_${major}_32_setup.exe' in win32ss/supermium $($release.tag_name)" }
   # The 64-bit build for Windows 10 and 11; the plain 64-bit setup only adds a DirectWrite shim for Windows 7/8.
   $asset64 = $release.assets | Where-Object { $_.name -eq "supermium_${major}_64_setup_win10_11.exe" } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset 'supermium_${major}_64_setup_win10_11.exe' in win32ss/supermium $($release.tag_name)" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset 'supermium_${major}_64_setup_win10_11.exe' in win32ss/supermium $($release.tag_name)" }
 
   @{
     Version      = $version

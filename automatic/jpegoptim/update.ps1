@@ -5,6 +5,7 @@ $release = Get-GitHubRelease XhmikosR jpegoptim-windows
 
 function global:au_GetLatest {
   $Url = $release.assets | ? { $_.name.endswith('.zip') } | select -First 1 -ExpandProperty browser_download_url
+  if (-not $Url) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No .zip asset in XhmikosR/jpegoptim-windows $($release.tag_name)" }
   $tag = $release.tag_name
   $version = ( ($tag).Split('-')[0] + '.' + (($tag).Split('-')[1]).Split('l')[1] )
   $ChecksumType = 'sha256'

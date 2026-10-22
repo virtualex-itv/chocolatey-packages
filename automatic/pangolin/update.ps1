@@ -6,6 +6,7 @@ $release = Get-GitHubRelease fosrl windows
 function global:au_GetLatest {
   $version = $release.tag_name
   $asset = $release.assets | Where-Object { $_.name -match 'pangolin-amd64-.*\.msi$' } | Select-Object -First 1
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'pangolin-amd64-*.msi' in fosrl/windows $($release.tag_name)" }
   $Url64 = $asset.browser_download_url
 
   return @{

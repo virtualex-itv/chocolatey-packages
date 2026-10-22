@@ -7,6 +7,8 @@ function global:au_GetLatest {
 
   $url64    = $release.assets | Where-Object { $_.name -eq 'vtui-x86_64-pc-windows-msvc.zip' }    | Select-Object -ExpandProperty browser_download_url -First 1
   $urlArm64 = $release.assets | Where-Object { $_.name -eq 'vtui-aarch64-pc-windows-msvc.zip' }   | Select-Object -ExpandProperty browser_download_url -First 1
+  if (-not $url64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset vtui-x86_64-pc-windows-msvc.zip in noclue/vtui $($release.tag_name)" }
+  if (-not $urlArm64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset vtui-aarch64-pc-windows-msvc.zip in noclue/vtui $($release.tag_name)" }
 
   @{
     Version   = $version

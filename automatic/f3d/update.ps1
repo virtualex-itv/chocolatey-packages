@@ -11,10 +11,10 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset = $release.assets | Where-Object { $_.name -like 'F3D-*-Windows-x86_64.exe' } | Select-Object -First 1
-  if (-not $asset) { throw "No asset matching 'F3D-*-Windows-x86_64.exe' in f3d-app/f3d $version" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'F3D-*-Windows-x86_64.exe' in f3d-app/f3d $version" }
 
   $assetRt = $release.assets | Where-Object { $_.name -like 'F3D-*-Windows-x86_64-raytracing.exe' } | Select-Object -First 1
-  if (-not $assetRt) { throw "No asset matching 'F3D-*-Windows-x86_64-raytracing.exe' in f3d-app/f3d $version" }
+  if (-not $assetRt) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'F3D-*-Windows-x86_64-raytracing.exe' in f3d-app/f3d $version" }
 
   @{
     Version      = $version

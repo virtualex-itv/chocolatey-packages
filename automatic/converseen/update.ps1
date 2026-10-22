@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset64 = $release.assets | Where-Object { $_.name -like 'Converseen-*-win64-setup.msi' } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset matching 'Converseen-*-win64-setup.msi' in Faster3ck/Converseen $version" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'Converseen-*-win64-setup.msi' in Faster3ck/Converseen $version" }
 
   @{
     Version      = $version

@@ -11,10 +11,10 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset32 = $release.assets | Where-Object { $_.name -like 'deskreen-ce-*-ia32.msi' } | Select-Object -First 1
-  if (-not $asset32) { throw "No asset matching 'deskreen-ce-*-ia32.msi' in pavlobu/deskreen $version" }
+  if (-not $asset32) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'deskreen-ce-*-ia32.msi' in pavlobu/deskreen $version" }
 
   $asset64 = $release.assets | Where-Object { $_.name -like 'deskreen-ce-*-x64.msi' } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset matching 'deskreen-ce-*-x64.msi' in pavlobu/deskreen $version" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'deskreen-ce-*-x64.msi' in pavlobu/deskreen $version" }
 
   @{
     Version      = $version

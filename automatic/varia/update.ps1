@@ -14,7 +14,7 @@ function global:au_GetLatest {
   $version = if ($Matches['rev']) { "$($Matches['ymd']).$($Matches['rev'])" } else { $Matches['ymd'] }
 
   $asset = $release.assets | Where-Object { $_.name -eq 'varia-windows-setup-amd64.exe' } | Select-Object -First 1
-  if (-not $asset) { throw "No asset 'varia-windows-setup-amd64.exe' in giantpinkrobots/varia $($release.tag_name)" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset 'varia-windows-setup-amd64.exe' in giantpinkrobots/varia $($release.tag_name)" }
 
   @{
     Version      = $version

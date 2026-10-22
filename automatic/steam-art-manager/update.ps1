@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset = $release.assets | Where-Object { $_.name -eq 'steam-art-manager.msi' } | Select-Object -First 1
-  if (-not $asset) { throw "No asset matching 'steam-art-manager.msi' in Tormak9970/Steam-Art-Manager $version" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'steam-art-manager.msi' in Tormak9970/Steam-Art-Manager $version" }
 
   @{
     Version      = $version

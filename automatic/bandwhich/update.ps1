@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset = $release.assets | Where-Object { $_.name -like 'bandwhich-*-x86_64-pc-windows-msvc.zip' } | Select-Object -First 1
-  if (-not $asset) { throw "No asset matching 'bandwhich-*-x86_64-pc-windows-msvc.zip' in imsnif/bandwhich $version" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'bandwhich-*-x86_64-pc-windows-msvc.zip' in imsnif/bandwhich $version" }
 
   @{
     Version      = $version

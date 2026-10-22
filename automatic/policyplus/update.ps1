@@ -13,7 +13,7 @@ function global:au_GetLatest {
   $version = "$($Matches['year']).$month"
 
   $asset = $release.assets | Where-Object { $_.name -eq 'PolicyPlus.exe' } | Select-Object -First 1
-  if (-not $asset) { throw "No asset matching 'PolicyPlus.exe' in Fleex255/PolicyPlus $version" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'PolicyPlus.exe' in Fleex255/PolicyPlus $version" }
 
   @{
     Version      = $version

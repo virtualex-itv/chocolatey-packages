@@ -11,10 +11,10 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset32 = $release.assets | Where-Object { $_.name -like 'gum_*_Windows_i386.zip' } | Select-Object -First 1
-  if (-not $asset32) { throw "No asset matching 'gum_*_Windows_i386.zip' in charmbracelet/gum $version" }
+  if (-not $asset32) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'gum_*_Windows_i386.zip' in charmbracelet/gum $version" }
 
   $asset64 = $release.assets | Where-Object { $_.name -like 'gum_*_Windows_x86_64.zip' } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset matching 'gum_*_Windows_x86_64.zip' in charmbracelet/gum $version" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'gum_*_Windows_x86_64.zip' in charmbracelet/gum $version" }
 
   @{
     Version      = $version

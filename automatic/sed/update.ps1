@@ -7,6 +7,8 @@ $release = Get-GitHubRelease mbuilov sed-windows
 function global:au_GetLatest {
   $Url32 = $release.assets | ? {$_.name -match 'x86' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
   $Url64 = $release.assets | ? {$_.name -match 'x64' } | ? { $_.name.endswith('.exe') } | select -First 1 -ExpandProperty browser_download_url
+  if (-not $Url32) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No x86 .exe asset in mbuilov/sed-windows $($release.tag_name)" }
+  if (-not $Url64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No x64 .exe asset in mbuilov/sed-windows $($release.tag_name)" }
 
   # The upstream repo re-uses the same numeric version across tags when binaries are
   # hotfixed (e.g., sed-4.9 followed by sed-4.9-x64-fixed). Pull just the X.Y(.Z) portion.

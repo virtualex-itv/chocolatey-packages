@@ -11,7 +11,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.TrimStart('v')
 
   $asset64 = $release.assets | Where-Object { $_.name -like 'Murmure_x64.msi' } | Select-Object -First 1
-  if (-not $asset64) { throw "No asset matching 'Murmure_x64.msi' in Kieirra/murmure $version" }
+  if (-not $asset64) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching 'Murmure_x64.msi' in Kieirra/murmure $version" }
 
   @{
     Version      = $version
