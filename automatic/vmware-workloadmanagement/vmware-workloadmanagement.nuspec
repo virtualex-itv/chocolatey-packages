@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>William Lam</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/lamw/VMware.WorkloadManagement</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e61315c1a1c9da8a17325a22fc299db5d040546d/icons/vmware-workloadmanagement.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@e61315c1a1c9da8a17325a22fc299db5d040546d/icons/vmware-workloadmanagement.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2026 VMware, Inc.  All rights reserved.</copyright>
     <tags>vmware powercli vsphere tanzu kubernetes k8s automation powershell module</tags>

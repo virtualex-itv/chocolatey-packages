@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>Stardock</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.stardock.com/products/launch/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock launch dock trial</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>Stardock</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.stardock.com/products/tiles/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © 2026 Stardock</copyright>
     <tags>stardock objectdesktop suite tiles trial</tags>

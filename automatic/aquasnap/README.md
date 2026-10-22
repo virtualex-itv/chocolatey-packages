@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="48" height="48"/> [aquasnap](https://community.chocolatey.org/packages/aquasnap)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="48" height="48"/> [aquasnap](https://community.chocolatey.org/packages/aquasnap)
 
 AquaSnap greatly enhances the way you can arrange windows on your Desktop. It gives you the possibility to snap windows to the edges or to the corners of the desktop, set windows to remain on top, stretch windows and more. It is freeware for personal single-monitor use only.
 
