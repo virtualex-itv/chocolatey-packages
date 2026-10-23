@@ -248,7 +248,7 @@ $description
 [Software Site]($($meta.projectUrl))
 
 [Package Source]($($meta.packageSourceUrl))
-"@ -replace "<!-- PARAMETERS.md -->", $parameters | Out-File -Encoding UTF8 $filename
+"@ -replace "<!-- PARAMETERS.md -->", $parameters -replace "`r?`n", "`r`n" | Out-File -Encoding UTF8 $filename
 
     $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"
     $navigation += "        url: /packages/$url.html$($lineFeed)"
