@@ -15,8 +15,12 @@ toc:
         url: /packages/betterdiscord.html
       - page: "BetterDiscord CLI"
         url: /packages/betterdiscordcli.html
+      - page: "Capptivo"
+        url: /packages/capptivo.html
       - page: "[Deprecated] Capture (Formerly Jing)"
         url: /packages/capture.html
+      - page: "Cardinal"
+        url: /packages/cardinal.html
       - page: "Converseen"
         url: /packages/converseen.html
       - page: "Creative App"
@@ -71,6 +75,8 @@ toc:
         url: /packages/lightzone.html
       - page: "Logi Options+"
         url: /packages/logioptionsplus.html
+      - page: "MangoDisk"
+        url: /packages/mangodisk.html
       - page: "[Retired] Marcs Updater"
         url: /packages/marcsupdater.html
       - page: "Micron Storage Executive"
@@ -89,12 +95,16 @@ toc:
         url: /packages/omnissahorizonclient.html
       - page: "[Deprecated] OpenLens"
         url: /packages/openlens.html
+      - page: "Orkas"
+        url: /packages/orkas.html
       - page: "Pangolin"
         url: /packages/pangolin.html
       - page: "PlayStation Plus"
         url: /packages/playstationplus.html
       - page: "Policy Plus"
         url: /packages/policyplus.html
+      - page: "Pomotroid"
+        url: /packages/pomotroid.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
       - page: "Aurora - Unified Lighting Effects"

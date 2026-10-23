@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="32" height="32"/> [![WindowFX](https://img.shields.io/chocolatey/v/windowfx.svg?label=WindowFX)](https://community.chocolatey.org/packages/windowfx) [![WindowFX](https://img.shields.io/chocolatey/dt/windowfx.svg)](https://community.chocolatey.org/packages/windowfx)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@b6e1be800dc6637d25fb124f2c24467b4273c4a5/icons/windowfx.png" width="32" height="32"/> [![WindowFX](https://img.shields.io/chocolatey/v/windowfx.svg?label=WindowFX)](https://community.chocolatey.org/packages/windowfx) [![WindowFX](https://img.shields.io/chocolatey/dt/windowfx.svg)](https://community.chocolatey.org/packages/windowfx)
 
 ## Usage
 

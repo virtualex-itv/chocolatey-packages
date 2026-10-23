@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png" width="32" height="32"/> [![Tiles](https://img.shields.io/chocolatey/v/tiles.svg?label=Tiles)](https://community.chocolatey.org/packages/tiles) [![Tiles](https://img.shields.io/chocolatey/dt/tiles.svg)](https://community.chocolatey.org/packages/tiles)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@b813b98075cd738bc4bdc7b8bae92839468cf3d9/icons/tiles.png" width="32" height="32"/> [![Tiles](https://img.shields.io/chocolatey/v/tiles.svg?label=Tiles)](https://community.chocolatey.org/packages/tiles) [![Tiles](https://img.shields.io/chocolatey/dt/tiles.svg)](https://community.chocolatey.org/packages/tiles)
 
 ## Usage
 

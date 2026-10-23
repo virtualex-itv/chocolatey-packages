@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/e78924b467961787352ce2d54f03406d841c8a9e/icons/shellsend.png" width="32" height="32"/> [![ShellSend](https://img.shields.io/chocolatey/v/shellsend.svg?label=ShellSend)](https://community.chocolatey.org/packages/shellsend) [![ShellSend](https://img.shields.io/chocolatey/dt/shellsend.svg)](https://community.chocolatey.org/packages/shellsend)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@e78924b467961787352ce2d54f03406d841c8a9e/icons/shellsend.png" width="32" height="32"/> [![ShellSend](https://img.shields.io/chocolatey/v/shellsend.svg?label=ShellSend)](https://community.chocolatey.org/packages/shellsend) [![ShellSend](https://img.shields.io/chocolatey/dt/shellsend.svg)](https://community.chocolatey.org/packages/shellsend)
 
 ## Usage
 

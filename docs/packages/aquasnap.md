@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="32" height="32"/> [![AquaSnap](https://img.shields.io/chocolatey/v/aquasnap.svg?label=AquaSnap)](https://community.chocolatey.org/packages/aquasnap) [![AquaSnap](https://img.shields.io/chocolatey/dt/aquasnap.svg)](https://community.chocolatey.org/packages/aquasnap)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@a6ddae1ded009908fcc241536886d0bca8d14a59/icons/aquasnap.png" width="32" height="32"/> [![AquaSnap](https://img.shields.io/chocolatey/v/aquasnap.svg?label=AquaSnap)](https://community.chocolatey.org/packages/aquasnap) [![AquaSnap](https://img.shields.io/chocolatey/dt/aquasnap.svg)](https://community.chocolatey.org/packages/aquasnap)
 
 ## Usage
 

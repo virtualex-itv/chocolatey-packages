@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="32" height="32"/> [![IconPackager](https://img.shields.io/chocolatey/v/iconpackager.svg?label=IconPackager)](https://community.chocolatey.org/packages/iconpackager) [![IconPackager](https://img.shields.io/chocolatey/dt/iconpackager.svg)](https://community.chocolatey.org/packages/iconpackager)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@877660a895a3b1522a6105e5b8ccd07b032308dc/icons/iconpackager.png" width="32" height="32"/> [![IconPackager](https://img.shields.io/chocolatey/v/iconpackager.svg?label=IconPackager)](https://community.chocolatey.org/packages/iconpackager) [![IconPackager](https://img.shields.io/chocolatey/dt/iconpackager.svg)](https://community.chocolatey.org/packages/iconpackager)
 
 ## Usage
 

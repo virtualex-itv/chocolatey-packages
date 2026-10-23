@@ -1,4 +1,4 @@
-# <img src="https://rawcdn.githack.com/virtualex-itv/chocolatey-packages/28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png" width="32" height="32"/> [![Launch](https://img.shields.io/chocolatey/v/launch.svg?label=Launch)](https://community.chocolatey.org/packages/launch) [![Launch](https://img.shields.io/chocolatey/dt/launch.svg)](https://community.chocolatey.org/packages/launch)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@28cd1bc572e20d2c70001318d532d15364b63c6a/icons/launch.png" width="32" height="32"/> [![Launch](https://img.shields.io/chocolatey/v/launch.svg?label=Launch)](https://community.chocolatey.org/packages/launch) [![Launch](https://img.shields.io/chocolatey/dt/launch.svg)](https://community.chocolatey.org/packages/launch)
 
 ## Usage
 
