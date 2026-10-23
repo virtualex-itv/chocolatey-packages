@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>26.2.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>virtualex</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright (c) Cardinal contributors</copyright>
     <tags>cardinal modular synthesizer synth vst vst3 clap lv2 audio music vcv-rack foss</tags>
-    <releaseNotes>https://github.com/DISTRHO/Cardinal/releases</releaseNotes>
+    <releaseNotes>https://github.com/DISTRHO/Cardinal/releases/tag/26.02</releaseNotes>
     <licenseUrl>https://github.com/DISTRHO/Cardinal/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/cardinal</packageSourceUrl>
@@ -59,8 +59,8 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 
 ### Package Notes
 
-* This package installs the 64-bit installer with the vendor&apos;s &quot;Full installation&quot; components: Carla/Ildaeil host tools plus the LV2, VST2, VST3 and CLAP plugins. The standalone app is not part of that selection.
-* Add the standalone (native) app with the package parameter `/Standalone`: `choco install cardinal --params &quot;&apos;/Standalone&apos;&quot;`.
+* This package installs the 64-bit installer with the vendor's "Full installation" components: Carla/Ildaeil host tools plus the LV2, VST2, VST3 and CLAP plugins. The standalone app is not part of that selection.
+* Add the standalone (native) app with the package parameter `/Standalone`: `choco install cardinal --params "'/Standalone'"`.
 * The download is large (about 370 MB).
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
