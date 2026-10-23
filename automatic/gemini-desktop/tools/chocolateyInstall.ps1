@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://dl.google.com/release2/Google%20DeepMind/acv5qauetud6hcvw6zsqz2us3cfq_1.15.0/GeminiSetup-1.15.0_uncompressed.exe'
-$checksum64 = '68e94affff42e96c2a690ae3f521a42afcd4bb5a481ae0d6a59a71c02d8df52e'
+$url64      = 'https://dl.google.com/release2/Google%20DeepMind/acd3kexcaptgv6s7rlvqcodfttkq_1.16.0/GeminiSetup-1.16.0_uncompressed.exe'
+$checksum64 = '02a3649952fcca275f310cc8ef9c5193a039f773f1310604ea657867d44a4289'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
