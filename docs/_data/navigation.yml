@@ -99,6 +99,8 @@ toc:
         url: /packages/orkas.html
       - page: "Pangolin"
         url: /packages/pangolin.html
+      - page: "Paragon Partition Manager Community Edition"
+        url: /packages/partitionmanager.html
       - page: "PlayStation Plus"
         url: /packages/playstationplus.html
       - page: "Policy Plus"
