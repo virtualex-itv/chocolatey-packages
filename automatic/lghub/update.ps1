@@ -2,8 +2,9 @@ Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-$releases   = 'https://www.logitechg.com/en-us/software/ghub'
-$updateFeed = 'https://updates.ghub.logitechg.com/pipeline/v2/update/ghub13/win/public/update.json'
+$releases     = 'https://www.logitechg.com/en-us/software/ghub'
+$releaseNotes = 'https://marketplace.logi.com/releasenotes/ghub/en'
+$feedBase     = 'https://updates.ghub.logitechg.com/pipeline/v2/update/ghub13/win'
 
 function GetChecksum([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -21,9 +22,24 @@ function GetChecksum([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  # Version comes from the updater's public-channel feed, i.e. the build the bootstrapper installs.
-  $version = (Invoke-RestMethod -Uri $updateFeed -UseBasicParsing).version
-  if ($version -notmatch '^20\d\d\.\d+\.\d+$') { throw "Unexpected G HUB version '$version' from $updateFeed" }
+  # Highest version offered by any of three sources: the release notes, and the updater's public and canary feeds.
+  # The sources disagree for weeks at a time (Oct 2026: notes and canary 2026.7.992920, public 2026.6.981214, while the
+  # app itself prompted for 2026.7.992920), so no single one is authoritative. Do NOT read the installer's ProductVersion:
+  # it is a bootstrapper whose own version lags the app.
+  $found = @()
+  try {
+    $notes = Get-RetryWebContent $releaseNotes -MustMatch '20\d\d\.\d+\.\d+'
+    $found += [regex]::Matches($notes, '20\d\d\.\d+\.\d+') | ForEach-Object { [pscustomobject]@{ Source = 'release notes'; Version = $_.Value } }
+  } catch { Write-Warning "G HUB release notes unavailable: $($_.Exception.Message)" }
+  foreach ($channel in 'public', 'canary') {
+    try {
+      $v = (Invoke-RestMethod -Uri "$feedBase/$channel/update.json" -UseBasicParsing).version
+      if ($v -match '^20\d\d\.\d+\.\d+$') { $found += [pscustomobject]@{ Source = "$channel feed"; Version = $v } }
+    } catch { Write-Warning "G HUB $channel feed unavailable: $($_.Exception.Message)" }
+  }
+  if (-not $found) { throw 'Could not read a G HUB version from the release notes or either update feed' }
+  $found | Group-Object Source | ForEach-Object { Write-Host ("  {0,-14} {1}" -f $_.Name, ($_.Group.Version | Sort-Object { [version]$_ } -Descending | Select-Object -First 1)) }
+  $version = $found.Version | Sort-Object { [version]$_ } -Descending | Select-Object -First 1
 
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $Url32 = $download_page.Links | Where-Object { $_.href -match '\.exe' } | Select-Object -First 1 -ExpandProperty href
