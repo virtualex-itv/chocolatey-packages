@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = ''
-$checksum64 = ''
+$url64      = 'https://github.com/jacktrip/jacktrip/releases/download/v3.0.1/JackTrip-v3.0.1-Windows-x64-installer.msi'
+$checksum64 = '522bc454559d34854a6f18e7f37ab147674755a395b814fc2c203bf43246ae43'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
