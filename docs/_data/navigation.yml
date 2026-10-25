@@ -5,6 +5,8 @@ toc:
         url: /packages/advancedipscanner.html
       - page: "[DEPRECATED] Advanced-IP Scanner"
         url: /packages/advancedipscanner.html
+      - page: "Altus"
+        url: /packages/altus.html
       - page: "Amazon WorkSpaces"
         url: /packages/amazonworkspaces.html
       - page: "AquaSnap"
@@ -15,6 +17,8 @@ toc:
         url: /packages/betterdiscord.html
       - page: "BetterDiscord CLI"
         url: /packages/betterdiscordcli.html
+      - page: "Bindplane Distro for OpenTelemetry Collector (BDOT)"
+        url: /packages/bindplaneotelcollector.html
       - page: "Capptivo"
         url: /packages/capptivo.html
       - page: "[Deprecated] Capture (Formerly Jing)"
@@ -59,6 +63,8 @@ toc:
         url: /packages/icondeveloper.html
       - page: "IconPackager"
         url: /packages/iconpackager.html
+      - page: "JackTrip"
+        url: /packages/jacktrip.html
       - page: "jpegoptim"
         url: /packages/jpegoptim.html
       - page: "Microsoft Local Administrator Password Solution (LAPS)"
@@ -109,6 +115,8 @@ toc:
         url: /packages/pomotroid.html
       - page: "PowerPanel Personal (Install)"
         url: /packages/powerpanelpersonal.html
+      - page: "PrivacyNotes"
+        url: /packages/privacynotes.html
       - page: "Aurora - Unified Lighting Effects"
         url: /packages/projectaurora.html
       - page: "PSWindowsUpdate (PowerShell Module)"
