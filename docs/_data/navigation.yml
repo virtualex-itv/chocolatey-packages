@@ -45,6 +45,8 @@ toc:
         url: /packages/deskscapes.html
       - page: "DisplayFusion (Portable)"
         url: /packages/displayfusion.portable.html
+      - page: "EmEditor"
+        url: /packages/emeditor.html
       - page: "F3D"
         url: /packages/f3d.html
       - page: "FileSeek (Portable)"
