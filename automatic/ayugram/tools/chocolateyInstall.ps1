@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64      = ''
-$checksum64 = ''
+$url64      = 'https://github.com/AyuGram/AyuGramDesktop/releases/download/v7.2.9/AyuGram.zip'
+$checksum64 = '69aab831164169a6713314bb06792314d4e3af8fba6f1cfbdf2cdcbf44364684'
 
 # The files cannot be replaced while AyuGram or its updater runs from the tools folder.
 Get-Process -ErrorAction SilentlyContinue |
