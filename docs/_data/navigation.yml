@@ -99,6 +99,8 @@ toc:
         url: /packages/murmure.html
       - page: "Notepad Replacer"
         url: /packages/notepadreplacer.html
+      - page: "Notesnook"
+        url: /packages/notesnook.html
       - page: "Object Desktop"
         url: /packages/objectdesktop.html
       - page: "ObjectDock"
@@ -155,6 +157,8 @@ toc:
         url: /packages/start8.html
       - page: "Steam Art Manager"
         url: /packages/steamartmanager.html
+      - page: "Stirling PDF"
+        url: /packages/stirlingpdf.html
       - page: "Supermium"
         url: /packages/supermium.html
       - page: "Termius"

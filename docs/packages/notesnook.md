@@ -1,0 +1,41 @@
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@d00181d5b7936d09936d7680cc1f5250b487ae59/icons/notesnook.png" width="32" height="32"/> [![Notesnook](https://img.shields.io/chocolatey/v/notesnook.svg?label=Notesnook)](https://community.chocolatey.org/packages/notesnook) [![Notesnook](https://img.shields.io/chocolatey/dt/notesnook.svg)](https://community.chocolatey.org/packages/notesnook)
+
+## Usage
+
+To install Notesnook, run the following command from the command line or from PowerShell:
+
+```powershell
+choco install notesnook
+```
+
+To upgrade Notesnook, run the following command from the command line or from PowerShell:
+
+```powershell
+choco upgrade notesnook
+```
+
+To uninstall Notesnook, run the following command from the command line or from PowerShell:
+
+```powershell
+choco uninstall notesnook
+```
+
+## Description
+
+Notesnook is a free and open-source note-taking app focused on privacy and ease of use. Notes are encrypted on your device with XChaCha20-Poly1305 and Argon2 before they are synced, so only you can read them.
+
+### Package Notes
+
+* This package installs the signed per-user installer for 64-bit Windows, or the native ARM64 installer on ARM64 Windows. The app installs for the account that runs Chocolatey.
+* Notesnook is free with unlimited notes. Paid plans add attachment storage, larger file uploads and extra features; sync uses a free Notesnook account.
+* Uninstalling Notesnook also deletes the app's local data for that account. Notes you have synced to a Notesnook account stay in the account.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
+## Links
+
+[Chocolatey Package Page](https://community.chocolatey.org/packages/notesnook)
+
+[Software Site](https://notesnook.com/)
+
+[Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/notesnook)
