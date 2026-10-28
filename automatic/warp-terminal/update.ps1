@@ -20,37 +20,12 @@ function ParseWarpVersion($v) {
 }
 
 function global:au_GetLatest {
-  $headers = @{ 'User-Agent' = 'AU-Updater' }
-  if ($env:github_api_key) { $headers.Authorization = "Bearer $env:github_api_key" }
+  # Warp's own update feed, the one the app consumes; stable.version is the current stable build
+  $feed = Invoke-RestMethod -Uri 'https://releases.warp.dev/channel_versions.json' -UseBasicParsing
+  $latest = ParseWarpVersion $feed.stable.version
+  if (-not $latest) { throw "Unrecognized Warp stable version in channel_versions.json: '$($feed.stable.version)'" }
 
-  $candidates = [System.Collections.Generic.List[object]]::new()
-
-  # Primary: merged versions from winget-pkgs directory listing
-  $response = Invoke-RestMethod -Uri 'https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/w/Warp/Warp' -Headers $headers -UseBasicParsing
-  $response | Where-Object { $_.type -eq 'dir' } | ForEach-Object {
-    $parsed = ParseWarpVersion $_.name
-    if ($parsed) { $candidates.Add($parsed) }
-  }
-
-  # Fallback: open PRs catch versions submitted to winget-pkgs but not yet merged.
-  # Warp's CI auto-submits PRs immediately on release, so this closes the lag window.
-  try {
-    $prs = Invoke-RestMethod -Uri 'https://api.github.com/search/issues?q=repo:microsoft/winget-pkgs+Warp.Warp+is:pr+is:open&sort=created&order=desc&per_page=10' -Headers $headers
-    $prs.items | ForEach-Object {
-      if ($_.title -match 'Warp\.Warp version (v0\.\d+\.\d+\.\d+\.\d+\.\d+\.stable_\d+)') {
-        $parsed = ParseWarpVersion $Matches[1]
-        if ($parsed) { $candidates.Add($parsed) }
-      }
-    }
-  } catch {
-    Write-Warning "Open PR check failed (rate limit or network issue): $_"
-  }
-
-  $latest = $candidates | Sort-Object SortKey -Descending | Select-Object -First 1
-  if (-not $latest) { throw 'No Warp versions found from winget-pkgs or open PRs' }
-
-  $source = if ($candidates | Where-Object { $_.SortKey -eq $latest.SortKey -and $_.FullVersion -eq $latest.FullVersion } | Select-Object -First 1) { 'merged' } else { 'open PR' }
-  Write-Host "Latest Warp version: $($latest.FullVersion) (source: winget-pkgs)"
+  Write-Host "Latest Warp version: $($latest.FullVersion) (source: releases.warp.dev)"
 
   # Chocolatey package version format: YYYY.M.D.HHMMBB
   # 4th octet uses integer arithmetic to avoid leading zeros (NuGet normalizes segments as integers,
