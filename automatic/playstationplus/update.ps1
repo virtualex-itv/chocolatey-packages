@@ -1,7 +1,7 @@
 Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 
-$releases = 'https://www.playstation.com/en-us/support/subscriptions/ps-plus-pc/#app'
+$releases = 'https://download-psplus.playstation.com/downloads/psplus/pc/latest'
 
 function GetResultInformation([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -24,10 +24,8 @@ function GetResultInformation([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  $re = 'download-psplus'
-  $Url32 = Get-RedirectedUrl ($download_page.Links | Where-Object { $_.href -match $re } | Select-Object -First 1 -ExpandProperty href)
+  $Url32 = Get-RedirectedUrl $releases
+  if ($Url32 -notmatch '^https://download-psplus\.playstation\.com/.+\.exe$') { throw "Unexpected PlayStation Plus download URL: '$Url32'" }
 
   # Get ETag and Content-Length via HEAD request
   $request = [System.Net.WebRequest]::CreateDefault($Url32)
