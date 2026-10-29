@@ -22,15 +22,17 @@ $packageArgs = @{
 
 if ($key.Count -eq 1) {
   $key | ForEach-Object {
-    $packageArgs['file'] = "$($_.UninstallString)"
-    if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+    # Work on a copy so the product code never leaks into the install arguments below
+    $uninstallArgs = $packageArgs.Clone()
+    $uninstallArgs['file'] = "$($_.UninstallString)"
+    if ($uninstallArgs['fileType'] -eq 'MSI') {
+      $uninstallArgs['silentArgs'] = "$($_.PSChildName) $($uninstallArgs['silentArgs'])"
 
-      $packageArgs['file'] = ''
+      $uninstallArgs['file'] = ''
     }
 
     Write-Host "`n$env:ChocolateyPackageName installation found, uninstalling prior to upgrade...`n" -ForegroundColor Yellow
-    Uninstall-ChocolateyPackage @packageArgs
+    Uninstall-ChocolateyPackage @uninstallArgs
   }
 } else {
   Write-Host "`nNo previous installation of $env:ChocolateyPackageName found, proceeding with installation...`n" -ForegroundColor Green
