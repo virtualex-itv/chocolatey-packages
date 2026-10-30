@@ -7,6 +7,8 @@ toc:
         url: /packages/advancedipscanner.html
       - page: "[DEPRECATED] Advanced-IP Scanner"
         url: /packages/advancedipscanner.html
+      - page: "age (Portable)"
+        url: /packages/age.portable.html
       - page: "Altus"
         url: /packages/altus.html
       - page: "Amazon WorkSpaces"
