@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/f3d-app/f3d/releases/download/v4.0.0/F3D-4.0.0-Windows-x86_64.exe'
-$checksum64 = 'e6e5896bdad35e70ac3a13812c86f7017e4114542d505cabf58bcd246e060c76'
-$url64Raytracing      = 'https://github.com/f3d-app/f3d/releases/download/v4.0.0/F3D-4.0.0-Windows-x86_64-raytracing.exe'
-$checksum64Raytracing = '2f8f6d2af78c203240bc7e8ef165347c0e041f5474895846d0a06402ed133cc2'
+$url64      = 'https://github.com/f3d-app/f3d/releases/download/v4.0.1/F3D-4.0.1-Windows-x86_64.exe'
+$checksum64 = '62cdfc082f0cb26a9df1a1fc4eaf899e862147e21365c1f9e9a32006433da774'
+$url64Raytracing      = 'https://github.com/f3d-app/f3d/releases/download/v4.0.1/F3D-4.0.1-Windows-x86_64-raytracing.exe'
+$checksum64Raytracing = '52b1a741f17751bf1d260a51c35d6ffceaff09b15e8d04d8933ac9d0070a0784'
 
 $pp = Get-PackageParameters
 
