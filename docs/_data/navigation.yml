@@ -25,6 +25,8 @@ toc:
         url: /packages/betterdiscordcli.html
       - page: "Bindplane Distro for OpenTelemetry Collector (BDOT)"
         url: /packages/bindplaneotelcollector.html
+      - page: "Bossanova"
+        url: /packages/bossanova.html
       - page: "Capptivo"
         url: /packages/capptivo.html
       - page: "[Deprecated] Capture (Formerly Jing)"
@@ -39,6 +41,8 @@ toc:
         url: /packages/cursorfx.html
       - page: "[Retired] Curtains"
         url: /packages/curtains.html
+      - page: "Cypress"
+        url: /packages/cypress.html
       - page: "[Retired] Decor8"
         url: /packages/decor8.html
       - page: "Deskreen CE"
@@ -97,6 +101,8 @@ toc:
         url: /packages/micronstorageexecutive.html
       - page: "[Retired] ModernMix"
         url: /packages/modernmix.html
+      - page: "Mole CLI for Windows"
+        url: /packages/mole.html
       - page: "Murmure"
         url: /packages/murmure.html
       - page: "Notepad Replacer"
