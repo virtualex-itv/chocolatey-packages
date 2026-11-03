@@ -1,7 +1,7 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
-$url64      = ''
-$checksum64 = ''
+$url64      = 'https://bsnv.app/releases/windows-x64/0.1.54/Bossanova-Setup.exe'
+$checksum64 = '2391a4e94abeb66cc355b2e8c9d6f3a9f2046cd29580d9fb07ba3bce2d25c3fb'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
