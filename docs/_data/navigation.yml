@@ -121,8 +121,6 @@ toc:
         url: /packages/pangolin.html
       - page: "Paragon Partition Manager Community Edition"
         url: /packages/partitionmanager.html
-      - page: "pkgconf"
-        url: /packages/pkgconf.html
       - page: "PlayStation Plus"
         url: /packages/playstationplus.html
       - page: "Policy Plus"
