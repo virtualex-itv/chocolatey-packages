@@ -1,10 +1,9 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-$releases     = 'https://www.logitechg.com/en-us/software/ghub'
-$releaseNotes = 'https://marketplace.logi.com/releasenotes/ghub/en'
-$feedBase     = 'https://updates.ghub.logitechg.com/pipeline/v2/update/ghub13/win'
+$releases = 'https://www.logitechg.com/en-us/software/ghub'
+$feedBase = 'https://updates.ghub.logitechg.com/pipeline/v2/update/ghub13/win'
 
 function GetChecksum([string]$Url32) {
   $fileName = Split-Path -Leaf $Url32
@@ -22,30 +21,40 @@ function GetChecksum([string]$Url32) {
 }
 
 function global:au_GetLatest {
-  # Highest version offered by any of three sources: the release notes, and the updater's public and canary feeds.
-  # The sources disagree for weeks at a time (Oct 2026: notes and canary 2026.7.992920, public 2026.6.981214, while the
-  # app itself prompted for 2026.7.992920), so no single one is authoritative. Do NOT read the installer's ProductVersion:
-  # it is a bootstrapper whose own version lags the app.
-  $found = @()
-  try {
-    $notes = Get-RetryWebContent $releaseNotes -MustMatch '20\d\d\.\d+\.\d+'
-    $found += [regex]::Matches($notes, '20\d\d\.\d+\.\d+') | ForEach-Object { [pscustomobject]@{ Source = 'release notes'; Version = $_.Value } }
-  } catch { Write-Warning "G HUB release notes unavailable: $($_.Exception.Message)" }
-  foreach ($channel in 'public', 'canary') {
-    try {
-      $v = (Invoke-RestMethod -Uri "$feedBase/$channel/update.json" -UseBasicParsing).version
-      if ($v -match '^20\d\d\.\d+\.\d+$') { $found += [pscustomobject]@{ Source = "$channel feed"; Version = $v } }
-    } catch { Write-Warning "G HUB $channel feed unavailable: $($_.Exception.Message)" }
-  }
-  if (-not $found) { throw 'Could not read a G HUB version from the release notes or either update feed' }
-  $found | Group-Object Source | ForEach-Object { Write-Host ("  {0,-14} {1}" -f $_.Name, ($_.Group.Version | Sort-Object { [version]$_ } -Descending | Select-Object -First 1)) }
-  $version = $found.Version | Sort-Object { [version]$_ } -Descending | Select-Object -First 1
+  # Read without a logi-install-id header on purpose: that gets the public record, the build every machine has once its rollout ends.
+  # The record's uuid is the content checksum, because the installer's own hash does not follow releases.
+  $build = Invoke-RestMethod -Uri "$feedBase/public/details.json" -UseBasicParsing
+  if ($build.version -notmatch '^20\d\d\.\d+\.\d+$' -or -not $build.uuid) { throw 'Unexpected details.json from the G HUB public channel' }
+  Write-Host ("  public {0}  build {1}  uuid {2}..." -f $build.version, $build.buildId, $build.uuid.Substring(0, 8))
+  $version = $build.version
+  $uuid = $build.uuid
 
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $Url32 = $download_page.Links | Where-Object { $_.href -match '\.exe' } | Select-Object -First 1 -ExpandProperty href
   if (-not $Url32) { throw "Could not find an installer link on $releases" }
 
   $nuspecVersion = ([xml](Get-Content "$PSScriptRoot\lghub.nuspec")).package.metadata.version
+
+  # info = installer ETag | version | installer length | build uuid, as of the last package that was built
+  $saveFile = ".\info"
+  $existingInfo = @()
+  if (Test-Path $saveFile) { $existingInfo = (Get-Content $saveFile -Encoding UTF8 -TotalCount 1) -split '\|' }
+  $publishedUuid = if ($existingInfo.Count -gt 3) { $existingInfo[3] } else { $null }
+
+  if ($publishedUuid) {
+    $nuspecBase = ([version]$nuspecVersion).ToString(3)   # a fix-version package carries a 4th segment
+    if ($publishedUuid -eq $uuid -and !$global:au_Force) {
+      Write-Host '  Same build as the published package - nothing to package'
+      $version = $nuspecVersion
+    } elseif ([version]$version -lt [version]$nuspecBase) {
+      Write-Warning "The public build ($version) is older than the published package ($nuspecVersion) - not downgrading"
+      $version = $nuspecVersion
+      $uuid = $publishedUuid   # so a later stub swap cannot record this older build as the published one
+    } elseif ([version]$version -eq [version]$nuspecBase -and $publishedUuid -ne $uuid) {
+      Write-Host 'Build replaced under the same version - forcing a fix-version update'
+      $global:au_Force = $true
+    }
+  }
 
   # Get ETag and Content-Length via HEAD request
   $request = [System.Net.WebRequest]::CreateDefault($Url32)
@@ -58,14 +67,12 @@ function global:au_GetLatest {
     if ($response) { $response.Dispose() }
   }
 
-  $saveFile = ".\info"
   $needsUpdate = $true
 
   # Re-hash when the CDN swaps the stub OR the nuspec is behind, so a version bump
   # never reaches au_SearchReplace without a matching checksum.
-  if ((Test-Path $saveFile) -and !$global:au_Force) {
-    $existingInfo = (Get-Content $saveFile -Encoding UTF8 -TotalCount 1) -split '\|'
-    if ($existingInfo[0] -eq $etag -and $existingInfo.Count -gt 2 -and $existingInfo[2] -eq $contentLength -and [version]$nuspecVersion -ge [version]$version) {
+  if ($existingInfo.Count -gt 2 -and !$global:au_Force) {
+    if ($existingInfo[0] -eq $etag -and $existingInfo[2] -eq $contentLength -and [version]$nuspecVersion -ge [version]$version) {
       $needsUpdate = $false
       $result = @{ Url32 = $Url32; Version = $version }
     }
@@ -74,7 +81,7 @@ function global:au_GetLatest {
   if ($needsUpdate) {
     $result = GetChecksum $Url32
     $result.Version = $version
-    "$etag|$version|$contentLength" | Out-File $saveFile -Encoding utf8 -NoNewline
+    "$etag|$version|$contentLength|$uuid" | Out-File $saveFile -Encoding utf8 -NoNewline
 
     # Logitech swapped the stub without a version bump: force a fix-version so the latest package keeps installing.
     $match = Select-String -Path "$PSScriptRoot\tools\chocolateyInstall.ps1" -Pattern '\$checksum\s*=\s*''([a-fA-F0-9]{64})''' -ErrorAction SilentlyContinue

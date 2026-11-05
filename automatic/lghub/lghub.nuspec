@@ -60,13 +60,20 @@ Program buttons with in-app actions and create your own macros to launch media a
 
 Choose from numerous animation effects, download lighting profiles from the community, and create your own advanced effects with Logitech G LIGHTSYNC for keyboards, mice, headsets, and speakers.
 
+## Package Notes
+
+* The installer is Logitech's small setup program, which downloads G HUB when it runs. Logitech rolls each new build out in stages and decides per machine which build it gets, so during a rollout your machine can get a newer build than the package version. The package version follows Logitech's public update feed, which moves when a rollout finishes.
+* To get Logitech's canary (early access) build without waiting for the rollout, pass `/Canary`: `choco install lghub --params "'/Canary'"`. Canary builds can be less stable, and the machine stays on the canary channel until G HUB is uninstalled. This applies to a fresh install only: if G HUB is already installed, the setup program leaves the installed build as it is, so uninstall G HUB first to switch.
+* The setup program needs the Microsoft Visual C++ runtime, which the package installs as a dependency.
+* Uninstalling this package removes G HUB completely, including its settings and profiles for the account that runs the uninstall.
+
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <!--<dependency id="" version="[]" />-->
+      <dependency id="vcredist140" version="14.29.30139" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
