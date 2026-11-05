@@ -4,9 +4,9 @@ toc:
       - page: "Achievements"
         url: /packages/achievements.html
       - page: "Advanced IP Scanner (Install)"
-        url: /packages/advancedipscanner.html
+        url: /packages/advanced-ip-scanner.html
       - page: "[DEPRECATED] Advanced-IP Scanner"
-        url: /packages/advancedipscanner.html
+        url: /packages/advanced-ipscanner.html
       - page: "age (Portable)"
         url: /packages/age.portable.html
       - page: "Altus"
