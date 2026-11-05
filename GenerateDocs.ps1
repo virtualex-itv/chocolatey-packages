@@ -191,6 +191,8 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
   $navigation += "    subfolderitems:$($lineFeed)"
 
   $packages = Get-ChildItem -Path $packagesFolder -Directory | Where-Object {$_.PSISContainer} | Sort-Object -Property Name
+  # Ids that are the same once dashes are removed (advanced-ip-scanner, advanced-ipscanner) keep their dashes, so one page does not overwrite the other
+  $docNameCollisions = @($packages | Group-Object { $_.Name.Replace('-','') } | Where-Object { $_.Count -gt 1 } | ForEach-Object { $_.Name })
   $packagesDocsFolder = Join-Path $docsFolder "packages"
   if (Test-Path($packagesDocsFolder)) { Remove-Item $packagesDocsFolder -Force -Recurse -EA SilentlyContinue }
   if(-not(Test-Path $packagesDocsFolder)){ mkdir $packagesDocsFolder -EA Continue | Out-Null }
@@ -203,8 +205,9 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
       continue
     }
     #Write-Host "Nuspec File $NuspecPath ..."
-    $filename = Join-Path $packagesDocsFolder "$($package.Name.Replace('-','')).md"
-    $url = "$($package.Name.Replace('-',''))"
+    $docName = if ($docNameCollisions -contains $package.Name.Replace('-','')) { $package.Name } else { $package.Name.Replace('-','') }
+    $filename = Join-Path $packagesDocsFolder "$docName.md"
+    $url = $docName
 
     $parameters = ''
     if(Test-Path "$($package.FullName)\PARAMETERS.md") {
