@@ -63,9 +63,10 @@ Choose from numerous animation effects, download lighting profiles from the comm
 ## Package Notes
 
 * The installer is Logitech's small setup program, which downloads G HUB when it runs. Logitech rolls each new build out in stages and decides per machine which build it gets, so during a rollout your machine can get a newer build than the package version. The package version follows Logitech's public update feed, which moves when a rollout finishes.
-* To get Logitech's canary (early access) build without waiting for the rollout, pass `/Canary`: `choco install lghub --params "'/Canary'"`. Canary builds can be less stable, and the machine stays on the canary channel until G HUB is uninstalled. This applies to a fresh install only: if G HUB is already installed, the setup program leaves the installed build as it is, so uninstall G HUB first to switch.
+* If G HUB is already installed, the setup program does nothing, so the package updates G HUB through G HUB's own local update service instead. This works with G HUB's automatic updates turned off and leaves that setting alone. G HUB closes and reopens while it updates. If the update cannot run, the package shows a warning and G HUB stays as it is, and you can still accept G HUB's own update prompt.
+* To get Logitech's canary (early access) build without waiting for the rollout, pass `/Canary`: `choco install lghub --params "'/Canary'"`. Canary builds can be less stable, and the machine stays on the canary channel until G HUB is uninstalled. This applies to a fresh install only: if G HUB is already installed, `/Canary` is ignored with a warning, so uninstall G HUB first to switch.
 * The setup program needs the Microsoft Visual C++ runtime, which the package installs as a dependency.
-* Uninstalling this package removes G HUB completely, including its settings and profiles for the account that runs the uninstall.
+* Uninstalling this package removes G HUB but keeps your settings and profiles in `%LOCALAPPDATA%\LGHUB`, so a later install picks them up. G HUB's automatic updates setting goes back to on after a reinstall.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 </description>

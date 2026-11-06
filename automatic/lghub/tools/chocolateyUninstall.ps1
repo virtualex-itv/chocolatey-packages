@@ -17,10 +17,11 @@ if (-not (Test-Path $uninstaller)) {
   throw "Could not find the G HUB uninstaller at $uninstaller"
 }
 
-# --full removes G HUB and its data; plain --uninstall left state that made the next install hang. The updater service host is the uninstaller itself, so it is not stopped here
+# --full clears the updater's state (plain --uninstall left some that made the next install hang), --keep-user-data keeps settings and profiles.
+# The updater service host is the uninstaller itself, so it is not stopped here.
 Uninstall-ChocolateyPackage -PackageName $env:ChocolateyPackageName `
   -FileType 'exe' `
-  -SilentArgs '--uninstall --full' `
+  -SilentArgs '--uninstall --full --keep-user-data' `
   -ValidExitCodes @(0) `
   -File $uninstaller
 
