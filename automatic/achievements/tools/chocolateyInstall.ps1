@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/PSerban93/Achievements/releases/download/1.3.2/Achievements-Setup-1.3.2.exe'
-$checksum64 = '4f6fd0860abd544ef62947035dcf427dd48491b3d88e3d5f7804c950acfb4a71'
+$url64      = 'https://github.com/PSerban93/Achievements/releases/download/1.3.3/Achievements-Setup-1.3.3.exe'
+$checksum64 = 'd1b7c882a310dc97925d69b7ca50864b05bf01a597a8b4c3e0eebe3093553b4d'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
