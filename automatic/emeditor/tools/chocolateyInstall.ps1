@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://download.emeditor.com/emed64_26.4.1.msi'
-$checksum64 = 'a24ae76cb702c8311ca0458d7a330ba4fcbddb49aa151d0e45ff800c018d0654'
+$url64      = 'https://download.emeditor.com/emed64_26.4.2.msi'
+$checksum64 = '8746d25aa5ea3ea63df47385d13986146e8f3021c279cc13bdb3678604c1de34'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
