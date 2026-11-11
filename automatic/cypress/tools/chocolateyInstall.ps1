@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = ''
-$checksum64 = ''
+$url64      = 'https://cdn.cypress.io/desktop/16.3.0/win32-x64/cypress.zip'
+$checksum64 = '307ce54a27dd5a457f34f8c4a1204d94d4a9e1c52a1d390ad2c818d0db3b8a74'
 
 $installDir = Join-Path (Get-ToolsLocation) 'Cypress'
 
