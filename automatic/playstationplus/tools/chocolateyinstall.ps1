@@ -2,8 +2,8 @@
 
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                   = 'https://download-psplus.playstation.com/downloads/psplus/pc/PlayStationPlus-12.7.0.exe'
-$checksum              = '93DABD7A537A0B67A6732DCAF0F868199EB0E426C92F6D929FB1C93D32DCF0C1'
+$url                   = 'https://download-psplus.playstation.com/downloads/psplus/pc/PlayStationPlus-12.8.0.exe'
+$checksum              = '4D6B7F6DEECF837A69081148FB5D851177A5FAC3DBCAF6F771156AC75A685211'
 $checksumType          = 'sha256'
 
 $packageArgs = @{
