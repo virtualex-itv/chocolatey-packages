@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = '"PlayStation Plus*"'
+  softwareName  = 'PlayStation Plus*'
   fileType      = 'exe'
   silentArgs    = '/quiet'
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
