@@ -42,12 +42,12 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <copyright>Copyright (c) Lifetime Labs LLC</copyright>
     <tags>privacynotes notes encrypted e2ee privacy tasks journal passwords markdown foss freemium</tags>
     <releaseNotes>https://privacynotes.app/changelog</releaseNotes>
-    <licenseUrl>https://github.com/LifetimeLabsDev/PrivacyNotes.app/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/LifetimeLabsHQ/PrivacyNotes.app/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/privacynotes</packageSourceUrl>
-    <projectSourceUrl>https://github.com/LifetimeLabsDev/PrivacyNotes.app</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/LifetimeLabsDev/PrivacyNotes.app/issues</bugTrackerUrl>
-    <docsUrl>https://github.com/LifetimeLabsDev/PrivacyNotes.app#readme</docsUrl>
+    <projectSourceUrl>https://github.com/LifetimeLabsHQ/PrivacyNotes.app</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/LifetimeLabsHQ/PrivacyNotes.app/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/LifetimeLabsHQ/PrivacyNotes.app#readme</docsUrl>
     <summary>End-to-end encrypted notes, tasks, journal and more in one app.</summary>
     <description>PrivacyNotes is an end-to-end encrypted app for notes, tasks, passwords, files, a calendar, contacts, bookmarks and a journal with mood and medication tracking. Notes are encrypted on your device before they sync, and you can sign in with a 12-word recovery phrase instead of an email address and password. The desktop app also works as a Markdown editor on a folder of plain `.md` and `.txt` files. The client code is open source.
 

@@ -7,12 +7,12 @@ function Get-Sha256([string]$Url, [string]$Digest) {
 }
 
 function global:au_GetLatest {
-  $release = Get-GitHubRelease LifetimeLabsDev PrivacyNotes.app
+  $release = Get-GitHubRelease LifetimeLabsHQ PrivacyNotes.app
   $version = $release.tag_name.TrimStart('v')
 
   $pattern = '^PrivacyNotes_[0-9.]+_x64-setup\.exe$'
   $asset = $release.assets | Where-Object { $_.name -match $pattern } | Select-Object -First 1
-  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching '$pattern' in LifetimeLabsDev/PrivacyNotes.app $version" }
+  if (-not $asset) { if (Test-ReleaseAssetsPending $release) { return 'ignore' }; throw "No asset matching '$pattern' in LifetimeLabsHQ/PrivacyNotes.app $version" }
 
   @{
     Version      = $version
