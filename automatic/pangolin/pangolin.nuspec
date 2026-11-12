@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pangolin</id>
-    <version>0.16.0</version>
+    <version>0.16.0.20261112</version>
     <owners>virtualex</owners>
     <title>Pangolin</title>
     <authors>fosrl</authors>
@@ -12,7 +12,7 @@
     <bugTrackerUrl>https://github.com/fosrl/pangolin/issues</bugTrackerUrl>
     <docsUrl>https://docs.pangolin.net</docsUrl>
     <licenseUrl>https://github.com/fosrl/pangolin/blob/main/LICENSE</licenseUrl>
-    <releaseNotes>https://github.com/fosrl/windows/releases</releaseNotes>
+    <releaseNotes>https://github.com/fosrl/windows-linux/releases</releaseNotes>
     <copyright>© 2026 Fossorial, Inc</copyright>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@98ca7895360ab02b5f1da15684b803777663eecd/icons/pangolin.png</iconUrl>
     <tags>vpn wireguard zero-trust proxy remote-access ztna pangolin</tags>
