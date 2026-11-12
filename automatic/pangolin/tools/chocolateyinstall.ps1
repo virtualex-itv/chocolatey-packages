@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64      = 'https://github.com/fosrl/windows/releases/download/0.16.0/pangolin-amd64-0.16.0.msi'
+$url64      = 'https://github.com/fosrl/windows-linux/releases/download/windows-0.16.0/pangolin-amd64-0.16.0.msi'
 $checksum64 = '224e4f3021ca6dd5b34e59330928ad64835a347285157483e5857c5afd09f643'
 
 $packageArgs = @{
