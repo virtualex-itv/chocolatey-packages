@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/ktgw0316/LightZone/releases/download/v5.0.3/LightZone-5.0.3-20261022T033611-windows-64bit.msi'
-$checksum64 = '2dcf80a9eb8e1acf094b3fb0e26ad818f600fcd4f075f8a9fd8f8de3ddeb3be7'
+$url64      = 'https://github.com/ktgw0316/LightZone/releases/download/v5.1.0/LightZone-5.1.0-20261113T142741-windows-64bit.msi'
+$checksum64 = '993096e8eda37af5d323f4bf3284bfb71036460e961c8074cd6415c7585a3875'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
