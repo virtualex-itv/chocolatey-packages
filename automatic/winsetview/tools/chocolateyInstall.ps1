@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url      = 'https://github.com/LesFerch/WinSetView/releases/download/3.2.0/WinSetView-Setup.exe'
-$checksum = '83633cbe6ba332118ef15a918a2a2652c555971157cef20f6b8de8a10e9f738c'
+$url      = 'https://github.com/LesFerch/WinSetView/releases/download/3.2.1/WinSetView-Setup.exe'
+$checksum = '5f6499102ec46100d6460e402aee117c79860c453c5458985e0122f70a184dfb'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
