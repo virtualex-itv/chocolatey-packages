@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/amanharwara/altus/releases/download/5.8.2/Altus-Setup-5.8.2.exe'
-$checksum64 = '63ab96e45201599f360897ee4071a07472352afa6878a8f69388d967b212e648'
+$url64      = 'https://github.com/amanharwara/altus/releases/download/5.8.3/Altus-Setup-5.8.3.exe'
+$checksum64 = '8da85b6ade85c6e7d01ce8f482b0c628861350d1d18178c805cd73871bc7ddc8'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

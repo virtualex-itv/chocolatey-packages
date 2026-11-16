@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$url64      = 'https://github.com/tw93/Mole/releases/download/V1.44.0-windows/mole-1.44.0-x64.zip'
-$checksum64 = 'e1548c25b3716dbbe9b1e04abd838e9e92dbcd480afe73ee0d8e5f3c579c7c89'
+$url64      = 'https://github.com/tw93/Mole/releases/download/V1.45.0-windows/mole-1.45.0-x64.zip'
+$checksum64 = '66645071b424eee0d8124f7e7d6db946a9d5295a6f55cae84b59a14ef4a66db8'
 
 if (-not [Environment]::Is64BitOperatingSystem) { throw 'Mole is only released for 64-bit Windows.' }
 
