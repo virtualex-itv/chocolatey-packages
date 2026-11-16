@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/Orkas-AI/Orkas/releases/download/v2026.11.4/Orkas.Setup.2.0.0.exe'
-$checksum64 = '5801a45d5c2ef53104dd3e445b81bb07d2c447685689a0b0d759d29d3788281c'
+$url64      = 'https://github.com/Orkas-AI/Orkas/releases/download/v2026.11.16/Orkas.Setup.2.5.0.exe'
+$checksum64 = '3b32fc5bce6f1bff4bfe66090d0155feef99837f2d5a2550d055986164d80028'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
