@@ -167,6 +167,8 @@ toc:
         url: /packages/steamartmanager.html
       - page: "Supermium"
         url: /packages/supermium.html
+      - page: "Tailscale"
+        url: /packages/tailscale.html
       - page: "Termius"
         url: /packages/termius.html
       - page: "Tiles"
@@ -177,6 +179,8 @@ toc:
         url: /packages/traystatus.install.html
       - page: "TrayStatus (Portable)"
         url: /packages/traystatus.portable.html
+      - page: "Twingate (Client)"
+        url: /packages/twingate.html
       - page: "[Retired] Twitch Studio"
         url: /packages/twitchstudio.html
       - page: "Varia"
