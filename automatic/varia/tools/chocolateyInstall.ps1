@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/giantpinkrobots/varia/releases/download/v2026.8.5-1/varia-windows-setup-amd64.exe'
-$checksum64 = '3daaa666727156cd667abebb247e547fed15a1d6c8eb7b7395dd924ea240a2a3'
+$url64      = 'https://github.com/giantpinkrobots/varia/releases/download/v2026.11.16/varia-windows-setup-amd64.exe'
+$checksum64 = '663eaa443e087bbbbed8c97386e620de5d15cc98b79e50801e8a3d62322bde41'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
