@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
-$url64         = ''
-$checksum64    = ''
-$urlArm64      = ''
-$checksumArm64 = ''
+$url64         = 'https://github.com/qzind/tray/releases/download/v2.3.0/qz-tray-2.3.0%2B1-x86_64.exe'
+$checksum64    = '01a8ae33da31c78f386ef8335024723f2dd2cb7d8bc44ce33079bf6bc0360011'
+$urlArm64      = 'https://github.com/qzind/tray/releases/download/v2.3.0/qz-tray-2.3.0%2B1-arm64.exe'
+$checksumArm64 = '76ce2e492779589e2a61697344ba0b871ec8ec67942c9e08c5a1c9d90f5119c5'
 
 if (-not [Environment]::Is64BitOperatingSystem) { throw 'QZ Tray publishes no 32-bit Windows build.' }
 
