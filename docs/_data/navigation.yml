@@ -115,6 +115,10 @@ toc:
         url: /packages/omnissahorizonclient.html
       - page: "[Deprecated] OpenLens"
         url: /packages/openlens.html
+      - page: "OpenTofu"
+        url: /packages/opentofu.html
+      - page: "OpenTofu (Portable)"
+        url: /packages/opentofu.portable.html
       - page: "Orkas"
         url: /packages/orkas.html
       - page: "Pangolin"
@@ -137,6 +141,8 @@ toc:
         url: /packages/projectaurora.html
       - page: "PSWindowsUpdate (PowerShell Module)"
         url: /packages/pswindowsupdate.html
+      - page: "QZ Tray"
+        url: /packages/qztray.html
       - page: "Royal Server"
         url: /packages/royalserver.html
       - page: "RVTools"
