@@ -21,7 +21,8 @@ function GetResultInformation([string]$Url32) {
 
   # Normalize to 3 segments (7.29.0.0 -> 7.29.0) to match the package's existing
   # version scheme; pad to at least X.Y.0.
-  $parts = ($rawVersion.Trim() -split '\.')
+  # Strip SemVer build metadata (8.0.0+7c7d7c40): CCR's push endpoint times out (504) on it.
+  $parts = (($rawVersion.Trim() -replace '\+.*$', '') -split '\.')
   while ($parts.Count -lt 3) { $parts += '0' }
   $version = ($parts | Select-Object -First 3) -join '.'
 
