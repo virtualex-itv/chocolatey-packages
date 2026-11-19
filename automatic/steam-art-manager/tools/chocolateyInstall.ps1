@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/Tormak9970/Steam-Art-Manager/releases/download/v3.23.2/steam-art-manager.msi'
-$checksum64 = '2b007ee0b2598fe84b0a7076054928b6dc922b0d8f76b31263320546ecd90c04'
+$url64      = 'https://github.com/Tormak9970/Steam-Art-Manager/releases/download/v3.31.0/steam-art-manager.msi'
+$checksum64 = '13d25d73fdcfaeeebdff103fc752f7e347673b6dadcb1a8c77d829402a6500d7'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
