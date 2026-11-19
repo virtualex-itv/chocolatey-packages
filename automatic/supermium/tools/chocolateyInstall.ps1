@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url32      = 'https://github.com/win32ss/supermium/releases/download/v150-r2.02/supermium_150_32_setup.exe'
-$checksum32 = '21d627b524c2da0f67dfa025acee65eb3b37375c39dcef9828ffaba1aeb1c755'
-$url64      = 'https://github.com/win32ss/supermium/releases/download/v150-r2.02/supermium_150_64_setup_win10_11.exe'
-$checksum64 = 'f3be091a7a46be2fdac0640f04c2d1189e481f6eddec0240ea1f760cff342432'
+$url32      = 'https://github.com/win32ss/supermium/releases/download/v150-r3/supermium_150_32_setup.exe'
+$checksum32 = '3075846a246b478679edeaae54e93478c5461a114ef779d9a459a5e625b30e30'
+$url64      = 'https://github.com/win32ss/supermium/releases/download/v150-r3/supermium_150_64_setup_win10_11.exe'
+$checksum64 = 'd3c84fb547fd22e2cb7741ed3697a9fd608c75038b51adfecbbcc4013bc849d6'
 
 # The installer is a 7-Zip self-extractor around Supermium's own setup: -y answers the
 # extractor's prompt, the rest goes to setup (--system-level = all users, --shortcuts = Start menu and desktop).
