@@ -3,7 +3,7 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url                    = 'https://cdn.stardock.us/downloads/public/software/objectdesktop/objectdesktop_setup.exe'
-$checksum               = '403cab70808118d7eb63a557ec8130f82bd6047f63fdf845d96d7f5f43a16784'
+$checksum               = '3628c416b7f51cbb8b317f985e729ec518d89d00790d98581d0d53044a619ca5'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
