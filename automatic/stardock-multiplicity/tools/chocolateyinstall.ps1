@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/multiplicity/Multiplicity3_setup_sd.exe'
-$checksum               = '82bd35e7e69f74da497e4b0fa7f73d4b7089f7c6f9deb994c798dc01b0a78d54'
+$url                    = 'https://cdn.stardock.us/downloads/public/software/multiplicity/Multiplicity4/Multiplicity4-setup_sd.exe'
+$checksum               = 'a832fad3ad67bcc78a7c5c1573247ced450388ab30023140f5dd88963027ed35'
 $checksumType           = 'sha256'
 
 $packageArgs = @{
