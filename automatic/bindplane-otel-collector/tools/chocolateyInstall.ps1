@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64         = 'https://github.com/observIQ/bindplane-otel-collector/releases/download/v1.112.0/observiq-otel-collector.msi'
-$checksum64    = '7bdf657b0be87d8079214daaac49c7cf29d78093cd60801a92b0adab1e52d3f8'
-$urlArm64      = 'https://github.com/observIQ/bindplane-otel-collector/releases/download/v1.112.0/observiq-otel-collector-arm64.msi'
-$checksumArm64 = '2430109e231f1444ce2cf4a46710149276fb04ebe2e47ebed136d2d298cb0393'
+$url64         = 'https://github.com/observIQ/bindplane-otel-collector/releases/download/v1.113.0/observiq-otel-collector.msi'
+$checksum64    = 'f6c4681c85943faa37297b1d8a6a658a19d2214f5c0e5d2d7aaeee065b3ed896'
+$urlArm64      = 'https://github.com/observIQ/bindplane-otel-collector/releases/download/v1.113.0/observiq-otel-collector-arm64.msi'
+$checksumArm64 = 'db3cf6015fbf71ad20fde3a62adad7bf17beeaf8ce7c60513ad197408f7f9cba'
 
 # Chocolatey runs as an emulated x64 process on ARM64 Windows, so PROCESSOR_ARCHITECTURE reads AMD64 there
 $isArm64 = $env:PROCESSOR_IDENTIFIER.StartsWith('ARMv')
