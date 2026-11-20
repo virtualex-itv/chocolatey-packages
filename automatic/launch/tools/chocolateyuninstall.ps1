@@ -1,34 +1,13 @@
-﻿$ErrorActionPreference = 'Stop';
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  softwareName  = "Stardock Launch*"
-  fileType      = 'exe'
-  silentArgs    = '"/U:' + ${env:ProgramFiles(x86)} + '\Stardock\Launch\Uninstall\uninstall.xml"'
-  validExitCodes= @(0, 3010, 1605, 1614, 1641)
-}
+﻿$ErrorActionPreference = 'Stop'
 
-$uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+$softwareName = 'Stardock Launch*'
 
-if ($key.Count -eq 1) {
+# Stardock's uninstaller for this product restarts Windows without asking, even with /noreboot, so it cannot run unattended
+[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
+
+if ($key.Count -gt 0) {
   $key | ForEach-Object {
-    $packageArgs['file'] = "$($_.UninstallString)"
-    if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-
-      $packageArgs['file'] = ''
-    }
-
-    #Uninstall-ChocolateyPackage @packageArgs
-    Write-Warning "`nStardock Launch is about to uninstall. If asked to reboot, select 'No', however, you must reboot prior to reinstalling the package.`n`nSelect [Y] to continue.`n"
-    ${env:ProgramFiles(x86)} + "\Stardock\Launch\uninstall.exe" + " $($packageArgs['silentArgs'])" #> $null
-
+    Write-Warning "$($_.DisplayName) was NOT removed: Stardock's uninstaller restarts Windows without asking, even with /noreboot."
   }
-} elseif ($key.Count -eq 0) {
-  Write-Warning "$packageName has already been uninstalled by other means."
-} elseif ($key.Count -gt 1) {
-  Write-Warning "$($key.Count) matches found!"
-  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
-  Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | ForEach-Object {Write-Warning "- $($_.DisplayName)"}
+  Write-Warning 'Remove it from Settings > Apps > Installed apps (or Control Panel > Programs and Features).'
 }
