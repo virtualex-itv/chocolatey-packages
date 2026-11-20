@@ -2,8 +2,8 @@
 
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url                    = 'https://cdn.stardock.us/downloads/public/software/deskscapes/DeskScapes11-sd-setup.exe'
-$checksum               = 'beb13c33ca11d7eeb85d5e22cc25043ceff01e069d1599a7677eb9a97bae087a'
+$url                    = 'https://stardock.cachefly.net/software/DeskScapes/DeskScapes2026/DeskScapes2026_setup.exe'
+$checksum               = 'dcd31ccda536ab66b1b1212faeeccde14dad99bec23ca0d2a8f25d82bd08ff30'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

@@ -5,10 +5,13 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/deskscapes/history'
 
 function global:au_GetLatest {
-  $Url = 'https://cdn.stardock.us/downloads/public/software/deskscapes/DeskScapes11-sd-setup.exe'
+  # Download URL is scraped from the trial page (it changes between major versions)
+  $urlRe = '(https?://[^\s"<>]+DeskScapes[^\s"<>]*\.exe)'
+  $null = (Get-RetryWebContent 'https://www.stardock.com/products/deskscapes/download-trial' -MustMatch $urlRe) -match $urlRe
+  $Url = $Matches[0]
 
-  # Match versions like "DeskScapes 10.96" or "DeskScapes 11.0"
-  $re = "DeskScapes (?<version>\d+\.\d+(?:\.\d+)*)"
+  # Match "DeskScapes 2026 v26.0.1.1", "DeskScapes 11.02" or "DeskScapes 11.0"
+  $re = "DeskScapes(?: \d{4})? v?(?<version>\d+\.\d+(?:\.\d+)*)"
   $content = Get-RetryWebContent $history_page -MustMatch $re
   $null = $content -match $re
   $version = $Matches.version
