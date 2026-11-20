@@ -29,7 +29,10 @@ If ( $OSProdType -ne 1 ) {
   throw
 }
 
-If (( $OSVer -lt [version]$min ) -or ( $OSVer -eq [version]$mid ) -or ( $OSVer -gt [version]$max )) {
+If ( $OSVer -gt [version]$max ) {
+  Write-Warning "Stardock lists Windows 10/8.1/7 as the supported systems for IconDeveloper; it is not officially supported on this version of Windows."
+}
+If (( $OSVer -lt [version]$min ) -or ( $OSVer -eq [version]$mid )) {
   Write-Warning "*** Stardock IconDeveloper requires a desktop OS running Windows 7/8.1/10... ***`n"
   throw
 } Else {
