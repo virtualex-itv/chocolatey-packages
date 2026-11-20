@@ -5,7 +5,10 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/cursorfx/history'
 
 function global:au_GetLatest {
-  $Url = 'https://cdn.stardock.us/downloads/public/software/cursorfx/CursorFX_setup_sd.exe'
+  # Download URL is scraped from the trial page (it changes between major versions)
+  $urlRe = '(https?://[^\s"<>]+CursorFX[^\s"<>]*\.exe)'
+  $null = (Get-RetryWebContent 'https://www.stardock.com/products/cursorfx/download-trial' -MustMatch $urlRe) -match $urlRe
+  $Url = $Matches[0]
 
   # Match versions like "CursorFX 4.03" or "CursorFX 4.0"
   $re = "CursorFX (?<version>\d+\.\d+(?:\.\d+)*)"
