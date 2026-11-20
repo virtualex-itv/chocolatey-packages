@@ -5,7 +5,40 @@ Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $history_page = 'https://www.stardock.com/products/fences/history'
 
 # Supported major versions (streams)
-$majorVersions = @(3, 4, 5, 6)
+$majorVersions = @(3, 4, 5, 6, 7)
+
+# Majors the history page does not list yet: version comes from the installer, cached by ETag + Content-Length in .\info
+$installerVersionMajors = @(7)
+
+function Get-InstallerVersion {
+    param([string]$stream, [string]$url)
+
+    $request = [System.Net.WebRequest]::CreateDefault($url)
+    $request.Method = 'HEAD'
+    $response = $request.GetResponse()
+    $etag = $response.Headers.Get('ETag'); $length = $response.ContentLength.ToString()
+    $response.Dispose()
+
+    # info: one line per stream, stream|ETag|Content-Length|Version
+    $infoFile = Join-Path $PSScriptRoot 'info'
+    $lines = @(if (Test-Path $infoFile) { Get-Content $infoFile -Encoding UTF8 | Where-Object { $_ } })
+    $cached = $lines | Where-Object { $_ -like "$stream|*" } | Select-Object -First 1
+    if ($cached) {
+        $p = $cached -split '\|'
+        if ($p[1] -eq $etag -and $p[2] -eq $length) { return $p[3] }
+    }
+
+    $dest = Join-Path $env:TEMP (Split-Path -Leaf $url)
+    Invoke-WebRequest -Uri $url -OutFile $dest -UseBasicParsing
+    $version = (Get-Command $dest).FileVersionInfo.ProductVersion
+    Remove-Item $dest -Force -ErrorAction SilentlyContinue
+    if (-not $version) { throw "Could not read a version from $url" }
+    $version = $version.Trim()
+
+    $lines = @($lines | Where-Object { $_ -notlike "$stream|*" }) + "$stream|$etag|$length|$version" | Sort-Object
+    $lines | Set-Content $infoFile -Encoding UTF8
+    return $version
+}
 
 function ConvertTo-FileVersion {
     param([string]$version, [int]$major)
@@ -46,12 +79,18 @@ function Get-DownloadUrl {
         4 { return 'https://stardock.cachefly.net/software/Fences4_setup.exe' }
         5 { return 'https://cdn.stardock.us/downloads/public/software/fences/v5/Fences5_setup.exe?a=sd' }
         6 { return 'https://stardock.cachefly.net/software/Fences6_setup.exe' }
+        7 { return 'https://stardock.cachefly.net/software/Fences/Fences7/Fences7_setup.exe' }
         default { return $null }
     }
 }
 
 function CreateStream {
     param([int]$major, [string]$content)
+
+    if ($major -in $installerVersionMajors) {
+        $Url = Get-DownloadUrl -major $major
+        return @{ Url32 = $Url; Version = (Get-InstallerVersion -stream "$major" -url $Url); ChecksumType32 = 'sha256' }
+    }
 
     # Match version patterns for this major version
     # Handles: "Fences v3.18", "Fences 4 v4.23", "Fences 5.89", "Fences 6.2.0.1"

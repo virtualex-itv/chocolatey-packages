@@ -1,34 +1,37 @@
-$ErrorActionPreference = 'Stop';
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  softwareName  = "Stardock Fences*"
-  fileType      = 'exe'
-  silentArgs    = '"/U:' + ${env:ProgramFiles(x86)} + '\Stardock\Fences\Uninstall\uninstall.xml"'
-  validExitCodes= @(0, 3010, 1605, 1614, 1641)
-}
+$ErrorActionPreference = 'Stop'
 
-$uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+$packageName  = $env:ChocolateyPackageName
+$softwareName = 'Stardock Fences*'
+
+[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
 if ($key.Count -eq 1) {
-  $key | ForEach-Object {
-    $packageArgs['file'] = "$($_.UninstallString)"
-    if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-
-      $packageArgs['file'] = ''
-    }
-
-    #Uninstall-ChocolateyPackage @packageArgs
-    Write-Warning "Stardock Fences is about to uninstall. If asked to reboot, select 'No', however, you must reboot prior to reinstalling the package.`n`nSelect [Y] to continue.`n"
-    ${env:ProgramFiles(x86)} + "\Stardock\Fences\uninstall.exe" + " $($packageArgs['silentArgs'])" #> $null
-
+  # Stardock uninstaller: "<dir>\uninstall.exe" "/U:<dir>\Uninstall\uninstall.xml"; Stardock documents /s /noreboot for a silent uninstall
+  if ($key[0].UninstallString -notmatch '^"(?<file>[^"]+)"\s*(?<arguments>.*)$') {
+    throw "Unrecognized uninstall entry: $($key[0].UninstallString)"
   }
+  $file = $Matches.file
+  $uninstallArgs = "$($Matches.arguments) /s /noreboot".Trim()
+
+  # Close the app (the uninstaller cannot remove files in use) but keep SdAppServices: the uninstaller needs it
+  $installDir = Split-Path $file
+  Get-Process | Where-Object { $_.Path -like "$installDir\*" -and $_.Name -notlike 'SdAppServices*' } | Stop-Process -Force -ErrorAction SilentlyContinue
+
+  Uninstall-ChocolateyPackage -PackageName $packageName `
+                              -FileType 'exe' `
+                              -SilentArgs $uninstallArgs `
+                              -File $file `
+                              -ValidExitCodes @(0, 3010, 1605, 1614, 1641)
+
+  # Wait for the uninstaller to finish removing its entry
+  $deadline = (Get-Date).AddSeconds(120)
+  while ((Get-UninstallRegistryKey -SoftwareName $softwareName 3>$null) -and (Get-Date) -lt $deadline) { Start-Sleep -Seconds 2 }
+  if (Get-UninstallRegistryKey -SoftwareName $softwareName 3>$null) { Write-Warning "$softwareName is still registered after 2 minutes; a reboot may be needed to finish the uninstall." }
 } elseif ($key.Count -eq 0) {
   Write-Warning "$packageName has already been uninstalled by other means."
 } elseif ($key.Count -gt 1) {
   Write-Warning "$($key.Count) matches found!"
   Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
-  Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | ForEach-Object {Write-Warning "- $($_.DisplayName)"}
+  Write-Warning "Please alert the package maintainer that the following keys were matched:"
+  $key | ForEach-Object { Write-Warning "- $($_.DisplayName)" }
 }

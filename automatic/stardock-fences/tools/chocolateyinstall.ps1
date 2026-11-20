@@ -15,7 +15,7 @@ $packageArgs = @{
   checksum              = $checksum
   checksumType          = $checksumType
   silentArgs            = '/s'
-  validExitCodes        = @(0)
+  validExitCodes        = @(0, 9)
 }
 
 [version]$OSVer = (Get-WmiObject Win32_OperatingSystem).Version
