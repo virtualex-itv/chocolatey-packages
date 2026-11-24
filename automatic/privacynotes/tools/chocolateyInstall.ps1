@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/LifetimeLabsHQ/PrivacyNotes.app/releases/download/v0.819.1/PrivacyNotes_0.819.1_x64-setup.exe'
-$checksum64 = '85d60f4a4493f00d2b82d710ce4da5ace3e8762ac6087b6a77c52a8bc98211af'
+$url64      = 'https://github.com/LifetimeLabsHQ/PrivacyNotes.app/releases/download/v0.836.3/PrivacyNotes_0.836.3_x64-setup.exe'
+$checksum64 = '23030e0fa03135ed903f8d95da5b34a96dea14b0e532c9d3b6492d70a2d04942'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
