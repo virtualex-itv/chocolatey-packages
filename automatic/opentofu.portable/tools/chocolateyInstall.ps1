@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$url32         = 'https://github.com/opentofu/opentofu/releases/download/v1.12.12/tofu_1.12.12_windows_386.zip'
-$checksum32    = '41470611e25aaa4b550980f492792b151cb7f5da12623639aa5b6a88eedc82da'
-$url64         = 'https://github.com/opentofu/opentofu/releases/download/v1.12.12/tofu_1.12.12_windows_amd64.zip'
-$checksum64    = '237c29f25bee7e6606ab07fd7c09c6ae90b41466b0d9e4bdd53e499c627d7b96'
-$urlArm64      = 'https://github.com/opentofu/opentofu/releases/download/v1.12.12/tofu_1.12.12_windows_amd64.zip'
-$checksumArm64 = '237c29f25bee7e6606ab07fd7c09c6ae90b41466b0d9e4bdd53e499c627d7b96'
+$url32         = 'https://github.com/opentofu/opentofu/releases/download/v1.13.10/tofu_1.13.10_windows_386.zip'
+$checksum32    = 'e459d385e1163d3f1aa543fe80ad9e47e2e95c60fa717da6020e9c90ed5fbca7'
+$url64         = 'https://github.com/opentofu/opentofu/releases/download/v1.13.10/tofu_1.13.10_windows_amd64.zip'
+$checksum64    = '643cbcb8d699a5aaf47da12ce8f9f715362f2fd84f10a407a32d44fbe2fe8e09'
+$urlArm64      = 'https://github.com/opentofu/opentofu/releases/download/v1.13.10/tofu_1.13.10_windows_arm64.zip'
+$checksumArm64 = '5c7279641fbe5099a000fc6815b295477775dd402997c5937b98d6ef4724cd1c'
 
 # Chocolatey runs as an emulated x64 process on ARM64 Windows, so PROCESSOR_ARCHITECTURE reads AMD64 there
 $isArm64 = $env:PROCESSOR_IDENTIFIER.StartsWith('ARMv')
