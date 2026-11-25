@@ -41,6 +41,6 @@ Gum provides highly configurable, ready-to-use utilities to help you write usefu
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/gum)
 
-[Software Site](https://github.com/charmbracelet/gum)
+[Software Site](https://charm.land/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/gum)

@@ -45,6 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/sharefile-for-windows</packageSourceUrl>
     <docsUrl>https://docs.sharefile.com/en-us/sharefile/sharefile-app/sharefile-for-windows</docsUrl>
+    <licenseUrl>https://www.progress.com/legal</licenseUrl>
     <summary>Access your ShareFile files from a drive in Windows Explorer.</summary>
     <description>ShareFile is a file sharing service for exchanging documents securely. ShareFile for Windows lets you access your ShareFile files from a drive in Windows Explorer. Files are downloaded only when you open them and are kept on your computer temporarily, and changes you make are saved back to ShareFile automatically.
 

@@ -45,6 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/vmware-workloadmanagement</packageSourceUrl>
     <docsUrl>https://www.powershellgallery.com/packages/VMware.WorkloadManagement</docsUrl>
+    <releaseNotes>https://github.com/lamw/VMware.WorkloadManagement/commits/master</releaseNotes>
     <summary>PowerCLI Module for vSphere with Kubernetes Workload Management</summary>
     <description>PowerCLI Module to interact with both [vSphere with Tanzu using Distributed Virtual Switch](https://www.virtuallyghetto.com/2020/10/automated-vsphere-with-tanzu-lab-deployment-script.html) and [vSphere with Tanzu using NSX-T](https://blogs.vmware.com/vsphere/2020/03/vsphere-7-kubernetes-tanzu.html).
 

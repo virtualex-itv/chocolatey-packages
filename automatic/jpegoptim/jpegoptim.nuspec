@@ -39,10 +39,10 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <projectUrl>https://github.com/XhmikosR/jpegoptim-windows</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@0743cb7f96af613811399e9081be98a1b2a11e8c/icons/jpegoptim.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>© 2026 GitHub, Inc.</copyright>
+    <copyright>Copyright (C) 1996-2026 Timo Kokkonen</copyright>
     <tags>jpeg optimize</tags>
     <releaseNotes>https://github.com/XhmikosR/jpegoptim-windows/releases/tag/1.5.6-rel2</releaseNotes>
-    <licenseUrl>https://docs.github.com/en/github/site-policy/github-terms-of-service</licenseUrl>
+    <licenseUrl>https://github.com/tjko/jpegoptim/blob/main/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/jpegoptim</packageSourceUrl>
     <docsUrl>https://github.com/XhmikosR/jpegoptim-windows</docsUrl>
     <summary>Utility to optimize jpeg files.</summary>

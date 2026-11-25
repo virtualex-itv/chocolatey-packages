@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <title>pkgconf</title>
     <authors>pkgconf authors</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/pkgconf/pkgconf</projectUrl>
+    <projectUrl>http://pkgconf.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@4234ccfc86b2ed85ebe44d247f7951db423b2516/icons/pkgconf.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright (c) 2011-2026 pkgconf authors</copyright>

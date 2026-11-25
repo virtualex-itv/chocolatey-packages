@@ -48,6 +48,6 @@ Mole is a free, open source command line toolkit for keeping a Windows PC tidy. 
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/mole)
 
-[Software Site](https://github.com/tw93/Mole/tree/windows)
+[Software Site](https://mole.fit/windows)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/mole)

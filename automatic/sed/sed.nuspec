@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/sed</packageSourceUrl>
-    <docsUrl>http://sed.sourceforge.net/#docs</docsUrl>
+    <docsUrl>https://sed.sourceforge.io/#docs</docsUrl>
     <summary>sed (stream editor) is a non-interactive command-line text editor.</summary>
     <description>sed is commonly used to filter text, i.e., it takes text input, performs some operation (or set of operations) on it, and outputs the modified text. sed is typically used for extracting part of a file using pattern matching or substituting multiple occurrences of a string within a file.
 

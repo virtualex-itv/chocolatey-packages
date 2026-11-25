@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/f3d</packageSourceUrl>
     <projectSourceUrl>https://github.com/f3d-app/f3d</projectSourceUrl>
     <bugTrackerUrl>https://github.com/f3d-app/f3d/issues</bugTrackerUrl>
-    <docsUrl>https://f3d.app/docs/</docsUrl>
+    <docsUrl>https://f3d.app/docs/user/QUICKSTART</docsUrl>
     <summary>A fast and minimalist 3D viewer.</summary>
     <description>F3D (pronounced "fed") is a fast and minimalist 3D viewer. It supports many file formats, from digital content to scientific datasets, can show animations, and offers many rendering and texturing options, including real-time physically based rendering. It is also controllable from the command line.
 

@@ -32,6 +32,6 @@ RVTools interacts with VirtualCenter 4.x, ESX Server 4.x, VirtualCenter 5.x, ESX
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/rvtools)
 
-[Software Site](https://robware.net/)
+[Software Site](https://www.dell.com/en-us/shop/vmware/sl/rvtools)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/rvtools)

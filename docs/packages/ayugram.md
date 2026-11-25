@@ -36,6 +36,6 @@ AyuGram Desktop is a free, open-source desktop client for the Telegram messaging
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/ayugram)
 
-[Software Site](https://github.com/AyuGram/AyuGramDesktop)
+[Software Site](https://docs.ayugram.one/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/ayugram)

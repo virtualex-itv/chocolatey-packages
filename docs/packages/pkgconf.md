@@ -43,6 +43,6 @@ pkgconf is a program which helps to configure compiler and linker flags for deve
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/pkgconf)
 
-[Software Site](https://github.com/pkgconf/pkgconf)
+[Software Site](http://pkgconf.org/)
 
 [Package Source](https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/pkgconf)

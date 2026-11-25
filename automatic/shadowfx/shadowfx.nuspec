@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <releaseNotes>https://www.stardock.com/products/shadowfx/history</releaseNotes>
     <licenseUrl>https://www.stardock.com/support/software-eula</licenseUrl>
     <packageSourceUrl>https://github.com/virtualex-itv/chocolatey-packages/tree/master/automatic/shadowfx</packageSourceUrl>
-    <docsUrl>https://www.stardock.com/support/</docsUrl>
+    <docsUrl>https://support.stardock.com/</docsUrl>
     <summary>Add drop shadows to your windows</summary>
     <description>Instantly add drop shadows to Windows 8 and 10.
 

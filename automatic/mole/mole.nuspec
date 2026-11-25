@@ -36,9 +36,10 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <title>Mole CLI for Windows</title>
     <authors>Tw93</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/tw93/Mole/tree/windows</projectUrl>
+    <projectUrl>https://mole.fit/windows</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@c9958c2fc46d8cba68dd64bdb8b5fa67701320d0/icons/mole.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Copyright (c) 2025-2026 tw93</copyright>
     <tags>mole mo cleanup uninstaller disk-analyzer system-monitor optimize cli powershell foss</tags>
     <releaseNotes>https://github.com/tw93/Mole/releases/tag/V1.46.0-windows</releaseNotes>
     <licenseUrl>https://github.com/tw93/Mole/blob/windows/LICENSE</licenseUrl>
