@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
     <authors>Progress ShareFile</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.sharefile.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@09c926fe13f3a1cd510a590a2802f1b7b2f328e5/icons/sharefile-for-windows.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@acd8cd2d98acc880bf80eec152fbec7450f8539a/icons/sharefile-for-windows.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright (c) Progress Software Corporation</copyright>
     <tags>sharefile citrixfiles file-sharing cloud-storage sync mapped-drive</tags>

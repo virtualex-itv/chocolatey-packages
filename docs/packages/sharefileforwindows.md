@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@09c926fe13f3a1cd510a590a2802f1b7b2f328e5/icons/sharefile-for-windows.png" width="32" height="32"/> [![ShareFile for Windows](https://img.shields.io/chocolatey/v/sharefile-for-windows.svg?label=ShareFile+for+Windows)](https://community.chocolatey.org/packages/sharefile-for-windows) [![ShareFile for Windows](https://img.shields.io/chocolatey/dt/sharefile-for-windows.svg)](https://community.chocolatey.org/packages/sharefile-for-windows)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@acd8cd2d98acc880bf80eec152fbec7450f8539a/icons/sharefile-for-windows.png" width="32" height="32"/> [![ShareFile for Windows](https://img.shields.io/chocolatey/v/sharefile-for-windows.svg?label=ShareFile+for+Windows)](https://community.chocolatey.org/packages/sharefile-for-windows) [![ShareFile for Windows](https://img.shields.io/chocolatey/dt/sharefile-for-windows.svg)](https://community.chocolatey.org/packages/sharefile-for-windows)
 
 ## Usage
 

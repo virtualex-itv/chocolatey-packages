@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@09c926fe13f3a1cd510a590a2802f1b7b2f328e5/icons/sharefile-for-windows.png" width="48" height="48"/> [sharefile-for-windows](https://community.chocolatey.org/packages/sharefile-for-windows)
+# <img src="https://cdn.jsdelivr.net/gh/virtualex-itv/chocolatey-packages@acd8cd2d98acc880bf80eec152fbec7450f8539a/icons/sharefile-for-windows.png" width="48" height="48"/> [sharefile-for-windows](https://community.chocolatey.org/packages/sharefile-for-windows)
 
 ShareFile is a file sharing service for exchanging documents securely. ShareFile for Windows lets you access your ShareFile files from a drive in Windows Explorer. Files are downloaded only when you open them and are kept on your computer temporarily, and changes you make are saved back to ShareFile automatically.
 
