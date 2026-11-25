@@ -62,8 +62,8 @@ MIT licensed. Paid tiers include monthly credits for the Nous Portal (300+ model
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="webview2-runtime" />
-      <dependency id="autohotkey" />
+      <dependency id="webview2-runtime" version="158.0.4370.33" />
+      <dependency id="autohotkey" version="2.0.0" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

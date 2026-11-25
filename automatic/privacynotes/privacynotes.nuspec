@@ -63,7 +63,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
 
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="webview2-runtime" />
+      <dependency id="webview2-runtime" version="158.0.4370.33" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

@@ -58,7 +58,7 @@ This is a nuspec. It mostly adheres to https://docs.microsoft.com/en-us/nuget/re
       <dependency id="" version="[__EXACT_VERSION__]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" /> -->
-      <dependency id="vcredist140" />
+      <dependency id="vcredist140" version="14.52.37029" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

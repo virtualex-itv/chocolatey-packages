@@ -73,7 +73,7 @@ PowerCLI is a command-line interface for managing and automating all aspects of 
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.microsoft.com/en-us/nuget/concepts/package-versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="netfx-4.7.2" />
+      <dependency id="netfx-4.7.2" version="4.7.2.0" />
       <dependency id="powershell" version="5.1.14409.1005" />
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

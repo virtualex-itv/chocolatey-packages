@@ -74,8 +74,8 @@ See https://www.garmin.com/de-DE/software/express for all information.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-    <dependency id="dotnetfx" />
-    <dependency id="netfx-4.7.2" />
+    <dependency id="dotnetfx" version="4.8.0.20220524" />
+    <dependency id="netfx-4.7.2" version="4.7.2.0" />
 
     <!--
       <dependency id="kb2919355" />
