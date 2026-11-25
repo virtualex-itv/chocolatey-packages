@@ -28,7 +28,16 @@ function CreateStream {
 
   $jsonHeader = Invoke-WebRequest -Uri $dlgHeaderUrl | ConvertFrom-Json
 
-  $ReleaseNotes = 'https://docs.omnissa.com/bundle/' + (($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match 'horizon-client-windows' }) + '/page/' + (($jsonHeader.dlg.documentation).Split(';|&') | Where-Object { $_ -match '.html' })
+  # Windows client notes live at horizon-client-windows-rnV<yymm>; else use the (HTML-encoded) link Omnissa lists
+  $ReleaseNotes = $null
+  if ($product.code -match '_WIN_(\d{4})') {
+    $clientNotes = "https://docs.omnissa.com/bundle/horizon-client-windows-rnV$($Matches[1])/page/Omnissa-Horizon-Client-for-Windows-Release-Notes.html"
+    try { if ((Invoke-WebRequest -Uri $clientNotes -Method Head -UseBasicParsing).StatusCode -eq 200) { $ReleaseNotes = $clientNotes } } catch { }
+  }
+  if (-not $ReleaseNotes) {
+    $ReleaseNotes = [regex]::Match([System.Net.WebUtility]::HtmlDecode("$($jsonHeader.dlg.documentation)"), 'href="([^"]+)"').Groups[1].Value
+  }
+  if (-not $ReleaseNotes) { $ReleaseNotes = 'https://docs.omnissa.com/' }
   #endregion
 
   $Result = @{
