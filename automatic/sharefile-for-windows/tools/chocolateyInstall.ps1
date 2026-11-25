@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
-$url64         = ''
-$checksum64    = ''
-$urlArm64      = ''
-$checksumArm64 = ''
+$url64         = 'https://dl.sharefile.com/sfwin-msi-x64/ShareFileForWindows_x64_v26.3.12.0.msi'
+$checksum64    = 'f47fd55d18370b8acd75190b4684431f0ee0946994be9ed35b95514011105cf0'
+$urlArm64      = 'https://dl.sharefile.com/sfwin-msi-arm64/ShareFileForWindows_ARM64_v26.3.12.0.msi'
+$checksumArm64 = 'a98cc04f61554a1d9f2df1d96b8805e0a2b1b1660fcfe127ea7dee3abe6acedc'
 
 if (-not [Environment]::Is64BitOperatingSystem) { throw 'ShareFile publishes no 32-bit installer for ShareFile for Windows.' }
 
