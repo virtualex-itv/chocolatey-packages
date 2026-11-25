@@ -151,6 +151,8 @@ toc:
         url: /packages/sed.html
       - page: "ShadowFX"
         url: /packages/shadowfx.html
+      - page: "ShareFile for Windows"
+        url: /packages/sharefileforwindows.html
       - page: "ShellSend"
         url: /packages/shellsend.html
       - page: "Sound Blaster Command"
@@ -225,4 +227,8 @@ toc:
         url: /packages/windowinspector.portable.html
       - page: "WinSetView"
         url: /packages/winsetview.html
+      - page: "Zoom VDI Client"
+        url: /packages/zoomvdiclient.html
+      - page: "Zoom VDI Universal Plugin"
+        url: /packages/zoomvdiuniversalplugin.html
 
