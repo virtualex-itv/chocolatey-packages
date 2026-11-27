@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://github.com/harry0703/MangoDisk/releases/download/v2.1.1/MangoDisk-2.1.1-windows.exe'
-$checksum64 = 'ef3bd07787d49056151b52b80e9fe94f8ff9c157ba61ac520e8ed637e690e53d'
+$url64      = 'https://github.com/harry0703/MangoDisk/releases/download/v2.1.2/MangoDisk-2.1.2-windows.exe'
+$checksum64 = 'c92245618d9c2caf95ec16119a09f875e5ab7984b244ce2762b38b89f76b08ff'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
